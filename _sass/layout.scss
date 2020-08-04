@@ -20,105 +20,19 @@
 	$path: "/assets/fonts/");
 
 body {
-	padding: $gap6;
 	font-family: Space Grotesk;
-	
+   @include tile(lines-up-a, purple, 6);
 
 	@include transition;
 }
 
-.backgrounds {
-	* {
-		background-repeat: no-repeat;
-		background-attachment: fixed;
-		position: fixed;
-		top: 0;
-		left:0;
-		width:100%;
-		height:100vh;
-		z-index:-1;
-		@include transition;
-	}
-	.noise {
-		background-image: url(/assets/images/Grainy_Overlay_2_Dense.png);
-		-webkit-filter: invert(100%);
-		filter: invert(100%);
-		background-repeat: repeat;
-		background-size: cover;
-	}
-	.home {
-		@include linear-gradient(320deg, #abbaab, white);
-	}
-	.study {
-		@include linear-gradient(160deg, white, #fbd786);
-	}
-	.project {
-		@include linear-gradient(0deg, #D3CCE3, #E9E4F0, white);
-	}
-	.illustrations {
-		@include linear-gradient(0deg, #f12711, #f5af19);
-	}
-	.note {
-		@include linear-gradient(190deg, white, white, #ACBB78);
-	}
-	.books {
-		@include linear-gradient(90deg, #FFAFBD, #ffc3a0);
-	}
-	.play {
-		@include linear-gradient(320deg, #dae2f8, #d6a4a4);
-	}
-	.external {
-		@include linear-gradient(0deg, #fdfcfb, #e2d1c3);
-	}
-}
 
 
-body .backgrounds * {
-	@include opacity(0);
-}
 
-.figma {
-	border: none;
-	padding: $gap 0;
-	width: 100%;
-	height: 500px;
-}
 
-body.illustrations .backgrounds .noise {
-	@include opacity(40);
-}
-
-body .backgrounds .noise,
-body.home .backgrounds .home,
-body.study .backgrounds .study,
-body.project .backgrounds .project,
-body.note .backgrounds .note,
-body.books .backgrounds .books,
-body.illustrations .backgrounds .illustrations,
-body.play .backgrounds .play,
-body.external .backgrounds .external {
-	@include opacity(100);
-}
-body.external .backgrounds *:not(.external) {
-	@include opacity(0);
-}
 
 .divider {
 	margin: $gap3 0;
-}
-
-.row.grid {
-	grid-gap: 0;
-
-}
-header.header {
-	h1, h2, h3, h4, h5 {
-		padding: 0;
-		margin: 0;
-
-	}
-
-
 }
 
 
@@ -129,93 +43,13 @@ h1, h2, h3, h4, h5, p {
 	margin-bottom: $gap;
 }
 
-.wow {
-	@include fadeInUp;
-}
 
 
 
 
-.post {
-	display: block;
-	overflow: hidden;
-	p {
-		margin: 0;
-	}
-	html.no-touch & {
-		p {
-			&.description {
-				height: 1px;
-				overflow: hidden;
-				@include transition;
-			}
-		}
-		&:hover {
-			p {
-				&.description {
-					height: 30px;
-					overflow: none;
-				}
-			}
-		}
-	}
-	
-
-}
 
 
 
-code.highlighter-rouge, pre.highlight code {
-	padding: 2px $gaphalf 0 $gaphalf;
-	font-family: RenoMono;
-	background-color: #fff;
-	font-size: 16px;
-	display: inline-block;
-	color: #333;
-	
-}
-
-pre.highlight, code.highlighter-rouge {
-
-	border: solid 1px #ccc;
-}
-
-pre.highlight {
-	padding: $gap $gaphalf;
-	background-color: #fff;
-
-	code {
-		display: block;
-	}
-
-}
-
-li {
-	del {
-		a {
-			background-color: #fff;
-			color: #999;
-		}
-		color: #999;
-		& ~ .highlighter-rouge {
-			font-family: Space Grotesk;
-			background-color: #ccc;
-			color: white;
-			display: inline-block;
-			margin-left: 5px;
-			padding: 2px 7px 0 7px;
-			font-size: 12px;
-			font-weight: bold;
-			@include radius(2px, regular);
-			&:before {
-				padding-right: 0;
-				displaY: inline-block;
-				content: "DONE:";
-				padding-right: 5px;
-			}
-		}
-	}
-}
 
 
 a {
@@ -227,174 +61,9 @@ a {
 		text-decoration: none;
 		background-color: $hover;
 	}
-	.links & {
-		background: none !important;
-		.title {
-			@include transition;
-			background-color: $link;
-			display: inline;
-		}
-		&:hover {
-			background: none !important;
-			.title {
-				background-color: $hover;
-				
-			}
-		}
-	}
-
 }
 
 
-body:not(.book) img, .wireframe svg {
-	width: 100%;
-	height: auto;
-}
-
-table {
-
-	width: 100%;
-	margin: $gap3 0;
-	img {
-		width: 200px;
-	}
-	tr {
-		border-bottom: solid 1px #ccc;
-		&:first-of-type {
-			border-top: solid 1px #ccc;
-		}
-	}
-	td, th {
-		padding: $gap2 $gap;
-	}
-}
-
-blockquote {
-	border-left: solid 5px #ccc;
-	padding-left: $gap2;
-	font-size: 120%;
-	width: 70%;
-	margin: $gap2 0;
-}
-
-
-canvas {
-	width: 100%;
-}
-
-$gallery-cols: 4;
-$gallery-gap: 3px;
-$gallery-radius: 3px;
-
-.gallery {
-	line-height: 0;
-	-webkit-column-count: $gallery-cols;
-	-webkit-column-gap:   $gallery-gap;
-	-moz-column-count:    $gallery-cols;
-	-moz-column-gap:      $gallery-gap;
-	column-count:         $gallery-cols;
-	column-gap:           $gallery-gap;  
-	@media (max-width: 1000px) {
-		-moz-column-count:    ($gallery-cols - 1);
-		-webkit-column-count: ($gallery-cols - 1);
-		column-count:         ($gallery-cols - 1);
-	}
-	@media (max-width: 800px) {
-		-moz-column-count:    ($gallery-cols - 2);
-		-webkit-column-count: ($gallery-cols - 2);
-		column-count:         ($gallery-cols - 2);
-	}
-	@media (max-width: 500px) {
-		-moz-column-count:    1;
-		-webkit-column-count: 1;
-		column-count:         1;
-	}
-	img {
-		width: 100% !important;
-		height: auto !important;
-		margin-bottom: $gallery-gap;
-		@include transition;
-		cursor: pointer;
-
-		@include radius($gallery-radius);
-		&:hover {
-			@include scale(1.4);
-			z-index: 1000;
-		}
-// 		&:nth-of-type(1) {
-// 	@include fadeInUp($delay: $delay * 1);
-// }
-// 		&:nth-of-type(2) {
-// 	@include fadeInUp($delay: $delay * 2);
-// }
-// 		&:nth-of-type(3) {
-// 	@include fadeInUp($delay: $delay * 3);
-// }
-// 		&:nth-of-type(4) {
-// 	@include fadeInUp($delay: $delay * 4);
-// }
-	}
-	&:hover img:not(:hover) {
-		@include opacity(20);
-	}
-}
-
-body.books  {
-
-img {
-	width: 300px;
-}
-	ul {
-  list-style: none;
-  counter-reset: my-awesome-counter;
-  margin: 0;
-  padding: 0;
-  	
-  li {
-  counter-increment: my-awesome-counter;
-  display:block;
-  margin-top: $gap3;
-  font-size: 1.3rem;
-  padding: 0;
-@include transition;
-
-
-  &::before {
-  content: counter(my-awesome-counter);
-  font-weight: bold;
-  font-size: 3rem;
-  width: 100px;
-@include opacity(20);
-  margin-right: 0.5rem;
-  display: block;
-  font-family: 'Abril Fatface', serif;
-  line-height: 1;
-  @include transition;
-}
- ul {
-		  
-		  	li {
-		  		  margin-top: $gaphalf !important;
-		  		  @include opacity(0);
-		  	@include transition;
-  font-size: 1rem;
-		  		  &::before {
-display: none;
-}
-		  	}
-		  }
-	&:hover {
-		color:  black;
-		  & > ul li {
-		  	@include opacity(70);
-		  }
-		  &::before {
-		  	@include opacity(100);
-		  }
-	}
-}
-}
-}
 
 $menu: 250px;
 $peek: 30px;
@@ -407,11 +76,11 @@ $peek: 30px;
 	position: absolute;
 	top: 0;
 	left: ($menu - $peek) * -1;
-		@include opacity(0);
+	@include opacity(0);
 	box-sizing: border-box;
 
 	margin: 2vh 0;
-		&:hover, &:focus, &:focus-within {
+	&:hover, &:focus, &:focus-within {
 		left: 0;
 		@include opacity(100);
 	}
@@ -420,17 +89,17 @@ $peek: 30px;
 		padding:0;
 	}
 	.actions {
-	margin-bottom: 20px;
-	font-size: 80%;
+		margin-bottom: 20px;
+		font-size: 80%;
 	}
 	.scroll {
 		overflow: auto;
 		padding: 20px;
-			background-color: white;
-				@include radius(0, 10px, 10px, 0, irregular);
-	@include shadow(box, 5px 0 0px rgba(0, 0, 0, 0.1));
-	box-sizing: border-box;
+		background-color: white;
+		@include radius(0, 10px, 10px, 0, irregular);
+		@include shadow(box, 5px 0 0px rgba(0, 0, 0, 0.1));
+		box-sizing: border-box;
 		height: 96vh;
 
+	}
 }
- }

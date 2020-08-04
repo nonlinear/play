@@ -1,86 +1,18 @@
 ---
 layout: default
 title: home
-categories: home
+categories: play
 ---
-<div class="row grid">
-
-
-<!-- 	<div class="col-sm links">
-		<h3>Projects</h3>
+<ol>
+			
 		{% for post in site.posts %}
-		{% if post.categories contains 'project' and post.status contains 'public' %}
-
-		
-			<a href="{{ post.url }}"  class="post">
-				<p class="title">{{ post.title }}</p>
-				<p class="description">{{ post.description }}</p>
+		{% if post.status contains 'public' %}
+				<li>
+					<a href="{{ post.url }}">
+				{{ post.title }}
 			</a>
-
-
+				</li>
+			
 		{% endif %}
 		{% endfor %}
-	</div> -->
-	<div class="col-sm links">
-		<h3>About</h3>
-	pending
-	</div>
-	<div class="col-sm links">
-		<h3>Books</h3>
-		{% for post in site.posts %}
-		{% if post.categories contains 'books' and post.status contains 'public' %}
-
-		
-			<a href="{{ post.url }}"  class="post">
-				<p class="title">{{ post.title }}</p>
-				<p class="description">{{ post.description }}</p>
-			</a>
-
-
-		{% endif %}
-		{% endfor %}
-	</div>
-	
-	<div class="col-sm links">
-		<h3>Illustrations</h3>
-		{% for post in site.posts %}
-		{% if post.categories contains 'illustrations' and post.status contains 'public' %}
-
-		
-			<a href="{{ post.url }}"  class="post">
-				<p class="title">{{ post.title }}</p>
-				<p class="description">{{ post.description }}</p>
-			</a>
-
-
-		{% endif %}
-		{% endfor %}
-	</div> 
-	<div class="col-sm links">
-		<h3>Studies</h3>
-		{% for post in site.posts %}
-		{% if post.categories contains 'study' and post.status contains 'public' %}
-		
-			<a href="{{ post.url }}"  class="post">
-				<p class="title">{{ post.title }}</p>
-				<p class="description">{{ post.description }}</p>
-			</a>
-
-		{% endif %}
-		{% endfor %}
-	</div> 
-<!-- 		<div class="col-sm links">
-		<h3>Processing</h3>
-		{% for post in site.posts %}
-		{% if post.categories contains 'processing' and post.status contains 'public' %}
-		
-			<a href="{{ post.url }}"  class="post">
-				<p class="title">{{ post.title }}</p>
-				<p class="description">{{ post.description }}</p>
-			</a>
-
-		{% endif %}
-		{% endfor %}
-	</div>  -->
-
-</div>
+</ol>

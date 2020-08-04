@@ -2,7 +2,7 @@
   "_args": [
     [
       "animatewithsass@3.2.1",
-      "/Users/nonlinear/Documents/praxis/jekyll-template"
+      "/Users/admin/Documents/nonlinear/play"
     ]
   ],
   "_from": "animatewithsass@3.2.1",
@@ -26,7 +26,7 @@
   ],
   "_resolved": "https://registry.npmjs.org/animatewithsass/-/animatewithsass-3.2.1.tgz",
   "_spec": "3.2.1",
-  "_where": "/Users/nonlinear/Documents/praxis/jekyll-template",
+  "_where": "/Users/admin/Documents/nonlinear/play",
   "author": {
     "name": "geoffgraham",
     "email": "@geoffreygraham"
