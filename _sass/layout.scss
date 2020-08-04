@@ -21,12 +21,15 @@
 
 body {
 	font-family: Space Grotesk;
-   @include tile(lines-up-a, purple, 6);
+	background-color: #ccc;
+   @include tile(dots-a, white, 10);
 
 	@include transition;
 }
 
-
+ol {
+	padding-left: $gap2;
+}
 
 
 
@@ -75,15 +78,20 @@ $peek: 30px;
 	@include transition;
 	position: absolute;
 	top: 0;
-	left: ($menu - $peek) * -1;
-	@include opacity(0);
-	box-sizing: border-box;
 
-	margin: 2vh 0;
-	&:hover, &:focus, &:focus-within {
+	body:not(.home) & {
+		left: ($menu - $peek) * -1;
+		@include opacity(0);
+		&:hover, &:focus, &:focus-within {
 		left: 0;
 		@include opacity(100);
 	}
+	}
+	
+	box-sizing: border-box;
+
+	margin: 2vh 0;
+	
 	.title {
 		margin: 0;
 		padding:0;

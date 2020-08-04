@@ -3,7 +3,7 @@ layout: default
 ---
 <html>
 {% include scripts/head.html %}
-<body class="play">
+<body class="{%- if page.categories -%}{{ page.categories }}{%- endif -%}" id="{%- if page.status -%}{{ page.status }}{%- endif -%}">
 		<div class="menu">
 			<div class="scroll">
 {% if page.path contains '_posts' %}
@@ -13,8 +13,8 @@ layout: default
     view github code</a>
 		</div>
 			{% else %}
-			<h2 class="title"><a href="{{ site.url }}">{{site.title}}</a></h2>
-			<h3>{{site.description}}</h3>
+			<h1 class="title">{{site.title}}</h1>
+			<hr>
 			{% endif %}
 
 
