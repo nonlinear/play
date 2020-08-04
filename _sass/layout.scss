@@ -78,7 +78,9 @@ $peek: 30px;
 	@include transition;
 	position: absolute;
 	top: 0;
-
+body.home & {
+	@include fadeInLeft($duration: 1s, $delay: 300ms);
+}
 	body:not(.home) & {
 		left: ($menu - $peek) * -1;
 		@include opacity(0);
