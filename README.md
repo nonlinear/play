@@ -1,32 +1,79 @@
-# jekyll-template
 
-<a href="https://praxis.nyc"><img src="https://praxis.nyc/assets/favicons/apple-touch-icon.png" width="60px" height="60px" /></a>
 
-Jekyll template with some cool add-ons:
-- bootstrap
-- [reveal.js](https://revealjs.com/#/) slide template
-- [animate.css](https://daneden.github.io/animate.css/) SASS port
+### About Play
 
-> This is a generic version for the [Praxis.nyc](https://praxis.nyc/) website.
+I'm carving up some space on my schedule to focus on #creative-code experiments. I'm   thinking one project per week, to get the momentum.
 
-> Questions? Comments? Debugging? [Join our group on keybase](https://keybase.io/team/praxis_nyc).
+For now, I'm setting the environment.  Scope is mostly #p5js (because vector-friendly and browser-based), but with a tad of #SASS (that I know A LOT, so it helps me to bridge the gap) and #jekyll (because browser-based requires easy publishing).
+
+I prefer if experiments are stand-alone, but I'm keeping a somewhat hidden directory [here](https://www.nonlinear.nyc/play) (mouseover left of screen). Here's [play github repo](https://github.com/nonlinear/play/).
+
+I setup p5js template as fullscreen (p5js doesn't respect the DOM by default, appearing where it wants) with space for about when you hover on the left. #creative-code is mostly remix of previous code, so documentation is important.
+
+I even found a way to link to original post on github using `{{page.path}}` #jekyll variable. See it in action [here](https://www.nonlinear.nyc/play/stars/) (again, mouseover left of screen)
+
+#jekyll has a handy `_include` feature, so the idea is to [collect reusable code](https://github.com/nonlinear/play/tree/master/_includes/) and just point to it. Think tools like accelerometer, save as image/vector, request location, etc.
+
+---
+
+## Phases
+
+I'm trying to be diligent with my weekly challenges, separating it into proper phases:
+
+- **planning**: some time to decide *what* I wanna build this week. Deadline is wednesday morning (2 days)
+- **research**: checking previous code, comparing libraries, watching tutorials, asking experts. Deadline is friday morning (2 days)
+- **execution**: actually tying the pieces together, and publishing. I maaaay setup a proper time and broadcast it via [whereby](https://whereby.com/praxis_nyc) *or* record it and publish it on youtube, for documentation. Deadline is sunday night (3 days)
+
+I thought of a **promotion** phase too, but frankly, my results will be subpar for a while, I'm not looking for quality but experimentation.
+
+---
+
+## TODO
+
+- [x] Move `creative-code` to `play`
+- [x] create play template, as slide
+- [x] Get screenflow
+- [ ] remove elastic scroll
+- [ ] QR code on about
+- [ ] about icon affordance
+- [ ] remove toolbar
+- [ ] Set date
+  - [ ] Sunday: delivery
+  - [ ] Monday: planning
+  - [ ] Wednesday: researching
+  - [ ] Friday: Execution
+- [ ] Mailing list
+
+
+---
+
+## Ideas
+
+### Enivronment
+
+- Present jekyll
+- P5js editor, codepen, open processing
+
+### Basics
+
+- functions
+- Get list of notes
+
+### Deconstruct
+
+find existing ones to deconstruct
+
+### Snippets
+
+Explain
 
 ### Running it locally
 
-You need [node](https://nodejs.org/en/download/) for npm, and [jekyll](https://jekyllrb.com/docs/installation/macos/).
+Navigate to folder on terminal then run:
 
-Clone repo, go to folder on terminal and run ` bundle exec make serve`.
+```
+open http://127.0.0.1:4000/
+bundle exec make serve
+```
 
-When it's running, go to [https://localhost:4000](https://localhost:4000) on your browser.
-
-### Personalizing
-
-1. Def start with `_config.yml`
-1. Change favicons
-1. Design `_layouts/template.html`
-1. Design `_sass/layout.scss`
-1. Create new pages on `_posts`
-
-### Troubleshooting
-
-We're tring to fix vulnerabilities from get go, using `npm install lodash.mergewith@4.6.2 set-value@2.0.1 mixin-deep@1.3.2 lodash@4.17.12 diff@3.5.0 js-yaml@3.13.1 fstream@1.0.12 tar@2.2.2 extend@3.0.2 --save` but do try `npm audit fix` if still showing errors.
+(you need [node](https://nodejs.org/en/download/) for npm, and [jekyll](https://jekyllrb.com/docs/installation/macos/))
