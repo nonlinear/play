@@ -67,7 +67,9 @@ find existing ones to deconstruct
 
 Explain
 
-### Running it locally
+---
+
+## Running it locally
 
 Navigate to folder on terminal then run:
 
