@@ -34,6 +34,7 @@ I thought of a **promotion** phase too, but frankly, my results will be subpar f
 - [x] create play template, as slide
 - [x] Get screenflow
 - [ ] remove elastic scroll
+- [ ] get ml5js (new template?)
 - [ ] QR code on about
 - [ ] about icon affordance
 - [ ] remove toolbar
