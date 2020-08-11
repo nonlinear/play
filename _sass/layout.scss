@@ -21,6 +21,9 @@
 
 // prevent elastic scroll
 
+*{
+	@include find(red);
+}
 html {
 	height  : 100%;
 	overflow: hidden;
