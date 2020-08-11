@@ -22,18 +22,18 @@
 // prevent elastic scroll
 
 html {
-    height  : 100%;
-    overflow: hidden;
-    position: relative;
+	height  : 100%;
+	overflow: hidden;
+	position: relative;
 }
 body {
-    height  : 100%;
-    overflow: auto;
-    position: relative;
+	height  : 100%;
+	overflow: auto;
+	position: relative;
     // prevent elastic scroll
-	font-family: Space Grotesk;
-	background-color: #ccc;
-	@include transition;
+    font-family: Space Grotesk;
+    background-color: #ccc;
+    @include transition;
 }
 
 ol {
@@ -83,36 +83,42 @@ $peek: 30px;
 .menu { 
 	width: $menu;
 	padding-right: $peek;
-	height: 96vh;
+	height: 98vh;
 	@include transition;
 	position: absolute;
 	top: 0;
-body.home & {
-	@include fadeInLeft($duration: 1s, $delay: 300ms);
-}
+	body.home & {
+		@include fadeInLeft($duration: 1s, $delay: 300ms);
+		.scroll {
+			@include shadow(box, 5px 0 0px rgba(0, 0, 0, 0.1));
+		}
+	}
 	body:not(.home) & {
 		left: ($menu - $peek) * -1;
-		@include opacity(40);
+		@include opacity(30);
 		&:hover, &:focus, &:focus-within {
-		left: 0;
-		@include opacity(100);
-	}
+			left: 0;
+			@include opacity(100);
+			.scroll {
+				@include shadow(box, 5px 0 0px rgba(0, 0, 0, 0.1));
+			}
+		}
 		&:after {
-		content:"✨";
-		margin-top: -$peek;
-		margin-right: -$peek;
-		font-size: 20px;
-		@include find(red);
-		width: $peek;
-		height: $peek;
-		float: right;
-		display: inline-block;
+			content:"ⓘ";
+			margin-top: -$peek;
+			margin-right: -$peek;
+			font-size: 20px;
+			padding: 5px;
+			width: $peek;
+			height: $peek;
+			float: right;
+			display: inline-block;
+		}
 	}
-	}
-	
+
 	box-sizing: border-box;
 
-	margin: 2vh 0;
+	margin: 1vh 0;
 	
 	.title {
 		margin: 0;
@@ -127,9 +133,8 @@ body.home & {
 		padding: 20px;
 		background-color: white;
 		@include radius(0, 10px, 10px, 0, irregular);
-		@include shadow(box, 5px 0 0px rgba(0, 0, 0, 0.1));
 		box-sizing: border-box;
-		height: 96vh;
+		height: 98vh;
 
 	}
 }
