@@ -19,11 +19,18 @@
 @include font-face(RenoMono, 
 	$path: "/assets/fonts/");
 
+
+html {
+    height  : 100%;
+    overflow: hidden;
+    position: relative;
+}
 body {
+    height  : 100%;
+    overflow: auto;
+    position: relative;
 	font-family: Space Grotesk;
 	background-color: #ccc;
-   @include tile(dots-a, white, 10);
-
 	@include transition;
 }
 
@@ -74,9 +81,7 @@ $peek: 30px;
 .menu { 
 	width: $menu;
 	padding-right: $peek;
-	@include find(green);
 	height: 96vh;
-	-webkit-overflow-scrolling: touch;
 	@include transition;
 	position: absolute;
 	top: 0;
