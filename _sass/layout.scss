@@ -90,7 +90,7 @@ $peek: 30px;
 	body.home & {
 		@include fadeInLeft($duration: 1s, $delay: 300ms);
 		.scroll {
-			@include shadow(box, 5px 0 0px rgba(0, 0, 0, 0.1));
+			@include shadow(box, 3px 0 0px rgba(0, 0, 0, 0.07));
 		}
 	}
 	body:not(.home) & {
@@ -100,7 +100,7 @@ $peek: 30px;
 			left: 0;
 			@include opacity(100);
 			.scroll {
-				@include shadow(box, 5px 0 0px rgba(0, 0, 0, 0.1));
+				@include shadow(box, 3px 0 0px rgba(0, 0, 0, 0.07));
 			}
 		}
 		&:after {
