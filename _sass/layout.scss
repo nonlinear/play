@@ -19,7 +19,11 @@
 @include font-face(RenoMono, 
 	$path: "/assets/fonts/");
 
+// prevent elastic scroll
 
+* {
+	@include find(yellow);
+}
 html {
     height  : 100%;
     overflow: hidden;
@@ -29,6 +33,7 @@ body {
     height  : 100%;
     overflow: auto;
     position: relative;
+    // prevent elastic scroll
 	font-family: Space Grotesk;
 	background-color: #ccc;
 	@include transition;
