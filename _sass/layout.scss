@@ -21,9 +21,6 @@
 
 // prevent elastic scroll
 
-* {
-	@include find(red);
-}
 html {
     height  : 100%;
     overflow: hidden;
@@ -95,10 +92,21 @@ body.home & {
 }
 	body:not(.home) & {
 		left: ($menu - $peek) * -1;
-		@include opacity(0);
+		@include opacity(40);
 		&:hover, &:focus, &:focus-within {
 		left: 0;
 		@include opacity(100);
+	}
+		&:after {
+		content:"✨";
+		margin-top: -$peek;
+		margin-right: -$peek;
+		font-size: 20px;
+		@include find(red);
+		width: $peek;
+		height: $peek;
+		float: right;
+		display: inline-block;
 	}
 	}
 	

@@ -13,7 +13,7 @@ layout: default
     view github code</a>
 		</div>
 			{% else %}
-			<h1 class="title">{{site.title}}!!!</h1>
+			<h1 class="title">{{site.title}}</h1>
 			<hr>
 			{% endif %}
 
@@ -23,6 +23,11 @@ layout: default
 			
 			</div>
 </div>
+<script>
+	document.addEventListener('gesturestart', function (e) {
+    e.preventDefault();
+});
+</script>
 	
 	{% include scripts/p5js.html %}
 </body>
