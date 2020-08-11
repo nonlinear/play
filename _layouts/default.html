@@ -25,6 +25,11 @@ layout: default
 </div>
 	
 	{% include scripts/p5js.html %}
+	<script>
+		document.body.addEventListener('touchmove', function(event) {
+    event.preventDefault();
+});
+	</script>
 </body>
 
 </html>

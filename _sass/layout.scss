@@ -74,7 +74,7 @@ $peek: 30px;
 .menu { 
 	width: $menu;
 	padding-right: $peek;
-	@include find(red);
+	@include find(green);
 	height: 96vh;
 	-webkit-overflow-scrolling: touch;
 	@include transition;
