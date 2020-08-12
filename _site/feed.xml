@@ -1,34 +1,25 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://127.0.0.1:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://127.0.0.1:4000/" rel="alternate" type="text/html" /><updated>2020-08-11T18:56:07-04:00</updated><id>http://127.0.0.1:4000/feed.xml</id><title type="html">play</title><subtitle>creative code</subtitle><entry><title type="html">accelerometer</title><link href="http://127.0.0.1:4000/accelerometer/" rel="alternate" type="text/html" title="accelerometer" /><published>2020-03-24T00:00:00-04:00</published><updated>2020-03-24T00:00:00-04:00</updated><id>http://127.0.0.1:4000/accelerometer</id><content type="html" xml:base="http://127.0.0.1:4000/accelerometer/">&lt;!-- https://stackoverflow.com/questions/56514116/how-do-i-get-deviceorientationevent-and-devicemotionevent-to-work-on-safari --&gt;
-&lt;script type=&quot;text/javascript&quot;&gt;
-    function requestOrientationPermission(){
-        DeviceOrientationEvent.requestPermission()
-        .then(response =&gt; {
-            if (response == 'granted') {
-                window.addEventListener('deviceorientation', (e) =&gt; {
-                    // do something with e
-                })
-            }
-        })
-        .catch(console.error)
-    }
-    function requestMotionPermission(){
-        DeviceMotionEvent.requestPermission()
-        .then(response =&gt; {
-            if (response == 'granted') {
-                window.addEventListener('devicemotion', (e) =&gt; {
-                    // do something with e
-                })
-            }
-        })
-        .catch(console.error)
-    }
-&lt;/script&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://127.0.0.1:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://127.0.0.1:4000/" rel="alternate" type="text/html" /><updated>2020-08-11T20:51:48-04:00</updated><id>http://127.0.0.1:4000/feed.xml</id><title type="html">play</title><subtitle>creative code</subtitle><entry><title type="html">loops</title><link href="http://127.0.0.1:4000/loops/" rel="alternate" type="text/html" title="loops" /><published>2020-08-11T00:00:00-04:00</published><updated>2020-08-11T00:00:00-04:00</updated><id>http://127.0.0.1:4000/loops</id><content type="html" xml:base="http://127.0.0.1:4000/loops/">&lt;script&gt;
+	function setup() {
+		createCanvas(windowWidth, windowHeight);
+	}
+	function draw() {
+		background(1, 75, 100);
+		// circle properties
+		fill(237, 34, 93);
+		noStroke();
+		var diameter = 40;
 
-&lt;div class=&quot;alert&quot;&gt;
-	&lt;p&gt;This experiment uses accelerometer so it needs your permission&lt;/p&gt;
-	&lt;button onclick='requestMotionPermission();'&gt;Request motion&lt;/button&gt;
-&lt;button onclick='requestOrientationPermission();'&gt;Request orientation&lt;/button&gt;
-&lt;/div&gt;</content><author><name></name></author><summary type="html">This experiment uses accelerometer so it needs your permission Request motion Request orientation</summary></entry><entry><title type="html">alien</title><link href="http://127.0.0.1:4000/alien/" rel="alternate" type="text/html" title="alien" /><published>2020-03-24T00:00:00-04:00</published><updated>2020-03-24T00:00:00-04:00</updated><id>http://127.0.0.1:4000/alien</id><content type="html" xml:base="http://127.0.0.1:4000/alien/">&lt;style&gt;    canvas {
+		// circle 
+	
+		for (var i = 0; i &lt; width / diameter; i = i+1) {
+			for (var j = 0; j &lt; height / diameter; j=j+1) {
+							ellipse(i * diameter + diameter / 2,
+							j * diameter + diameter / 2, diameter, diameter);
+
+			}
+		}
+	}
+&lt;/script&gt;</content><author><name></name></author><summary type="html">function setup() { createCanvas(windowWidth, windowHeight); } function draw() { background(1, 75, 100); // circle properties fill(237, 34, 93); noStroke(); var diameter = 40;</summary></entry><entry><title type="html">alien</title><link href="http://127.0.0.1:4000/alien/" rel="alternate" type="text/html" title="alien" /><published>2020-03-24T00:00:00-04:00</published><updated>2020-03-24T00:00:00-04:00</updated><id>http://127.0.0.1:4000/alien</id><content type="html" xml:base="http://127.0.0.1:4000/alien/">&lt;style&gt;    canvas {
            position:absolute;
            top:0;
            left:0;
@@ -357,4 +348,34 @@ value = 'FALSE';
 			text(value, width/2, height/2);
 		}
 
-	&lt;/script&gt;</content><author><name></name></author><summary type="html"></summary></entry></feed>
+	&lt;/script&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">accelerometer</title><link href="http://127.0.0.1:4000/accelerometer/" rel="alternate" type="text/html" title="accelerometer" /><published>2020-03-24T00:00:00-04:00</published><updated>2020-03-24T00:00:00-04:00</updated><id>http://127.0.0.1:4000/accelerometer</id><content type="html" xml:base="http://127.0.0.1:4000/accelerometer/">&lt;!-- https://stackoverflow.com/questions/56514116/how-do-i-get-deviceorientationevent-and-devicemotionevent-to-work-on-safari --&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+    function requestOrientationPermission(){
+        DeviceOrientationEvent.requestPermission()
+        .then(response =&gt; {
+            if (response == 'granted') {
+                window.addEventListener('deviceorientation', (e) =&gt; {
+                    // do something with e
+                })
+            }
+        })
+        .catch(console.error)
+    }
+    function requestMotionPermission(){
+        DeviceMotionEvent.requestPermission()
+        .then(response =&gt; {
+            if (response == 'granted') {
+                window.addEventListener('devicemotion', (e) =&gt; {
+                    // do something with e
+                })
+            }
+        })
+        .catch(console.error)
+    }
+&lt;/script&gt;
+
+&lt;div class=&quot;alert&quot;&gt;
+	&lt;p&gt;This experiment uses accelerometer so it needs your permission&lt;/p&gt;
+	&lt;button onclick='requestMotionPermission();'&gt;Request motion&lt;/button&gt;
+&lt;button onclick='requestOrientationPermission();'&gt;Request orientation&lt;/button&gt;
+&lt;/div&gt;</content><author><name></name></author><summary type="html">This experiment uses accelerometer so it needs your permission Request motion Request orientation</summary></entry></feed>
