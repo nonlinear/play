@@ -30,14 +30,7 @@ I thought of a **promotion** phase too, but frankly, my results will be subpar f
 
 ## TODO
 
-- [x] Move `creative-code` to `play`
-- [x] create play template, as slide
-- [x] Get screenflow
-- [x] remove elastic scroll
-- [ ] get ml5js (new template?)
 - [ ] QR code on about
-- [x] about icon affordance
-- [ ] install xcode, ios simulator
 - [ ] remove toolbar
 - [ ] Set date
   - [ ] Sunday: delivery

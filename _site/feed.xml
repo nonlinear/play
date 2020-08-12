@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://127.0.0.1:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://127.0.0.1:4000/" rel="alternate" type="text/html" /><updated>2020-08-11T20:51:48-04:00</updated><id>http://127.0.0.1:4000/feed.xml</id><title type="html">play</title><subtitle>creative code</subtitle><entry><title type="html">loops</title><link href="http://127.0.0.1:4000/loops/" rel="alternate" type="text/html" title="loops" /><published>2020-08-11T00:00:00-04:00</published><updated>2020-08-11T00:00:00-04:00</updated><id>http://127.0.0.1:4000/loops</id><content type="html" xml:base="http://127.0.0.1:4000/loops/">&lt;script&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://127.0.0.1:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://127.0.0.1:4000/" rel="alternate" type="text/html" /><updated>2020-08-12T19:22:13-04:00</updated><id>http://127.0.0.1:4000/feed.xml</id><title type="html">play</title><subtitle>creative code experiments</subtitle><entry><title type="html">loops</title><link href="http://127.0.0.1:4000/loops/" rel="alternate" type="text/html" title="loops" /><published>2020-08-11T00:00:00-04:00</published><updated>2020-08-11T00:00:00-04:00</updated><id>http://127.0.0.1:4000/loops</id><content type="html" xml:base="http://127.0.0.1:4000/loops/">&lt;script&gt;
 	function setup() {
 		createCanvas(windowWidth, windowHeight);
 	}
@@ -19,17 +19,7 @@
 			}
 		}
 	}
-&lt;/script&gt;</content><author><name></name></author><summary type="html">function setup() { createCanvas(windowWidth, windowHeight); } function draw() { background(1, 75, 100); // circle properties fill(237, 34, 93); noStroke(); var diameter = 40;</summary></entry><entry><title type="html">alien</title><link href="http://127.0.0.1:4000/alien/" rel="alternate" type="text/html" title="alien" /><published>2020-03-24T00:00:00-04:00</published><updated>2020-03-24T00:00:00-04:00</updated><id>http://127.0.0.1:4000/alien</id><content type="html" xml:base="http://127.0.0.1:4000/alien/">&lt;style&gt;    canvas {
-           position:absolute;
-           top:0;
-           left:0;
-           width:100%;
-           height:100%;
-           z-index:-1;
-        }
-        &lt;/style&gt;
-
-From &lt;a href=&quot;https://codepen.io/p5art/pen/XKWyob&quot;&gt;this codepen&lt;/a&gt;.
+&lt;/script&gt;</content><author><name></name></author><summary type="html">function setup() { createCanvas(windowWidth, windowHeight); } function draw() { background(1, 75, 100); // circle properties fill(237, 34, 93); noStroke(); var diameter = 40;</summary></entry><entry><title type="html">alien</title><link href="http://127.0.0.1:4000/alien/" rel="alternate" type="text/html" title="alien" /><published>2020-03-24T00:00:00-04:00</published><updated>2020-03-24T00:00:00-04:00</updated><id>http://127.0.0.1:4000/alien</id><content type="html" xml:base="http://127.0.0.1:4000/alien/">From &lt;a href=&quot;https://codepen.io/p5art/pen/XKWyob&quot;&gt;this codepen&lt;/a&gt;.
 
 &lt;a href=&quot;#&quot;&gt;Reload page&lt;/a&gt; for new random content.
 
@@ -175,7 +165,7 @@ From &lt;a href=&quot;https://codepen.io/p5art/pen/XKWyob&quot;&gt;this codepen&
 		initStuff();
 	}
 
-	&lt;/script&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">json</title><link href="http://127.0.0.1:4000/json/" rel="alternate" type="text/html" title="json" /><published>2020-03-24T00:00:00-04:00</published><updated>2020-03-24T00:00:00-04:00</updated><id>http://127.0.0.1:4000/json</id><content type="html" xml:base="http://127.0.0.1:4000/json/">&lt;script&gt;
+	&lt;/script&gt;</content><author><name></name></author><summary type="html">From this codepen.</summary></entry><entry><title type="html">json</title><link href="http://127.0.0.1:4000/json/" rel="alternate" type="text/html" title="json" /><published>2020-03-24T00:00:00-04:00</published><updated>2020-03-24T00:00:00-04:00</updated><id>http://127.0.0.1:4000/json</id><content type="html" xml:base="http://127.0.0.1:4000/json/">&lt;script&gt;
 
 		var fontSize = 35
 		var margin = 250
@@ -232,16 +222,7 @@ function draw() {
   background(100)
 }
 
-&lt;/script&gt;</content><author><name></name></author><summary type="html">var data function preload(){ data = loadJSON('/assets/data/more/languages.json') } function setup() { noCanvas() var language = data.languages for (var i = 0; i &lt; language.length; i++) { createElement('h1', language[i].name) } }</summary></entry><entry><title type="html">loop</title><link href="http://127.0.0.1:4000/loop/" rel="alternate" type="text/html" title="loop" /><published>2020-03-24T00:00:00-04:00</published><updated>2020-03-24T00:00:00-04:00</updated><id>http://127.0.0.1:4000/loop</id><content type="html" xml:base="http://127.0.0.1:4000/loop/">&lt;style&gt;    canvas {
-           position:absolute;
-           top:0;
-           left:0;
-           width:100%;
-           height:100%;
-           z-index:-1;
-        }
-        &lt;/style&gt;
-	&lt;script&gt;
+&lt;/script&gt;</content><author><name></name></author><summary type="html">var data function preload(){ data = loadJSON('/assets/data/more/languages.json') } function setup() { noCanvas() var language = data.languages for (var i = 0; i &lt; language.length; i++) { createElement('h1', language[i].name) } }</summary></entry><entry><title type="html">loop</title><link href="http://127.0.0.1:4000/loop/" rel="alternate" type="text/html" title="loop" /><published>2020-03-24T00:00:00-04:00</published><updated>2020-03-24T00:00:00-04:00</updated><id>http://127.0.0.1:4000/loop</id><content type="html" xml:base="http://127.0.0.1:4000/loop/">&lt;script&gt;
 function setup() {
   createCanvas(windowWidth, windowHeight)
 }
@@ -258,16 +239,7 @@ function draw() {
   }
 }
 
-&lt;/script&gt;</content><author><name></name></author><summary type="html">function setup() { createCanvas(windowWidth, windowHeight) }</summary></entry><entry><title type="html">stars</title><link href="http://127.0.0.1:4000/stars/" rel="alternate" type="text/html" title="stars" /><published>2020-03-24T00:00:00-04:00</published><updated>2020-03-24T00:00:00-04:00</updated><id>http://127.0.0.1:4000/stars</id><content type="html" xml:base="http://127.0.0.1:4000/stars/">&lt;style&gt;    canvas {
-           position:absolute;
-           top:0;
-           left:0;
-           width:100%;
-           height:100%;
-           z-index:-1;
-        }
-        &lt;/style&gt;
-&lt;script&gt;
+&lt;/script&gt;</content><author><name></name></author><summary type="html">function setup() { createCanvas(windowWidth, windowHeight) }</summary></entry><entry><title type="html">stars</title><link href="http://127.0.0.1:4000/stars/" rel="alternate" type="text/html" title="stars" /><published>2020-03-24T00:00:00-04:00</published><updated>2020-03-24T00:00:00-04:00</updated><id>http://127.0.0.1:4000/stars</id><content type="html" xml:base="http://127.0.0.1:4000/stars/">&lt;script&gt;
 	function star(left, top, size, range) {
 			push()
 			stroke(random(0, 100))
@@ -280,7 +252,7 @@ function draw() {
 			line(0, size * -1, 0, size)
 			pop()
 		}
-    &lt;/script&gt;
+&lt;/script&gt;
 &lt;script&gt;
 	function setup() {
 		createCanvas(windowWidth, windowHeight)
@@ -312,18 +284,7 @@ function draw() {
 		pop()
 	}
 &lt;/script&gt;
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam libero culpa placeat nisi doloribus distinctio impedit quia, quisquam! Adipisci, dolores!&lt;/p&gt;</content><author><name></name></author><summary type="html">function setup() { createCanvas(windowWidth, windowHeight) console.log('The faculty of 5 is 1*2*3*4*5 = ' + faculty(5)) } function faculty(theValue) { var result = 1 for (var i = 1; i &lt;= theValue; i++) { result = result * i } return result }</summary></entry><entry><title type="html">lynda</title><link href="http://127.0.0.1:4000/lynda/" rel="alternate" type="text/html" title="lynda" /><published>2020-03-24T00:00:00-04:00</published><updated>2020-03-24T00:00:00-04:00</updated><id>http://127.0.0.1:4000/lynda</id><content type="html" xml:base="http://127.0.0.1:4000/lynda/">&lt;style&gt;    canvas {
-           position:absolute;
-           top:0;
-           left:0;
-           width:100%;
-           height:100%;
-           z-index:-1;
-        }
-        &lt;/style&gt;
-
-
-	&lt;script&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam libero culpa placeat nisi doloribus distinctio impedit quia, quisquam! Adipisci, dolores!&lt;/p&gt;</content><author><name></name></author><summary type="html">function setup() { createCanvas(windowWidth, windowHeight) console.log('The faculty of 5 is 1*2*3*4*5 = ' + faculty(5)) } function faculty(theValue) { var result = 1 for (var i = 1; i &lt;= theValue; i++) { result = result * i } return result }</summary></entry><entry><title type="html">lynda</title><link href="http://127.0.0.1:4000/lynda/" rel="alternate" type="text/html" title="lynda" /><published>2020-03-24T00:00:00-04:00</published><updated>2020-03-24T00:00:00-04:00</updated><id>http://127.0.0.1:4000/lynda</id><content type="html" xml:base="http://127.0.0.1:4000/lynda/">&lt;script&gt;
 var num;
 		function setup() {
 			num = 2;
@@ -348,7 +309,7 @@ value = 'FALSE';
 			text(value, width/2, height/2);
 		}
 
-	&lt;/script&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">accelerometer</title><link href="http://127.0.0.1:4000/accelerometer/" rel="alternate" type="text/html" title="accelerometer" /><published>2020-03-24T00:00:00-04:00</published><updated>2020-03-24T00:00:00-04:00</updated><id>http://127.0.0.1:4000/accelerometer</id><content type="html" xml:base="http://127.0.0.1:4000/accelerometer/">&lt;!-- https://stackoverflow.com/questions/56514116/how-do-i-get-deviceorientationevent-and-devicemotionevent-to-work-on-safari --&gt;
+	&lt;/script&gt;</content><author><name></name></author><summary type="html">var num; function setup() { num = 2; createCanvas(windowWidth, windowHeight); textAlign(CENTER, CENTER);</summary></entry><entry><title type="html">accelerometer</title><link href="http://127.0.0.1:4000/accelerometer/" rel="alternate" type="text/html" title="accelerometer" /><published>2020-03-24T00:00:00-04:00</published><updated>2020-03-24T00:00:00-04:00</updated><id>http://127.0.0.1:4000/accelerometer</id><content type="html" xml:base="http://127.0.0.1:4000/accelerometer/">&lt;!-- https://stackoverflow.com/questions/56514116/how-do-i-get-deviceorientationevent-and-devicemotionevent-to-work-on-safari --&gt;
 &lt;script type=&quot;text/javascript&quot;&gt;
     function requestOrientationPermission(){
         DeviceOrientationEvent.requestPermission()
@@ -376,6 +337,6 @@ value = 'FALSE';
 
 &lt;div class=&quot;alert&quot;&gt;
 	&lt;p&gt;This experiment uses accelerometer so it needs your permission&lt;/p&gt;
-	&lt;button onclick='requestMotionPermission();'&gt;Request motion&lt;/button&gt;
-&lt;button onclick='requestOrientationPermission();'&gt;Request orientation&lt;/button&gt;
-&lt;/div&gt;</content><author><name></name></author><summary type="html">This experiment uses accelerometer so it needs your permission Request motion Request orientation</summary></entry></feed>
+	&lt;button onclick='requestMotionPermission();'&gt;Allow request&lt;/button&gt;
+&lt;!-- &lt;button onclick='requestOrientationPermission();'&gt;Request orientation&lt;/button&gt; --&gt;
+&lt;/div&gt;</content><author><name></name></author><summary type="html">This experiment uses accelerometer so it needs your permission Allow request</summary></entry></feed>

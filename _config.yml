@@ -1,7 +1,7 @@
 title: play
 email: info@nicholasfrota.com
 description: >- # this means to ignore newlines until "baseurl:"
-  creative code
+  creative code experiments
 baseurl: '/play'
 basecolor: '#000000' # for browser settings
 url: 'https://www.nonlinear.nyc'
