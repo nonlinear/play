@@ -38,6 +38,12 @@ I thought of a **promotion** phase too, but frankly, my results will be subpar f
   - [ ] Wednesday: researching
   - [ ] Friday: Execution
 - [ ] Mailing list
+- [ ] install dash
+- [ ] find ml5 package
+- [ ] loading affordance
+- [ ] research UX solutions for camera request affordance
+- [ ] migrate from dash to [devdocs.io](https://devdocs.io/settings)
+- [ ] Checklist for promotion
 
 
 ---

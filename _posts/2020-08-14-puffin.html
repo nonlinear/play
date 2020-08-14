@@ -1,0 +1,56 @@
+---
+layout: default
+title: puffin
+slug: puffin
+categories: ML
+status: public
+description: 
+date: 2020-08-14
+permalink: /:slug/
+---
+Following <a href="https://www.youtube.com/playlist?list=PLRqwX-V7Uu6YPSwT06y_AEYTqIwbeam3y">Beginners Guide to Machine Learning in JavaScript</a> step by step.
+<hr>
+using <a href="http://www.image-net.org/">ImageNet</a> (and <a href="https://github.com/tensorflow/models/blob/master/research/slim/nets/mobilenet_v1.md">MobileNet</a>) for image classification.
+<hr>
+ml5 forces you to start with errors
+<hr>
+i had to use relative path so it works both locally (root) and online (folder play)
+
+<script>
+	let mobilenet;
+	let puffin;
+
+	function modelReady() {
+		console.log('Model is Ready!!!');
+		mobilenet.predict(puffin, gotResults);
+	}
+
+	function gotResults(error, results) {
+		if (error) {
+			console.error(error);
+		} else {
+			console.log(results);
+			let label = results[0].label;
+			let confidence = results[0].confidence;
+			fill(0);
+			textSize(30);
+			text(label, 10, 40);
+			text(confidence, 10, 80);
+		}
+	}
+
+	function imageReady() {
+		image(puffin, 0, 0, width, height);
+	}
+
+	function setup() {
+		createCanvas(windowWidth, windowHeight);
+		puffin = createImg('../assets/images/puffin.jpg', imageReady);
+		puffin.hide();
+
+		background(0);
+
+		mobilenet = ml5.imageClassifier('MobileNet', modelReady);
+
+	}
+</script>

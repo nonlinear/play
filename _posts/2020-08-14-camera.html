@@ -1,0 +1,29 @@
+---
+layout: default
+title: camera
+slug: camera
+categories: ML
+status: public
+description: 
+date: 2020-08-14
+permalink: /:slug/
+---
+Following <a href="https://www.youtube.com/playlist?list=PLRqwX-V7Uu6YPSwT06y_AEYTqIwbeam3y">Beginners Guide to Machine Learning in JavaScript</a> step by step, using <a href="http://www.image-net.org/">ImageNet</a> (and <a href="https://github.com/tensorflow/models/blob/master/research/slim/nets/mobilenet_v1.md">MobileNet</a>) for image classification.
+
+<script>
+	let mobilenet;
+	let puffin;
+
+	function modelReady() {
+		console.log('Model is Ready!!!');
+	}
+
+		function setup() {
+		createCanvas(windowWidth, windowHeight);
+		puffin = createImg('');
+		background(0);
+
+		mobilenet = ml5.imageClassifier('MobileNet', modelReady);
+
+	}
+</script>
