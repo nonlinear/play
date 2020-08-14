@@ -38,7 +38,7 @@ body {
     @include transition;
 }
 
-ol {
+ol, ul {
 	padding-left: $gap2;
 }
 
