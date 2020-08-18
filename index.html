@@ -10,7 +10,7 @@ categories: home
     <ul>
     {% for post in category.last %}
      {% if post.status contains "public" %}
-        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+        <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
         {% endif %}
     {% endfor %}
     </ul>
