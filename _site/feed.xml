@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://127.0.0.1:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://127.0.0.1:4000/" rel="alternate" type="text/html" /><updated>2020-08-18T17:51:37-04:00</updated><id>http://127.0.0.1:4000/feed.xml</id><title type="html">play</title><subtitle>creative code experiments</subtitle><entry><title type="html">puffin</title><link href="http://127.0.0.1:4000/puffin/" rel="alternate" type="text/html" title="puffin" /><published>2020-08-14T00:00:00-04:00</published><updated>2020-08-14T00:00:00-04:00</updated><id>http://127.0.0.1:4000/puffin</id><content type="html" xml:base="http://127.0.0.1:4000/puffin/">Following &lt;a href=&quot;https://www.youtube.com/playlist?list=PLRqwX-V7Uu6YPSwT06y_AEYTqIwbeam3y&quot;&gt;Beginners Guide to Machine Learning in JavaScript&lt;/a&gt; step by step.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://127.0.0.1:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://127.0.0.1:4000/" rel="alternate" type="text/html" /><updated>2020-08-18T18:29:07-04:00</updated><id>http://127.0.0.1:4000/feed.xml</id><title type="html">play</title><subtitle>creative code experiments</subtitle><entry><title type="html">puffin</title><link href="http://127.0.0.1:4000/puffin/" rel="alternate" type="text/html" title="puffin" /><published>2020-08-14T00:00:00-04:00</published><updated>2020-08-14T00:00:00-04:00</updated><id>http://127.0.0.1:4000/puffin</id><content type="html" xml:base="http://127.0.0.1:4000/puffin/">Following &lt;a href=&quot;https://www.youtube.com/playlist?list=PLRqwX-V7Uu6YPSwT06y_AEYTqIwbeam3y&quot;&gt;Beginners Guide to Machine Learning in JavaScript&lt;/a&gt; step by step.
 &lt;hr&gt;
 using &lt;a href=&quot;http://www.image-net.org/&quot;&gt;ImageNet&lt;/a&gt; (and &lt;a href=&quot;https://github.com/tensorflow/models/blob/master/research/slim/nets/mobilenet_v1.md&quot;&gt;MobileNet&lt;/a&gt;) for image classification.
 &lt;hr&gt;
@@ -43,25 +43,52 @@ i had to use relative path so it works both locally (root) and online (folder pl
 		mobilenet = ml5.imageClassifier('MobileNet', modelReady);
 
 	}
-&lt;/script&gt;</content><author><name></name></author><summary type="html">Following Beginners Guide to Machine Learning in JavaScript step by step. using ImageNet (and MobileNet) for image classification. ml5 forces you to start with errors i had to use relative path so it works both locally (root) and online (folder play)</summary></entry><entry><title type="html">camera</title><link href="http://127.0.0.1:4000/camera/" rel="alternate" type="text/html" title="camera" /><published>2020-08-14T00:00:00-04:00</published><updated>2020-08-14T00:00:00-04:00</updated><id>http://127.0.0.1:4000/camera</id><content type="html" xml:base="http://127.0.0.1:4000/camera/">Following &lt;a href=&quot;https://www.youtube.com/playlist?list=PLRqwX-V7Uu6YPSwT06y_AEYTqIwbeam3y&quot;&gt;Beginners Guide to Machine Learning in JavaScript&lt;/a&gt; step by step, using &lt;a href=&quot;http://www.image-net.org/&quot;&gt;ImageNet&lt;/a&gt; (and &lt;a href=&quot;https://github.com/tensorflow/models/blob/master/research/slim/nets/mobilenet_v1.md&quot;&gt;MobileNet&lt;/a&gt;) for image classification.
-
+&lt;/script&gt;</content><author><name></name></author><summary type="html">Following Beginners Guide to Machine Learning in JavaScript step by step. using ImageNet (and MobileNet) for image classification. ml5 forces you to start with errors i had to use relative path so it works both locally (root) and online (folder play)</summary></entry><entry><title type="html">camera</title><link href="http://127.0.0.1:4000/camera/" rel="alternate" type="text/html" title="camera" /><published>2020-08-14T00:00:00-04:00</published><updated>2020-08-14T00:00:00-04:00</updated><id>http://127.0.0.1:4000/camera</id><content type="html" xml:base="http://127.0.0.1:4000/camera/">&lt;a href=&quot;https://www.youtube.com/playlist?list=PLRqwX-V7Uu6YPSwT06y_AEYTqIwbeam3y&quot;&gt;webcam image classification&lt;/a&gt;.
 &lt;script&gt;
 	let mobilenet;
-	let puffin;
+	let video;
+	let label = '';
 
 	function modelReady() {
 		console.log('Model is Ready!!!');
+		mobilenet.predict(gotResults);
 	}
 
-		function setup() {
+	function gotResults(error, results) {
+		if (error) {
+			console.error(error);
+		} else {
+			console.log(results);
+			label = results[0].label;
+
+
+			mobilenet.predict(gotResults);
+		}
+	}
+
+
+	function setup() {
 		createCanvas(windowWidth, windowHeight);
-		puffin = createImg('');
-		background(0);
+		video = createCapture(VIDEO);
+		video.hide();
 
-		mobilenet = ml5.imageClassifier('MobileNet', modelReady);
+		
+
+		mobilenet = ml5.imageClassifier('MobileNet', video, modelReady); //continually hook up video
 
 	}
-&lt;/script&gt;</content><author><name></name></author><summary type="html">Following Beginners Guide to Machine Learning in JavaScript step by step, using ImageNet (and MobileNet) for image classification.</summary></entry><entry><title type="html">loops</title><link href="http://127.0.0.1:4000/loops/" rel="alternate" type="text/html" title="loops" /><published>2020-08-11T00:00:00-04:00</published><updated>2020-08-11T00:00:00-04:00</updated><id>http://127.0.0.1:4000/loops</id><content type="html" xml:base="http://127.0.0.1:4000/loops/">&lt;script&gt;
+	function draw(){
+		background(0);
+		image(video, 0, 50, width, width * .66);
+		fill(200);
+		textSize(20);
+		text('MobileNet sees a', 10, 30);
+		text('test', 170, 30);
+		text(label, 170, 30);
+		textSize(40);
+		text('🤖', width - 45, 40);
+	}
+&lt;/script&gt;</content><author><name></name></author><summary type="html">webcam image classification. let mobilenet; let video; let label = '';</summary></entry><entry><title type="html">loops</title><link href="http://127.0.0.1:4000/loops/" rel="alternate" type="text/html" title="loops" /><published>2020-08-11T00:00:00-04:00</published><updated>2020-08-11T00:00:00-04:00</updated><id>http://127.0.0.1:4000/loops</id><content type="html" xml:base="http://127.0.0.1:4000/loops/">&lt;script&gt;
 	function setup() {
 		createCanvas(windowWidth, windowHeight);
 	}
