@@ -1,4 +1,76 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://127.0.0.1:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://127.0.0.1:4000/" rel="alternate" type="text/html" /><updated>2020-08-18T18:29:07-04:00</updated><id>http://127.0.0.1:4000/feed.xml</id><title type="html">play</title><subtitle>creative code experiments</subtitle><entry><title type="html">puffin</title><link href="http://127.0.0.1:4000/puffin/" rel="alternate" type="text/html" title="puffin" /><published>2020-08-14T00:00:00-04:00</published><updated>2020-08-14T00:00:00-04:00</updated><id>http://127.0.0.1:4000/puffin</id><content type="html" xml:base="http://127.0.0.1:4000/puffin/">Following &lt;a href=&quot;https://www.youtube.com/playlist?list=PLRqwX-V7Uu6YPSwT06y_AEYTqIwbeam3y&quot;&gt;Beginners Guide to Machine Learning in JavaScript&lt;/a&gt; step by step.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://127.0.0.1:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://127.0.0.1:4000/" rel="alternate" type="text/html" /><updated>2020-08-26T19:08:21-04:00</updated><id>http://127.0.0.1:4000/feed.xml</id><title type="html">play</title><subtitle>creative code experiments</subtitle><entry><title type="html">font1</title><link href="http://127.0.0.1:4000/font1/" rel="alternate" type="text/html" title="font1" /><published>2020-08-26T00:00:00-04:00</published><updated>2020-08-26T00:00:00-04:00</updated><id>http://127.0.0.1:4000/font1</id><content type="html" xml:base="http://127.0.0.1:4000/font1/">&lt;p&gt;I feel I need to concentrate in typography first, because p5 is very rudimentary... objects are just there, without relationship with one another, if you don't specify.&lt;/p&gt;
+&lt;p&gt;or i dunno, cheat adding html &lt;em&gt;inside&lt;/em&gt; p5 canvas.&lt;/p&gt;
+&lt;p&gt;fonts used are &lt;a href=&quot;../assets/fonts/SpaceGrotesk-Regular.woff&quot;&gt;Space Grotesk&lt;/a&gt; and &lt;a href=&quot;../assets/fonts/RenoMono.ttf&quot;&gt;RenoMono&lt;/a&gt;
+&lt;/p&gt;
+&lt;script&gt;
+	let = grotesk;
+	let = renomono;
+
+function preload() {
+	grotesk = loadFont('../assets/fonts/SpaceGrotesk-Regular.woff');
+	renomono = loadFont('../assets/fonts/RenoMono.ttf');
+}
+
+function setup() {
+	createCanvas(windowWidth, windowHeight);
+	background(0);
+}
+
+function draw() {
+	fill(255);
+	stroke(0);
+	textSize(70);
+	textFont(grotesk);
+	text('Space Grotesk', 200, 200);
+	textFont(renomono);
+	text('RenoMono', 200, (200 + 100));
+
+}
+&lt;/script&gt;</content><author><name></name></author><summary type="html">I feel I need to concentrate in typography first, because p5 is very rudimentary... objects are just there, without relationship with one another, if you don't specify. or i dunno, cheat adding html inside p5 canvas. fonts used are Space Grotesk and RenoMono let = grotesk; let = renomono;</summary></entry><entry><title type="html">camera</title><link href="http://127.0.0.1:4000/camera/" rel="alternate" type="text/html" title="camera" /><published>2020-08-14T00:00:00-04:00</published><updated>2020-08-14T00:00:00-04:00</updated><id>http://127.0.0.1:4000/camera</id><content type="html" xml:base="http://127.0.0.1:4000/camera/">&lt;a href=&quot;https://www.youtube.com/playlist?list=PLRqwX-V7Uu6YPSwT06y_AEYTqIwbeam3y&quot;&gt;webcam image classification&lt;/a&gt;.
+&lt;script&gt;
+	let mobilenet;
+	let video;
+	let label = '';
+
+	function modelReady() {
+		console.log('Model is Ready!!!');
+		mobilenet.predict(gotResults);
+	}
+
+	function gotResults(error, results) {
+		if (error) {
+			console.error(error);
+		} else {
+			console.log(results);
+			label = results[0].label;
+
+
+			mobilenet.predict(gotResults);
+		}
+	}
+
+
+	function setup() {
+		createCanvas(windowWidth, windowHeight);
+		video = createCapture(VIDEO);
+		video.hide();
+
+		
+
+		mobilenet = ml5.imageClassifier('MobileNet', video, modelReady); //continually hook up video
+
+	}
+	function draw(){
+		background(0);
+		image(video, 0, 50, width, width * .66);
+		fill(200);
+		textSize(20);
+		text('MobileNet sees a', 10, 30);
+		text(label, 170, 30);
+		textSize(40);
+		text('🤖', width - 45, 40);
+	}
+&lt;/script&gt;</content><author><name></name></author><summary type="html">webcam image classification. let mobilenet; let video; let label = '';</summary></entry><entry><title type="html">puffin</title><link href="http://127.0.0.1:4000/puffin/" rel="alternate" type="text/html" title="puffin" /><published>2020-08-14T00:00:00-04:00</published><updated>2020-08-14T00:00:00-04:00</updated><id>http://127.0.0.1:4000/puffin</id><content type="html" xml:base="http://127.0.0.1:4000/puffin/">Following &lt;a href=&quot;https://www.youtube.com/playlist?list=PLRqwX-V7Uu6YPSwT06y_AEYTqIwbeam3y&quot;&gt;Beginners Guide to Machine Learning in JavaScript&lt;/a&gt; step by step.
 &lt;hr&gt;
 using &lt;a href=&quot;http://www.image-net.org/&quot;&gt;ImageNet&lt;/a&gt; (and &lt;a href=&quot;https://github.com/tensorflow/models/blob/master/research/slim/nets/mobilenet_v1.md&quot;&gt;MobileNet&lt;/a&gt;) for image classification.
 &lt;hr&gt;
@@ -43,52 +115,7 @@ i had to use relative path so it works both locally (root) and online (folder pl
 		mobilenet = ml5.imageClassifier('MobileNet', modelReady);
 
 	}
-&lt;/script&gt;</content><author><name></name></author><summary type="html">Following Beginners Guide to Machine Learning in JavaScript step by step. using ImageNet (and MobileNet) for image classification. ml5 forces you to start with errors i had to use relative path so it works both locally (root) and online (folder play)</summary></entry><entry><title type="html">camera</title><link href="http://127.0.0.1:4000/camera/" rel="alternate" type="text/html" title="camera" /><published>2020-08-14T00:00:00-04:00</published><updated>2020-08-14T00:00:00-04:00</updated><id>http://127.0.0.1:4000/camera</id><content type="html" xml:base="http://127.0.0.1:4000/camera/">&lt;a href=&quot;https://www.youtube.com/playlist?list=PLRqwX-V7Uu6YPSwT06y_AEYTqIwbeam3y&quot;&gt;webcam image classification&lt;/a&gt;.
-&lt;script&gt;
-	let mobilenet;
-	let video;
-	let label = '';
-
-	function modelReady() {
-		console.log('Model is Ready!!!');
-		mobilenet.predict(gotResults);
-	}
-
-	function gotResults(error, results) {
-		if (error) {
-			console.error(error);
-		} else {
-			console.log(results);
-			label = results[0].label;
-
-
-			mobilenet.predict(gotResults);
-		}
-	}
-
-
-	function setup() {
-		createCanvas(windowWidth, windowHeight);
-		video = createCapture(VIDEO);
-		video.hide();
-
-		
-
-		mobilenet = ml5.imageClassifier('MobileNet', video, modelReady); //continually hook up video
-
-	}
-	function draw(){
-		background(0);
-		image(video, 0, 50, width, width * .66);
-		fill(200);
-		textSize(20);
-		text('MobileNet sees a', 10, 30);
-		text('test', 170, 30);
-		text(label, 170, 30);
-		textSize(40);
-		text('🤖', width - 45, 40);
-	}
-&lt;/script&gt;</content><author><name></name></author><summary type="html">webcam image classification. let mobilenet; let video; let label = '';</summary></entry><entry><title type="html">loops</title><link href="http://127.0.0.1:4000/loops/" rel="alternate" type="text/html" title="loops" /><published>2020-08-11T00:00:00-04:00</published><updated>2020-08-11T00:00:00-04:00</updated><id>http://127.0.0.1:4000/loops</id><content type="html" xml:base="http://127.0.0.1:4000/loops/">&lt;script&gt;
+&lt;/script&gt;</content><author><name></name></author><summary type="html">Following Beginners Guide to Machine Learning in JavaScript step by step. using ImageNet (and MobileNet) for image classification. ml5 forces you to start with errors i had to use relative path so it works both locally (root) and online (folder play)</summary></entry><entry><title type="html">loops</title><link href="http://127.0.0.1:4000/loops/" rel="alternate" type="text/html" title="loops" /><published>2020-08-11T00:00:00-04:00</published><updated>2020-08-11T00:00:00-04:00</updated><id>http://127.0.0.1:4000/loops</id><content type="html" xml:base="http://127.0.0.1:4000/loops/">&lt;script&gt;
 	function setup() {
 		createCanvas(windowWidth, windowHeight);
 	}
@@ -109,24 +136,7 @@ i had to use relative path so it works both locally (root) and online (folder pl
 			}
 		}
 	}
-&lt;/script&gt;</content><author><name></name></author><summary type="html">function setup() { createCanvas(windowWidth, windowHeight); } function draw() { background(1, 75, 100); // circle properties fill(237, 34, 93); noStroke(); var diameter = 40;</summary></entry><entry><title type="html">loop</title><link href="http://127.0.0.1:4000/loop/" rel="alternate" type="text/html" title="loop" /><published>2020-03-24T00:00:00-04:00</published><updated>2020-03-24T00:00:00-04:00</updated><id>http://127.0.0.1:4000/loop</id><content type="html" xml:base="http://127.0.0.1:4000/loop/">&lt;script&gt;
-function setup() {
-  createCanvas(windowWidth, windowHeight)
-}
-
-function draw() {
-  background(1,75,100)
-  fill(random(237, 207), random(34, 4), random(93, 63))
-  noStroke()
-  var diameter = 100
-  var range = 20
-
-  for (var i = 0;i &lt;= width / diameter;i = i + 1) {
-  	ellipse(i * diameter, 100, random(diameter, diameter - range), random(diameter, diameter - range))
-  }
-}
-
-&lt;/script&gt;</content><author><name></name></author><summary type="html">function setup() { createCanvas(windowWidth, windowHeight) }</summary></entry><entry><title type="html">stars</title><link href="http://127.0.0.1:4000/stars/" rel="alternate" type="text/html" title="stars" /><published>2020-03-24T00:00:00-04:00</published><updated>2020-03-24T00:00:00-04:00</updated><id>http://127.0.0.1:4000/stars</id><content type="html" xml:base="http://127.0.0.1:4000/stars/">In this card I write the main object (the stars) as a &lt;a href=&quot;https://github.com/nonlinear/play/blob/master/_includes/stars.html&quot;&gt;jekyll include&lt;/a&gt;. This way other cards can also use it too.
+&lt;/script&gt;</content><author><name></name></author><summary type="html">function setup() { createCanvas(windowWidth, windowHeight); } function draw() { background(1, 75, 100); // circle properties fill(237, 34, 93); noStroke(); var diameter = 40;</summary></entry><entry><title type="html">stars</title><link href="http://127.0.0.1:4000/stars/" rel="alternate" type="text/html" title="stars" /><published>2020-03-24T00:00:00-04:00</published><updated>2020-03-24T00:00:00-04:00</updated><id>http://127.0.0.1:4000/stars</id><content type="html" xml:base="http://127.0.0.1:4000/stars/">In this card I write the main object (the stars) as a &lt;a href=&quot;https://github.com/nonlinear/play/blob/master/_includes/stars.html&quot;&gt;jekyll include&lt;/a&gt;. This way other cards can also use it too.
 &lt;script&gt;
 	function star(left, top, size, range) {
 			push()
@@ -399,34 +409,21 @@ function draw() {
   background(100)
 }
 
-&lt;/script&gt;</content><author><name></name></author><summary type="html">var data function preload(){ data = loadJSON('/assets/data/more/languages.json') } function setup() { noCanvas() var language = data.languages for (var i = 0; i &lt; language.length; i++) { createElement('h1', language[i].name) } }</summary></entry><entry><title type="html">accelerometer</title><link href="http://127.0.0.1:4000/accelerometer/" rel="alternate" type="text/html" title="accelerometer" /><published>2020-03-24T00:00:00-04:00</published><updated>2020-03-24T00:00:00-04:00</updated><id>http://127.0.0.1:4000/accelerometer</id><content type="html" xml:base="http://127.0.0.1:4000/accelerometer/">&lt;!-- https://stackoverflow.com/questions/56514116/how-do-i-get-deviceorientationevent-and-devicemotionevent-to-work-on-safari --&gt;
-&lt;script type=&quot;text/javascript&quot;&gt;
-    function requestOrientationPermission(){
-        DeviceOrientationEvent.requestPermission()
-        .then(response =&gt; {
-            if (response == 'granted') {
-                window.addEventListener('deviceorientation', (e) =&gt; {
-                    // do something with e
-                })
-            }
-        })
-        .catch(console.error)
-    }
-    function requestMotionPermission(){
-        DeviceMotionEvent.requestPermission()
-        .then(response =&gt; {
-            if (response == 'granted') {
-                window.addEventListener('devicemotion', (e) =&gt; {
-                    // do something with e
-                })
-            }
-        })
-        .catch(console.error)
-    }
-&lt;/script&gt;
+&lt;/script&gt;</content><author><name></name></author><summary type="html">var data function preload(){ data = loadJSON('/assets/data/more/languages.json') } function setup() { noCanvas() var language = data.languages for (var i = 0; i &lt; language.length; i++) { createElement('h1', language[i].name) } }</summary></entry><entry><title type="html">loop</title><link href="http://127.0.0.1:4000/loop/" rel="alternate" type="text/html" title="loop" /><published>2020-03-24T00:00:00-04:00</published><updated>2020-03-24T00:00:00-04:00</updated><id>http://127.0.0.1:4000/loop</id><content type="html" xml:base="http://127.0.0.1:4000/loop/">&lt;script&gt;
+function setup() {
+  createCanvas(windowWidth, windowHeight)
+}
 
-&lt;div class=&quot;alert&quot;&gt;
-	&lt;p&gt;This experiment uses accelerometer so it needs your permission&lt;/p&gt;
-	&lt;button onclick='requestMotionPermission();'&gt;Allow request&lt;/button&gt;
-&lt;!-- &lt;button onclick='requestOrientationPermission();'&gt;Request orientation&lt;/button&gt; --&gt;
-&lt;/div&gt;</content><author><name></name></author><summary type="html">This experiment uses accelerometer so it needs your permission Allow request</summary></entry></feed>
+function draw() {
+  background(1,75,100)
+  fill(random(237, 207), random(34, 4), random(93, 63))
+  noStroke()
+  var diameter = 100
+  var range = 20
+
+  for (var i = 0;i &lt;= width / diameter;i = i + 1) {
+  	ellipse(i * diameter, 100, random(diameter, diameter - range), random(diameter, diameter - range))
+  }
+}
+
+&lt;/script&gt;</content><author><name></name></author><summary type="html">function setup() { createCanvas(windowWidth, windowHeight) }</summary></entry></feed>
