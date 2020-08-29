@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://127.0.0.1:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://127.0.0.1:4000/" rel="alternate" type="text/html" /><updated>2020-08-26T19:08:21-04:00</updated><id>http://127.0.0.1:4000/feed.xml</id><title type="html">play</title><subtitle>creative code experiments</subtitle><entry><title type="html">font1</title><link href="http://127.0.0.1:4000/font1/" rel="alternate" type="text/html" title="font1" /><published>2020-08-26T00:00:00-04:00</published><updated>2020-08-26T00:00:00-04:00</updated><id>http://127.0.0.1:4000/font1</id><content type="html" xml:base="http://127.0.0.1:4000/font1/">&lt;p&gt;I feel I need to concentrate in typography first, because p5 is very rudimentary... objects are just there, without relationship with one another, if you don't specify.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://127.0.0.1:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://127.0.0.1:4000/" rel="alternate" type="text/html" /><updated>2020-08-28T21:09:50-04:00</updated><id>http://127.0.0.1:4000/feed.xml</id><title type="html">play</title><subtitle>creative code experiments</subtitle><entry><title type="html">font1</title><link href="http://127.0.0.1:4000/font1/" rel="alternate" type="text/html" title="font1" /><published>2020-08-26T00:00:00-04:00</published><updated>2020-08-26T00:00:00-04:00</updated><id>http://127.0.0.1:4000/font1</id><content type="html" xml:base="http://127.0.0.1:4000/font1/">&lt;p&gt;I feel I need to concentrate in typography first, because p5 is very rudimentary... objects are just there, without relationship with one another, if you don't specify.&lt;/p&gt;
 &lt;p&gt;or i dunno, cheat adding html &lt;em&gt;inside&lt;/em&gt; p5 canvas.&lt;/p&gt;
 &lt;p&gt;fonts used are &lt;a href=&quot;../assets/fonts/SpaceGrotesk-Regular.woff&quot;&gt;Space Grotesk&lt;/a&gt; and &lt;a href=&quot;../assets/fonts/RenoMono.ttf&quot;&gt;RenoMono&lt;/a&gt;
 &lt;/p&gt;
@@ -26,7 +26,7 @@ function draw() {
 	text('RenoMono', 200, (200 + 100));
 
 }
-&lt;/script&gt;</content><author><name></name></author><summary type="html">I feel I need to concentrate in typography first, because p5 is very rudimentary... objects are just there, without relationship with one another, if you don't specify. or i dunno, cheat adding html inside p5 canvas. fonts used are Space Grotesk and RenoMono let = grotesk; let = renomono;</summary></entry><entry><title type="html">camera</title><link href="http://127.0.0.1:4000/camera/" rel="alternate" type="text/html" title="camera" /><published>2020-08-14T00:00:00-04:00</published><updated>2020-08-14T00:00:00-04:00</updated><id>http://127.0.0.1:4000/camera</id><content type="html" xml:base="http://127.0.0.1:4000/camera/">&lt;a href=&quot;https://www.youtube.com/playlist?list=PLRqwX-V7Uu6YPSwT06y_AEYTqIwbeam3y&quot;&gt;webcam image classification&lt;/a&gt;.
+&lt;/script&gt;</content><author><name></name></author><category term="p5js" /><summary type="html">I feel I need to concentrate in typography first, because p5 is very rudimentary... objects are just there, without relationship with one another, if you don't specify. or i dunno, cheat adding html inside p5 canvas. fonts used are Space Grotesk and RenoMono let = grotesk; let = renomono;</summary></entry><entry><title type="html">camera</title><link href="http://127.0.0.1:4000/camera/" rel="alternate" type="text/html" title="camera" /><published>2020-08-14T00:00:00-04:00</published><updated>2020-08-14T00:00:00-04:00</updated><id>http://127.0.0.1:4000/camera</id><content type="html" xml:base="http://127.0.0.1:4000/camera/">&lt;a href=&quot;https://www.youtube.com/playlist?list=PLRqwX-V7Uu6YPSwT06y_AEYTqIwbeam3y&quot;&gt;webcam image classification&lt;/a&gt;.
 &lt;script&gt;
 	let mobilenet;
 	let video;
@@ -70,7 +70,7 @@ function draw() {
 		textSize(40);
 		text('🤖', width - 45, 40);
 	}
-&lt;/script&gt;</content><author><name></name></author><summary type="html">webcam image classification. let mobilenet; let video; let label = '';</summary></entry><entry><title type="html">puffin</title><link href="http://127.0.0.1:4000/puffin/" rel="alternate" type="text/html" title="puffin" /><published>2020-08-14T00:00:00-04:00</published><updated>2020-08-14T00:00:00-04:00</updated><id>http://127.0.0.1:4000/puffin</id><content type="html" xml:base="http://127.0.0.1:4000/puffin/">Following &lt;a href=&quot;https://www.youtube.com/playlist?list=PLRqwX-V7Uu6YPSwT06y_AEYTqIwbeam3y&quot;&gt;Beginners Guide to Machine Learning in JavaScript&lt;/a&gt; step by step.
+&lt;/script&gt;</content><author><name></name></author><category term="p5js," /><category term="ml5js" /><summary type="html">webcam image classification. let mobilenet; let video; let label = '';</summary></entry><entry><title type="html">puffin</title><link href="http://127.0.0.1:4000/puffin/" rel="alternate" type="text/html" title="puffin" /><published>2020-08-14T00:00:00-04:00</published><updated>2020-08-14T00:00:00-04:00</updated><id>http://127.0.0.1:4000/puffin</id><content type="html" xml:base="http://127.0.0.1:4000/puffin/">Following &lt;a href=&quot;https://www.youtube.com/playlist?list=PLRqwX-V7Uu6YPSwT06y_AEYTqIwbeam3y&quot;&gt;Beginners Guide to Machine Learning in JavaScript&lt;/a&gt; step by step.
 &lt;hr&gt;
 using &lt;a href=&quot;http://www.image-net.org/&quot;&gt;ImageNet&lt;/a&gt; (and &lt;a href=&quot;https://github.com/tensorflow/models/blob/master/research/slim/nets/mobilenet_v1.md&quot;&gt;MobileNet&lt;/a&gt;) for image classification.
 &lt;hr&gt;
@@ -115,7 +115,7 @@ i had to use relative path so it works both locally (root) and online (folder pl
 		mobilenet = ml5.imageClassifier('MobileNet', modelReady);
 
 	}
-&lt;/script&gt;</content><author><name></name></author><summary type="html">Following Beginners Guide to Machine Learning in JavaScript step by step. using ImageNet (and MobileNet) for image classification. ml5 forces you to start with errors i had to use relative path so it works both locally (root) and online (folder play)</summary></entry><entry><title type="html">loops</title><link href="http://127.0.0.1:4000/loops/" rel="alternate" type="text/html" title="loops" /><published>2020-08-11T00:00:00-04:00</published><updated>2020-08-11T00:00:00-04:00</updated><id>http://127.0.0.1:4000/loops</id><content type="html" xml:base="http://127.0.0.1:4000/loops/">&lt;script&gt;
+&lt;/script&gt;</content><author><name></name></author><category term="p5js," /><category term="ml5js" /><summary type="html">Following Beginners Guide to Machine Learning in JavaScript step by step. using ImageNet (and MobileNet) for image classification. ml5 forces you to start with errors i had to use relative path so it works both locally (root) and online (folder play)</summary></entry><entry><title type="html">loops</title><link href="http://127.0.0.1:4000/loops/" rel="alternate" type="text/html" title="loops" /><published>2020-08-11T00:00:00-04:00</published><updated>2020-08-11T00:00:00-04:00</updated><id>http://127.0.0.1:4000/loops</id><content type="html" xml:base="http://127.0.0.1:4000/loops/">&lt;script&gt;
 	function setup() {
 		createCanvas(windowWidth, windowHeight);
 	}
@@ -136,7 +136,7 @@ i had to use relative path so it works both locally (root) and online (folder pl
 			}
 		}
 	}
-&lt;/script&gt;</content><author><name></name></author><summary type="html">function setup() { createCanvas(windowWidth, windowHeight); } function draw() { background(1, 75, 100); // circle properties fill(237, 34, 93); noStroke(); var diameter = 40;</summary></entry><entry><title type="html">stars</title><link href="http://127.0.0.1:4000/stars/" rel="alternate" type="text/html" title="stars" /><published>2020-03-24T00:00:00-04:00</published><updated>2020-03-24T00:00:00-04:00</updated><id>http://127.0.0.1:4000/stars</id><content type="html" xml:base="http://127.0.0.1:4000/stars/">In this card I write the main object (the stars) as a &lt;a href=&quot;https://github.com/nonlinear/play/blob/master/_includes/stars.html&quot;&gt;jekyll include&lt;/a&gt;. This way other cards can also use it too.
+&lt;/script&gt;</content><author><name></name></author><category term="p5js" /><summary type="html">function setup() { createCanvas(windowWidth, windowHeight); } function draw() { background(1, 75, 100); // circle properties fill(237, 34, 93); noStroke(); var diameter = 40;</summary></entry><entry><title type="html">stars</title><link href="http://127.0.0.1:4000/stars/" rel="alternate" type="text/html" title="stars" /><published>2020-03-24T00:00:00-04:00</published><updated>2020-03-24T00:00:00-04:00</updated><id>http://127.0.0.1:4000/stars</id><content type="html" xml:base="http://127.0.0.1:4000/stars/">In this card I write the main object (the stars) as a &lt;a href=&quot;https://github.com/nonlinear/play/blob/master/_includes/stars.html&quot;&gt;jekyll include&lt;/a&gt;. This way other cards can also use it too.
 &lt;script&gt;
 	function star(left, top, size, range) {
 			push()
@@ -181,7 +181,7 @@ i had to use relative path so it works both locally (root) and online (folder pl
 		star(40, 70, 12, 3)
 		pop()
 	}
-&lt;/script&gt;</content><author><name></name></author><summary type="html">In this card I write the main object (the stars) as a jekyll include. This way other cards can also use it too. function setup() { createCanvas(windowWidth, windowHeight) console.log('The faculty of 5 is 1*2*3*4*5 = ' + faculty(5)) } function faculty(theValue) { var result = 1 for (var i = 1; i &lt;= theValue; i++) { result = result * i } return result }</summary></entry><entry><title type="html">lynda</title><link href="http://127.0.0.1:4000/lynda/" rel="alternate" type="text/html" title="lynda" /><published>2020-03-24T00:00:00-04:00</published><updated>2020-03-24T00:00:00-04:00</updated><id>http://127.0.0.1:4000/lynda</id><content type="html" xml:base="http://127.0.0.1:4000/lynda/">&lt;script&gt;
+&lt;/script&gt;</content><author><name></name></author><category term="p5js" /><summary type="html">In this card I write the main object (the stars) as a jekyll include. This way other cards can also use it too. function setup() { createCanvas(windowWidth, windowHeight) console.log('The faculty of 5 is 1*2*3*4*5 = ' + faculty(5)) } function faculty(theValue) { var result = 1 for (var i = 1; i &lt;= theValue; i++) { result = result * i } return result }</summary></entry><entry><title type="html">lynda</title><link href="http://127.0.0.1:4000/lynda/" rel="alternate" type="text/html" title="lynda" /><published>2020-03-24T00:00:00-04:00</published><updated>2020-03-24T00:00:00-04:00</updated><id>http://127.0.0.1:4000/lynda</id><content type="html" xml:base="http://127.0.0.1:4000/lynda/">&lt;script&gt;
 var num;
 		function setup() {
 			num = 2;
@@ -206,7 +206,7 @@ value = 'FALSE';
 			text(value, width/2, height/2);
 		}
 
-	&lt;/script&gt;</content><author><name></name></author><summary type="html">var num; function setup() { num = 2; createCanvas(windowWidth, windowHeight); textAlign(CENTER, CENTER);</summary></entry><entry><title type="html">alien</title><link href="http://127.0.0.1:4000/alien/" rel="alternate" type="text/html" title="alien" /><published>2020-03-24T00:00:00-04:00</published><updated>2020-03-24T00:00:00-04:00</updated><id>http://127.0.0.1:4000/alien</id><content type="html" xml:base="http://127.0.0.1:4000/alien/">From &lt;a href=&quot;https://codepen.io/p5art/pen/XKWyob&quot;&gt;this codepen&lt;/a&gt;.
+	&lt;/script&gt;</content><author><name></name></author><category term="p5js" /><summary type="html">var num; function setup() { num = 2; createCanvas(windowWidth, windowHeight); textAlign(CENTER, CENTER);</summary></entry><entry><title type="html">alien</title><link href="http://127.0.0.1:4000/alien/" rel="alternate" type="text/html" title="alien" /><published>2020-03-24T00:00:00-04:00</published><updated>2020-03-24T00:00:00-04:00</updated><id>http://127.0.0.1:4000/alien</id><content type="html" xml:base="http://127.0.0.1:4000/alien/">From &lt;a href=&quot;https://codepen.io/p5art/pen/XKWyob&quot;&gt;this codepen&lt;/a&gt;.
 
 &lt;a href=&quot;#&quot;&gt;Reload page&lt;/a&gt; for new random content.
 
@@ -352,7 +352,7 @@ value = 'FALSE';
 		initStuff();
 	}
 
-	&lt;/script&gt;</content><author><name></name></author><summary type="html">From this codepen.</summary></entry><entry><title type="html">json</title><link href="http://127.0.0.1:4000/json/" rel="alternate" type="text/html" title="json" /><published>2020-03-24T00:00:00-04:00</published><updated>2020-03-24T00:00:00-04:00</updated><id>http://127.0.0.1:4000/json</id><content type="html" xml:base="http://127.0.0.1:4000/json/">&lt;script&gt;
+	&lt;/script&gt;</content><author><name></name></author><category term="p5js" /><summary type="html">From this codepen.</summary></entry><entry><title type="html">json</title><link href="http://127.0.0.1:4000/json/" rel="alternate" type="text/html" title="json" /><published>2020-03-24T00:00:00-04:00</published><updated>2020-03-24T00:00:00-04:00</updated><id>http://127.0.0.1:4000/json</id><content type="html" xml:base="http://127.0.0.1:4000/json/">&lt;script&gt;
 
 		var fontSize = 35
 		var margin = 250
@@ -392,7 +392,7 @@ value = 'FALSE';
 			}
 		}
 
-	&lt;/script&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">languages</title><link href="http://127.0.0.1:4000/languages/" rel="alternate" type="text/html" title="languages" /><published>2020-03-24T00:00:00-04:00</published><updated>2020-03-24T00:00:00-04:00</updated><id>http://127.0.0.1:4000/languages</id><content type="html" xml:base="http://127.0.0.1:4000/languages/">&lt;script&gt;
+	&lt;/script&gt;</content><author><name></name></author><category term="p5js" /><summary type="html"></summary></entry><entry><title type="html">languages</title><link href="http://127.0.0.1:4000/languages/" rel="alternate" type="text/html" title="languages" /><published>2020-03-24T00:00:00-04:00</published><updated>2020-03-24T00:00:00-04:00</updated><id>http://127.0.0.1:4000/languages</id><content type="html" xml:base="http://127.0.0.1:4000/languages/">&lt;script&gt;
 		var data
 			function preload(){
 			data = loadJSON('/assets/data/more/languages.json')
@@ -409,7 +409,7 @@ function draw() {
   background(100)
 }
 
-&lt;/script&gt;</content><author><name></name></author><summary type="html">var data function preload(){ data = loadJSON('/assets/data/more/languages.json') } function setup() { noCanvas() var language = data.languages for (var i = 0; i &lt; language.length; i++) { createElement('h1', language[i].name) } }</summary></entry><entry><title type="html">loop</title><link href="http://127.0.0.1:4000/loop/" rel="alternate" type="text/html" title="loop" /><published>2020-03-24T00:00:00-04:00</published><updated>2020-03-24T00:00:00-04:00</updated><id>http://127.0.0.1:4000/loop</id><content type="html" xml:base="http://127.0.0.1:4000/loop/">&lt;script&gt;
+&lt;/script&gt;</content><author><name></name></author><category term="p5js" /><summary type="html">var data function preload(){ data = loadJSON('/assets/data/more/languages.json') } function setup() { noCanvas() var language = data.languages for (var i = 0; i &lt; language.length; i++) { createElement('h1', language[i].name) } }</summary></entry><entry><title type="html">loop</title><link href="http://127.0.0.1:4000/loop/" rel="alternate" type="text/html" title="loop" /><published>2020-03-24T00:00:00-04:00</published><updated>2020-03-24T00:00:00-04:00</updated><id>http://127.0.0.1:4000/loop</id><content type="html" xml:base="http://127.0.0.1:4000/loop/">&lt;script&gt;
 function setup() {
   createCanvas(windowWidth, windowHeight)
 }
@@ -426,4 +426,4 @@ function draw() {
   }
 }
 
-&lt;/script&gt;</content><author><name></name></author><summary type="html">function setup() { createCanvas(windowWidth, windowHeight) }</summary></entry></feed>
+&lt;/script&gt;</content><author><name></name></author><category term="p5js" /><summary type="html">function setup() { createCanvas(windowWidth, windowHeight) }</summary></entry></feed>

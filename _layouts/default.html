@@ -7,11 +7,16 @@ layout: default
 		<div class="menu">
 			<div class="scroll">
 {% if page.path contains '_posts' %}
-
+<header>
 				<h2 class="title">{{ page.title }}</h2>
-<div class="actions">			<a href="https://github.com/nonlinear/play/blob/master/{{page.path}}" target="_blank">
-    view github code</a>
-		</div>
+   <p>{% for tag in page.tags %}
+ {{ tag }}
+         {% endfor %}</p>
+	    <p><a href="https://github.com/nonlinear/play/blob/master/{{page.path}}" target="_blank">
+    view github code</a></p>
+
+		
+	</header>
 			{% else %}
 			<h1 class="title">{{site.title}}</h1>
 			<hr>
@@ -23,6 +28,9 @@ layout: default
 			
 			</div>
 </div>
+
+
+
 <script>
 	// prevent scroll
 	document.addEventListener('gesturestart', function (e) {
@@ -32,20 +40,22 @@ layout: default
 window.scrollTo(0,1);
 </script>
 
-
+{% if page.path contains '_posts' %}
+    {% for tag in page.tags %}
+ 
+    {% if tag contains "p5js" %}
 	<script src="{{'/assets/vendor/p5.min.js' | prepend: site.baseurl}}"></script>
 	<script src="{{'/assets/vendor/p5.dom.min.js' | prepend: site.baseurl}}"></script>
 	<script src="{{'/assets/vendor/p5.sound.min.js' | prepend: site.baseurl}}"></script>
-	<script src="{{'/assets/vendor/ml5.min.js' | prepend: site.baseurl}}"></script>
-
-
-<!-- 
-<script src="{{'/assets/vendor/jquery.min.js' | prepend: site.baseurl}}"></script>
-	<script src="{{'/assets/vendor/modernizr.js' | prepend: site.baseurl}}"></script>
-	<script src="{{'/assets/vendor/detectizr.js' | prepend: site.baseurl}}"></script>
-
-		
-	<script src="{{'/assets/vendor/popper.min.js' | prepend: site.baseurl}}"></script>
+{% endif %}
+    {% if tag contains "ml5js" %}
+   	<script src="{{'/assets/vendor/ml5.min.js' | prepend: site.baseurl}}"></script>
+{% endif %}
+    {% if tag contains "jquery" %}
+   <script src="{{'/assets/vendor/jquery.min.js' | prepend: site.baseurl}}"></script>
+{% endif %}
+    {% if tag contains "bootstrap" %}
+     	<script src="{{'/assets/vendor/popper.min.js' | prepend: site.baseurl}}"></script>
 	<script src="{{'/assets/vendor/bootstrap.min.js' | prepend: site.baseurl}}"></script>
 	<script>
 		$(function () {
@@ -66,7 +76,19 @@ window.scrollTo(0,1);
         }
       }, 300);
     });
-    </script> -->
+    </script>
+{% endif %}
+
+    {% if tag contains "modernizr" %}
+   	<script src="{{'/assets/vendor/modernizr.js' | prepend: site.baseurl}}"></script>
+	<script src="{{'/assets/vendor/detectizr.js' | prepend: site.baseurl}}"></script>
+{% endif %}
+    {% endfor %}
+    {% endif %}
+
+
+
+
              
 </body>
 

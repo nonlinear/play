@@ -121,15 +121,20 @@ $peek: 30px;
 	box-sizing: border-box;
 
 	margin: 1vh 0;
-	
-	.title {
+	header {
+margin-bottom: 20px;
+	p {
+	margin-bottom: 0;
+		font-size: 80%;
+	}
+
+	}
+			.title {
 		margin: 0;
 		padding:0;
 	}
-	.actions {
-		margin-bottom: 20px;
-		font-size: 80%;
-	}
+	
+	
 	.scroll {
 		overflow: auto;
 		padding: 20px;
