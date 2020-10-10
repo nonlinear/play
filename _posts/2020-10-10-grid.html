@@ -1,0 +1,75 @@
+---
+layout: default
+title: grid
+slug: grid
+status: public
+tags: p5js, random
+date: 2020-10-10
+permalink: /:title/
+---
+From <a href="https://codepen.io/p5art/pen/XKWyob">this codepen</a>.
+
+<a href="#">Reload page</a> for new random content.
+<script>
+	{% include classes/Grid.js %}
+	function Element() {
+  this.palette = [color(153,204,224), color(227,92,55), color(52,52,50)];
+  this.shapes = ['straight','arc-left','arc-right'];
+  this.color = this.palette[floor(random(this.palette.length))];
+  this.direction;
+  this.thickness = 20;
+  
+
+  this.shape = this.shapes[floor(random(this.shapes.length))];
+  this.shape = this.shapes[1];
+  this.size = 100;
+  this.background = color(255,255,255);
+  // this.width = this.size
+  // this.height = this.size*2;
+  
+  
+  this.show = function() {
+    push();
+    noStroke();
+    if (this.shape == 'arc-left') {
+      fill(this.color);
+      arc(0, 0, this.size, this.size, HALF_PI, PI + HALF_PI);
+      fill(this.background);
+      arc(0, 0, this.size -  (this.thickness*2), this.size -  (this.thickness*2), HALF_PI, PI + HALF_PI);
+    } else if (this.shape == 'arc-right') {
+      fill(this.color);
+      arc(0, 0, this.size, this.size, PI + HALF_PI, HALF_PI);
+      fill(this.background);
+      arc(0, 0, this.size/2, this.size/2, PI + HALF_PI, HALF_PI);
+    }
+    else if (this.shape == 'straight') {
+      fill(this.color);
+      rect(0,0,this.size/2, this.thickness);
+      
+    }
+    pop();
+  }
+  
+  
+}
+	
+	let grid;
+let e;
+
+function setup() {
+  createCanvas(350, 500);
+  grid = new Grid(8,0);
+  
+  e = new Element();
+  
+}
+
+function draw() {
+  background(255,255,255);
+  translate(100,100);
+  e.show();
+  
+
+}
+
+	</script>

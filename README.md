@@ -14,37 +14,6 @@ I even found a way to link to original post on github using `{{page.path}}` #jek
 
 #jekyll has a handy `_include` feature, so the idea is to [collect reusable code](https://github.com/nonlinear/play/tree/master/_includes/) and just point to it. Think tools like accelerometer, save as image/vector, request location, etc.
 
----
-
-## Phases
-
-I'm trying to be diligent with my weekly challenges, separating it into proper phases:
-
-- **planning**: some time to decide *what* I wanna build this week. Deadline is wednesday morning (2 days)
-- **research**: checking previous code, comparing libraries, watching tutorials, asking experts. Deadline is friday morning (2 days)
-- **execution**: actually tying the pieces together, and publishing. I maaaay setup a proper time and broadcast it via [whereby](https://whereby.com/praxis_nyc) *or* record it and publish it on youtube, for documentation. Deadline is sunday night (3 days)
-
-I thought of a **promotion** phase too, but frankly, my results will be subpar for a while, I'm not looking for quality but experimentation.
-
----
-
-## TODO
-
-- [ ] QR code on about
-- [ ] remove toolbar
-- [ ] Set date
-  - [ ] Sunday: delivery
-  - [ ] Monday: planning
-  - [ ] Wednesday: researching
-  - [ ] Friday: Execution
-- [ ] Mailing list
-- [ ] install dash
-- [ ] find ml5 package
-- [ ] loading affordance
-- [ ] research UX solutions for camera request affordance
-- [ ] migrate from dash to [devdocs.io](https://devdocs.io/settings)
-- [ ] Checklist for promotion
-
 
 ---
 

@@ -1,0 +1,23 @@
+---
+layout: default
+title: tim1
+slug: tim1
+status: public
+tags: p5js, processing
+date: 2020-09-08
+permalink: /:slug/
+---
+<p>A p5js port from  <a href="https://timrodenbroeker.de/courses/creative-coding-essentials/processing/">timrodenbroeker</a></p>
+<script>
+	function setup() {
+  createCanvas(windowWidth, windowHeight);
+}
+
+function draw() {
+	let circle = windowWidth / 3;
+	background(mouseX/2);
+	fill(width-mouseX);
+	noStroke();
+	ellipse(mouseX, mouseY, circle, circle);
+}
+</script>
