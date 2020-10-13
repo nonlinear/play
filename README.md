@@ -23,7 +23,7 @@ I even found a way to link to original post on github using `{{page.path}}` #jek
 1. ~~grid~~
 1. ~~stack~~ 2020-10-12
 1. grid-on-cell (define parent feature)
-1. text on text
+1. text on cell (test)
 1. irregular cells (2, 1, 3)
 1. rows
 1. detect remaining space, alert if object is more than that (we decide what to do later)
