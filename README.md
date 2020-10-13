@@ -21,11 +21,6 @@
 
 ---
 
-### Share feature
-
-1. [On the Web Share API | CSS-Tricks](https://css-tricks.com/on-the-web-share-api/)
-
----
 
 ### Grid feature
 
@@ -33,10 +28,19 @@
 1. ~~grid~~
 1. ~~stack~~ 2020-10-12
 1. grid-on-cell (define parent feature)
-1. text on cell (test)
+1. text on cell (test, [reference](https://creative-coding.decontextualize.com/text-and-type/))
 1. irregular cells (2, 1, 3)
 1. rows
 1. detect remaining space, alert if object is more than that (we decide what to do later)
+
+---
+
+### Peripherals
+
+1. Share page [On the Web Share API | CSS-Tricks](https://css-tricks.com/on-the-web-share-api/)
+1. QR code
+1. sensor request, unified (make it fullscreen)
+1. notes (very buried, maybe a specific click?)
 
 ---
 
@@ -63,8 +67,8 @@
 
 1. click, drag, double-tap, two-finger
 1. drag velocity, directions
-1. sensor request, how to unify (make it fullscreen)
 1. accelerator
+1. scroll via p5
 1. location
 1. camera
 1. mic
