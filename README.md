@@ -21,8 +21,8 @@
 
 ---
 
-
 ### Grid feature
+#### [isolated development link](https://glitch.com/edit/#!/join/5d296832-f632-4ae8-be86-dad95ed88e0b)
 
 1. ~~column~~
 1. ~~grid~~
