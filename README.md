@@ -2,27 +2,25 @@
 
 ## [Play](https://www.nonlinear.nyc/play)
 
-1. creative code
-1. browser-based
-1. mobile-friendly
-1. self-contained
+creative code | browser-based | mobile-friendly | self-contained
 
 ---
 
-### Methodology for feature publication
+### Feature Phases
 
-1. define scope
-1. research libraries
-1. develop/test cycle (isolated)
-1. develop/test cycle (integrated)
+1. scope
+1. research (libraries, best practices, experiments)
+1. development
+	1. isolated
+	1. integrated
 1. packaging (version, documentation, wish list)
-1. publish (discuss promotion)
+1. promotion (discuss promotion)
 1. feedback (rebuild wish list, collaborators)
 
 ---
 
 ### Grid feature
-#### [isolated development link](https://glitch.com/edit/#!/join/5d296832-f632-4ae8-be86-dad95ed88e0b)
+(development, isolated: [link](https://glitch.com/edit/#!/join/5d296832-f632-4ae8-be86-dad95ed88e0b))
 
 1. ~~column~~
 1. ~~grid~~
@@ -36,6 +34,7 @@
 ---
 
 ### Peripherals
+scope
 
 1. Share page [On the Web Share API | CSS-Tricks](https://css-tricks.com/on-the-web-share-api/)
 1. QR code
@@ -45,6 +44,7 @@
 ---
 
 ### Typography
+scope
 
 1. new fonts
 1. line height, kerning, other font editing features
@@ -56,6 +56,7 @@
 ---
 
 ### Database
+scope
 
 1. json or yml?
 1. importing from common services (headless CMS)
@@ -64,6 +65,7 @@
 ---
 
 ### Device Sensors
+scope
 
 1. click, drag, double-tap, two-finger
 1. drag velocity, directions
@@ -77,6 +79,7 @@
 ---
 
 ### SVG
+scope
 
 1. import svg ([Load an SVG to a P5 sketch](https://stackoverflow.com/questions/40389179/load-an-svg-to-a-p5-sketch))
 1. import svg, editing points, objects, id/class
@@ -86,6 +89,7 @@
 ---
 
 ### Generative Design
+scope
 
 1. random, noise, universe of variation, weights
 1. reload 
