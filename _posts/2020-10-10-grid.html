@@ -11,7 +11,7 @@ permalink: /:title/
 
 <p>From this glitch</a>, studying with <a href="https://www.twitch.tv/rodjunjun">Rodrigo Junqueira</a>.</p>
 
-<p><a href="#">Reload page</a> for new random content.</p>
+<p><a href="javascript:location.reload();">Reload page</a> for new random content.</p>
 
 <style>
 body, html {
@@ -29,11 +29,11 @@ canvas {
   {% include Element.js %}
 
   let grid1;
-let elementsQty = 10;
+let elementsQty = 9;
 
 function setup() {
-  createCanvas(350, 600);
-  grid1 = new Grid(8,0);
+  createCanvas(400, 584);
+  grid1 = new Grid(7,0);
   
   // generation
   for (let j = 0; j < grid1.cellNumber; j++) {
