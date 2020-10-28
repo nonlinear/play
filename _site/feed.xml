@@ -1,10 +1,92 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://127.0.0.1:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://127.0.0.1:4000/" rel="alternate" type="text/html" /><updated>2020-10-28T17:11:43-04:00</updated><id>http://127.0.0.1:4000/feed.xml</id><title type="html">play</title><subtitle>creative code experiments</subtitle><entry><title type="html">grid1</title><link href="http://127.0.0.1:4000/grid1/" rel="alternate" type="text/html" title="grid1" /><published>2020-10-10T00:00:00-04:00</published><updated>2020-10-10T00:00:00-04:00</updated><id>http://127.0.0.1:4000/grid1</id><content type="html" xml:base="http://127.0.0.1:4000/grid1/">&lt;p&gt;Grid toolbox, version 1.0.1, &lt;a href=&quot;https://github.com/nonlinear/play/blob/master/assets/articles/03.md#creative-code-toolbox&quot;&gt;check feature list&lt;/a&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://127.0.0.1:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://127.0.0.1:4000/" rel="alternate" type="text/html" /><updated>2020-10-28T17:51:55-04:00</updated><id>http://127.0.0.1:4000/feed.xml</id><title type="html">play</title><subtitle>creative code experiments</subtitle><entry><title type="html">grid and typography</title><link href="http://127.0.0.1:4000/grid2/" rel="alternate" type="text/html" title="grid and typography" /><published>2020-10-28T00:00:00-04:00</published><updated>2020-10-28T00:00:00-04:00</updated><id>http://127.0.0.1:4000/grid2</id><content type="html" xml:base="http://127.0.0.1:4000/grid2/">&lt;p&gt;typography examples using &lt;a href=&quot;https://github.com/nonlinear/play/blob/master/assets/articles/03.md#creative-code-toolbox&quot;&gt;grid toolbox&lt;/a&gt;&lt;/p&gt;
+
+&lt;style&gt;
+	
+body, html {
+  height: 100%;
+  display: grid;
+}
+canvas { 
+  margin: auto;
+  box-shadow: 5px 5px 2px rgba(0,0,0,.1);
+  border-radius: 5px;
+}
+	canvas {
+		padding 20px;
+	}
+&lt;/style&gt;
+&lt;script&gt;
+	// Grid for p5js
+// version 1.0.1
+
+function Grid(cellNumber,gap) {
+  this.cellNumber = cellNumber;
+  this.gap = gap;
+  this.width = (width-((this.cellNumber-1)*this.gap))/this.cellNumber;
+  this.cells = [];
+  for (let i = 0; i &lt; this.cellNumber; i++) {
+    this.cells[i] = [];
+  }
+  
+  
+  this.show = function() {
+    for (let j = 0; j &lt; this.cellNumber; j++) {
+      let heightPointer = 0;      
+      for (let i = 0; i &lt; this.cells[j].length; i++) {
+        if (heightPointer + this.cells[j][i].height() &lt; height) {
+          push();
+          translate(this.cellPosition(j),heightPointer);
+          heightPointer += this.cells[j][i].height();    
+          this.cells[j][i].show();
+          pop();
+        }
+      }    
+    }
+    
+  }
+  
+  this.stack = function(n, elem) {
+    this.cells[n].push(elem);    
+  }
+  
+  this.cellPosition = function(n) {
+    return this.width*n+this.gap*n;
+  }
+  
+}
+	function setup() {
+		createCanvas(400, 584);
+		grid1 = new Grid(2,10);
+		text1 = new Title(&quot;Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Praesentium perferendis explicabo modi fugit nostrum ex minus sit velit at impedit.&quot;);
+	}
+	function draw() {
+		background(255);
+		grid1.show();
+		grid1.stack(0,text1);
+		fill(0,0,0);
+
+	}
+	function Title(text) {
+		this.height = function() {
+			return 50;
+		}
+		this.text = text;
+		this.show = function() {
+			push();
+			textSize(40);
+			textAlign(LEFT, TOP);
+			text(this.text, 10, 10, 300);
+			pop();
+		}
+	}
+&lt;/script&gt;</content><author><name></name></author><category term="p5js," /><category term="random" /><summary type="html">typography examples using grid toolbox</summary></entry><entry><title type="html">grid1</title><link href="http://127.0.0.1:4000/grid1/" rel="alternate" type="text/html" title="grid1" /><published>2020-10-10T00:00:00-04:00</published><updated>2020-10-10T00:00:00-04:00</updated><id>http://127.0.0.1:4000/grid1</id><content type="html" xml:base="http://127.0.0.1:4000/grid1/">&lt;p&gt;Grid toolbox, version 1.0.1, &lt;a href=&quot;https://github.com/nonlinear/play/blob/master/assets/articles/03.md#creative-code-toolbox&quot;&gt;check feature list&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;From this glitch&lt;/a&gt;, studying with &lt;a href=&quot;https://www.twitch.tv/rodjunjun&quot;&gt;Rodrigo Junqueira&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;javascript:location.reload();&quot;&gt;Reload page&lt;/a&gt; for new random content.&lt;/p&gt;
 
 &lt;style&gt;
+  
 body, html {
   height: 100%;
   display: grid;
@@ -219,51 +301,7 @@ function draw() {
 	text('RenoMono', 200, (200 + 100));
 
 }
-&lt;/script&gt;</content><author><name></name></author><category term="p5js," /><category term="typography" /><summary type="html">I feel I need to concentrate in typography first, because p5 is very rudimentary... objects are just there, without relationship with one another, if you don't specify. or i dunno, cheat adding html inside p5 canvas. fonts used are Space Grotesk and RenoMono let = grotesk; let = renomono;</summary></entry><entry><title type="html">camera</title><link href="http://127.0.0.1:4000/camera/" rel="alternate" type="text/html" title="camera" /><published>2020-08-14T00:00:00-04:00</published><updated>2020-08-14T00:00:00-04:00</updated><id>http://127.0.0.1:4000/camera</id><content type="html" xml:base="http://127.0.0.1:4000/camera/">&lt;a href=&quot;https://www.youtube.com/playlist?list=PLRqwX-V7Uu6YPSwT06y_AEYTqIwbeam3y&quot;&gt;webcam image classification&lt;/a&gt;.
-&lt;script&gt;
-	let mobilenet;
-	let video;
-	let label = '';
-
-	function modelReady() {
-		console.log('Model is Ready!!!');
-		mobilenet.predict(gotResults);
-	}
-
-	function gotResults(error, results) {
-		if (error) {
-			console.error(error);
-		} else {
-			console.log(results);
-			label = results[0].label;
-
-
-			mobilenet.predict(gotResults);
-		}
-	}
-
-
-	function setup() {
-		createCanvas(windowWidth, windowHeight);
-		video = createCapture(VIDEO);
-		video.hide();
-
-		
-
-		mobilenet = ml5.imageClassifier('MobileNet', video, modelReady); //continually hook up video
-
-	}
-	function draw(){
-		background(0);
-		image(video, 0, 50, width, width * .66);
-		fill(200);
-		textSize(20);
-		text('MobileNet sees a', 10, 30);
-		text(label, 170, 30);
-		textSize(40);
-		text('🤖', width - 45, 40);
-	}
-&lt;/script&gt;</content><author><name></name></author><category term="p5js," /><category term="ml5js" /><summary type="html">webcam image classification. let mobilenet; let video; let label = '';</summary></entry><entry><title type="html">puffin</title><link href="http://127.0.0.1:4000/puffin/" rel="alternate" type="text/html" title="puffin" /><published>2020-08-14T00:00:00-04:00</published><updated>2020-08-14T00:00:00-04:00</updated><id>http://127.0.0.1:4000/puffin</id><content type="html" xml:base="http://127.0.0.1:4000/puffin/">Following &lt;a href=&quot;https://www.youtube.com/playlist?list=PLRqwX-V7Uu6YPSwT06y_AEYTqIwbeam3y&quot;&gt;Beginners Guide to Machine Learning in JavaScript&lt;/a&gt; step by step.
+&lt;/script&gt;</content><author><name></name></author><category term="p5js," /><category term="typography" /><summary type="html">I feel I need to concentrate in typography first, because p5 is very rudimentary... objects are just there, without relationship with one another, if you don't specify. or i dunno, cheat adding html inside p5 canvas. fonts used are Space Grotesk and RenoMono let = grotesk; let = renomono;</summary></entry><entry><title type="html">puffin</title><link href="http://127.0.0.1:4000/puffin/" rel="alternate" type="text/html" title="puffin" /><published>2020-08-14T00:00:00-04:00</published><updated>2020-08-14T00:00:00-04:00</updated><id>http://127.0.0.1:4000/puffin</id><content type="html" xml:base="http://127.0.0.1:4000/puffin/">Following &lt;a href=&quot;https://www.youtube.com/playlist?list=PLRqwX-V7Uu6YPSwT06y_AEYTqIwbeam3y&quot;&gt;Beginners Guide to Machine Learning in JavaScript&lt;/a&gt; step by step.
 &lt;hr&gt;
 using &lt;a href=&quot;http://www.image-net.org/&quot;&gt;ImageNet&lt;/a&gt; (and &lt;a href=&quot;https://github.com/tensorflow/models/blob/master/research/slim/nets/mobilenet_v1.md&quot;&gt;MobileNet&lt;/a&gt;) for image classification.
 &lt;hr&gt;
@@ -308,7 +346,51 @@ i had to use relative path so it works both locally (root) and online (folder pl
 		mobilenet = ml5.imageClassifier('MobileNet', modelReady);
 
 	}
-&lt;/script&gt;</content><author><name></name></author><category term="p5js," /><category term="ml5js" /><summary type="html">Following Beginners Guide to Machine Learning in JavaScript step by step. using ImageNet (and MobileNet) for image classification. ml5 forces you to start with errors i had to use relative path so it works both locally (root) and online (folder play)</summary></entry><entry><title type="html">loops</title><link href="http://127.0.0.1:4000/loops/" rel="alternate" type="text/html" title="loops" /><published>2020-08-11T00:00:00-04:00</published><updated>2020-08-11T00:00:00-04:00</updated><id>http://127.0.0.1:4000/loops</id><content type="html" xml:base="http://127.0.0.1:4000/loops/">&lt;script&gt;
+&lt;/script&gt;</content><author><name></name></author><category term="p5js," /><category term="ml5js" /><summary type="html">Following Beginners Guide to Machine Learning in JavaScript step by step. using ImageNet (and MobileNet) for image classification. ml5 forces you to start with errors i had to use relative path so it works both locally (root) and online (folder play)</summary></entry><entry><title type="html">camera</title><link href="http://127.0.0.1:4000/camera/" rel="alternate" type="text/html" title="camera" /><published>2020-08-14T00:00:00-04:00</published><updated>2020-08-14T00:00:00-04:00</updated><id>http://127.0.0.1:4000/camera</id><content type="html" xml:base="http://127.0.0.1:4000/camera/">&lt;a href=&quot;https://www.youtube.com/playlist?list=PLRqwX-V7Uu6YPSwT06y_AEYTqIwbeam3y&quot;&gt;webcam image classification&lt;/a&gt;.
+&lt;script&gt;
+	let mobilenet;
+	let video;
+	let label = '';
+
+	function modelReady() {
+		console.log('Model is Ready!!!');
+		mobilenet.predict(gotResults);
+	}
+
+	function gotResults(error, results) {
+		if (error) {
+			console.error(error);
+		} else {
+			console.log(results);
+			label = results[0].label;
+
+
+			mobilenet.predict(gotResults);
+		}
+	}
+
+
+	function setup() {
+		createCanvas(windowWidth, windowHeight);
+		video = createCapture(VIDEO);
+		video.hide();
+
+		
+
+		mobilenet = ml5.imageClassifier('MobileNet', video, modelReady); //continually hook up video
+
+	}
+	function draw(){
+		background(0);
+		image(video, 0, 50, width, width * .66);
+		fill(200);
+		textSize(20);
+		text('MobileNet sees a', 10, 30);
+		text(label, 170, 30);
+		textSize(40);
+		text('🤖', width - 45, 40);
+	}
+&lt;/script&gt;</content><author><name></name></author><category term="p5js," /><category term="ml5js" /><summary type="html">webcam image classification. let mobilenet; let video; let label = '';</summary></entry><entry><title type="html">loops</title><link href="http://127.0.0.1:4000/loops/" rel="alternate" type="text/html" title="loops" /><published>2020-08-11T00:00:00-04:00</published><updated>2020-08-11T00:00:00-04:00</updated><id>http://127.0.0.1:4000/loops</id><content type="html" xml:base="http://127.0.0.1:4000/loops/">&lt;script&gt;
 	function setup() {
 		createCanvas(windowWidth, windowHeight);
 	}
@@ -329,207 +411,66 @@ i had to use relative path so it works both locally (root) and online (folder pl
 			}
 		}
 	}
-&lt;/script&gt;</content><author><name></name></author><category term="p5js," /><category term="basics" /><summary type="html">function setup() { createCanvas(windowWidth, windowHeight); } function draw() { background(1, 75, 100); // circle properties fill(237, 34, 93); noStroke(); var diameter = 40;</summary></entry><entry><title type="html">alien aaa</title><link href="http://127.0.0.1:4000/alien/" rel="alternate" type="text/html" title="alien aaa" /><published>2020-03-24T00:00:00-04:00</published><updated>2020-03-24T00:00:00-04:00</updated><id>http://127.0.0.1:4000/alien</id><content type="html" xml:base="http://127.0.0.1:4000/alien/">From &lt;a href=&quot;https://codepen.io/p5art/pen/XKWyob&quot;&gt;this codepen&lt;/a&gt;.
-
-&lt;a href=&quot;#&quot;&gt;Reload page&lt;/a&gt; for new random content.
-
-	&lt;script&gt;
-	var outerCell, innerCell;
-	var r, sz, unit;
-	var bg = 238;
-
+&lt;/script&gt;</content><author><name></name></author><category term="p5js," /><category term="basics" /><summary type="html">function setup() { createCanvas(windowWidth, windowHeight); } function draw() { background(1, 75, 100); // circle properties fill(237, 34, 93); noStroke(); var diameter = 40;</summary></entry><entry><title type="html">stars</title><link href="http://127.0.0.1:4000/stars/" rel="alternate" type="text/html" title="stars" /><published>2020-03-24T00:00:00-04:00</published><updated>2020-03-24T00:00:00-04:00</updated><id>http://127.0.0.1:4000/stars</id><content type="html" xml:base="http://127.0.0.1:4000/stars/">In this card I write the main object (the stars) as a &lt;a href=&quot;https://github.com/nonlinear/play/blob/master/_includes/stars.html&quot;&gt;jekyll include&lt;/a&gt;. This way other cards can also use it too.
+&lt;script&gt;
+	function star(left, top, size, range) {
+			push()
+			stroke(random(0, 100))
+			strokeWeight(2)
+			translate(random(left, left + range), random(top, top + range))
+			line(0, size * -1, 0, size)
+			rotate(45)
+			line(0, size * -1, 0, size)
+			rotate(45)
+			line(0, size * -1, 0, size)
+			pop()
+		}
+&lt;/script&gt;
+&lt;script&gt;
 	function setup() {
-		createCanvas(windowWidth, windowHeight-4);
-		strokeWeight(3);
-		stroke(66);
-		fill(bg);
-		r = .3;
-		sz = 10
-		outerCell = 75;
-		innerCell = outerCell * .4;
-		unit = innerCell / 2;
-		initStuff();
+		createCanvas(windowWidth, windowHeight)
+		console.log('The faculty of 5 is 1*2*3*4*5 = ' + faculty(5))
+	}
+	function faculty(theValue) {
+		var result = 1
+		for (var i = 1; i &lt;= theValue; i++) {
+			result = result * i
+		}
+		return result
 	}
 
 	function draw() {
-
+		background(125)
+		ellipse(50, 50, 50, 50)
+		push()
+		star(30, 20, 10, 3)
+		star(50, 40, 15, 3)
+		star(40, 70, 12, 3)
+		translate(100, 60)
+		star(30, 20, 10, 3)
+		star(50, 40, 8, 3)
+		star(40, 70, 7, 3)
+		translate(20, -60)
+		star(30, 20, 15, 3)
+		star(50, 40, 10, 3)
+		star(40, 70, 12, 3)
+		pop()
 	}
-
-	function drawPatternA(x, y) {
-
-		if (random(1) &gt; r) {
-			strokeCap(SQUARE);
-		} else {
-			strokeCap(PROJECT);
-		}
-
-		push();
-		translate(x, y);
-
-		// triangles
-		//triangles();
-
-		//cross
-		cross();
-
-		//center: square and circle(s) or arc(s)
-		centerSymbol();
-
-		//circle(s) or triangle(s) at edges
-		symbolsAtEdges();
-
-		pop();
-	}
-
-	function triangles() {
-		var unit3 = unit * .35;
-		for (var i = 0; i &lt; 8; i++) {
-			push();
-			rotate(radians(45) * i);
-			push();
-			translate(-unit * 1.5, 0);
-			if (random(1) &gt; r + .3) triangle(-unit3, 0, unit3, -unit3, unit3, unit3);
-			pop();
-			pop();
-		}
-	}
-
-	function cross() {
-		if (random(1) &gt; r) {
-			if (random(1) &gt; r) line(-unit, 0, unit, 0);
-			if (random(1) &gt; r) line(0, -unit, 0, unit);
-		} else {
-			if (random(1) &gt; r) line(-unit, -unit, unit, unit);
-			if (random(1) &gt; r) line(-unit, unit, unit, -unit);
-		}
-	}
-
-	function centerSymbol() {
-		//center: square and circle(s) or arc(s)
-		if (random(1) &gt; r) {
-			if (random(1) &gt; r + .2) {
-				rectMode(CENTER);
-				if (random(1) &gt; r) rectMode(CORNER);
-				push();
-				//rotate(floor(random(4))*HALF_PI);
-				rect(0, 0, sz * 2, sz * 2);
-				pop();
-			} else {
-				var unit2 = unit * 2.75;
-				if (random(1) &gt; r) {
-					if (random(1) &gt; r + .3) ellipse(0, 0, unit2, unit2);
-					if (random(1) &gt; r) ellipse(0, 0, unit2 * .66, unit2 * .66);
-				} else {
-					noFill();
-					for (var i = 0; i &lt; 4; i++) {
-						var start = i * HALF_PI;
-						if (random(1) &gt; r) arc(0, 0, unit2, unit2, start, start + HALF_PI);
-					}
-					fill(bg);
-				}
-			}
-		}
-	}
-
-	function symbolsAtEdges() {
-		//circle(s) or triangle(s) at edges
-		if (random(1) &gt; r) ellipse(0, 0, sz, sz);
-		var unit3 = unit * .35;
-		for (var i = 0; i &lt; 4; i++) {
-			//push();
-			rotate(i * HALF_PI);
-			if (random(1) &gt; r + .3) {
-				if (random(1) &gt; r) {
-					ellipse(-unit * 1.4, 0, sz, sz);
-				} else {
-					push();
-					translate(-unit * 1.5, 0);
-					if (random(1) &gt; r + .3) triangle(-unit3, 0, unit3, -unit3, unit3, unit3);
-					pop();
-				}
-			}
-		}
-	}
-
-	function initStuff() {
-		background(bg);
-		strokeWeight(3);
-		stroke(66);
-		for (var x = outerCell / 2; x &lt; width; x += outerCell) {
-			for (var y = outerCell / 2; y &lt; height; y += outerCell) {
-				drawPatternA(x, y);
-			}
-		}
-	}
-
-	function mouseReleased() {
-		initStuff();
-	}
-
-	function keyTyped() {
-		if (key === 's') save(random(123) + '.png');
-	}
-
-	function windowResized() {
-		resizeCanvas(windowWidth, windowHeight-4);
-		initStuff();
-	}
-
-	&lt;/script&gt;</content><author><name></name></author><category term="p5js," /><category term="random" /><summary type="html">From this codepen.</summary></entry><entry><title type="html">json</title><link href="http://127.0.0.1:4000/json/" rel="alternate" type="text/html" title="json" /><published>2020-03-24T00:00:00-04:00</published><updated>2020-03-24T00:00:00-04:00</updated><id>http://127.0.0.1:4000/json</id><content type="html" xml:base="http://127.0.0.1:4000/json/">&lt;script&gt;
-
-		var fontSize = 35
-		var margin = 250
-		var lineBase = 150
-		var month = months.months
-
-		function preload(){
-			months = loadJSON('assets/data/more/months.json')
-		}
-
-		function setup() {
-			createCanvas(windowWidth, windowHeight)
-		}
-
-		function draw() {
-			background(180)
-			fill(255)
-			strokeWeight(1)
-			ellipse(60, 60, 100, 100)
-			push()
-			rotate(30)
-			angleMode(DEGREES)
-			rect(60, 60, 100, 20)
-			pop()
-			fill(0)
-			textSize(25)
-			textFont(&quot;RenoMono&quot;)
-			textSize(fontSize * .7)
-			
-			stroke(120)
-			for (var i = 0; i &lt;= 20; i++) {
-				line(100, lineBase, (i*10) + lineBase, lineBase * 2)
-				line(lineBase *2, lineBase, (i*10) + lineBase, lineBase * 2)
-			}
-			for (var i = 0; i &lt; months.months.length; i++) {
-				text(months.months[i].name, random(margin, margin+5), fontSize * (i+1))
-			}
-		}
-
-	&lt;/script&gt;</content><author><name></name></author><category term="p5js," /><category term="database" /><summary type="html"></summary></entry><entry><title type="html">languages</title><link href="http://127.0.0.1:4000/languages/" rel="alternate" type="text/html" title="languages" /><published>2020-03-24T00:00:00-04:00</published><updated>2020-03-24T00:00:00-04:00</updated><id>http://127.0.0.1:4000/languages</id><content type="html" xml:base="http://127.0.0.1:4000/languages/">&lt;script&gt;
-		var data
-			function preload(){
-			data = loadJSON('/assets/data/more/languages.json')
-		}
+&lt;/script&gt;</content><author><name></name></author><category term="p5js," /><category term="devices" /><summary type="html">In this card I write the main object (the stars) as a jekyll include. This way other cards can also use it too. function setup() { createCanvas(windowWidth, windowHeight) console.log('The faculty of 5 is 1*2*3*4*5 = ' + faculty(5)) } function faculty(theValue) { var result = 1 for (var i = 1; i &lt;= theValue; i++) { result = result * i } return result }</summary></entry><entry><title type="html">loop</title><link href="http://127.0.0.1:4000/loop/" rel="alternate" type="text/html" title="loop" /><published>2020-03-24T00:00:00-04:00</published><updated>2020-03-24T00:00:00-04:00</updated><id>http://127.0.0.1:4000/loop</id><content type="html" xml:base="http://127.0.0.1:4000/loop/">&lt;script&gt;
 function setup() {
-   noCanvas()
-  var language = data.languages
-for (var i = 0; i &lt; language.length; i++) {
-	createElement('h1', language[i].name)
-}
+  createCanvas(windowWidth, windowHeight)
 }
 
 function draw() {
-  background(100)
+  background(1,75,100)
+  fill(random(237, 207), random(34, 4), random(93, 63))
+  noStroke()
+  var diameter = 100
+  var range = 20
+
+  for (var i = 0;i &lt;= width / diameter;i = i + 1) {
+  	ellipse(i * diameter, 100, random(diameter, diameter - range), random(diameter, diameter - range))
+  }
 }
 
-&lt;/script&gt;</content><author><name></name></author><category term="p5js," /><category term="database" /><summary type="html">var data function preload(){ data = loadJSON('/assets/data/more/languages.json') } function setup() { noCanvas() var language = data.languages for (var i = 0; i &lt; language.length; i++) { createElement('h1', language[i].name) } }</summary></entry></feed>
+&lt;/script&gt;</content><author><name></name></author><category term="p5js," /><category term="basics" /><summary type="html">function setup() { createCanvas(windowWidth, windowHeight) }</summary></entry></feed>

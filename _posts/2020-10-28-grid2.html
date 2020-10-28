@@ -1,0 +1,45 @@
+---
+layout: default
+title: grid and typography
+slug: grid2
+status: public
+tags: p5js, random
+date: 2020-10-28
+permalink: /:slug/
+---
+<p>typography examples using <a href="https://github.com/nonlinear/play/blob/master/assets/articles/03.md#creative-code-toolbox">grid toolbox</a></p>
+
+<style>
+	{% include styles/card.css %}
+	canvas {
+		padding 20px;
+	}
+</style>
+<script>
+	{% include toolbox/Grid.js %}
+	function setup() {
+		createCanvas(400, 584);
+		grid1 = new Grid(2,10);
+		text1 = new Title("Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Praesentium perferendis explicabo modi fugit nostrum ex minus sit velit at impedit.");
+	}
+	function draw() {
+		background(255);
+		grid1.show();
+		grid1.stack(0,text1);
+		fill(0,0,0);
+
+	}
+	function Title(text) {
+		this.height = function() {
+			return 50;
+		}
+		this.text = text;
+		this.show = function() {
+			push();
+			textSize(40);
+			textAlign(LEFT, TOP);
+			text(this.text, 10, 10, 300);
+			pop();
+		}
+	}
+</script>

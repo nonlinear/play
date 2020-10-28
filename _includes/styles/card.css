@@ -1,0 +1,10 @@
+
+body, html {
+  height: 100%;
+  display: grid;
+}
+canvas { 
+  margin: auto;
+  box-shadow: 5px 5px 2px rgba(0,0,0,.1);
+  border-radius: 5px;
+}
