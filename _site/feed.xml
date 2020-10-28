@@ -1,21 +1,38 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://127.0.0.1:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://127.0.0.1:4000/" rel="alternate" type="text/html" /><updated>2020-10-19T21:52:59-04:00</updated><id>http://127.0.0.1:4000/feed.xml</id><title type="html">play</title><subtitle>creative code experiments</subtitle><entry><title type="html">grid</title><link href="http://127.0.0.1:4000/grid/" rel="alternate" type="text/html" title="grid" /><published>2020-10-10T00:00:00-04:00</published><updated>2020-10-10T00:00:00-04:00</updated><id>http://127.0.0.1:4000/grid</id><content type="html" xml:base="http://127.0.0.1:4000/grid/">From &lt;a href=&quot;https://glitch.com/edit/#!/playing-with-grids&quot;&gt;this glitch&lt;/a&gt;, studying with &lt;a href=&quot;https://www.twitch.tv/rodjunjun&quot;&gt;Rodrigo Junqueira&lt;/a&gt;.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://127.0.0.1:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://127.0.0.1:4000/" rel="alternate" type="text/html" /><updated>2020-10-28T16:57:02-04:00</updated><id>http://127.0.0.1:4000/feed.xml</id><title type="html">play</title><subtitle>creative code experiments</subtitle><entry><title type="html">grid</title><link href="http://127.0.0.1:4000/grid/" rel="alternate" type="text/html" title="grid" /><published>2020-10-10T00:00:00-04:00</published><updated>2020-10-10T00:00:00-04:00</updated><id>http://127.0.0.1:4000/grid</id><content type="html" xml:base="http://127.0.0.1:4000/grid/">From &lt;a href=&quot;https://glitch.com/edit/#!/playing-with-grids&quot;&gt;this glitch&lt;/a&gt;, studying with &lt;a href=&quot;https://www.twitch.tv/rodjunjun&quot;&gt;Rodrigo Junqueira&lt;/a&gt;.
 
 &lt;a href=&quot;#&quot;&gt;Reload page&lt;/a&gt; for new random content.
 &lt;script&gt;
-	function Grid(cell,gap) {
-  this.cell = cell;
+	// Grid for p5js
+// version 1.0.1
+
+function Grid(cellNumber,gap) {
+  this.cellNumber = cellNumber;
   this.gap = gap;
-  this.width = (width-((this.cell-1)*this.gap))/this.cell;
+  this.width = (width-((this.cellNumber-1)*this.gap))/this.cellNumber;
+  this.cells = [];
+  for (let i = 0; i &lt; this.cellNumber; i++) {
+    this.cells[i] = [];
+  }
   
   
   this.show = function() {
-    push();
-    for (let i = 0; i &lt; this.cell; i++) {
-      noStroke();
-      fill(255, 0, 0, 20);
-      rect(this.width*i+this.gap*i, 0, this.width, height);
+    for (let j = 0; j &lt; this.cellNumber; j++) {
+      let heightPointer = 0;      
+      for (let i = 0; i &lt; this.cells[j].length; i++) {
+        if (heightPointer + this.cells[j][i].height() &lt; height) {
+          push();
+          translate(this.cellPosition(j),heightPointer);
+          heightPointer += this.cells[j][i].height();    
+          this.cells[j][i].show();
+          pop();
+        }
+      }    
     }
-    pop();
+    
+  }
+  
+  this.stack = function(n, elem) {
+    this.cells[n].push(elem);    
   }
   
   this.cellPosition = function(n) {
@@ -23,65 +40,96 @@
   }
   
 }
-	function Element() {
+  function Element(size) {
   this.palette = [color(153,204,224), color(227,92,55), color(52,52,50)];
   this.shapes = ['straight','arc-left','arc-right'];
   this.color = this.palette[floor(random(this.palette.length))];
   this.direction;
-  this.thickness = 20;
-  
-
+ 
   this.shape = this.shapes[floor(random(this.shapes.length))];
-  this.shape = this.shapes[1];
-  this.size = 100;
+  this.size = size;
+  this.thickness = (this.size/3);
   this.background = color(255,255,255);
-  // this.width = this.size
-  // this.height = this.size*2;
-  
   
   this.show = function() {
     push();
-    noStroke();
+    noStroke(); 
     if (this.shape == 'arc-left') {
+      translate(this.size, this.size);
       fill(this.color);
-      arc(0, 0, this.size, this.size, HALF_PI, PI + HALF_PI);
+      arc(0, 0, this.size*2, this.size*2, HALF_PI, PI + HALF_PI);
       fill(this.background);
-      arc(0, 0, this.size -  (this.thickness*2), this.size -  (this.thickness*2), HALF_PI, PI + HALF_PI);
+      arc(0, 0, this.size*2 -  (this.thickness*4), this.size*2 -  (this.thickness*4), HALF_PI, PI + HALF_PI);
     } else if (this.shape == 'arc-right') {
+      translate(0, this.size);
       fill(this.color);
-      arc(0, 0, this.size, this.size, PI + HALF_PI, HALF_PI);
+      arc(0, 0, this.size*2, this.size*2, PI + HALF_PI, HALF_PI);
       fill(this.background);
-      arc(0, 0, this.size/2, this.size/2, PI + HALF_PI, HALF_PI);
+      arc(0, 0, this.size*2 - (this.thickness*4), this.size*2 - (this.thickness*4), PI + HALF_PI, HALF_PI);
     }
     else if (this.shape == 'straight') {
-      fill(this.color);
-      rect(0,0,this.size/2, this.thickness);
-      
+      fill(this.palette[2]);
+      rect(0,0,this.size, this.thickness*2);
+      rect(0,(this.size*2 - this.thickness*2),this.size, this.thickness*2);  
     }
     pop();
   }
-  
+  this.height = function() {
+    return this.size*2;
+  }
   
 }
-	
-	let grid;
-let e;
+
+  let grid1;
+let elementsQty = 10;
 
 function setup() {
-  createCanvas(350, 500);
-  grid = new Grid(8,0);
+  createCanvas(350, 600);
+  grid1 = new Grid(8,0);
   
-  e = new Element();
+  // generation
+  for (let j = 0; j &lt; grid1.cellNumber; j++) {
+    for (let i = 0; i &lt; elementsQty; i++) {
+      let newE = new Element(grid1.width);  
+      grid1.stack(j,newE);
+    }
+  }
+  
+  
+  
+  // get colwidth
+  // pass collwidth*2 as this.size
+  // heigth/this.size (arredondado para baixo) é o numero de objetos por coluna
+  
+
   
 }
 
 function draw() {
-  background(255,255,255);
-  translate(100,100);
-  e.show();
+  background(255);
+  
+  // presentation
+  grid1.show();
+  
+  // logica do stack
+  // ha um objeto ja na coluna? se nao, 0, 0
+  // se sim, 0, (sum of all previous objects height)
   
 
+//   grid1.show();
+//   fill(0);
+//   textSize(20);
+//   text('dsfsdv fgregrw fdgsgsfg dgsgsfg', grid1.cellPosition(2), 0, grid1.width);
+//   push(); 
+//   noStroke();
+//   fill(200,0,255);
+//   rect(grid1.cellPosition(0),0,grid1.width,100);
+//   pop();
 }
+
+
+
+
 
 	&lt;/script&gt;</content><author><name></name></author><category term="p5js," /><category term="random" /><summary type="html">From this glitch, studying with Rodrigo Junqueira.</summary></entry><entry><title type="html">tim1</title><link href="http://127.0.0.1:4000/tim1/" rel="alternate" type="text/html" title="tim1" /><published>2020-09-08T00:00:00-04:00</published><updated>2020-09-08T00:00:00-04:00</updated><id>http://127.0.0.1:4000/tim1</id><content type="html" xml:base="http://127.0.0.1:4000/tim1/">&lt;p&gt;A p5js port from  &lt;a href=&quot;https://timrodenbroeker.de/courses/creative-coding-essentials/processing/&quot;&gt;timrodenbroeker&lt;/a&gt;&lt;/p&gt;
 &lt;script&gt;

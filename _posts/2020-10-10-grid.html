@@ -11,65 +11,58 @@ From <a href="https://glitch.com/edit/#!/playing-with-grids">this glitch</a>, st
 
 <a href="#">Reload page</a> for new random content.
 <script>
-	{% include classes/Grid.js %}
-	function Element() {
-  this.palette = [color(153,204,224), color(227,92,55), color(52,52,50)];
-  this.shapes = ['straight','arc-left','arc-right'];
-  this.color = this.palette[floor(random(this.palette.length))];
-  this.direction;
-  this.thickness = 20;
-  
+	{% include toolbox/Grid.js %}
+  {% include Element.js %}
 
-  this.shape = this.shapes[floor(random(this.shapes.length))];
-  this.shape = this.shapes[1];
-  this.size = 100;
-  this.background = color(255,255,255);
-  // this.width = this.size
-  // this.height = this.size*2;
+  let grid1;
+let elementsQty = 10;
+
+function setup() {
+  createCanvas(350, 600);
+  grid1 = new Grid(8,0);
   
-  
-  this.show = function() {
-    push();
-    noStroke();
-    if (this.shape == 'arc-left') {
-      fill(this.color);
-      arc(0, 0, this.size, this.size, HALF_PI, PI + HALF_PI);
-      fill(this.background);
-      arc(0, 0, this.size -  (this.thickness*2), this.size -  (this.thickness*2), HALF_PI, PI + HALF_PI);
-    } else if (this.shape == 'arc-right') {
-      fill(this.color);
-      arc(0, 0, this.size, this.size, PI + HALF_PI, HALF_PI);
-      fill(this.background);
-      arc(0, 0, this.size/2, this.size/2, PI + HALF_PI, HALF_PI);
+  // generation
+  for (let j = 0; j < grid1.cellNumber; j++) {
+    for (let i = 0; i < elementsQty; i++) {
+      let newE = new Element(grid1.width);  
+      grid1.stack(j,newE);
     }
-    else if (this.shape == 'straight') {
-      fill(this.color);
-      rect(0,0,this.size/2, this.thickness);
-      
-    }
-    pop();
   }
   
   
-}
-	
-	let grid;
-let e;
-
-function setup() {
-  createCanvas(350, 500);
-  grid = new Grid(8,0);
   
-  e = new Element();
+  // get colwidth
+  // pass collwidth*2 as this.size
+  // heigth/this.size (arredondado para baixo) é o numero de objetos por coluna
+  
+
   
 }
 
 function draw() {
-  background(255,255,255);
-  translate(100,100);
-  e.show();
+  background(255);
+  
+  // presentation
+  grid1.show();
+  
+  // logica do stack
+  // ha um objeto ja na coluna? se nao, 0, 0
+  // se sim, 0, (sum of all previous objects height)
   
 
+//   grid1.show();
+//   fill(0);
+//   textSize(20);
+//   text('dsfsdv fgregrw fdgsgsfg dgsgsfg', grid1.cellPosition(2), 0, grid1.width);
+//   push(); 
+//   noStroke();
+//   fill(200,0,255);
+//   rect(grid1.cellPosition(0),0,grid1.width,100);
+//   pop();
 }
+
+
+
+
 
 	</script>
