@@ -1,15 +1,29 @@
 ---
 layout: default
-title: grid
-slug: grid
+title: grid1
+slug: grid1
 status: public
 tags: p5js, random
 date: 2020-10-10
 permalink: /:title/
 ---
-From <a href="https://glitch.com/edit/#!/playing-with-grids">this glitch</a>, studying with <a href="https://www.twitch.tv/rodjunjun">Rodrigo Junqueira</a>.
+<p>Grid toolbox, version 1.0.1, <a href="https://github.com/nonlinear/play/blob/master/assets/articles/03.md#creative-code-toolbox">check feature list</a></p>
 
-<a href="#">Reload page</a> for new random content.
+<p>From this glitch</a>, studying with <a href="https://www.twitch.tv/rodjunjun">Rodrigo Junqueira</a>.</p>
+
+<p><a href="#">Reload page</a> for new random content.</p>
+
+<style>
+body, html {
+  height: 100%;
+  display: grid;
+}
+canvas { 
+  margin: auto;
+  box-shadow: 5px 5px 2px rgba(0,0,0,.1);
+  border-radius: 5px;
+}
+  </style>
 <script>
 	{% include toolbox/Grid.js %}
   {% include Element.js %}
