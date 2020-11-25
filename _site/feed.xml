@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://127.0.0.1:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://127.0.0.1:4000/" rel="alternate" type="text/html" /><updated>2020-11-25T14:34:31-05:00</updated><id>http://127.0.0.1:4000/feed.xml</id><title type="html">play</title><subtitle>creative code experiments</subtitle><entry><title type="html">illos</title><link href="http://127.0.0.1:4000/illos/" rel="alternate" type="text/html" title="illos" /><published>2020-11-25T00:00:00-05:00</published><updated>2020-11-25T00:00:00-05:00</updated><id>http://127.0.0.1:4000/illos</id><content type="html" xml:base="http://127.0.0.1:4000/illos/">&lt;p&gt;playing with my illustrations, plus p5js&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://127.0.0.1:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://127.0.0.1:4000/" rel="alternate" type="text/html" /><updated>2020-11-25T16:50:55-05:00</updated><id>http://127.0.0.1:4000/feed.xml</id><title type="html">play</title><subtitle>creative code experiments</subtitle><entry><title type="html">illos</title><link href="http://127.0.0.1:4000/illos/" rel="alternate" type="text/html" title="illos" /><published>2020-11-25T00:00:00-05:00</published><updated>2020-11-25T00:00:00-05:00</updated><id>http://127.0.0.1:4000/illos</id><content type="html" xml:base="http://127.0.0.1:4000/illos/">&lt;p&gt;playing with my illustrations, plus p5js&lt;/p&gt;
 
 &lt;style&gt;
 	
@@ -16,20 +16,31 @@ canvas {
 	}
 &lt;/style&gt;
 &lt;script&gt;
+	let layers = [];
+	let illustration = &quot;brat&quot;;
+	let layerNum = 5;
+	let parallax = 5;
+	function preload(){
+		for (var i = 1; i &lt;= layerNum; i++) {
+			layers.push(loadImage('/assets/images/illustrations/' + illustration + '0' + i + '.png'));
+		}
+	}
 	function setup() {
 		createCanvas(500, 500);
-		background(243, 228, 176);
-	
-		brat01 = loadImage('/assets/images/illustrations/brat01.png');
-		brat02 = loadImage('/assets/images/illustrations/brat02.png');
-		brat03 = loadImage('/assets/images/illustrations/brat03.png');
-		brat04 = loadImage('/assets/images/illustrations/brat04.png');
 	}
 	function draw() {
-		image(brat01, 50, 50, 400, 400);
-		image(brat02, 50, 50, 400, 400);
-		image(brat03, 50, 50, 400, 400);
-		image(brat04, 50, 50, 400, 400);
+		background(243, 228, 176);
+
+		for (var i = 0; i &lt; layerNum; i++) {
+			let dx = map(mouseX, 0, width, -i * parallax, i * parallax);
+			let dy = map(mouseY, 0, height, -i * parallax, i * parallax);
+			image(layers[i], dx, dy, width, height);
+		}
+
+		// image 1, move parallax * 0
+		// image 2, move parallax * 1
+		//
+		
 	}
 &lt;/script&gt;</content><author><name></name></author><category term="p5js," /><category term="random" /><summary type="html">playing with my illustrations, plus p5js</summary></entry><entry><title type="html">vibration</title><link href="http://127.0.0.1:4000/vibration/" rel="alternate" type="text/html" title="vibration" /><published>2020-11-11T00:00:00-05:00</published><updated>2020-11-11T00:00:00-05:00</updated><id>http://127.0.0.1:4000/vibration</id><content type="html" xml:base="http://127.0.0.1:4000/vibration/">&lt;p&gt;from &lt;a href=&quot;https://www.instagram.com/p/CFEiaBOnjIL/&quot;&gt;this instagram&lt;/a&gt;, but I don't think it works.&lt;/p&gt;
 

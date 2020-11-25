@@ -16,19 +16,30 @@ permalink: /:slug/
 	}
 </style>
 <script>
+	let layers = [];
+	let illustration = "brat";
+	let layerNum = 5;
+	let parallax = 5;
+	function preload(){
+		for (var i = 1; i <= layerNum; i++) {
+			layers.push(loadImage('/assets/images/illustrations/' + illustration + '0' + i + '.png'));
+		}
+	}
 	function setup() {
 		createCanvas(500, 500);
-		background(243, 228, 176);
-	
-		brat01 = loadImage('/assets/images/illustrations/brat01.png');
-		brat02 = loadImage('/assets/images/illustrations/brat02.png');
-		brat03 = loadImage('/assets/images/illustrations/brat03.png');
-		brat04 = loadImage('/assets/images/illustrations/brat04.png');
 	}
 	function draw() {
-		image(brat01, 50, 50, 400, 400);
-		image(brat02, 50, 50, 400, 400);
-		image(brat03, 50, 50, 400, 400);
-		image(brat04, 50, 50, 400, 400);
+		background(243, 228, 176);
+
+		for (var i = 0; i < layerNum; i++) {
+			let dx = map(mouseX, 0, width, -i * parallax, i * parallax);
+			let dy = map(mouseY, 0, height, -i * parallax, i * parallax);
+			image(layers[i], dx, dy, width, height);
+		}
+
+		// image 1, move parallax * 0
+		// image 2, move parallax * 1
+		//
+		
 	}
 </script>
