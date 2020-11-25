@@ -1,4 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://127.0.0.1:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://127.0.0.1:4000/" rel="alternate" type="text/html" /><updated>2020-11-25T16:50:55-05:00</updated><id>http://127.0.0.1:4000/feed.xml</id><title type="html">play</title><subtitle>creative code experiments</subtitle><entry><title type="html">illos</title><link href="http://127.0.0.1:4000/illos/" rel="alternate" type="text/html" title="illos" /><published>2020-11-25T00:00:00-05:00</published><updated>2020-11-25T00:00:00-05:00</updated><id>http://127.0.0.1:4000/illos</id><content type="html" xml:base="http://127.0.0.1:4000/illos/">&lt;p&gt;playing with my illustrations, plus p5js&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://127.0.0.1:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://127.0.0.1:4000/" rel="alternate" type="text/html" /><updated>2020-11-25T16:57:13-05:00</updated><id>http://127.0.0.1:4000/feed.xml</id><title type="html">play</title><subtitle>creative code experiments</subtitle><entry><title type="html">illos</title><link href="http://127.0.0.1:4000/illos/" rel="alternate" type="text/html" title="illos" /><published>2020-11-25T00:00:00-05:00</published><updated>2020-11-25T00:00:00-05:00</updated><id>http://127.0.0.1:4000/illos</id><content type="html" xml:base="http://127.0.0.1:4000/illos/">&lt;p&gt;playing with my illustrations, plus p5js&lt;/p&gt;
+&lt;p&gt;future state:&lt;/p&gt;
+&lt;ol&gt;
+	&lt;li&gt;make 1st layer move too&lt;/li&gt;
+	&lt;li&gt;loading images&lt;/li&gt;
+	&lt;li&gt;array of other images, with diff layer # (random? on click)&lt;/li&gt;
+	&lt;li&gt;accelerometer if available, mouse if not&lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;style&gt;
 	
@@ -42,7 +49,7 @@ canvas {
 		//
 		
 	}
-&lt;/script&gt;</content><author><name></name></author><category term="p5js," /><category term="random" /><summary type="html">playing with my illustrations, plus p5js</summary></entry><entry><title type="html">vibration</title><link href="http://127.0.0.1:4000/vibration/" rel="alternate" type="text/html" title="vibration" /><published>2020-11-11T00:00:00-05:00</published><updated>2020-11-11T00:00:00-05:00</updated><id>http://127.0.0.1:4000/vibration</id><content type="html" xml:base="http://127.0.0.1:4000/vibration/">&lt;p&gt;from &lt;a href=&quot;https://www.instagram.com/p/CFEiaBOnjIL/&quot;&gt;this instagram&lt;/a&gt;, but I don't think it works.&lt;/p&gt;
+&lt;/script&gt;</content><author><name></name></author><category term="p5js," /><category term="random" /><summary type="html">playing with my illustrations, plus p5js future state: make 1st layer move too loading images array of other images, with diff layer # (random? on click) accelerometer if available, mouse if not</summary></entry><entry><title type="html">vibration</title><link href="http://127.0.0.1:4000/vibration/" rel="alternate" type="text/html" title="vibration" /><published>2020-11-11T00:00:00-05:00</published><updated>2020-11-11T00:00:00-05:00</updated><id>http://127.0.0.1:4000/vibration</id><content type="html" xml:base="http://127.0.0.1:4000/vibration/">&lt;p&gt;from &lt;a href=&quot;https://www.instagram.com/p/CFEiaBOnjIL/&quot;&gt;this instagram&lt;/a&gt;, but I don't think it works.&lt;/p&gt;
 
 &lt;script&gt;
 let R0;
