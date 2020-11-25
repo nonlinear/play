@@ -1,4 +1,72 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://127.0.0.1:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://127.0.0.1:4000/" rel="alternate" type="text/html" /><updated>2020-10-28T17:51:55-04:00</updated><id>http://127.0.0.1:4000/feed.xml</id><title type="html">play</title><subtitle>creative code experiments</subtitle><entry><title type="html">grid and typography</title><link href="http://127.0.0.1:4000/grid2/" rel="alternate" type="text/html" title="grid and typography" /><published>2020-10-28T00:00:00-04:00</published><updated>2020-10-28T00:00:00-04:00</updated><id>http://127.0.0.1:4000/grid2</id><content type="html" xml:base="http://127.0.0.1:4000/grid2/">&lt;p&gt;typography examples using &lt;a href=&quot;https://github.com/nonlinear/play/blob/master/assets/articles/03.md#creative-code-toolbox&quot;&gt;grid toolbox&lt;/a&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://127.0.0.1:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://127.0.0.1:4000/" rel="alternate" type="text/html" /><updated>2020-11-25T14:34:31-05:00</updated><id>http://127.0.0.1:4000/feed.xml</id><title type="html">play</title><subtitle>creative code experiments</subtitle><entry><title type="html">illos</title><link href="http://127.0.0.1:4000/illos/" rel="alternate" type="text/html" title="illos" /><published>2020-11-25T00:00:00-05:00</published><updated>2020-11-25T00:00:00-05:00</updated><id>http://127.0.0.1:4000/illos</id><content type="html" xml:base="http://127.0.0.1:4000/illos/">&lt;p&gt;playing with my illustrations, plus p5js&lt;/p&gt;
+
+&lt;style&gt;
+	
+body, html {
+  height: 100%;
+  display: grid;
+}
+canvas { 
+  margin: auto;
+  box-shadow: 5px 5px 2px rgba(0,0,0,.1);
+  border-radius: 5px;
+}
+	canvas {
+		padding 20px;
+	}
+&lt;/style&gt;
+&lt;script&gt;
+	function setup() {
+		createCanvas(500, 500);
+		background(243, 228, 176);
+	
+		brat01 = loadImage('/assets/images/illustrations/brat01.png');
+		brat02 = loadImage('/assets/images/illustrations/brat02.png');
+		brat03 = loadImage('/assets/images/illustrations/brat03.png');
+		brat04 = loadImage('/assets/images/illustrations/brat04.png');
+	}
+	function draw() {
+		image(brat01, 50, 50, 400, 400);
+		image(brat02, 50, 50, 400, 400);
+		image(brat03, 50, 50, 400, 400);
+		image(brat04, 50, 50, 400, 400);
+	}
+&lt;/script&gt;</content><author><name></name></author><category term="p5js," /><category term="random" /><summary type="html">playing with my illustrations, plus p5js</summary></entry><entry><title type="html">vibration</title><link href="http://127.0.0.1:4000/vibration/" rel="alternate" type="text/html" title="vibration" /><published>2020-11-11T00:00:00-05:00</published><updated>2020-11-11T00:00:00-05:00</updated><id>http://127.0.0.1:4000/vibration</id><content type="html" xml:base="http://127.0.0.1:4000/vibration/">&lt;p&gt;from &lt;a href=&quot;https://www.instagram.com/p/CFEiaBOnjIL/&quot;&gt;this instagram&lt;/a&gt;, but I don't think it works.&lt;/p&gt;
+
+&lt;script&gt;
+let R0;
+
+function setup() {
+  createCanvas(1000, 1000);
+}
+
+function draw() {
+  background(0);
+  R0 = 0.26 * width;
+  if (R0 &lt;= 0)
+    noLoop();
+  translate(width/2, width/2);
+  let inc = .005;
+  noStroke();
+  
+for (let i=0; R0 &gt; 20; i++) {
+	R0 -= 10;
+	fill(255 * (i % 2));
+	beginShape();
+	for (let a = 0; a &lt;= TWO_PI; a += inc) {
+		let r - min(1 / abs(sin(a)), 1 / abs(cos(a)));
+		let f = 2;
+		let R = R0 + noise((1 + sin(a)) * f, (1 + cos(a)) * f) * R0;
+		let x = R * r * sin(a);
+		let y = R * r * cos(a);
+		vertex(x, y);
+	}
+	endShape(CLOSE);
+	
+}
+}
+&lt;/script&gt;</content><author><name></name></author><category term="p5js," /><category term="random," /><category term="fail" /><summary type="html">from this instagram, but I don't think it works.</summary></entry><entry><title type="html">grid and typography</title><link href="http://127.0.0.1:4000/grid2/" rel="alternate" type="text/html" title="grid and typography" /><published>2020-10-28T00:00:00-04:00</published><updated>2020-10-28T00:00:00-04:00</updated><id>http://127.0.0.1:4000/grid2</id><content type="html" xml:base="http://127.0.0.1:4000/grid2/">&lt;p&gt;typography examples using &lt;a href=&quot;https://github.com/nonlinear/play/blob/master/assets/articles/03.md#creative-code-toolbox&quot;&gt;grid toolbox&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;from &lt;a href=&quot;https://glitch.com/edit/#!/tipografia-e-grid?path=index.html%3A46%3A0&quot;&gt;THIS GLITCH&lt;/a&gt;&lt;/p&gt;
 
 &lt;style&gt;
 	
@@ -79,7 +147,7 @@ function Grid(cellNumber,gap) {
 			pop();
 		}
 	}
-&lt;/script&gt;</content><author><name></name></author><category term="p5js," /><category term="random" /><summary type="html">typography examples using grid toolbox</summary></entry><entry><title type="html">grid1</title><link href="http://127.0.0.1:4000/grid1/" rel="alternate" type="text/html" title="grid1" /><published>2020-10-10T00:00:00-04:00</published><updated>2020-10-10T00:00:00-04:00</updated><id>http://127.0.0.1:4000/grid1</id><content type="html" xml:base="http://127.0.0.1:4000/grid1/">&lt;p&gt;Grid toolbox, version 1.0.1, &lt;a href=&quot;https://github.com/nonlinear/play/blob/master/assets/articles/03.md#creative-code-toolbox&quot;&gt;check feature list&lt;/a&gt;&lt;/p&gt;
+&lt;/script&gt;</content><author><name></name></author><category term="p5js," /><category term="random" /><summary type="html">typography examples using grid toolbox from THIS GLITCH</summary></entry><entry><title type="html">grid1</title><link href="http://127.0.0.1:4000/grid1/" rel="alternate" type="text/html" title="grid1" /><published>2020-10-10T00:00:00-04:00</published><updated>2020-10-10T00:00:00-04:00</updated><id>http://127.0.0.1:4000/grid1</id><content type="html" xml:base="http://127.0.0.1:4000/grid1/">&lt;p&gt;Grid toolbox, version 1.0.1, &lt;a href=&quot;https://github.com/nonlinear/play/blob/master/assets/articles/03.md#creative-code-toolbox&quot;&gt;check feature list&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;From this glitch&lt;/a&gt;, studying with &lt;a href=&quot;https://www.twitch.tv/rodjunjun&quot;&gt;Rodrigo Junqueira&lt;/a&gt;.&lt;/p&gt;
 
@@ -411,66 +479,4 @@ i had to use relative path so it works both locally (root) and online (folder pl
 			}
 		}
 	}
-&lt;/script&gt;</content><author><name></name></author><category term="p5js," /><category term="basics" /><summary type="html">function setup() { createCanvas(windowWidth, windowHeight); } function draw() { background(1, 75, 100); // circle properties fill(237, 34, 93); noStroke(); var diameter = 40;</summary></entry><entry><title type="html">stars</title><link href="http://127.0.0.1:4000/stars/" rel="alternate" type="text/html" title="stars" /><published>2020-03-24T00:00:00-04:00</published><updated>2020-03-24T00:00:00-04:00</updated><id>http://127.0.0.1:4000/stars</id><content type="html" xml:base="http://127.0.0.1:4000/stars/">In this card I write the main object (the stars) as a &lt;a href=&quot;https://github.com/nonlinear/play/blob/master/_includes/stars.html&quot;&gt;jekyll include&lt;/a&gt;. This way other cards can also use it too.
-&lt;script&gt;
-	function star(left, top, size, range) {
-			push()
-			stroke(random(0, 100))
-			strokeWeight(2)
-			translate(random(left, left + range), random(top, top + range))
-			line(0, size * -1, 0, size)
-			rotate(45)
-			line(0, size * -1, 0, size)
-			rotate(45)
-			line(0, size * -1, 0, size)
-			pop()
-		}
-&lt;/script&gt;
-&lt;script&gt;
-	function setup() {
-		createCanvas(windowWidth, windowHeight)
-		console.log('The faculty of 5 is 1*2*3*4*5 = ' + faculty(5))
-	}
-	function faculty(theValue) {
-		var result = 1
-		for (var i = 1; i &lt;= theValue; i++) {
-			result = result * i
-		}
-		return result
-	}
-
-	function draw() {
-		background(125)
-		ellipse(50, 50, 50, 50)
-		push()
-		star(30, 20, 10, 3)
-		star(50, 40, 15, 3)
-		star(40, 70, 12, 3)
-		translate(100, 60)
-		star(30, 20, 10, 3)
-		star(50, 40, 8, 3)
-		star(40, 70, 7, 3)
-		translate(20, -60)
-		star(30, 20, 15, 3)
-		star(50, 40, 10, 3)
-		star(40, 70, 12, 3)
-		pop()
-	}
-&lt;/script&gt;</content><author><name></name></author><category term="p5js," /><category term="devices" /><summary type="html">In this card I write the main object (the stars) as a jekyll include. This way other cards can also use it too. function setup() { createCanvas(windowWidth, windowHeight) console.log('The faculty of 5 is 1*2*3*4*5 = ' + faculty(5)) } function faculty(theValue) { var result = 1 for (var i = 1; i &lt;= theValue; i++) { result = result * i } return result }</summary></entry><entry><title type="html">loop</title><link href="http://127.0.0.1:4000/loop/" rel="alternate" type="text/html" title="loop" /><published>2020-03-24T00:00:00-04:00</published><updated>2020-03-24T00:00:00-04:00</updated><id>http://127.0.0.1:4000/loop</id><content type="html" xml:base="http://127.0.0.1:4000/loop/">&lt;script&gt;
-function setup() {
-  createCanvas(windowWidth, windowHeight)
-}
-
-function draw() {
-  background(1,75,100)
-  fill(random(237, 207), random(34, 4), random(93, 63))
-  noStroke()
-  var diameter = 100
-  var range = 20
-
-  for (var i = 0;i &lt;= width / diameter;i = i + 1) {
-  	ellipse(i * diameter, 100, random(diameter, diameter - range), random(diameter, diameter - range))
-  }
-}
-
-&lt;/script&gt;</content><author><name></name></author><category term="p5js," /><category term="basics" /><summary type="html">function setup() { createCanvas(windowWidth, windowHeight) }</summary></entry></feed>
+&lt;/script&gt;</content><author><name></name></author><category term="p5js," /><category term="basics" /><summary type="html">function setup() { createCanvas(windowWidth, windowHeight); } function draw() { background(1, 75, 100); // circle properties fill(237, 34, 93); noStroke(); var diameter = 40;</summary></entry></feed>
