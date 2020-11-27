@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://127.0.0.1:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://127.0.0.1:4000/" rel="alternate" type="text/html" /><updated>2020-11-25T17:19:20-05:00</updated><id>http://127.0.0.1:4000/feed.xml</id><title type="html">play</title><subtitle>creative code experiments</subtitle><entry><title type="html">illos</title><link href="http://127.0.0.1:4000/illos/" rel="alternate" type="text/html" title="illos" /><published>2020-11-25T00:00:00-05:00</published><updated>2020-11-25T00:00:00-05:00</updated><id>http://127.0.0.1:4000/illos</id><content type="html" xml:base="http://127.0.0.1:4000/illos/">&lt;p&gt;playing with my illustrations, plus p5js&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://127.0.0.1:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://127.0.0.1:4000/" rel="alternate" type="text/html" /><updated>2020-11-27T15:02:18-05:00</updated><id>http://127.0.0.1:4000/feed.xml</id><title type="html">play</title><subtitle>creative code experiments</subtitle><entry><title type="html">illos</title><link href="http://127.0.0.1:4000/illos/" rel="alternate" type="text/html" title="illos" /><published>2020-11-25T00:00:00-05:00</published><updated>2020-11-25T00:00:00-05:00</updated><id>http://127.0.0.1:4000/illos</id><content type="html" xml:base="http://127.0.0.1:4000/illos/">&lt;p&gt;playing with my illustrations, plus p5js&lt;/p&gt;
 &lt;p&gt;future state:&lt;/p&gt;
 &lt;ol&gt;
 	&lt;li&gt;make 1st layer move too&lt;/li&gt;
@@ -166,7 +166,60 @@ function Grid(cellNumber,gap) {
 			pop();
 		}
 	}
-&lt;/script&gt;</content><author><name></name></author><category term="p5js," /><category term="random" /><summary type="html">typography examples using grid toolbox from THIS GLITCH</summary></entry><entry><title type="html">grid1</title><link href="http://127.0.0.1:4000/grid1/" rel="alternate" type="text/html" title="grid1" /><published>2020-10-10T00:00:00-04:00</published><updated>2020-10-10T00:00:00-04:00</updated><id>http://127.0.0.1:4000/grid1</id><content type="html" xml:base="http://127.0.0.1:4000/grid1/">&lt;p&gt;Grid toolbox, version 1.0.1, &lt;a href=&quot;https://github.com/nonlinear/play/blob/master/assets/articles/03.md#creative-code-toolbox&quot;&gt;check feature list&lt;/a&gt;&lt;/p&gt;
+&lt;/script&gt;</content><author><name></name></author><category term="p5js," /><category term="random" /><summary type="html">typography examples using grid toolbox from THIS GLITCH</summary></entry><entry><title type="html">html experiments</title><link href="http://127.0.0.1:4000/html/" rel="alternate" type="text/html" title="html experiments" /><published>2020-10-28T00:00:00-04:00</published><updated>2020-10-28T00:00:00-04:00</updated><id>http://127.0.0.1:4000/html</id><content type="html" xml:base="http://127.0.0.1:4000/html/">coisas a fazer
+- illo com giroscopia
+- random svg from folder
+- limpar css (outro default:)
+- criar layouts com grid
+&lt;style&gt;
+	.resize {
+		color: red;
+	}
+&lt;/style&gt;
+&lt;p class=&quot;resize&quot;&gt;Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Quasi, facilis?&lt;/p&gt;
+&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td class=&quot;resize&quot;&gt;
+			&lt;svg width=&quot;16&quot; height=&quot;16&quot; viewBox=&quot;0 0 16 16&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+&lt;path d=&quot;M6.38462 0.5V5.88462H1V9.11538H6.38462V14.5H9.61538V9.11538H15V5.88462H9.61538V0.5H6.38462Z&quot; fill=&quot;#1C1D1E&quot;/&gt;
+&lt;/svg&gt;
+
+		Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Delectus, iure?&lt;/td&gt;
+		&lt;td&gt;Non ipsa iusto aliquid maiores, fugit in, aperiam tempore rerum.&lt;/td&gt;
+		&lt;td&gt;Exercitationem aliquam sit libero repellat sapiente mollitia aliquid quos soluta?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Molestiae, facere.&lt;/td&gt;
+		&lt;td id=&quot;thecanvas&quot;&gt;&lt;/td&gt;
+		&lt;td class=&quot;resize&quot;&gt;Quos ad exercitationem quia sint labore modi adipisci similique repellendus.&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur, eum.&lt;/td&gt;
+		&lt;td&gt;Eaque commodi perferendis deleniti suscipit sapiente expedita nemo quam dicta?&lt;/td&gt;
+		&lt;td class=&quot;resize&quot;&gt;Tempore dolorem recusandae voluptate magni dolores odio in nemo amet.&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+
+
+&lt;script&gt;
+	let resize;
+function setup() {
+	var myCanvas = createCanvas(200, 200);
+	myCanvas.parent(&quot;thecanvas&quot;);
+
+
+resize = selectAll('.resize');
+}
+
+function draw() {
+	// counter, test condition, update counter, code
+	for (var i = 0; i &lt; resize.length; i++) {
+		 resize[i].style('color','blue');
+	}
+
+
+}
+&lt;/script&gt;</content><author><name></name></author><category term="p5js," /><category term="random" /><summary type="html">coisas a fazer - illo com giroscopia - random svg from folder - limpar css (outro default:) - criar layouts com grid Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Quasi, facilis? Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Delectus, iure? Non ipsa iusto aliquid maiores, fugit in, aperiam tempore rerum. Exercitationem aliquam sit libero repellat sapiente mollitia aliquid quos soluta? Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Molestiae, facere. Quos ad exercitationem quia sint labore modi adipisci similique repellendus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur, eum. Eaque commodi perferendis deleniti suscipit sapiente expedita nemo quam dicta? Tempore dolorem recusandae voluptate magni dolores odio in nemo amet.</summary></entry><entry><title type="html">grid1</title><link href="http://127.0.0.1:4000/grid1/" rel="alternate" type="text/html" title="grid1" /><published>2020-10-10T00:00:00-04:00</published><updated>2020-10-10T00:00:00-04:00</updated><id>http://127.0.0.1:4000/grid1</id><content type="html" xml:base="http://127.0.0.1:4000/grid1/">&lt;p&gt;Grid toolbox, version 1.0.1, &lt;a href=&quot;https://github.com/nonlinear/play/blob/master/assets/articles/03.md#creative-code-toolbox&quot;&gt;check feature list&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;From this glitch&lt;/a&gt;, studying with &lt;a href=&quot;https://www.twitch.tv/rodjunjun&quot;&gt;Rodrigo Junqueira&lt;/a&gt;.&lt;/p&gt;
 
@@ -477,25 +530,4 @@ i had to use relative path so it works both locally (root) and online (folder pl
 		textSize(40);
 		text('🤖', width - 45, 40);
 	}
-&lt;/script&gt;</content><author><name></name></author><category term="p5js," /><category term="ml5js" /><summary type="html">webcam image classification. let mobilenet; let video; let label = '';</summary></entry><entry><title type="html">loops</title><link href="http://127.0.0.1:4000/loops/" rel="alternate" type="text/html" title="loops" /><published>2020-08-11T00:00:00-04:00</published><updated>2020-08-11T00:00:00-04:00</updated><id>http://127.0.0.1:4000/loops</id><content type="html" xml:base="http://127.0.0.1:4000/loops/">&lt;script&gt;
-	function setup() {
-		createCanvas(windowWidth, windowHeight);
-	}
-	function draw() {
-		background(1, 75, 100);
-		// circle properties
-		fill(237, 34, 93);
-		noStroke();
-		var diameter = 40;
-
-		// circle 
-	
-		for (var i = 0; i &lt; width / diameter; i = i+1) {
-			for (var j = 0; j &lt; height / diameter; j=j+1) {
-							ellipse(i * diameter + diameter / 2,
-							j * diameter + diameter / 2, diameter, diameter);
-
-			}
-		}
-	}
-&lt;/script&gt;</content><author><name></name></author><category term="p5js," /><category term="basics" /><summary type="html">function setup() { createCanvas(windowWidth, windowHeight); } function draw() { background(1, 75, 100); // circle properties fill(237, 34, 93); noStroke(); var diameter = 40;</summary></entry></feed>
+&lt;/script&gt;</content><author><name></name></author><category term="p5js," /><category term="ml5js" /><summary type="html">webcam image classification. let mobilenet; let video; let label = '';</summary></entry></feed>

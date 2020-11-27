@@ -1,0 +1,60 @@
+---
+layout: default
+title: html experiments
+slug: html
+status: public
+tags: p5js, random
+date: 2020-10-28
+permalink: /:slug/
+---
+coisas a fazer
+- illo com giroscopia
+- random svg from folder
+- limpar css (outro default:)
+- criar layouts com grid
+<style>
+	.resize {
+		color: red;
+	}
+</style>
+<p class="resize">Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Quasi, facilis?</p>
+<table>
+	<tr>
+		<td class="resize">
+			{% include  icons/add.svg %}
+		Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Delectus, iure?</td>
+		<td>Non ipsa iusto aliquid maiores, fugit in, aperiam tempore rerum.</td>
+		<td>Exercitationem aliquam sit libero repellat sapiente mollitia aliquid quos soluta?</td>
+	</tr>
+	<tr>
+		<td>Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Molestiae, facere.</td>
+		<td id="thecanvas"></td>
+		<td class="resize">Quos ad exercitationem quia sint labore modi adipisci similique repellendus.</td>
+	</tr>
+	<tr>
+		<td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur, eum.</td>
+		<td>Eaque commodi perferendis deleniti suscipit sapiente expedita nemo quam dicta?</td>
+		<td class="resize">Tempore dolorem recusandae voluptate magni dolores odio in nemo amet.</td>
+	</tr>
+</table>
+
+
+<script>
+	let resize;
+function setup() {
+	var myCanvas = createCanvas(200, 200);
+	myCanvas.parent("thecanvas");
+
+
+resize = selectAll('.resize');
+}
+
+function draw() {
+	// counter, test condition, update counter, code
+	for (var i = 0; i < resize.length; i++) {
+		 resize[i].style('color','blue');
+	}
+
+
+}
+</script>
