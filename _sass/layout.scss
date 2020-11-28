@@ -22,17 +22,8 @@
 // prevent elastic scroll
 
 
-html {
-	height  : 100%;
-	overflow: hidden;
-	position: relative;
-}
+
 body {
-	height  : 100%;
-	overflow: auto;
-	position: relative;
-	overflow: hidden;
-    // prevent elastic scroll
     font-family: Space Grotesk;
     background-color: #ccc;
     @include transition;
