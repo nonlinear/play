@@ -1,0 +1,19 @@
+---
+layout: blog
+title: Coding for visual learners
+slug: lynda-p5
+categories: study
+status: public
+description: lynda p5 tutorial
+date: 2020-01-29 18:03:16 -0500
+permalink: /:categories/:slug/
+---
+
+- [Coding for Visual Learners: Learning JavaScript from Scratch](https://www.lynda.com/JavaScript-tutorials/Coding-Visual-Learners-Learning-JavaScript-from-Scratch/782143-2.html)
+
+- it's more an ideal framerate.
+- `framerate(rate)` (default is 60)
+- `noLoop()` (on setup)
+- **frameRate** is the number of times the draw function is executed in a second. If the **frameRate** for a program were to be 60, the **frameCount** after three seconds would be 180 (60 x 3).
+- `text(value, x, y)`
+

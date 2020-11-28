@@ -1,0 +1,46 @@
+- Os gregos antigos estavam mais pra candomblé do que pra cristianismo.
+- O Império romano não caiu.
+- Nao há palácio opulento sem aldeia explorada.
+- O Brasil não foi descoberto.
+- Feudalismo não significa estagnação.
+- A Grécia era periferia do imperio persa.
+- A Europa era periferia da periferia no sistema-mundo até o sec xviii.
+- O tráfico negreiro bancou o capitalismo industrial.
+- O exército indiano montou o imperio britanico.
+- Os soldados soviéticos, e não o frio, venceram a segunda guerra.
+- As estatuas gregas eram pintadas, e tudo bem.
+- Não existe progresso.
+- A servidão era uma entre dezenas de formas de exploração do trabalho medieval.
+- Estado não é a única forma de ordem.
+- Nacionalismo é uma ilusão genocida.
+- Bandeirantismo é genocídio.
+- Os estados unidos nunca foram liberais.
+- História econômica é importante.
+- A teoria do populismo é estúpida e serve para apagar a democracia realmente existente.
+- O ensino por projetos traz dignidade no outono da escola como forma dominante de educação.
+- Não existe religião antes do século xviii.
+- O Capital não é um livro de economia.
+- Assumir publicamente a parcialidade é antídoto para a desonestidade intelectual.
+- Nem existem universais, nem tudo é relativo: ninguem escapa das perspectivas.
+- A teoria do design inteligente prova que o designer era um desenhista bem marromeno.
+- "Milênio islâmico" é melhor que "Idade Média".
+- Mitologia é verdade pra quem acredita, portanto deus(es) existe(m).
+- Nada mais medieval que um "renascimento".
+- Os monumentos à barbárie não devem ser destruídos, mas revitalizados: com placa, spray ou martelo.
+- Não há nova museologia sem gestão democrática do museu.
+- Não há imperio sem elite local colaboracionista.
+- A dicotomia "bens materiais/imateriais" oculta a luta de classes no patrimonio; a dialetica "cultura/barbarie" escancara.
+- Documento histórico não é sinônimo de textos oficiais.
+- Didática da História não se limita à historia escolar.
+- Estruturalismo não se reduz a Lacan e Levi-Strauss.
+- O autor morreu, mas está la.
+- Nunca fomos "ocidentais" (modernos, talvez), e aceitar isso é libertador.
+- Antisemitismo é tão francês quanto alemão.
+- Aula expositiva mais atrapalha que ajuda.
+- A norma culta é uma variação entre tantas da língua portuguesa.
+- Memória é tanto descarte quanto armazenamento.
+- Nem prezi salva aula ruim.
+- O passado não ensina e o futuro não redime.
+- A Historia Global, mais do que a teoria da história, será o espaço de diálogo dos historiadores todos.
+- Autocrítica é mais importante que certeza para uma ciência.
+- Foi golpe.

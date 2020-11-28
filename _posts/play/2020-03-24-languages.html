@@ -1,0 +1,27 @@
+---
+layout: play
+title: languages
+slug: languages
+status: public
+tags: p5js, database
+date: 2020-03-24
+permalink: /:slug/
+---
+	<script>
+		var data
+			function preload(){
+			data = loadJSON('/assets/data/more/languages.json')
+		}
+function setup() {
+   noCanvas()
+  var language = data.languages
+for (var i = 0; i < language.length; i++) {
+	createElement('h1', language[i].name)
+}
+}
+
+function draw() {
+  background(100)
+}
+
+</script>

@@ -1,0 +1,56 @@
+	{% if page.categories contains "project" %}
+
+	{% for post in site.posts %}
+	{% if post.categories contains "project" and post.status contains "public" %}
+	<a href="{{ post.url }}"><span class="title">{{ post.title }}</span></a>
+	{% endif %}
+	{% endfor %}
+	{% endif %}
+
+	{% if page.categories contains "study" %}
+	{% for post in site.posts %}
+	{% if post.categories contains "study" and post.status contains "public" %}
+	<a href="{{ post.url }}"><span class="title">{{ post.title }}</span></a>
+	{% endif %}
+	{% endfor %}
+	{% endif %}
+
+	{% if page.categories contains "note" %}
+	{% for post in site.posts %}
+	{% if post.categories contains "note" and post.status contains "public" %}
+	<a href="{{ post.url }}"><span class="title">{{ post.title }}</span></a>
+	{% endif %}
+	{% endfor %}
+	{% endif %}
+
+		{% if page.categories contains "rings" %}
+	{% for post in site.posts %}
+	{% if post.categories contains "rings" and post.status contains "public" %}
+	<a href="{{ post.url }}"><span class="title">{{ post.title }}</span></a>
+	{% endif %}
+	{% endfor %}
+	{% endif %}
+
+		{% if page.categories contains "books" %}
+	{% for post in site.posts %}
+	{% if post.categories contains "books" and post.status contains "public" %}
+	<a href="{{ post.url }}"><span class="title">{{ post.title }}</span></a>
+	{% endif %}
+	{% endfor %}
+	{% endif %}
+
+			{% if page.categories contains "illustrations" %}
+	{% for post in site.posts %}
+	{% if post.categories contains "illustrations" and post.status contains "public" %}
+	<a href="{{ post.url }}"><span class="title">{{ post.title }}</span></a>
+	{% endif %}
+	{% endfor %}
+	{% endif %}
+
+	{% if page.categories contains "play" %}
+	{% for post in site.posts %}
+	{% if post.categories contains "play" and post.status contains "public" %}
+	<a href="{{ post.url }}"><span class="title">{{ post.title }}</span></a>
+	{% endif %}
+	{% endfor %}
+	{% endif %}

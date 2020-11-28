@@ -1,0 +1,76 @@
+  <script src="{{'/assets/vendor/jquery.min.js' | prepend: site.baseurl}}"></script>
+  <script src="{{'/assets/vendor/popper.min.js' | prepend: site.baseurl}}"></script>
+  <script src="{{'/assets/vendor/bootstrap.min.js' | prepend: site.baseurl}}"></script>
+  <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    });
+    $('[data-toggle="popover"]').popover({ trigger: "manual" , html: true, animation:false, content: ''})
+    .on("mouseenter", function () {
+      var _this = this;
+      $(this).popover("show");
+      $(".popover").on("mouseleave", function () {
+        $(_this).popover('hide');
+      });
+    }).on("mouseleave", function () {
+      var _this = this;
+      setTimeout(function () {
+        if (!$(".popover:hover").length) {
+          $(_this).popover("hide");
+        }
+      }, 300);
+    });
+  </script>
+  <script>
+    $("a[href*=project]").hover(
+      function () {
+        $("body").addClass("project");
+      },
+      function () {
+        $("body").removeClass("project");
+      }
+      );
+    $("a[href*=study]").hover(
+      function () {
+        $("body").addClass("study");
+      },
+      function () {
+        $("body").removeClass("study");
+      }
+      );
+    $("a[href*=note]").hover(
+      function () {
+        $("body").addClass("note");
+      },
+      function () {
+        $("body").removeClass("note");
+      }
+      );
+    $("a[href*=processing]").hover(
+      function () {
+        $("body").addClass("processing");
+      },
+      function () {
+        $("body").removeClass("processing");
+      }
+      );
+    $("a[href*=nonlinear]").hover(
+      function () {
+        $("body").addClass("home");
+      },
+      function () {
+        $("body").removeClass("home");
+      }
+      );
+    $('a').filter(function() {
+     return this.hostname && this.hostname !== location.hostname;
+   }).addClass("external");
+    $("a.external").hover(
+      function () {
+        $("body").addClass("external");
+      },
+      function () {
+        $("body").removeClass("external");
+      }
+      );
+    </script>
