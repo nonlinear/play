@@ -29,7 +29,7 @@ layout: play
 
 {% if page.path contains '_posts' %}
     {% for tag in page.tags %}
-     {% if tag contains "other" %}
+     {% if tag contains "no-zoom" %}
      <script>
   document.addEventListener('gesturestart', function (e) {
     e.preventDefault();
