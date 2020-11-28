@@ -3,19 +3,22 @@ layout: blog
 ---
 <html>
 {% include head.html %}
-<body class="{%- if page.categories -%}{{ page.categories }}{%- endif -%}" id="{%- if page.status -%}{{ page.status }}{%- endif -%}">
-	{% include bgs.html %}
-	<div class="container">
+<body id="{{page.layout}}" class="
+ {%- if page.categories -%}
+{{page.categories}}
+{%- endif -%}">
+{% include bgs.html %}
+<div class="container">
 
-		<header class="header wow">
-			{% if page.path contains '_posts' %}
-			<h5><a href="{{ site.url }}">{{ site.title }}</a>/<a data-toggle="popover" title="more {{ page.categories }}" data-html="true" data-content='
-		{% include categories.html %}
+	<header class="header wow">
+		{% if page.path contains '_posts' %}
+		<h5><a href="{{ site.url }}">{{ site.title }}</a>/<a data-toggle="popover" title="more {{ page.categories }}" data-html="true" data-content='
+			{% include categories.html %}
 			' data-placement="bottom">{{ page.categories }}</a>/</h5>
 			<h1>{{ page.title }}</h1>
 			
-				{% if page.categories contains 'rings' %}
-<h5>from <a href="{{ page.source }}">{{ page.source }}</a></h5>
+			{% if page.categories contains 'rings' %}
+			<h5>from <a href="{{ page.source }}">{{ page.source }}</a></h5>
 			{% else %}
 			<h5>{{ page.description }}</h5>
 			{% endif %}
