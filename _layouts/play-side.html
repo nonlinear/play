@@ -1,10 +1,28 @@
 ---
-layout: play
+layout: play-side
 ---
 <html>
 {% include head.html %}
 <body class="{%- if page.categories -%}{{ page.categories }}{%- endif -%}" id="{%- if page.status -%}{{ page.status }}{%- endif -%}">
-		{{ content }}
+		<div class="menu">
+			<div class="scroll">
+{% if page.path contains '_posts' %}
+<header>
+				<h2 class="title">{{ page.title }}</h2>
+   <p>{% for tag in page.tags %}
+ {{ tag }}
+         {% endfor %}</p>
+	    <p><a href="https://github.com/nonlinear/play/blob/master/{{page.path}}" target="_blank">
+    view github code</a></p>
+{% else %}
+			<h1 class="title">{{site.title}}</h1>
+		
+			{% endif %}
+			<hr>
+	</header>
+			{{ content }}
+			</div>
+</div>
 
 
 
