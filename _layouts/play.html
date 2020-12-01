@@ -50,6 +50,16 @@ body {
     {% if tag contains "jquery" %}
    <script src="{{'/assets/vendor/jquery.min.js' | prepend: site.baseurl}}"></script>
 {% endif %}
+    {% if tag contains "smooth-scroll" %}
+ <script type="text/javascript">
+   $('a').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top
+    }, 500);
+    return false;
+});
+ </script>
+{% endif %}
     {% if tag contains "bootstrap" %}
      	<script src="{{'/assets/vendor/popper.min.js' | prepend: site.baseurl}}"></script>
 	<script src="{{'/assets/vendor/bootstrap.min.js' | prepend: site.baseurl}}"></script>

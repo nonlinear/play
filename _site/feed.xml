@@ -1,4 +1,125 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://127.0.0.1:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://127.0.0.1:4000/" rel="alternate" type="text/html" /><updated>2020-11-28T21:00:58-05:00</updated><id>http://127.0.0.1:4000/feed.xml</id><title type="html">nonlinear</title><subtitle>The anagram of my name is anarchist fool</subtitle><entry><title type="html">illos</title><link href="http://127.0.0.1:4000/illos/" rel="alternate" type="text/html" title="illos" /><published>2020-11-25T00:00:00-05:00</published><updated>2020-11-25T00:00:00-05:00</updated><id>http://127.0.0.1:4000/illos</id><content type="html" xml:base="http://127.0.0.1:4000/illos/">&lt;p&gt;playing with my illustrations, plus p5js&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://127.0.0.1:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://127.0.0.1:4000/" rel="alternate" type="text/html" /><updated>2020-12-01T18:38:51-05:00</updated><id>http://127.0.0.1:4000/feed.xml</id><title type="html">nonlinear</title><subtitle>The anagram of my name is anarchist fool</subtitle><entry><title type="html">event</title><link href="http://127.0.0.1:4000/event/" rel="alternate" type="text/html" title="event" /><published>2020-12-01T00:00:00-05:00</published><updated>2020-12-01T00:00:00-05:00</updated><id>http://127.0.0.1:4000/event</id><content type="html" xml:base="http://127.0.0.1:4000/event/">&lt;style&gt;
+.events {
+  display: flex;
+  overflow: auto;
+  flex: none;
+  width: 100vw;
+  height: 100vh;
+  flex-flow: column nowrap;
+  scroll-snap-type: y mandatory;
+}
+
+.event {
+  scroll-snap-align: center;
+    text-align: center;
+  flex: none;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  text-align: center;
+}
+
+
+.card {
+	height: 100%;
+	width: 500px;
+margin: 0 auto;
+	background-color: white;
+	border-radius: 10px;
+    text-align: center;
+
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.1);
+}
+	@media screen and (max-width: 500px) {
+.card {
+	width: 100%;
+}
+}
+
+/*.event:nth-of-type(odd) .card {
+	    transform: rotate(1deg);
+}
+.event:nth-of-type(even) .card {
+	    transform: rotate(-1deg);
+}*/
+
+.card a {
+	display: inline;
+	font-size: 80px;
+	margin-top: 50px;
+}
+
+
+
+&lt;/style&gt;
+&lt;div class=&quot;events&quot;&gt;
+
+&lt;div class=&quot;event&quot; id=&quot;1&quot;&gt;
+&lt;div class=&quot;card&quot;&gt;
+		&lt;a href=&quot;#2&quot;&gt;event 1&lt;/a&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;event&quot; id=&quot;2&quot;&gt;
+&lt;div class=&quot;card&quot;&gt;
+		&lt;a href=&quot;#3&quot;&gt;event 2&lt;/a&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;event&quot; id=&quot;3&quot;&gt;
+&lt;div class=&quot;card&quot;&gt;
+		&lt;a href=&quot;#4&quot;&gt;event 3&lt;/a&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;event&quot; id=&quot;4&quot;&gt;
+&lt;div class=&quot;card&quot;&gt;
+		&lt;a href=&quot;#5&quot;&gt;event 4&lt;/a&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;event&quot; id=&quot;5&quot;&gt;
+&lt;div class=&quot;card&quot;&gt;
+		&lt;a href=&quot;#6&quot;&gt;event 5&lt;/a&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;event&quot; id=&quot;6&quot;&gt;
+&lt;div class=&quot;card&quot;&gt;
+		&lt;a href=&quot;#7&quot;&gt;event 6&lt;/a&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;event&quot; id=&quot;7&quot;&gt;
+&lt;div class=&quot;card&quot;&gt;
+		&lt;a href=&quot;#8&quot;&gt;event 7&lt;/a&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;event&quot; id=&quot;8&quot;&gt;
+&lt;div class=&quot;card&quot;&gt;
+		&lt;a href=&quot;#9&quot;&gt;event 8&lt;/a&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;event&quot; id=&quot;9&quot;&gt;
+&lt;div class=&quot;card&quot;&gt;
+		&lt;a href=&quot;#1&quot;&gt;event 9&lt;/a&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+	let resize;
+function setup() {
+	var myCanvas = createCanvas(200, 200);
+	myCanvas.parent(&quot;thecanvas&quot;);
+
+
+resize = selectAll('.resize');
+}
+
+function draw() {
+	// counter, test condition, update counter, code
+	for (var i = 0; i &lt; resize.length; i++) {
+		 resize[i].style('color','blue');
+	}
+
+
+}
+&lt;/script&gt;</content><author><name></name></author><category term="p5js," /><category term="smooth-scroll" /><summary type="html">.events { display: flex; overflow: auto; flex: none; width: 100vw; height: 100vh; flex-flow: column nowrap; scroll-snap-type: y mandatory; }</summary></entry><entry><title type="html">illos</title><link href="http://127.0.0.1:4000/illos/" rel="alternate" type="text/html" title="illos" /><published>2020-11-25T00:00:00-05:00</published><updated>2020-11-25T00:00:00-05:00</updated><id>http://127.0.0.1:4000/illos</id><content type="html" xml:base="http://127.0.0.1:4000/illos/">&lt;p&gt;playing with my illustrations, plus p5js&lt;/p&gt;
 &lt;p&gt;future state:&lt;/p&gt;
 &lt;ol&gt;
 	&lt;li&gt;make 1st layer move too&lt;/li&gt;
@@ -1065,37 +1186,4 @@ function draw() {
 	noStroke();
 	ellipse(mouseX, mouseY, circle, circle);
 }
-&lt;/script&gt;</content><author><name></name></author><category term="no-scroll," /><category term="no-zoom," /><category term="p5js," /><category term="processing" /><summary type="html">A p5js port from timrodenbroeker function setup() { createCanvas(windowWidth, windowHeight); }</summary></entry><entry><title type="html">amish</title><link href="http://127.0.0.1:4000/amish/" rel="alternate" type="text/html" title="amish" /><published>2020-09-02T00:00:00-04:00</published><updated>2020-09-02T00:00:00-04:00</updated><id>http://127.0.0.1:4000/amish</id><content type="html" xml:base="http://127.0.0.1:4000/amish/">&lt;p&gt;An instagram post from &lt;a href=&quot;https://www.instagram.com/p/CEQMBarFjvy/&quot;&gt;@amish_ranpariya&lt;/a&gt;&lt;/p&gt;
-&lt;script&gt;
-	let angle = 0;
-	function setup() {
-		createCanvas(800, 800, WEBGL);
-		angleMode(DEGREES);
-	}
-	function draw() {
-		background(0);
-		push();
-		rotateX(angle);
-		rotateY(angle / 2);
-		rotateZ(angle / 1.5);
-		for (let i = 0; i &lt; 5; i++) {
-				let x map(i, 0, 5, -250, 250);
-			for (let j = 0; j &lt; 5; j++) {
-				let y map(j, 0, 5, -250, 250);
-			for (let k = 0; k &lt; 5; k++) {
-				let z map(k, 0, 5, -250, 250);
-			push();
-			translate(x, y, z);
-			let r = map(i, 0, 5, 0, 255)
-			let g = map(j, 0, 5, 0, 255)
-			let b = map(k, 0, 5, 0, 255)
-			emissiveMaterial(r, g, b);
-			box(70);
-			pop();
-		}
-	}
-}
-pop();
-angle++;
-}
-&lt;/script&gt;</content><author><name></name></author><category term="no-scroll," /><category term="no-zoom," /><category term="p5js," /><category term="devices" /><summary type="html">An instagram post from @amish_ranpariya</summary></entry></feed>
+&lt;/script&gt;</content><author><name></name></author><category term="no-scroll," /><category term="no-zoom," /><category term="p5js," /><category term="processing" /><summary type="html">A p5js port from timrodenbroeker function setup() { createCanvas(windowWidth, windowHeight); }</summary></entry></feed>
