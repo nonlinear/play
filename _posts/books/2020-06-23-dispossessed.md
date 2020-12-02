@@ -5,7 +5,7 @@ slug: dispossessed
 categories: books
 status: public
 description: by Ursula Le Guin
-uses: header, style, bootstrap, favicon, open-graph
+uses: header, style, bootstrap, jquery, favicon, open-graph
 date: 2020-01-29 18:03:16 -0500
 permalink: /:categories/:slug/
 ---

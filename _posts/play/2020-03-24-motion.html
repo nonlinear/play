@@ -5,11 +5,30 @@ slug: motion
 status: public
 category: creative code
 tags: devices
-uses: no-zoom, p5js, style, accelerometer, sidenotes, no-zoom, no-scroll, fullscreen, jquery
+uses: no-zoom, p5js, style, accelerometer, fullscreen, jquery, bootstrap
 date: 2020-03-24
 permalink: /:slug/
 ---
-<button id="request">Request full screen</button>
+<div class="panel">
+  <a data-toggle="collapse" data-parent="#collapse" href="#collapseOne" class="collapse-trigger">
+    Panel 1 title
+  </a>
+  <div id="collapseOne" class="collapse in">
+    Panel 1 content
+  </div>
+</div>
+<h2>TODO</h2>
+<ul>
+  <li>testar :fullscreen pseudo class</li>
+  <li>testar orientation lock</li>
+  <li>testar permissoes de acelerometro no android</li>
+  <li>fix fullscreen on firefox ios</li>
+  <li>comecar com permission interstitial</li>
+</ul>
+  <hr>
+<button onClick='screenfull.request();'>Make fullscreen</button>
+<button onClick='screenfull.exit();'>Remove fullscreen</button>
+<button onClick='screenfull.toggle();'>Toggle fullscreen</button>
 		<p>This experiment uses accelerometer so it needs your permission</p>
 	<button onclick='requestMotionPermission();'>Allow request</button>
 <hr>
@@ -19,10 +38,7 @@ permalink: /:slug/
 	<button onClick='screen.orientation.lock("portrait-secondary");'>portrait-secondary</button>
 	<button onClick='screen.orientation.lock("landscape-primary");'>landscape-primary</button>
 	<button onClick='screen.orientation.lock("landscape-secondary");'>landscape-secondary</button>
-	<hr>
-	- testar accelerometro
-- testar permissons em android
-- desaparecer com warning se permissao foi dada
+
 <script type="text/javascript">
 
     function requestOrientationPermission(){
@@ -63,10 +79,10 @@ let ax = 0;
 let ay = 0;
 
 let vMultiplier = 0.007;
-let bMultiplier = 1;
+let bMultiplier = 0.6;
 
 function setup() {
-  createCanvas(displayWidth, displayHeight);
+  createCanvas(displayWidth, 300px);
   fill(0);
 }
 

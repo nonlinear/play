@@ -15,7 +15,7 @@ include-npm-deps:
 	cp node_modules/p5/lib/p5.min.js $(VENDOR_DIR)
 	cp node_modules/screenfull/dist/screenfull.js $(VENDOR_DIR)
 	cp node_modules/ml5/dist/ml5.min.js $(VENDOR_DIR)
-	cp -R node_modules/bootstrap/scss $(SCSS_VENDOR_DIR)bootstrap
+	cp node_modules/bootstrap/dist/css/bootstrap.css $(VENDOR_DIR)
 	cp -R node_modules/animatewithsass $(SCSS_VENDOR_DIR)animatewithsass
 
 serve: install include-npm-deps

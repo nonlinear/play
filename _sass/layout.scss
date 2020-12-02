@@ -28,6 +28,9 @@ body {
     background-color: #ccc;
     @include transition;
 }
+.container {
+	padding: $gap3 0;
+}
 
 ol, ul {
 	padding-left: $gap2;
