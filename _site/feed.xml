@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://127.0.0.1:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://127.0.0.1:4000/" rel="alternate" type="text/html" /><updated>2020-12-02T17:19:47-05:00</updated><id>http://127.0.0.1:4000/feed.xml</id><title type="html">nonlinear</title><subtitle>The anagram of my name is anarchist fool</subtitle><entry><title type="html">Jekyll uses</title><link href="http://127.0.0.1:4000/note/uses/" rel="alternate" type="text/html" title="Jekyll uses" /><published>2020-12-02T00:00:00-05:00</published><updated>2020-12-02T00:00:00-05:00</updated><id>http://127.0.0.1:4000/note/uses</id><content type="html" xml:base="http://127.0.0.1:4000/note/uses/">&lt;ul&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://127.0.0.1:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://127.0.0.1:4000/" rel="alternate" type="text/html" /><updated>2020-12-02T18:25:55-05:00</updated><id>http://127.0.0.1:4000/feed.xml</id><title type="html">nonlinear</title><subtitle>The anagram of my name is anarchist fool</subtitle><entry><title type="html">Jekyll uses</title><link href="http://127.0.0.1:4000/note/uses/" rel="alternate" type="text/html" title="Jekyll uses" /><published>2020-12-02T00:00:00-05:00</published><updated>2020-12-02T00:00:00-05:00</updated><id>http://127.0.0.1:4000/note/uses</id><content type="html" xml:base="http://127.0.0.1:4000/note/uses/">&lt;ul&gt;
   &lt;li&gt;favicon&lt;/li&gt;
   &lt;li&gt;open-graph&lt;/li&gt;
   &lt;li&gt;style&lt;/li&gt;
@@ -232,10 +232,6 @@ for (let i=0; R0 &gt; 20; i++) {
 &lt;table&gt;
 	&lt;tr&gt;
 		&lt;td class=&quot;resize&quot;&gt;
-			&lt;svg width=&quot;16&quot; height=&quot;16&quot; viewBox=&quot;0 0 16 16&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-&lt;path d=&quot;M6.38462 0.5V5.88462H1V9.11538H6.38462V14.5H9.61538V9.11538H15V5.88462H9.61538V0.5H6.38462Z&quot; fill=&quot;#1C1D1E&quot;/&gt;
-&lt;/svg&gt;
-
 		Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Delectus, iure?&lt;/td&gt;
 		&lt;td&gt;Non ipsa iusto aliquid maiores, fugit in, aperiam tempore rerum.&lt;/td&gt;
 		&lt;td&gt;Exercitationem aliquam sit libero repellat sapiente mollitia aliquid quos soluta?&lt;/td&gt;

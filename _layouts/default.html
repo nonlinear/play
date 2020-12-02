@@ -52,10 +52,15 @@ layout: default
   <meta property="twitter:image" content="{{ site.url }}/assets/images/{{ page.cover }}"> {% endif %} {%if page.open %}
     <meta property="twitter:image" content="{{ site.url }}/assets/images/{{ page.open }}"> {% endif %} 
 {% endif %}
+    {% if page.uses contains "bootstrap" %}
+   <link
+    rel="stylesheet" href="{{'/assets/vendor/bootstrap.css' | prepend: site.baseurl}}">
+    {% endif %}
     {% if page.uses contains "style" %}
     <link
     rel="stylesheet" href="{{'/assets/main.css' | prepend: site.baseurl}}">
     {% endif %}
+
 </head>
 <body class="{%- if page.categories -%}{{ page.categories }}{%- endif -%}" id="{%- if page.status -%}{{ page.status }}{%- endif -%}">
 {% if page.uses contains "header" %}

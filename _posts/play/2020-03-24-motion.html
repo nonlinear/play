@@ -9,6 +9,22 @@ uses: no-zoom, p5js, accelerometer, fullscreen, style
 date: 2020-03-24
 permalink: /:slug/
 ---
+<div id="checklist">
+<div class="modal">
+      <div class="icon">{% include icons/checklist.svg %}</div>
+      <div class="permissions">
+       <a class="motion" href="#" onclick='requestMotionPermission();'>{% include icons/warning.svg %}Allow gyroscope permissions</a>
+         <a class="location" href="#">{% include icons/warning.svg %}Allow location permissions</a>
+          <a class="camera" href="#">{% include icons/warning.svg %}Allow camera permissions</a>
+      </div>
+
+  <a href="#" class="launch" onClick='screenfull.request();
+  var element = document.getElementById("checklist");
+element.classList.add("closed");
+'>
+✨ Launch</a>
+</div>
+</div>
 <h2>TODO</h2>
 <ul>
   <li>testar :fullscreen pseudo class</li>
@@ -18,11 +34,11 @@ permalink: /:slug/
   <li>comecar com permission interstitial</li>
 </ul>
   <hr>
-<button onClick='screenfull.request();'>Make fullscreen</button>
+
 <button onClick='screenfull.exit();'>Remove fullscreen</button>
 <button onClick='screenfull.toggle();'>Toggle fullscreen</button>
 		<p>This experiment uses accelerometer so it needs your permission</p>
-	<button onclick='requestMotionPermission();'>Allow request</button>
+	
 <hr>
 <h2>orientation lock test</h2>
 	<button onClick='screen.orientation.lock("natural");'>natural</button>
