@@ -5,12 +5,19 @@ slug: accelerometer
 status: public
 category: creative code
 tags: devices
-uses: no-scroll, no-zoom, p5js, style, accelerometer
+uses: no-zoom, p5js, style, accelerometer
 date: 2020-03-24
 permalink: /:slug/
 ---
-	<p>This experiment uses accelerometer so it needs your permission</p>
+
+- testar accelerometro
+- testar permissons em android
+- desaparecer com warning se permissao foi dada
+
+<div class="permissions">
+		<p>This experiment uses accelerometer so it needs your permission</p>
 	<button onclick='requestMotionPermission();'>Allow request</button>
+</div>
 <script type="text/javascript">
     function requestOrientationPermission(){
         DeviceOrientationEvent.requestPermission()
