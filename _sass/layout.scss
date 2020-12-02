@@ -27,7 +27,6 @@ body {
     font-family: Space Grotesk;
     background-color: #ccc;
     @include transition;
-    padding: $gap5 0;
 }
 
 ol, ul {
