@@ -1,31 +1,28 @@
 ---
 layout: default
-title: accelerometer
-slug: accelerometer
+title: motion
+slug: motion
 status: public
 category: creative code
 tags: devices
-uses: no-zoom, p5js, style, accelerometer, sidenotes, no-scroll
+uses: no-zoom, p5js, style, accelerometer, sidenotes, no-zoom, no-scroll, fullscreen, jquery
 date: 2020-03-24
 permalink: /:slug/
 ---
-
-- testar accelerometro
-- testar permissons em android
-- desaparecer com warning se permissao foi dada
-
-<div class="permissions">
+<button id="request">Request full screen</button>
 		<p>This experiment uses accelerometer so it needs your permission</p>
 	<button onclick='requestMotionPermission();'>Allow request</button>
 <hr>
+<h2>orientation lock test</h2>
 	<button onClick='screen.orientation.lock("natural");'>natural</button>
 	<button onClick='screen.orientation.lock("portrait-primary");'>portrait-primary</button>
 	<button onClick='screen.orientation.lock("portrait-secondary");'>portrait-secondary</button>
 	<button onClick='screen.orientation.lock("landscape-primary");'>landscape-primary</button>
 	<button onClick='screen.orientation.lock("landscape-secondary");'>landscape-secondary</button>
-
-	
-</div>
+	<hr>
+	- testar accelerometro
+- testar permissons em android
+- desaparecer com warning se permissao foi dada
 <script type="text/javascript">
 
     function requestOrientationPermission(){
