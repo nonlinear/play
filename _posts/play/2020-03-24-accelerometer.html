@@ -9,4 +9,30 @@ uses: no-scroll, no-zoom, p5js, style, accelerometer
 date: 2020-03-24
 permalink: /:slug/
 ---
-{% include accelerometer.html %}
+<script type="text/javascript">
+    function requestOrientationPermission(){
+        DeviceOrientationEvent.requestPermission()
+        .then(response => {
+            if (response == 'granted') {
+                window.addEventListener('deviceorientation', (e) => {
+                    // do something with e
+                })
+            }
+        })
+        .catch(console.error)
+    }
+    function requestMotionPermission(){
+        DeviceMotionEvent.requestPermission()
+        .then(response => {
+            if (response == 'granted') {
+                window.addEventListener('devicemotion', (e) => {
+                    // do something with e
+                })
+            }
+        })
+        .catch(console.error)
+    }
+</script>
+
+	<p>This experiment uses accelerometer so it needs your permission</p>
+	<button onclick='requestMotionPermission();'>Allow request</button>
