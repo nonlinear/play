@@ -5,18 +5,10 @@ slug: motion
 status: public
 category: creative code
 tags: devices
-uses: no-zoom, p5js, style, accelerometer, fullscreen, jquery, bootstrap
+uses: no-zoom, p5js, accelerometer, fullscreen, style
 date: 2020-03-24
 permalink: /:slug/
 ---
-<div class="panel">
-  <a data-toggle="collapse" data-parent="#collapse" href="#collapseOne" class="collapse-trigger">
-    Panel 1 title
-  </a>
-  <div id="collapseOne" class="collapse in">
-    Panel 1 content
-  </div>
-</div>
 <h2>TODO</h2>
 <ul>
   <li>testar :fullscreen pseudo class</li>
@@ -67,8 +59,8 @@ permalink: /:slug/
 
 <script>
 	// Position Variables
-let x = 0;
-let y = 0;
+let x = 20;
+let y = 20;
 
 // Speed - Velocity
 let vx = 0;
@@ -82,7 +74,7 @@ let vMultiplier = 0.007;
 let bMultiplier = 0.6;
 
 function setup() {
-  createCanvas(displayWidth, 300px);
+  createCanvas(displayWidth, 300);
   fill(0);
 }
 
