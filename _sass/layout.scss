@@ -27,6 +27,7 @@ body {
     font-family: Space Grotesk;
     background-color: #ccc;
     @include transition;
+    padding: $gap5 0;
 }
 
 ol, ul {
@@ -80,13 +81,13 @@ $peek: 30px;
 	@include transition;
 	position: absolute;
 	top: 0;
-	body.home & {
+	body.article & {
 		@include fadeInLeft($duration: 1s, $delay: 300ms);
 		.scroll {
 			@include shadow(box, 3px 0 0px rgba(0, 0, 0, 0.07));
 		}
 	}
-	body:not(.home) & {
+	body:not(.article) & {
 		left: ($menu - $peek) * -1;
 		@include opacity(30);
 		&:hover, &:focus, &:focus-within {
@@ -144,6 +145,14 @@ margin-bottom: 20px;
 	}
 }
 
-#blog {
-	padding: 50px 0;
+.categories {
+	display: grid;
+	grid-gap: $gap2;
+	grid-template-columns: repeat(4, 1fr);
+	.category {
+		ul {
+	@include reset(all);
+	@include reset(list);
+		}
+	}
 }

@@ -1,10 +1,11 @@
 ---
-layout: blog
+layout: default
 title: stretches
 slug: stretches
 categories: rings
 status: public
 source: https://www.youtube.com/watch?v=HgxqZaqRKUw&t=312s
+uses: header, style, bootstrap, favicon, open-graph
 date: 2020-10-16
 permalink: /:categories/:slug/
 ---

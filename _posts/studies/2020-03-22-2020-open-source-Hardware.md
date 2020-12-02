@@ -1,10 +1,11 @@
 ---
-layout: blog
+layout: default
 title: Open Source Hardware
 slug: open-source-hardware
 categories: study
 status: public
 description: Notes on open source hardware convention
+uses: header, style, bootstrap, favicon, open-graph
 date: 2020-01-29 18:03:16 -0500
 permalink: /:categories/:slug/
 ---

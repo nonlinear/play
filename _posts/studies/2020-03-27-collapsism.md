@@ -1,10 +1,11 @@
 ---
-layout: blog
+layout: default
 title: collapsism
 slug: collapsism
 categories: study
 status: public
 description: Vinay Gupta on systemic risks to civilization and responses
+uses: header, style, bootstrap, favicon, open-graph
 date: 2020-01-29 18:03:16 -0500
 permalink: /:categories/:slug/
 ---

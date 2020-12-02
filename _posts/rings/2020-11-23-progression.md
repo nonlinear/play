@@ -1,10 +1,11 @@
 ---
-layout: blog
+layout: default
 title: progression
 slug: progression
 categories: rings
 status: public
 source: https://www.youtube.com/watch?v=Qsg6EP4Va4I&t=144s
+uses: header, style, bootstrap, favicon, open-graph
 date: 2020-01-29 18:03:16 -0500
 permalink: /:categories/:slug/
 ---

@@ -1,0 +1,37 @@
+---
+layout: default
+title: lynda
+slug: lynda
+status: public
+category: creative code
+uses: no-scroll, no-zoom, p5js, style, sidenotes
+date: 2020-03-24
+permalink: /:slug/
+---
+
+	<script>
+var num;
+		function setup() {
+			num = 2;
+			createCanvas(windowWidth, windowHeight);
+			textAlign(CENTER, CENTER);
+
+		}
+
+		function draw() {
+			var value;
+			background(220);
+			fill(237, 34, 93);
+
+			textSize(100);
+			if (num === 1) {
+				fill(0, 150, 0);
+value = 'TRUE';
+			} else {
+
+value = 'FALSE';
+			}
+			text(value, width/2, height/2);
+		}
+
+	</script>

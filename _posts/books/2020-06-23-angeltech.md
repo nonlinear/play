@@ -1,10 +1,11 @@
 ---
-layout: blog
+layout: default
 title: Angel Tech
 slug: angel-tech
 categories: books
 status: public
 description: by Antero Alli
+uses: header, style, bootstrap, favicon, open-graph
 date: 2020-01-29 18:03:16 -0500
 permalink: /:categories/:slug/
 ---

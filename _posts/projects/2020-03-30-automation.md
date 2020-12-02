@@ -1,10 +1,11 @@
 ---
-layout: blog
+layout: default
 title: automations
 slug: automations
 categories: project
 status: draft
 description: my tools to automate
+uses: header, style, bootstrap, favicon, open-graph
 date: 2020-01-29 18:03:16 -0500
 permalink: /:categories/:slug/
 ---

@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://127.0.0.1:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://127.0.0.1:4000/" rel="alternate" type="text/html" /><updated>2020-12-01T18:38:51-05:00</updated><id>http://127.0.0.1:4000/feed.xml</id><title type="html">nonlinear</title><subtitle>The anagram of my name is anarchist fool</subtitle><entry><title type="html">event</title><link href="http://127.0.0.1:4000/event/" rel="alternate" type="text/html" title="event" /><published>2020-12-01T00:00:00-05:00</published><updated>2020-12-01T00:00:00-05:00</updated><id>http://127.0.0.1:4000/event</id><content type="html" xml:base="http://127.0.0.1:4000/event/">&lt;style&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://127.0.0.1:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://127.0.0.1:4000/" rel="alternate" type="text/html" /><updated>2020-12-02T14:46:28-05:00</updated><id>http://127.0.0.1:4000/feed.xml</id><title type="html">nonlinear</title><subtitle>The anagram of my name is anarchist fool</subtitle><entry><title type="html">Jekyll uses</title><link href="http://127.0.0.1:4000/note/uses/" rel="alternate" type="text/html" title="Jekyll uses" /><published>2020-12-02T00:00:00-05:00</published><updated>2020-12-02T00:00:00-05:00</updated><id>http://127.0.0.1:4000/note/uses</id><content type="html" xml:base="http://127.0.0.1:4000/note/uses/">&lt;ul&gt;
+  &lt;li&gt;favicon&lt;/li&gt;
+  &lt;li&gt;open-graph&lt;/li&gt;
+  &lt;li&gt;style&lt;/li&gt;
+  &lt;li&gt;header&lt;/li&gt;
+  &lt;li&gt;no-scroll&lt;/li&gt;
+  &lt;li&gt;no-zoom&lt;/li&gt;
+  &lt;li&gt;p5js&lt;/li&gt;
+  &lt;li&gt;ml5js&lt;/li&gt;
+  &lt;li&gt;smooth-scroll&lt;/li&gt;
+  &lt;li&gt;sidenotes&lt;/li&gt;
+  &lt;li&gt;modernizr&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">favicon open-graph style header no-scroll no-zoom p5js ml5js smooth-scroll sidenotes modernizr</summary></entry><entry><title type="html">event</title><link href="http://127.0.0.1:4000/event/" rel="alternate" type="text/html" title="event" /><published>2020-12-01T00:00:00-05:00</published><updated>2020-12-01T00:00:00-05:00</updated><id>http://127.0.0.1:4000/event</id><content type="html" xml:base="http://127.0.0.1:4000/event/">&lt;style&gt;
 .events {
   display: flex;
   overflow: auto;
@@ -119,7 +131,7 @@ function draw() {
 
 
 }
-&lt;/script&gt;</content><author><name></name></author><category term="p5js," /><category term="smooth-scroll" /><summary type="html">.events { display: flex; overflow: auto; flex: none; width: 100vw; height: 100vh; flex-flow: column nowrap; scroll-snap-type: y mandatory; }</summary></entry><entry><title type="html">illos</title><link href="http://127.0.0.1:4000/illos/" rel="alternate" type="text/html" title="illos" /><published>2020-11-25T00:00:00-05:00</published><updated>2020-11-25T00:00:00-05:00</updated><id>http://127.0.0.1:4000/illos</id><content type="html" xml:base="http://127.0.0.1:4000/illos/">&lt;p&gt;playing with my illustrations, plus p5js&lt;/p&gt;
+&lt;/script&gt;</content><author><name></name></author><category term="creative code" /><summary type="html">.events { display: flex; overflow: auto; flex: none; width: 100vw; height: 100vh; flex-flow: column nowrap; scroll-snap-type: y mandatory; }</summary></entry><entry><title type="html">illos</title><link href="http://127.0.0.1:4000/illos/" rel="alternate" type="text/html" title="illos" /><published>2020-11-25T00:00:00-05:00</published><updated>2020-11-25T00:00:00-05:00</updated><id>http://127.0.0.1:4000/illos</id><content type="html" xml:base="http://127.0.0.1:4000/illos/">&lt;p&gt;playing with my illustrations, plus p5js&lt;/p&gt;
 &lt;p&gt;future state:&lt;/p&gt;
 &lt;ol&gt;
 	&lt;li&gt;make 1st layer move too&lt;/li&gt;
@@ -171,7 +183,7 @@ canvas {
 		//
 		
 	}
-&lt;/script&gt;</content><author><name></name></author><category term="no-scroll," /><category term="no-zoom," /><category term="p5js," /><category term="random" /><summary type="html">playing with my illustrations, plus p5js future state: make 1st layer move too loading images array of other images, with diff layerNum (random? on click) parallax should be normalize by layerNum accelerometer if available, mouse if not</summary></entry><entry><title type="html">vibration</title><link href="http://127.0.0.1:4000/vibration/" rel="alternate" type="text/html" title="vibration" /><published>2020-11-11T00:00:00-05:00</published><updated>2020-11-11T00:00:00-05:00</updated><id>http://127.0.0.1:4000/vibration</id><content type="html" xml:base="http://127.0.0.1:4000/vibration/">&lt;p&gt;from &lt;a href=&quot;https://www.instagram.com/p/CFEiaBOnjIL/&quot;&gt;this instagram&lt;/a&gt;, but I don't think it works.&lt;/p&gt;
+&lt;/script&gt;</content><author><name></name></author><category term="creative code" /><summary type="html">playing with my illustrations, plus p5js future state: make 1st layer move too loading images array of other images, with diff layerNum (random? on click) parallax should be normalize by layerNum accelerometer if available, mouse if not</summary></entry><entry><title type="html">vibration</title><link href="http://127.0.0.1:4000/vibration/" rel="alternate" type="text/html" title="vibration" /><published>2020-11-11T00:00:00-05:00</published><updated>2020-11-11T00:00:00-05:00</updated><id>http://127.0.0.1:4000/vibration</id><content type="html" xml:base="http://127.0.0.1:4000/vibration/">&lt;p&gt;from &lt;a href=&quot;https://www.instagram.com/p/CFEiaBOnjIL/&quot;&gt;this instagram&lt;/a&gt;, but I don't think it works.&lt;/p&gt;
 
 &lt;script&gt;
 let R0;
@@ -205,7 +217,7 @@ for (let i=0; R0 &gt; 20; i++) {
 	
 }
 }
-&lt;/script&gt;</content><author><name></name></author><category term="no-scroll," /><category term="no-zoom," /><category term="p5js," /><category term="random," /><category term="fail" /><summary type="html">from this instagram, but I don't think it works.</summary></entry><entry><title type="html">html experiments</title><link href="http://127.0.0.1:4000/html/" rel="alternate" type="text/html" title="html experiments" /><published>2020-10-28T00:00:00-04:00</published><updated>2020-10-28T00:00:00-04:00</updated><id>http://127.0.0.1:4000/html</id><content type="html" xml:base="http://127.0.0.1:4000/html/">coisas a fazer
+&lt;/script&gt;</content><author><name></name></author><category term="creative code" /><category term="random," /><category term="fail" /><summary type="html">from this instagram, but I don't think it works.</summary></entry><entry><title type="html">html experiments</title><link href="http://127.0.0.1:4000/html/" rel="alternate" type="text/html" title="html experiments" /><published>2020-10-28T00:00:00-04:00</published><updated>2020-10-28T00:00:00-04:00</updated><id>http://127.0.0.1:4000/html</id><content type="html" xml:base="http://127.0.0.1:4000/html/">coisas a fazer
 - illo com giroscopia
 - random svg from folder
 - limpar css (outro default:)
@@ -258,7 +270,7 @@ function draw() {
 
 
 }
-&lt;/script&gt;</content><author><name></name></author><category term="no-scroll," /><category term="no-zoom," /><category term="p5js," /><category term="random" /><summary type="html">coisas a fazer - illo com giroscopia - random svg from folder - limpar css (outro default:) - criar layouts com grid Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Quasi, facilis? Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Delectus, iure? Non ipsa iusto aliquid maiores, fugit in, aperiam tempore rerum. Exercitationem aliquam sit libero repellat sapiente mollitia aliquid quos soluta? Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Molestiae, facere. Quos ad exercitationem quia sint labore modi adipisci similique repellendus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur, eum. Eaque commodi perferendis deleniti suscipit sapiente expedita nemo quam dicta? Tempore dolorem recusandae voluptate magni dolores odio in nemo amet.</summary></entry><entry><title type="html">grid and typography</title><link href="http://127.0.0.1:4000/grid2/" rel="alternate" type="text/html" title="grid and typography" /><published>2020-10-28T00:00:00-04:00</published><updated>2020-10-28T00:00:00-04:00</updated><id>http://127.0.0.1:4000/grid2</id><content type="html" xml:base="http://127.0.0.1:4000/grid2/">&lt;p&gt;typography examples using &lt;a href=&quot;https://github.com/nonlinear/play/blob/master/assets/articles/03.md#creative-code-toolbox&quot;&gt;grid toolbox&lt;/a&gt;&lt;/p&gt;
+&lt;/script&gt;</content><author><name></name></author><category term="creative code" /><category term="random" /><summary type="html">coisas a fazer - illo com giroscopia - random svg from folder - limpar css (outro default:) - criar layouts com grid Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Quasi, facilis? Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Delectus, iure? Non ipsa iusto aliquid maiores, fugit in, aperiam tempore rerum. Exercitationem aliquam sit libero repellat sapiente mollitia aliquid quos soluta? Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Molestiae, facere. Quos ad exercitationem quia sint labore modi adipisci similique repellendus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur, eum. Eaque commodi perferendis deleniti suscipit sapiente expedita nemo quam dicta? Tempore dolorem recusandae voluptate magni dolores odio in nemo amet.</summary></entry><entry><title type="html">grid and typography</title><link href="http://127.0.0.1:4000/grid2/" rel="alternate" type="text/html" title="grid and typography" /><published>2020-10-28T00:00:00-04:00</published><updated>2020-10-28T00:00:00-04:00</updated><id>http://127.0.0.1:4000/grid2</id><content type="html" xml:base="http://127.0.0.1:4000/grid2/">&lt;p&gt;typography examples using &lt;a href=&quot;https://github.com/nonlinear/play/blob/master/assets/articles/03.md#creative-code-toolbox&quot;&gt;grid toolbox&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;from &lt;a href=&quot;https://glitch.com/edit/#!/tipografia-e-grid?path=index.html%3A46%3A0&quot;&gt;THIS GLITCH&lt;/a&gt;&lt;/p&gt;
 
 &lt;style&gt;
@@ -340,66 +352,7 @@ function Grid(cellNumber,gap) {
 			pop();
 		}
 	}
-&lt;/script&gt;</content><author><name></name></author><category term="no-scroll," /><category term="no-zoom," /><category term="p5js," /><category term="random" /><summary type="html">typography examples using grid toolbox from THIS GLITCH</summary></entry><entry><title type="html">stretches</title><link href="http://127.0.0.1:4000/rings/stretches/" rel="alternate" type="text/html" title="stretches" /><published>2020-10-16T00:00:00-04:00</published><updated>2020-10-16T00:00:00-04:00</updated><id>http://127.0.0.1:4000/rings/stretches</id><content type="html" xml:base="http://127.0.0.1:4000/rings/stretches/">&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt; &lt;/th&gt;
-      &lt;th&gt; &lt;/th&gt;
-      &lt;th&gt; &lt;/th&gt;
-      &lt;th style=&quot;text-align: right&quot;&gt; &lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;1&lt;/td&gt;
-      &lt;td&gt;Squat opener&lt;/td&gt;
-      &lt;td&gt;3 min&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;&lt;img src=&quot;/assets/images/rings/stretches01.png&quot; style=&quot;width: 250px&quot; /&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;2&lt;/td&gt;
-      &lt;td&gt;Shoulder stretch&lt;/td&gt;
-      &lt;td&gt;1 min per side&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;&lt;img src=&quot;/assets/images/rings/stretches02.png&quot; style=&quot;width: 250px&quot; /&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;3&lt;/td&gt;
-      &lt;td&gt;Butterfly stretch&lt;/td&gt;
-      &lt;td&gt;3 min&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;&lt;img src=&quot;/assets/images/rings/stretches03.png&quot; style=&quot;width: 250px&quot; /&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;4&lt;/td&gt;
-      &lt;td&gt;Forearms&lt;/td&gt;
-      &lt;td&gt;3 min&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;&lt;img src=&quot;/assets/images/rings/stretches04.png&quot; style=&quot;width: 250px&quot; /&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;5&lt;/td&gt;
-      &lt;td&gt;Triceps stretch&lt;/td&gt;
-      &lt;td&gt;1 min per side&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;&lt;img src=&quot;/assets/images/rings/stretches05.png&quot; style=&quot;width: 250px&quot; /&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;6 (night)&lt;/td&gt;
-      &lt;td&gt;Hip stretch&lt;/td&gt;
-      &lt;td&gt;2 min per side&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;&lt;img src=&quot;/assets/images/rings/stretches06.png&quot; style=&quot;width: 250px&quot; /&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;7 (night)&lt;/td&gt;
-      &lt;td&gt;Forward fold&lt;/td&gt;
-      &lt;td&gt;3 min&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;&lt;img src=&quot;/assets/images/rings/stretches07.png&quot; style=&quot;width: 250px&quot; /&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;</content><author><name></name></author><summary type="html">        1 Squat opener 3 min 2 Shoulder stretch 1 min per side 3 Butterfly stretch 3 min 4 Forearms 3 min 5 Triceps stretch 1 min per side 6 (night) Hip stretch 2 min per side 7 (night) Forward fold 3 min        </summary></entry><entry><title type="html">start training on rings</title><link href="http://127.0.0.1:4000/rings/start/" rel="alternate" type="text/html" title="start training on rings" /><published>2020-10-16T00:00:00-04:00</published><updated>2020-10-16T00:00:00-04:00</updated><id>http://127.0.0.1:4000/rings/start</id><content type="html" xml:base="http://127.0.0.1:4000/rings/start/">&lt;table&gt;
+&lt;/script&gt;</content><author><name></name></author><category term="creative code" /><category term="random" /><summary type="html">typography examples using grid toolbox from THIS GLITCH</summary></entry><entry><title type="html">start training on rings</title><link href="http://127.0.0.1:4000/rings/start/" rel="alternate" type="text/html" title="start training on rings" /><published>2020-10-16T00:00:00-04:00</published><updated>2020-10-16T00:00:00-04:00</updated><id>http://127.0.0.1:4000/rings/start</id><content type="html" xml:base="http://127.0.0.1:4000/rings/start/">&lt;table&gt;
   &lt;thead&gt;
     &lt;tr&gt;
       &lt;th&gt; &lt;/th&gt;
@@ -464,7 +417,66 @@ function Grid(cellNumber,gap) {
       &lt;td style=&quot;text-align: right&quot;&gt;&lt;img src=&quot;/assets/images/rings/start12.png&quot; alt=&quot;&quot; /&gt; &lt;img src=&quot;/assets/images/rings/start13.png&quot; alt=&quot;&quot; /&gt;&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
-&lt;/table&gt;</content><author><name></name></author><summary type="html">        1 Support hold few seconds, close to the body, stablizing your hands. Stay till you cna handle 15 seconds. 1.2 Advanced support hold   2 Plank with rings Stay till 15 seconds 3 Ring dips At least 10 good reps 3.2 Bulgarian dips At least 10 good reps 4 Ring pushup focus on stabilizing your hands. till 10 good reps 5 False Grip practice till 15 seconds hold 6 Ring pull ups rotate wrists doing the movement 6.2 Simpler pull ups  </summary></entry><entry><title type="html">grid1</title><link href="http://127.0.0.1:4000/grid1/" rel="alternate" type="text/html" title="grid1" /><published>2020-10-10T00:00:00-04:00</published><updated>2020-10-10T00:00:00-04:00</updated><id>http://127.0.0.1:4000/grid1</id><content type="html" xml:base="http://127.0.0.1:4000/grid1/">&lt;p&gt;Grid toolbox, version 1.0.1, &lt;a href=&quot;https://github.com/nonlinear/play/blob/master/assets/articles/03.md#creative-code-toolbox&quot;&gt;check feature list&lt;/a&gt;&lt;/p&gt;
+&lt;/table&gt;</content><author><name></name></author><summary type="html">        1 Support hold few seconds, close to the body, stablizing your hands. Stay till you cna handle 15 seconds. 1.2 Advanced support hold   2 Plank with rings Stay till 15 seconds 3 Ring dips At least 10 good reps 3.2 Bulgarian dips At least 10 good reps 4 Ring pushup focus on stabilizing your hands. till 10 good reps 5 False Grip practice till 15 seconds hold 6 Ring pull ups rotate wrists doing the movement 6.2 Simpler pull ups  </summary></entry><entry><title type="html">stretches</title><link href="http://127.0.0.1:4000/rings/stretches/" rel="alternate" type="text/html" title="stretches" /><published>2020-10-16T00:00:00-04:00</published><updated>2020-10-16T00:00:00-04:00</updated><id>http://127.0.0.1:4000/rings/stretches</id><content type="html" xml:base="http://127.0.0.1:4000/rings/stretches/">&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt; &lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;Squat opener&lt;/td&gt;
+      &lt;td&gt;3 min&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;&lt;img src=&quot;/assets/images/rings/stretches01.png&quot; style=&quot;width: 250px&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;Shoulder stretch&lt;/td&gt;
+      &lt;td&gt;1 min per side&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;&lt;img src=&quot;/assets/images/rings/stretches02.png&quot; style=&quot;width: 250px&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;Butterfly stretch&lt;/td&gt;
+      &lt;td&gt;3 min&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;&lt;img src=&quot;/assets/images/rings/stretches03.png&quot; style=&quot;width: 250px&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;td&gt;Forearms&lt;/td&gt;
+      &lt;td&gt;3 min&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;&lt;img src=&quot;/assets/images/rings/stretches04.png&quot; style=&quot;width: 250px&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;5&lt;/td&gt;
+      &lt;td&gt;Triceps stretch&lt;/td&gt;
+      &lt;td&gt;1 min per side&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;&lt;img src=&quot;/assets/images/rings/stretches05.png&quot; style=&quot;width: 250px&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;6 (night)&lt;/td&gt;
+      &lt;td&gt;Hip stretch&lt;/td&gt;
+      &lt;td&gt;2 min per side&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;&lt;img src=&quot;/assets/images/rings/stretches06.png&quot; style=&quot;width: 250px&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;7 (night)&lt;/td&gt;
+      &lt;td&gt;Forward fold&lt;/td&gt;
+      &lt;td&gt;3 min&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;&lt;img src=&quot;/assets/images/rings/stretches07.png&quot; style=&quot;width: 250px&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</content><author><name></name></author><summary type="html">        1 Squat opener 3 min 2 Shoulder stretch 1 min per side 3 Butterfly stretch 3 min 4 Forearms 3 min 5 Triceps stretch 1 min per side 6 (night) Hip stretch 2 min per side 7 (night) Forward fold 3 min        </summary></entry><entry><title type="html">grid1</title><link href="http://127.0.0.1:4000/grid1/" rel="alternate" type="text/html" title="grid1" /><published>2020-10-10T00:00:00-04:00</published><updated>2020-10-10T00:00:00-04:00</updated><id>http://127.0.0.1:4000/grid1</id><content type="html" xml:base="http://127.0.0.1:4000/grid1/">&lt;p&gt;Grid toolbox, version 1.0.1, &lt;a href=&quot;https://github.com/nonlinear/play/blob/master/assets/articles/03.md#creative-code-toolbox&quot;&gt;check feature list&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;From this glitch&lt;/a&gt;, studying with &lt;a href=&quot;https://www.twitch.tv/rodjunjun&quot;&gt;Rodrigo Junqueira&lt;/a&gt;.&lt;/p&gt;
 
@@ -612,7 +624,7 @@ function draw() {
 
 
 
-	&lt;/script&gt;</content><author><name></name></author><category term="no-scroll," /><category term="no-zoom," /><category term="p5js," /><category term="random" /><summary type="html">Grid toolbox, version 1.0.1, check feature list</summary></entry><entry><title type="html">Zendegi</title><link href="http://127.0.0.1:4000/books/zendegi/" rel="alternate" type="text/html" title="Zendegi" /><published>2020-09-26T00:00:00-04:00</published><updated>2020-09-26T00:00:00-04:00</updated><id>http://127.0.0.1:4000/books/zendegi</id><content type="html" xml:base="http://127.0.0.1:4000/books/zendegi/">&lt;p&gt;&lt;img src=&quot;/assets/images/books/zendegi.jpg&quot; alt=&quot;book&quot; /&gt;&lt;/p&gt;
+	&lt;/script&gt;</content><author><name></name></author><category term="creative code" /><summary type="html">Grid toolbox, version 1.0.1, check feature list</summary></entry><entry><title type="html">Zendegi</title><link href="http://127.0.0.1:4000/books/zendegi/" rel="alternate" type="text/html" title="Zendegi" /><published>2020-09-26T00:00:00-04:00</published><updated>2020-09-26T00:00:00-04:00</updated><id>http://127.0.0.1:4000/books/zendegi</id><content type="html" xml:base="http://127.0.0.1:4000/books/zendegi/">&lt;p&gt;&lt;img src=&quot;/assets/images/books/zendegi.jpg&quot; alt=&quot;book&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;finished September 26, 2020&lt;/p&gt;
 
@@ -1173,17 +1185,4 @@ function draw() {
     &lt;p&gt;If you want to make it human, make it whole.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;the courage and ingenuity of the Iranian people.&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">tim1</title><link href="http://127.0.0.1:4000/tim1/" rel="alternate" type="text/html" title="tim1" /><published>2020-09-08T00:00:00-04:00</published><updated>2020-09-08T00:00:00-04:00</updated><id>http://127.0.0.1:4000/tim1</id><content type="html" xml:base="http://127.0.0.1:4000/tim1/">&lt;p&gt;A p5js port from  &lt;a href=&quot;https://timrodenbroeker.de/courses/creative-coding-essentials/processing/&quot;&gt;timrodenbroeker&lt;/a&gt;&lt;/p&gt;
-&lt;script&gt;
-	function setup() {
-  createCanvas(windowWidth, windowHeight);
-}
-
-function draw() {
-	let circle = windowWidth / 3;
-	background(mouseX/2);
-	fill(width-mouseX);
-	noStroke();
-	ellipse(mouseX, mouseY, circle, circle);
-}
-&lt;/script&gt;</content><author><name></name></author><category term="no-scroll," /><category term="no-zoom," /><category term="p5js," /><category term="processing" /><summary type="html">A p5js port from timrodenbroeker function setup() { createCanvas(windowWidth, windowHeight); }</summary></entry></feed>
+&lt;/ul&gt;</content><author><name></name></author><summary type="html"></summary></entry></feed>

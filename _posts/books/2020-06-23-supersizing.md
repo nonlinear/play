@@ -1,11 +1,12 @@
 ---
-layout: blog
+layout: default
 title: Supersizing the mind
 slug: supersizing
 categories: books
 status: public
 description: by Andy Clark
 date: 2020-01-29 18:03:16 -0500
+uses: header, style, bootstrap, favicon, open-graph
 permalink: /:categories/:slug/
 ---
 ![book](/assets/images/books/{{ page.slug }}.jpg)

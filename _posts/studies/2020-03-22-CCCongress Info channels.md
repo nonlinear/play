@@ -1,10 +1,11 @@
 ---
-layout: blog
+layout: default
 title: CCCongress Info channels
 slug: ccc
 categories: study
 status: public
 description: notes on CCC convention policies
+uses: header, style, bootstrap, favicon, open-graph
 date: 2020-01-29 18:03:16 -0500
 permalink: /:categories/:slug/
 ---

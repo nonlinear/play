@@ -1,10 +1,11 @@
 ---
-layout: blog
+layout: default
 title: Figma Config
 slug: figma-config
 categories: study
 status: public
 description: notes on figma config conference
+uses: header, style, bootstrap, favicon, open-graph
 date: 2020-01-29 18:03:16 -0500
 permalink: /:categories/:slug/
 ---
