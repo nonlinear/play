@@ -26,6 +26,8 @@
 body {
     font-family: Space Grotesk;
     background-color: #ccc;
+    padding: 0;
+    margin: 0;
     @include transition;
 }
 .container {
