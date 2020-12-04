@@ -5,75 +5,49 @@ slug: motion
 status: public
 category: creative code
 tags: devices
-uses: no-zoom, p5js, accelerometer, fullscreen, style, no-scroll
+uses: no-zoom, p5js, accelerometer, fullscreen, style
 date: 2020-03-24
 permalink: /:slug/
 ---
-<div id="checklist">
-  <div class="modal">
-    <div class="icon">{% include icons/checklist.svg %}</div>
-    <div class="permissions">
-     <a class="motion" href="#" onclick='requestMotionPermission();'>{% include icons/warning.svg %}Allow gyroscope permissions</a>
-     <a class="location" href="#">{% include icons/warning.svg %}Allow location permissions</a>
-     <a class="camera" href="#">{% include icons/warning.svg %}Allow camera permissions</a>
-   </div>
-
-   <a href="#" class="launch" onClick='screenfull.request();
-   var element = document.getElementById("checklist");
-   element.classList.add("closed");
-   '>
- ✨ Launch</a>
-</div>
-</div>
-<!-- <h2>TODO</h2>
-<ul>
-  <li>testar :fullscreen pseudo class</li>
-  <li>testar orientation lock</li>
-  <li>testar permissoes de acelerometro no android</li>
-  <li>fix fullscreen on firefox ios</li>
-  <li>comecar com permission interstitial</li>
-</ul>
-<hr>
-
-<button onClick='screenfull.exit();'>Remove fullscreen</button>
-<button onClick='screenfull.toggle();'>Toggle fullscreen</button>
-<p>This experiment uses accelerometer so it needs your permission</p>
-
-<hr>
-<h2>orientation lock test</h2>
-<button onClick='screen.orientation.lock("natural");'>natural</button>
-<button onClick='screen.orientation.lock("portrait-primary");'>portrait-primary</button>
-<button onClick='screen.orientation.lock("portrait-secondary");'>portrait-secondary</button>
-<button onClick='screen.orientation.lock("landscape-primary");'>landscape-primary</button>
-<button onClick='screen.orientation.lock("landscape-secondary");'>landscape-secondary</button> -->
-
-<script type="text/javascript">
-
-  function requestOrientationPermission(){
-    DeviceOrientationEvent.requestPermission()
-    .then(response => {
-      if (response == 'granted') {
-        window.addEventListener('deviceorientation', (e) => {
-
-        })
-      }
-    })
-    .catch(console.error)
+<style>
+  .gradient {
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    background-image: url('/assets/images/badge.svg');
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+    display: block;
   }
-  function requestMotionPermission(){
-    DeviceMotionEvent.requestPermission()
-    .then(response => {
-      if (response == 'granted') {
-        window.addEventListener('devicemotion', (e) => {
-                    // do something with e
-                  })
-      }
-    })
-    .catch(console.error)
+</style>
+
+
+
+<!-- <div class="badge">
+  {% include badge.svg %}
+</div> -->
+<div class="gradient gleam"></div>
+<div class="gradient gleam"></div>
+
+
+<script>
+  var gleam;
+  var gleamH;
+  function setup() {
+    createCanvas(200,200);
+  }
+  function draw() {
+    gleamH = map(mouseX, 0, width, 0, 100);
+    gleam = selectAll('.gleam');
+    for (var i = 0; i < gleam.length; i++) {
+       gleam[i].style('background-position', gleamH + '0');
+    }
+    // console.log('linear-gradient( 95deg, rgba(0,0,0,1) ' + gleamH + '%, rgba(255,255,255,1)  ' + (gleamH - 15) + '%, rgba(255,255,255,1) ' + (gleamH - 10) + '%, rgba(0,0,0,1) ' + (gleamH - 5) + '%)');
   }
 </script>
 
-<script>
+
+<!-- <script>
 	// Position Variables
   let x = 20;
   let y = 20;
@@ -128,3 +102,4 @@ function ballMove() {
   }
 }
 </script>
+ -->

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://127.0.0.1:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://127.0.0.1:4000/" rel="alternate" type="text/html" /><updated>2020-12-03T12:42:29-05:00</updated><id>http://127.0.0.1:4000/feed.xml</id><title type="html">nonlinear</title><subtitle>The anagram of my name is anarchist fool</subtitle><entry><title type="html">Jekyll uses</title><link href="http://127.0.0.1:4000/note/uses/" rel="alternate" type="text/html" title="Jekyll uses" /><published>2020-12-02T00:00:00-05:00</published><updated>2020-12-02T00:00:00-05:00</updated><id>http://127.0.0.1:4000/note/uses</id><content type="html" xml:base="http://127.0.0.1:4000/note/uses/">&lt;ul&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://127.0.0.1:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://127.0.0.1:4000/" rel="alternate" type="text/html" /><updated>2020-12-04T14:54:22-05:00</updated><id>http://127.0.0.1:4000/feed.xml</id><title type="html">nonlinear</title><subtitle>The anagram of my name is anarchist fool</subtitle><entry><title type="html">Jekyll uses</title><link href="http://127.0.0.1:4000/note/uses/" rel="alternate" type="text/html" title="Jekyll uses" /><published>2020-12-02T00:00:00-05:00</published><updated>2020-12-02T00:00:00-05:00</updated><id>http://127.0.0.1:4000/note/uses</id><content type="html" xml:base="http://127.0.0.1:4000/note/uses/">&lt;ul&gt;
   &lt;li&gt;favicon&lt;/li&gt;
   &lt;li&gt;open-graph&lt;/li&gt;
   &lt;li&gt;style&lt;/li&gt;
@@ -227,6 +227,8 @@ for (let i=0; R0 &gt; 20; i++) {
 	.resize {
 		color: red;
 	}
+
+
 &lt;/style&gt;
 &lt;p class=&quot;resize&quot;&gt;Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Quasi, facilis?&lt;/p&gt;
 &lt;table&gt;
@@ -267,7 +269,7 @@ function draw() {
 
 
 }
-&lt;/script&gt;</content><author><name></name></author><category term="creative code" /><category term="random" /><summary type="html">coisas a fazer - illo com giroscopia - random svg from folder - limpar css (outro default:) - criar layouts com grid Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Quasi, facilis? Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Delectus, iure? Non ipsa iusto aliquid maiores, fugit in, aperiam tempore rerum. Exercitationem aliquam sit libero repellat sapiente mollitia aliquid quos soluta? Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Molestiae, facere. Quos ad exercitationem quia sint labore modi adipisci similique repellendus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur, eum. Eaque commodi perferendis deleniti suscipit sapiente expedita nemo quam dicta? Tempore dolorem recusandae voluptate magni dolores odio in nemo amet.</summary></entry><entry><title type="html">grid and typography</title><link href="http://127.0.0.1:4000/grid2/" rel="alternate" type="text/html" title="grid and typography" /><published>2020-10-28T00:00:00-04:00</published><updated>2020-10-28T00:00:00-04:00</updated><id>http://127.0.0.1:4000/grid2</id><content type="html" xml:base="http://127.0.0.1:4000/grid2/">&lt;p&gt;typography examples using &lt;a href=&quot;https://github.com/nonlinear/play/blob/master/assets/articles/03.md#creative-code-toolbox&quot;&gt;grid toolbox&lt;/a&gt;&lt;/p&gt;
+&lt;/script&gt;</content><author><name></name></author><category term="creative code" /><category term="random" /><summary type="html">coisas a fazer - illo com giroscopia - random svg from folder - limpar css (outro default:) - criar layouts com grid .resize { color: red; }</summary></entry><entry><title type="html">grid and typography</title><link href="http://127.0.0.1:4000/grid2/" rel="alternate" type="text/html" title="grid and typography" /><published>2020-10-28T00:00:00-04:00</published><updated>2020-10-28T00:00:00-04:00</updated><id>http://127.0.0.1:4000/grid2</id><content type="html" xml:base="http://127.0.0.1:4000/grid2/">&lt;p&gt;typography examples using &lt;a href=&quot;https://github.com/nonlinear/play/blob/master/assets/articles/03.md#creative-code-toolbox&quot;&gt;grid toolbox&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;from &lt;a href=&quot;https://glitch.com/edit/#!/tipografia-e-grid?path=index.html%3A46%3A0&quot;&gt;THIS GLITCH&lt;/a&gt;&lt;/p&gt;
 
 &lt;style&gt;
