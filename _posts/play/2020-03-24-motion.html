@@ -5,14 +5,14 @@ slug: motion
 status: public
 category: creative code
 tags: devices
-uses: no-zoom, p5js, accelerometer, fullscreen, style
+uses: no-zoom, p5js, accelerometer, fullscreen, style, no-scroll
 date: 2020-03-24
 permalink: /:slug/
 ---
 <style>
   .gradient {
     width: 100%;
-    height: 100%;
+    height: 50%;
     background-color: red;
     background-image: url('/assets/images/badge.svg');
     background-repeat: no-repeat;
@@ -39,10 +39,9 @@ permalink: /:slug/
   function draw() {
     gleamH = map(mouseX, 0, width, 0, 100);
     gleam = selectAll('.gleam');
-    for (var i = 0; i < gleam.length; i++) {
-       gleam[i].style('background-position', gleamH + '0');
-    }
-    // console.log('linear-gradient( 95deg, rgba(0,0,0,1) ' + gleamH + '%, rgba(255,255,255,1)  ' + (gleamH - 15) + '%, rgba(255,255,255,1) ' + (gleamH - 10) + '%, rgba(0,0,0,1) ' + (gleamH - 5) + '%)');
+
+    gleam[0].style('background-position', gleamH + ' 0');
+    gleam[1].style('background-position', '0 ' + gleamH);
   }
 </script>
 
