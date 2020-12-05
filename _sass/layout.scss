@@ -42,7 +42,7 @@ ol, ul {
 
 
 .divider {
-	margin: $gap3 0;
+	margin: $gap2 0;
 }
 
 
@@ -158,5 +158,19 @@ margin-bottom: 20px;
 	@include reset(all);
 	@include reset(list);
 		}
+	}
+}
+
+
+header.header {
+		line-height: 100%;
+	.title, .description {
+		margin-bottom: 0;
+
+	}
+	.date {
+		@include translate(0, 15);
+		font-size: 80%;
+		color: #999;
 	}
 }

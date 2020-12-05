@@ -70,15 +70,16 @@ layout: default
     <h5><a href="{{ site.url }}">{{ site.title }}</a>/<a data-toggle="popover" title="more {{ page.categories }}" data-html="true" data-content='
       {% include categories.html %}
       ' data-placement="bottom">{{ page.categories }}</a>/</h5>
-      <h1>{{ page.title }}</h1>
+      <h1 class="title">{{ page.title }}</h1>
       {% if page.categories contains 'rings' %}
       <h5>from <a href="{{ page.source }}">{{ page.source }}</a></h5>
       {% else %}
-      <h5>{{ page.description }}</h5>
+      <h5 class="description">{{ page.description }}</h5>
+<h5 class="date">{{ page.date | date_to_string }}</h5>
       {% endif %}
       {% else %}
-      <h1><a href="{{ site.url }}">{{site.title}}</a></h1>
-      <h3>{{site.description}}</h3>
+      <h1 class="title"><a href="{{ site.url }}">{{site.title}}</a></h1>
+      <h3 class="description">{{site.description}}</h3>
       {% endif %}
     </header>
     <hr class="wow divider">
