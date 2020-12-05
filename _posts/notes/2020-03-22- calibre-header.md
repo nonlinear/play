@@ -11,8 +11,6 @@ permalink: /:categories/:slug/
 ---
 
 
-permalink: /:categories/:slug/
-
 ## Instructions
 
 - Convert Book
