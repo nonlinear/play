@@ -18,6 +18,7 @@ permalink: /:slug/
     background-repeat: no-repeat;
     background-size: 100px 100px;
     display: block;
+    border: solid 3px blue;
   }
 </style>
 
@@ -32,16 +33,18 @@ permalink: /:slug/
 
 <script>
   var gleam;
-  var gleamH;
+  var gleamHor;
+  var gleamVert;
   function setup() {
-    createCanvas(200,200);
+    createCanvas(300,300);
   }
   function draw() {
-    gleamH = map(mouseX, 0, width, 0, 100);
+    gleamHor = map(mouseX, 0, width, 0, 100);
+    gleamVert = map(mouseY, 0, height, 0, 100);
     gleam = selectAll('.gleam');
 
-    gleam[0].style('background-position', gleamH + ' 0');
-    gleam[1].style('background-position', '0 ' + gleamH);
+    gleam[0].style('background-position', gleamHor + 'px ' + gleamVert + 'px');
+      gleam[1].style('background-position', gleamVert + 'px ' + gleamHor + 'px');
   }
 </script>
 

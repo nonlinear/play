@@ -1,0 +1,48 @@
+---
+layout: default
+title: olympics
+slug: olympics
+status: public
+category: creative code
+tags: database
+uses: p5js, style, bootstrap, jquery
+date: 2020-03-24
+permalink: /:slug/
+---
+<div class="container">
+	<h1>aaa</h1>
+	<a href="#" data-toggle="tooltip" title="Tooltip Content">Tooltip trigger</a>
+</div>
+<script>
+	var dataOlympics;
+	var dataObjects;
+	function preload(){
+		dataOlympics = loadJSON('/assets/data/sports/olympics.json');
+		dataObjects = loadJSON('/assets/data/objects/objects.json');
+	}
+	function setup() {
+		noCanvas();
+		var collapsewrapper = select(".container");
+		var olympics = dataOlympics.olympics.summer;
+		for (var i = 0; i < olympics.length; i++) {
+			collapsewrapper.html(collapsecity(olympics[i]), true);
+		}
+	}
+
+	function collapsecity(element) {
+		var html = '<div class="panel" style="position: absolute; left:' + element.year + 'px">';
+		html += '<a data-toggle="collapse" data-parent="#collapse" href="#' + element.year + '" class="collapse-trigger">';
+		html += '' + element.city + ', ' + element.year + '';
+		html += '</a>';
+		html += '<div id="' + element.year + '" class="collapse in">';
+		html += '<p>' + element.countries + ' countries played with athletes total.</p>';
+		html += '</div>';
+		html += '</div>';
+		return html;
+	}
+
+	function draw() {
+		
+	}
+
+</script>
