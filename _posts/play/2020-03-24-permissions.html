@@ -5,26 +5,11 @@ slug: permissions
 status: public
 category: creative code
 tags: devices
-uses: no-zoom, p5js, accelerometer, fullscreen, style, no-scroll, test
+uses: no-zoom, p5js, accelerometer, fullscreen, style, no-scroll, test, request-motion, request-camera
 date: 2020-03-24
 permalink: /:slug/
 ---
-<div id="permissions">
-  <div class="modal">
-    <div class="icon">{% include icons/checklist.svg %}</div>
-    <div class="checklist">
-     <a class="motion" href="#" onclick='requestMotionPermission();'>{% include icons/warning.svg %}Allow gyroscope permissions</a>
-     <a class="location" href="#">{% include icons/warning.svg %}Allow location permissions</a>
-     <a class="camera" href="#">{% include icons/warning.svg %}Allow camera permissions</a>
-   </div>
 
-   <a href="#" class="launch" onClick='screenfull.request();
-   var element = document.getElementById("permissions");
-   element.classList.add("closed");
-   '>
- ✨ Launch</a>
-</div>
-</div>
 <!-- <h2>TODO</h2>
 <ul>
   <li>testar :fullscreen pseudo class</li>

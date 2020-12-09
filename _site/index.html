@@ -2,11 +2,11 @@
 <head>
   
   <link rel="apple-touch-icon" sizes="180x180"
-    href="/assets/favicons/apple-touch-icon.png">
+  href="/assets/favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32"
-    href="/assets/favicons/favicon-32x32.png">
+  href="/assets/favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16"
-    href="/assets/favicons/favicon-16x16.png">
+  href="/assets/favicons/favicon-16x16.png">
   <link rel="manifest" href="/assets/favicons/site.webmanifest">
   <link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#000000">
   <link rel="shortcut icon" href="/assets/favicons/favicon.ico">
@@ -34,29 +34,30 @@
   
   
     
-
-    
-   <link
-    rel="stylesheet" href="/assets/vendor/bootstrap.css">
-    
-    
-    <link
-    rel="stylesheet" href="/assets/main.css">
-    
+  
+  
+  <link
+  rel="stylesheet" href="/assets/vendor/bootstrap.css">
+  
+  
+  <link
+  rel="stylesheet" href="/assets/main.css">
+  
 
 </head>
 <body class="article" id="">
-
-<div class="container">
-  <header class="header wow">
-    
-      <h1 class="title"><a href="http://127.0.0.1:4000">nonlinear</a></h1>
-      <h3 class="description">The anagram of my name is anarchist fool</h3>
+  
+  
+  <div class="container">
+    <header class="header wow">
       
-    </header>
-    <hr class="wow divider">
-    <article class="main wow">
-      <ol>
+        <h1 class="title"><a href="http://127.0.0.1:4000">nonlinear</a></h1>
+        <h3 class="description">The anagram of my name is anarchist fool</h3>
+        
+      </header>
+      <hr class="wow divider">
+      <article class="main wow">
+        <ol>
 <li><a href="https://mastodon.social/@nonlinear" target="_blank">my mastodon</a></li>
 <li><a href="https://twitter.com/nonlinear" target="_blank">my twitter</a></li>
 <li><a href="https://savee.it/nonlinear" target="_blank">my inspiration board</a></li>
@@ -67,53 +68,53 @@
 <li><a href="links.html">my notes</a> (a lot to clean up)</li>
 <li><a href="https://www.figma.com/@nonlinear" target="_blank">my figma</a> (not a lot there)</li>
 </ol>
-    </article>
-  </div>
+      </article>
+    </div>
+    
 
-
+   
+   
+  
   
 
-    
-    
+  
+  
+  
+  <script src="/assets/vendor/jquery.min.js"></script>
+  
+  
 
-    
-    
-    
-   <script src="/assets/vendor/jquery.min.js"></script>
-
-    
-    
-      <script src="/assets/vendor/popper.min.js"></script>
-  <script src="/assets/vendor/bootstrap.min.js"></script>
-  <script>
-    $(function () {
-      $('[data-toggle="tooltip"]').tooltip()
+<script src="/assets/vendor/popper.min.js"></script>
+<script src="/assets/vendor/bootstrap.min.js"></script>
+<script>
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  });
+  $('[data-toggle="popover"]').popover({ trigger: "manual" , html: true, animation:false, content: ''})
+  .on("mouseenter", function () {
+    var _this = this;
+    $(this).popover("show");
+    $(".popover").on("mouseleave", function () {
+      $(_this).popover('hide');
     });
-    $('[data-toggle="popover"]').popover({ trigger: "manual" , html: true, animation:false, content: ''})
-    .on("mouseenter", function () {
-      var _this = this;
-      $(this).popover("show");
-      $(".popover").on("mouseleave", function () {
-        $(_this).popover('hide');
-      });
-    }).on("mouseleave", function () {
-      var _this = this;
-      setTimeout(function () {
-        if (!$(".popover:hover").length) {
-          $(_this).popover("hide");
-        }
-      }, 300);
-    });
-    </script>
+  }).on("mouseleave", function () {
+    var _this = this;
+    setTimeout(function () {
+      if (!$(".popover:hover").length) {
+        $(_this).popover("hide");
+      }
+    }, 300);
+  });
+</script>
 
 
 
-    
-
-    
 
 
-             
+
+
+
+
 </body>
 
 </html>

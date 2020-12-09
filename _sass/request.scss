@@ -24,11 +24,7 @@
 		.icon svg {
 			width: 80px;
 			path: #333;
-		
-
 		}
-		
-
 	}
 	.checklist {
 		border-top: dashed 1px purple;
@@ -41,13 +37,13 @@
 					path: purple;
 				}
 			}
-	svg {
-		width: 20px;
-		height: 20px;
-		margin-right: 10px;
-		@include translate(0, 7);
+			svg {
+				width: 20px;
+				height: 20px;
+				margin-right: 10px;
+				@include translate(0, 7);
 
-	}
+			}
 			display: block;
 			padding: $gap;
 			border-bottom: dashed 1px purple;
@@ -56,22 +52,21 @@
 		}
 	}
 }
-
 .launch {
-text-decoration: none;
-background-color: purple;
-color: white;
-display: block;
-text-align: center;
-padding: $gap;
-margin-top: $gap2;
-font-size: 130%;
-
-&:hover {
+	text-decoration: none;
+	background-color: purple;
+	color: white;
+	display: block;
+	text-align: center;
+	padding: $gap;
 	margin-top: $gap2;
-}
-border: solid 1px white;
-@include radius($gaphalf);
-			font-weight: bold;
-			@include shadow(box, 0 3px 0 rgba(0, 0, 0, 0.1));
+	font-size: 130%;
+
+	&:hover {
+		margin-top: $gap2;
+	}
+	border: solid 1px white;
+	@include radius($gaphalf);
+	font-weight: bold;
+	@include shadow(box, 0 3px 0 rgba(0, 0, 0, 0.1));
 }
