@@ -9,9 +9,26 @@ uses: p5js, style, bootstrap, jquery
 date: 2020-03-24
 permalink: /:slug/
 ---
+<style>
+	.olympic li {
+		border-bottom: solid 1px #999;
+		padding-bottom: 40px;
+		margin-bottom: 40px;
+	}
+		.olympic li:first-of-type {
+		border-top: solid 1px #999;
+		padding-top: 40px;
+		margin-top: 40px;
+	}
+</style>
+
 <div class="container">
+	<a data-toggle="popover" title="Popover title" data-html="true" data-content="Popover content" data-placement="top">Popover trigger</a>
 	<h1>aaa</h1>
-	<a href="#" data-toggle="tooltip" title="Tooltip Content">Tooltip trigger</a>
+		<a data-toggle="popover" title="Popover title" data-html="true" data-content="Popover content" data-placement="top">Popover trigger</a>
+	<ul class="olympic">
+		<!-- loop comes here -->
+	</ul>
 </div>
 <script>
 	var dataOlympics;
@@ -22,7 +39,7 @@ permalink: /:slug/
 	}
 	function setup() {
 		noCanvas();
-		var collapsewrapper = select(".container");
+		var collapsewrapper = select(".olympic");
 		var olympics = dataOlympics.olympics.summer;
 		for (var i = 0; i < olympics.length; i++) {
 			collapsewrapper.html(collapsecity(olympics[i]), true);
@@ -30,14 +47,9 @@ permalink: /:slug/
 	}
 
 	function collapsecity(element) {
-		var html = '<div class="panel" style="position: absolute; left:' + element.year + 'px">';
-		html += '<a data-toggle="collapse" data-parent="#collapse" href="#' + element.year + '" class="collapse-trigger">';
-		html += '' + element.city + ', ' + element.year + '';
-		html += '</a>';
-		html += '<div id="' + element.year + '" class="collapse in">';
-		html += '<p>' + element.countries + ' countries played with athletes total.</p>';
-		html += '</div>';
-		html += '</div>';
+		html = '<li><h2>'+ element.city + ', ' + element.year + ' </h2>';
+		html += '<p>' + element.countries + ' countries played with ' + element.athletes + ' athletes total.</p>';
+		html += '<a data-toggle="popover" title="Popover title" data-html="true" data-content="Popover content" data-placement="top">Popover trigger</a></li>';
 		return html;
 	}
 
