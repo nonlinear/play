@@ -15,7 +15,7 @@ permalink: /:slug/
 		padding-bottom: 40px;
 		margin-bottom: 40px;
 	}
-		.olympic li:first-of-type {
+	.olympic li:first-of-type {
 		border-top: solid 1px #999;
 		padding-top: 40px;
 		margin-top: 40px;
@@ -25,10 +25,11 @@ permalink: /:slug/
 <div class="container">
 	<a data-toggle="popover" title="Popover title" data-html="true" data-content="Popover content" data-placement="top">Popover trigger</a>
 	<h1>aaa</h1>
+	<a data-toggle="popover" title="Popover title" data-html="true" data-content="Popover content" data-placement="top">Popover trigger</a>
+	<div class="olympic">
 		<a data-toggle="popover" title="Popover title" data-html="true" data-content="Popover content" data-placement="top">Popover trigger</a>
-	<ul class="olympic">
 		<!-- loop comes here -->
-	</ul>
+	</div>
 </div>
 <script>
 	var dataOlympics;
@@ -37,24 +38,25 @@ permalink: /:slug/
 		dataOlympics = loadJSON('/assets/data/sports/olympics.json');
 		dataObjects = loadJSON('/assets/data/objects/objects.json');
 	}
-	function setup() {
-		noCanvas();
-		var collapsewrapper = select(".olympic");
-		var olympics = dataOlympics.olympics.summer;
-		for (var i = 0; i < olympics.length; i++) {
-			collapsewrapper.html(collapsecity(olympics[i]), true);
-		}
-	}
+	
+function setup() {
+	noCanvas();
+	var collapsewrapper = select(".olympic");
+	var olympics = dataOlympics.olympics.summer;
+	for (var i = 0; i < olympics.length; i++) {
+		collapsewrapper.html(collapsecity(olympics[i]), true);
+	};
+}
 
-	function collapsecity(element) {
-		html = '<li><h2>'+ element.city + ', ' + element.year + ' </h2>';
-		html += '<p>' + element.countries + ' countries played with ' + element.athletes + ' athletes total.</p>';
-		html += '<a data-toggle="popover" title="Popover title" data-html="true" data-content="Popover content" data-placement="top">Popover trigger</a></li>';
-		return html;
-	}
+function collapsecity(element) {
+	html = '<li><h2>'+ element.city + ', ' + element.year + ' </h2>';
+	html += '<p class="watch">' + element.countries + ' countries played with ' + element.athletes + ' athletes total.</p>';
+	html += '<a data-toggle="popover" title="Popover title" data-html="true" data-content="Popover content" data-placement="top">Popover trigger</a></li>';
+	return html;
+}
 
-	function draw() {
-		
-	}
+function draw() {
+
+}
 
 </script>

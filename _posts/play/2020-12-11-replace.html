@@ -1,0 +1,76 @@
+---
+layout: default
+title: replace
+slug: replace
+status: public
+category: creative code
+tags: database
+uses: p5js, style, bootstrap, jquery
+date: 2020-03-24
+permalink: /:slug/
+---
+<style>
+	.olympic li {
+		border-bottom: solid 1px #999;
+		padding-bottom: 40px;
+		margin-bottom: 40px;
+	}
+	.olympic li:first-of-type {
+		border-top: solid 1px #999;
+		padding-top: 40px;
+		margin-top: 40px;
+	}
+	a.vocabulary {
+		text-decoration: green wavy underline;
+	}
+</style>
+
+<div class="container">
+	<a data-toggle="popover" title="Popover title" data-html="true" data-content="Popover content" data-placement="top">Popover trigger</a>
+	<h1>aaa</h1>
+	<a data-toggle="popover" title="Popover title" data-html="true" data-content="Popover content" data-placement="top">Popover trigger</a>
+	<div class="olympic">
+		<a data-toggle="popover" title="Popover title" data-html="true" data-content="Popover content" data-placement="top">Popover trigger</a>
+		<!-- loop comes here -->
+	</div>
+</div>
+<script>
+	var dataOlympics;
+	var dataObjects;
+	function preload(){
+		dataOlympics = loadJSON('/assets/data/sports/olympics.json');
+		dataObjects = loadJSON('/assets/data/objects/objects.json');
+	}
+	function playReplace(initialString, finalString) {
+		var watch = selectAll(".watch");
+		for (var i = 0; i < watch.length; i++) {
+			var target = watch[i].html();
+			var targetSplit = target.split(initialString);
+			var targetResult = targetSplit[0] + finalString + targetSplit[1]; 
+			watch[i].html(targetResult, false);
+		};
+
+	}
+	function setup() {
+		noCanvas();
+		var collapsewrapper = select(".olympic");
+		var olympics = dataOlympics.olympics.summer;
+		for (var i = 0; i < olympics.length; i++) {
+			collapsewrapper.html(collapsecity(olympics[i]), true);
+		};
+		playReplace('athletes', '<a class="vocabulary" href="https://en.wikipedia.org/wiki/Special:search/athletes">athletes</a>');
+	}
+
+	function collapsecity(element) {
+		html = '<li><h2>'+ element.city + ', ' + element.year + ' </h2>';
+		html += '<p class="watch">' + element.countries + ' countries played with ' + element.athletes + ' athletes total.</p>';
+		html += '<a data-toggle="popover" title="Popover title" data-html="true" data-content="Popover content" data-placement="top">Popover trigger</a></li>';
+		return html;
+	}
+
+	function draw() {
+
+	}
+
+
+</script>
