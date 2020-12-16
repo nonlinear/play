@@ -41,7 +41,7 @@ permalink: /:slug/
 	function preload(){
 		dataOlympics = loadJSON('/assets/data/sports/olympics.json');
 	}
-{% include toolbox/replaceString.js %}
+{% include replaceString.js %}
 	function setup() {
 		noCanvas();
 		var collapsewrapper = select(".grid");
