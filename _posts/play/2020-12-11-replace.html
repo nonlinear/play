@@ -26,6 +26,12 @@ permalink: /:slug/
 	.cell:hover {
 		background-color: rgba(255,255,255,.9);
 	}
+	.otherthing {
+		border: solid 1px red;
+	}
+	.otherthing.another {
+		border: dashed 3px blue;
+	}
 </style>
 <div class="grid">
 
@@ -35,7 +41,7 @@ permalink: /:slug/
 	function preload(){
 		dataOlympics = loadJSON('/assets/data/sports/olympics.json');
 	}
-{% include toolbox/ReplaceString.js %}
+{% include toolbox/replaceString.js %}
 	function setup() {
 		noCanvas();
 		var collapsewrapper = select(".grid");
@@ -43,12 +49,13 @@ permalink: /:slug/
 		for (var i = 0; i < olympics.length; i++) {
 			collapsewrapper.html(collapsecity(olympics[i]), true);
 		};
-		ReplaceString('athletes', '<a class="vocabulary" href="https://en.wikipedia.org/wiki/Special:search/athletes">athletes</a>');
+		replaceString('athletes', '<a class="vocabulary" href="https://en.wikipedia.org/wiki/Special:search/athletes">athletes</a>');
+		
 	}
 
 	function collapsecity(element) {
 		html = '<div class="cell"><h3>'+ element.city + ', ' + element.year + ' </h3>';
-		html += '<p class="watch">' + element.countries + ' countries played with ' + element.athletes + ' athletes total. second athletes.</p></div>';
+		html += '<p class="replaceString">athletes ' + element.countries + ' countries played with ' + element.athletes + ' athletes total. second athletes.</p></div>';
 	
 		return html;
 	}
