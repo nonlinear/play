@@ -129,8 +129,9 @@ layout: default
     window.scrollTo(0,1);
   </script>
   {% endif %}
-  {% if page.uses contains "no-scroll" %}
+
   <style>
+      {% if page.uses contains "no-scroll" %}
     html {
       height  : 100%;
       overflow: hidden;
@@ -142,8 +143,20 @@ layout: default
       position: relative;
       overflow: hidden;
     }
+      {% endif %}
+      {% if page.uses contains "no-text-select" %}
+      * {
+     -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+      }
+      {% endif %}
   </style>
-  {% endif %}
+
 
   {% if page.uses contains "p5js" %}
   <script src="{{'/assets/vendor/p5.min.js' | prepend: site.baseurl}}"></script>
