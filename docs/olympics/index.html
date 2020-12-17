@@ -1,0 +1,126 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>nonlinear, olympics</title>
+  
+  
+  <link
+  rel="stylesheet" href="/assets/vendor/bootstrap.css">
+  
+  
+  <link
+  rel="stylesheet" href="/assets/main.css">
+  
+
+</head>
+<body class="creative code" id="public">
+  
+  
+   <style>
+	.olympic li {
+		border-bottom: solid 1px #999;
+		padding-bottom: 40px;
+		margin-bottom: 40px;
+	}
+	.olympic li:first-of-type {
+		border-top: solid 1px #999;
+		padding-top: 40px;
+		margin-top: 40px;
+	}
+</style>
+
+<div class="container">
+	<a data-toggle="popover" title="Popover title" data-html="true" data-content="Popover content" data-placement="top">Popover trigger</a>
+	<h1>aaa</h1>
+	<a data-toggle="popover" title="Popover title" data-html="true" data-content="Popover content" data-placement="top">Popover trigger</a>
+	<div class="olympic">
+		<a data-toggle="popover" title="Popover title" data-html="true" data-content="Popover content" data-placement="top">Popover trigger</a>
+		<!-- loop comes here -->
+	</div>
+</div>
+<script>
+	var dataOlympics;
+	var dataObjects;
+	function preload(){
+		dataOlympics = loadJSON('/assets/data/sports/olympics.json');
+		dataObjects = loadJSON('/assets/data/objects/objects.json');
+	}
+	
+function setup() {
+	noCanvas();
+	var collapsewrapper = select(".olympic");
+	var olympics = dataOlympics.olympics.summer;
+	for (var i = 0; i < olympics.length; i++) {
+		collapsewrapper.html(collapsecity(olympics[i]), true);
+	};
+}
+
+function collapsecity(element) {
+	html = '<li><h2>'+ element.city + ', ' + element.year + ' </h2>';
+	html += '<p class="watch">' + element.countries + ' countries played with ' + element.athletes + ' athletes total.</p>';
+	html += '<a data-toggle="popover" title="Popover title" data-html="true" data-content="Popover content" data-placement="top">Popover trigger</a></li>';
+	return html;
+}
+
+function draw() {
+
+}
+
+</script>
+   
+
+   
+   
+  
+
+  <style>
+      
+      
+  </style>
+
+
+  
+  <script src="/assets/vendor/p5.min.js"></script>
+  <script src="/assets/vendor/p5.dom.min.js"></script>
+  <script src="/assets/vendor/p5.sound.min.js"></script>
+  
+  
+  
+  <script src="/assets/vendor/jquery.min.js"></script>
+  
+  
+
+<script src="/assets/vendor/popper.min.js"></script>
+<script src="/assets/vendor/bootstrap.min.js"></script>
+<script>
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  });
+  $('[data-toggle="popover"]').popover({ trigger: "manual" , html: true, animation:false, content: ''})
+  .on("mouseenter", function () {
+    var _this = this;
+    $(this).popover("show");
+    $(".popover").on("mouseleave", function () {
+      $(_this).popover('hide');
+    });
+  }).on("mouseleave", function () {
+    var _this = this;
+    setTimeout(function () {
+      if (!$(".popover:hover").length) {
+        $(_this).popover("hide");
+      }
+    }, 300);
+  });
+</script>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

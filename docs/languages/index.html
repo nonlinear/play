@@ -1,0 +1,98 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>nonlinear, languages</title>
+  
+  
+  
+  <link
+  rel="stylesheet" href="/assets/main.css">
+  
+
+</head>
+<body class="creative code" id="public">
+  
+  
+    <div class="menu">
+      <div class="scroll">
+        
+        <header>
+          <h2 class="title">languages</h2>
+          <p>
+           database
+         </p>
+         <p><a href="https://github.com/nonlinear/play/blob/master/_posts/play/2020-03-24-languages.html" target="_blank">
+         view github code</a></p>
+         
+         <hr>
+       </header>
+       	<script>
+		var data
+			function preload(){
+			data = loadJSON('/assets/data/more/languages.json')
+		}
+function setup() {
+   noCanvas()
+  var language = data.languages
+for (var i = 0; i < language.length; i++) {
+	createElement('h1', language[i].name)
+}
+}
+
+function draw() {
+  background(100)
+}
+
+</script>
+     </div>
+   </div>
+   
+
+   
+   
+   <script>
+    document.addEventListener('gesturestart', function (e) {
+      e.preventDefault();
+    });
+  </script>
+  
+  
+
+  <style>
+      
+    html {
+      height  : 100%;
+      overflow: hidden;
+      position: relative;
+    }
+    body {
+      height  : 100%;
+      overflow: auto;
+      position: relative;
+      overflow: hidden;
+    }
+      
+      
+  </style>
+
+
+  
+  <script src="/assets/vendor/p5.min.js"></script>
+  <script src="/assets/vendor/p5.dom.min.js"></script>
+  <script src="/assets/vendor/p5.sound.min.js"></script>
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

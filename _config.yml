@@ -7,6 +7,7 @@ basecolor: '#000000' # for browser settings
 url: 'https://www.nonlinear.nyc'
 twitter_username: nonlinear
 github_username: nonlinear
+destination: docs
 
 sass:
   load_paths:

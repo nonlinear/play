@@ -1,0 +1,109 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>nonlinear, font1</title>
+  
+  
+  
+  <link
+  rel="stylesheet" href="/assets/main.css">
+  
+
+</head>
+<body class="creative code" id="public">
+  
+  
+    <div class="menu">
+      <div class="scroll">
+        
+        <header>
+          <h2 class="title">font1</h2>
+          <p>
+           typography
+         </p>
+         <p><a href="https://github.com/nonlinear/play/blob/master/_posts/play/2020-08-26-google.html" target="_blank">
+         view github code</a></p>
+         
+         <hr>
+       </header>
+       <p>I feel I need to concentrate in typography first, because p5 is very rudimentary... objects are just there, without relationship with one another, if you don't specify.</p>
+<p>or i dunno, cheat adding html <em>inside</em> p5 canvas.</p>
+<p>fonts used are <a href="../assets/fonts/SpaceGrotesk-Regular.woff">Space Grotesk</a> and <a href="../assets/fonts/RenoMono.ttf">RenoMono</a>
+</p>
+<script>
+	let = grotesk;
+	let = renomono;
+
+function preload() {
+	grotesk = loadFont('../assets/fonts/SpaceGrotesk-Regular.woff');
+	renomono = loadFont('../assets/fonts/RenoMono.ttf');
+}
+
+function setup() {
+	createCanvas(windowWidth, windowHeight);
+	background(0);
+}
+
+function draw() {
+	fill(255);
+	stroke(0);
+	textSize(70);
+	textFont(grotesk);
+	text('Space Grotesk', 200, 200);
+	textFont(renomono);
+	text('RenoMono', 200, (200 + 100));
+
+}
+</script>
+     </div>
+   </div>
+   
+
+   
+   
+   <script>
+    document.addEventListener('gesturestart', function (e) {
+      e.preventDefault();
+    });
+  </script>
+  
+  
+
+  <style>
+      
+    html {
+      height  : 100%;
+      overflow: hidden;
+      position: relative;
+    }
+    body {
+      height  : 100%;
+      overflow: auto;
+      position: relative;
+      overflow: hidden;
+    }
+      
+      
+  </style>
+
+
+  
+  <script src="/assets/vendor/p5.min.js"></script>
+  <script src="/assets/vendor/p5.dom.min.js"></script>
+  <script src="/assets/vendor/p5.sound.min.js"></script>
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

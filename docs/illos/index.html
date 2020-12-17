@@ -1,0 +1,131 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>nonlinear, illos</title>
+  
+  
+  
+  <link
+  rel="stylesheet" href="/assets/main.css">
+  
+
+</head>
+<body class="creative code" id="public">
+  
+  
+    <div class="menu">
+      <div class="scroll">
+        
+        <header>
+          <h2 class="title">illos</h2>
+          <p></p>
+         <p><a href="https://github.com/nonlinear/play/blob/master/_posts/play/2020-11-25-illos.html" target="_blank">
+         view github code</a></p>
+         
+         <hr>
+       </header>
+       <p>playing with my illustrations, plus p5js</p>
+<p>future state:</p>
+<ol>
+	<li>make 1st layer move too</li>
+	<li>loading images</li>
+	<li>array of other images, with diff layerNum (random? on click)</li>
+	<li>parallax should be normalize by layerNum</li>
+	<li>accelerometer if available, mouse if not</li>
+</ol>
+
+<style>
+	
+body, html {
+  height: 100%;
+  display: grid;
+}
+canvas { 
+  margin: auto;
+  box-shadow: 5px 5px 2px rgba(0,0,0,.1);
+  border-radius: 5px;
+}
+	canvas {
+		padding 20px;
+	}
+</style>
+<script>
+	let layers = [];
+	let illustration = "brat";
+	let layerNum = 5;
+	let parallax = 5;
+	function preload(){
+		for (var i = 1; i <= layerNum; i++) {
+			layers.push(loadImage('../assets/images/illustrations/' + illustration + '0' + i + '.png'));
+		}
+	}
+	function setup() {
+		createCanvas(500, 500);
+	}
+	function draw() {
+		background(243, 228, 176);
+
+		for (var i = 0; i < layerNum; i++) {
+			let dx = map(mouseX, 0, width, -i * parallax, i * parallax);
+			let dy = map(mouseY, 0, height, -i * parallax, i * parallax);
+			image(layers[i], dx, dy, width, height);
+		}
+
+		// image 1, move parallax * 0
+		// image 2, move parallax * 1
+		//
+		
+	}
+</script>
+     </div>
+   </div>
+   
+
+   
+   
+   <script>
+    document.addEventListener('gesturestart', function (e) {
+      e.preventDefault();
+    });
+  </script>
+  
+  
+
+  <style>
+      
+    html {
+      height  : 100%;
+      overflow: hidden;
+      position: relative;
+    }
+    body {
+      height  : 100%;
+      overflow: auto;
+      position: relative;
+      overflow: hidden;
+    }
+      
+      
+  </style>
+
+
+  
+  <script src="/assets/vendor/p5.min.js"></script>
+  <script src="/assets/vendor/p5.dom.min.js"></script>
+  <script src="/assets/vendor/p5.sound.min.js"></script>
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

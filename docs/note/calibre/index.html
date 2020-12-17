@@ -1,0 +1,357 @@
+<html>
+<head>
+  
+  <link rel="apple-touch-icon" sizes="180x180"
+  href="/assets/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32"
+  href="/assets/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16"
+  href="/assets/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/assets/favicons/site.webmanifest">
+  <link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#000000">
+  <link rel="shortcut icon" href="/assets/favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#000000">
+  <meta name="msapplication-config" content="/assets/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#000000"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>nonlinear, Calibre PDF Conversion</title>
+  
+  <meta name="title" content="nonlinear, Calibre PDF Conversion">
+  
+  <meta name="description" content="how to convert epubs to pdfs">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://127.0.0.1:4000">
+  
+  <meta property="og:title" content="Calibre PDF Conversion">
+  
+  
+  <meta property="og:description" content="how to convert epubs to pdfs">
+  
+   <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="http://127.0.0.1:4000">
+  
+  <meta property="twitter:title" content="Calibre PDF Conversion">
+  
+  
+  <meta property="twitter:description" content="how to convert epubs to pdfs">
+  
+    
+  
+  
+  <link
+  rel="stylesheet" href="/assets/vendor/bootstrap.css">
+  
+  
+  <link
+  rel="stylesheet" href="/assets/main.css">
+  
+
+</head>
+<body class="note" id="public">
+  
+  
+  <div class="container">
+    <header class="header wow">
+      
+      <h5><a href="http://127.0.0.1:4000">nonlinear</a>/<a data-toggle="popover" title="more note" data-html="true" data-content='
+        	
+
+	
+
+	
+	
+	
+	<a href="/familia/"><span class="title">☎️</span></a>
+	
+	
+	
+	<a href="/note/uses/"><span class="title">Jekyll uses</span></a>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<a href="/note/after-crisis/"><span class="title">After the crisis</span></a>
+	
+	
+	
+	<a href="/note/calibre/"><span class="title">Calibre PDF Conversion</span></a>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+		
+
+		
+
+			
+
+	
+        ' data-placement="bottom">note</a>/</h5>
+        <h1 class="title">Calibre PDF Conversion</h1>
+        
+        <h5 class="description">how to convert epubs to pdfs</h5>
+        
+        <h5 class="date">Published in 29 Jan 2020</h5>
+        
+        
+        
+      </header>
+      <hr class="wow divider">
+      <article class="main wow">
+        <h2 id="instructions">Instructions</h2>
+
+<ul>
+  <li>Convert Book</li>
+  <li>Univers-Light-Normal 120%</li>
+  <li>Text Left Align</li>
+  <li>Layout 1 em</li>
+  <li>pdf output A5</li>
+  <li>header template</li>
+  <li>check page total, change header and run again</li>
+</ul>
+
+<h2 id="title-and-author-template">Title and Author template</h2>
+
+<div style="border-radius: 0 0 5px 5px;
+      background-color: #000;
+      color: white;
+      padding: 10px;">
+    <div style="display: grid; grid-template-columns: 1fr 1fr; grid-gap: 30px; font-size: 80%">
+      <p style="text-align: left">
+        _TITLE_
+      </p>
+      <p style="text-align: right">
+        _AUTHOR_
+      </p>
+    </div>
+   <div style="display: grid; grid-template-columns: calc((_PAGENUM_ * 100)/1173)% 1fr; grid-gap: 0; height: 3px">
+     <p style="
+      background-color: white;"></p>
+     <p style="
+      background-color: black;"></p>
+  </div>
+</div>
+
+<blockquote>
+
+</blockquote>
+
+<h2 id="title-only-template">Title-only template</h2>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span>
+  <span class="na">style=</span><span class="s">"text-align: center;
+    border-radius: 0 0 5px 5px;
+    background-color: #000;
+    color: white;
+    padding: 10px;"</span>
+<span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"height: 30px;"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">" margin: 0; font-size: 80%; text-align: center"</span><span class="nt">&gt;</span>
+      _TITLE_
+    <span class="nt">&lt;/p&gt;</span>
+
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span>
+    <span class="na">style=</span><span class="s">"   width: 100%;
+    display: block;
+    height: 3px;
+    background-color: black;"</span>
+  <span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span>
+      <span class="na">style=</span><span class="s">"      width: calc((_PAGENUM_ * 100%)/1173);
+    background-color: white;
+    display: block;
+    height: 3px;"</span>
+    <span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+      </article>
+    </div>
+    
+
+   
+   
+  
+
+  <style>
+      
+      
+  </style>
+
+
+  
+  
+  
+  <script src="/assets/vendor/jquery.min.js"></script>
+  
+  
+
+<script src="/assets/vendor/popper.min.js"></script>
+<script src="/assets/vendor/bootstrap.min.js"></script>
+<script>
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  });
+  $('[data-toggle="popover"]').popover({ trigger: "manual" , html: true, animation:false, content: ''})
+  .on("mouseenter", function () {
+    var _this = this;
+    $(this).popover("show");
+    $(".popover").on("mouseleave", function () {
+      $(_this).popover('hide');
+    });
+  }).on("mouseleave", function () {
+    var _this = this;
+    setTimeout(function () {
+      if (!$(".popover:hover").length) {
+        $(_this).popover("hide");
+      }
+    }, 300);
+  });
+</script>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

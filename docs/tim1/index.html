@@ -1,0 +1,94 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>nonlinear, tim1</title>
+  
+  
+  
+  <link
+  rel="stylesheet" href="/assets/main.css">
+  
+
+</head>
+<body class="creative code" id="public">
+  
+  
+    <div class="menu">
+      <div class="scroll">
+        
+        <header>
+          <h2 class="title">tim1</h2>
+          <p>
+           processing
+         </p>
+         <p><a href="https://github.com/nonlinear/play/blob/master/_posts/play/2020-09-08-tim1.html" target="_blank">
+         view github code</a></p>
+         
+         <hr>
+       </header>
+       <p>A p5js port from  <a href="https://timrodenbroeker.de/courses/creative-coding-essentials/processing/">timrodenbroeker</a></p>
+<script>
+	function setup() {
+  createCanvas(windowWidth, windowHeight);
+}
+
+function draw() {
+	let circle = windowWidth / 3;
+	background(mouseX/2);
+	fill(width-mouseX);
+	noStroke();
+	ellipse(mouseX, mouseY, circle, circle);
+}
+</script>
+     </div>
+   </div>
+   
+
+   
+   
+   <script>
+    document.addEventListener('gesturestart', function (e) {
+      e.preventDefault();
+    });
+  </script>
+  
+  
+
+  <style>
+      
+    html {
+      height  : 100%;
+      overflow: hidden;
+      position: relative;
+    }
+    body {
+      height  : 100%;
+      overflow: auto;
+      position: relative;
+      overflow: hidden;
+    }
+      
+      
+  </style>
+
+
+  
+  <script src="/assets/vendor/p5.min.js"></script>
+  <script src="/assets/vendor/p5.dom.min.js"></script>
+  <script src="/assets/vendor/p5.sound.min.js"></script>
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,227 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>nonlinear, grid1</title>
+  
+  
+  
+  <link
+  rel="stylesheet" href="/assets/main.css">
+  
+
+</head>
+<body class="creative code" id="public">
+  
+  
+    <div class="menu">
+      <div class="scroll">
+        
+        <header>
+          <h2 class="title">grid1</h2>
+          <p></p>
+         <p><a href="https://github.com/nonlinear/play/blob/master/_posts/play/2020-10-10-grid1.html" target="_blank">
+         view github code</a></p>
+         
+         <hr>
+       </header>
+       <p>Grid toolbox, version 1.0.1, <a href="https://github.com/nonlinear/play/blob/master/assets/articles/03.md#creative-code-toolbox">check feature list</a></p>
+
+<p>From this glitch</a>, studying with <a href="https://www.twitch.tv/rodjunjun">Rodrigo Junqueira</a>.</p>
+
+<p><a href="javascript:location.reload();">Reload page</a> for new random content.</p>
+
+<style>
+  
+body, html {
+  height: 100%;
+  display: grid;
+}
+canvas { 
+  margin: auto;
+  box-shadow: 5px 5px 2px rgba(0,0,0,.1);
+  border-radius: 5px;
+}
+  </style>
+<script>
+	// Grid for p5js
+// version 1.0.1
+
+function Grid(cellNumber,gap) {
+  this.cellNumber = cellNumber;
+  this.gap = gap;
+  this.width = (width-((this.cellNumber-1)*this.gap))/this.cellNumber;
+  this.cells = [];
+  for (let i = 0; i < this.cellNumber; i++) {
+    this.cells[i] = [];
+  }
+  
+  
+  this.show = function() {
+    for (let j = 0; j < this.cellNumber; j++) {
+      let heightPointer = 0;      
+      for (let i = 0; i < this.cells[j].length; i++) {
+        if (heightPointer + this.cells[j][i].height() < height) {
+          push();
+          translate(this.cellPosition(j),heightPointer);
+          heightPointer += this.cells[j][i].height();    
+          this.cells[j][i].show();
+          pop();
+        }
+      }    
+    }
+    
+  }
+  
+  this.stack = function(n, elem) {
+    this.cells[n].push(elem);    
+  }
+  
+  this.cellPosition = function(n) {
+    return this.width*n+this.gap*n;
+  }
+  
+}
+  function Element(size) {
+  this.palette = [color(153,204,224), color(227,92,55), color(52,52,50)];
+  this.shapes = ['straight','arc-left','arc-right'];
+  this.color = this.palette[floor(random(this.palette.length))];
+  this.direction;
+ 
+  this.shape = this.shapes[floor(random(this.shapes.length))];
+  this.size = size;
+  this.thickness = (this.size/3);
+  this.background = color(255,255,255);
+  
+  this.show = function() {
+    push();
+    noStroke(); 
+    if (this.shape == 'arc-left') {
+      translate(this.size, this.size);
+      fill(this.color);
+      arc(0, 0, this.size*2, this.size*2, HALF_PI, PI + HALF_PI);
+      fill(this.background);
+      arc(0, 0, this.size*2 -  (this.thickness*4), this.size*2 -  (this.thickness*4), HALF_PI, PI + HALF_PI);
+    } else if (this.shape == 'arc-right') {
+      translate(0, this.size);
+      fill(this.color);
+      arc(0, 0, this.size*2, this.size*2, PI + HALF_PI, HALF_PI);
+      fill(this.background);
+      arc(0, 0, this.size*2 - (this.thickness*4), this.size*2 - (this.thickness*4), PI + HALF_PI, HALF_PI);
+    }
+    else if (this.shape == 'straight') {
+      fill(this.palette[2]);
+      rect(0,0,this.size, this.thickness*2);
+      rect(0,(this.size*2 - this.thickness*2),this.size, this.thickness*2);  
+    }
+    pop();
+  }
+  this.height = function() {
+    return this.size*2;
+  }
+  
+}
+
+  let grid1;
+let elementsQty = 9;
+
+function setup() {
+  createCanvas(400, 584);
+  grid1 = new Grid(7,0);
+  
+  // generation
+  for (let j = 0; j < grid1.cellNumber; j++) {
+    for (let i = 0; i < elementsQty; i++) {
+      let newE = new Element(grid1.width);  
+      grid1.stack(j,newE);
+    }
+  }
+  
+  
+  
+  // get colwidth
+  // pass collwidth*2 as this.size
+  // heigth/this.size (arredondado para baixo) é o numero de objetos por coluna
+  
+
+  
+}
+
+function draw() {
+  background(255);
+  
+  // presentation
+  grid1.show();
+  
+  // logica do stack
+  // ha um objeto ja na coluna? se nao, 0, 0
+  // se sim, 0, (sum of all previous objects height)
+  
+
+//   grid1.show();
+//   fill(0);
+//   textSize(20);
+//   text('dsfsdv fgregrw fdgsgsfg dgsgsfg', grid1.cellPosition(2), 0, grid1.width);
+//   push(); 
+//   noStroke();
+//   fill(200,0,255);
+//   rect(grid1.cellPosition(0),0,grid1.width,100);
+//   pop();
+}
+
+
+
+
+
+	</script>
+     </div>
+   </div>
+   
+
+   
+   
+   <script>
+    document.addEventListener('gesturestart', function (e) {
+      e.preventDefault();
+    });
+  </script>
+  
+  
+
+  <style>
+      
+    html {
+      height  : 100%;
+      overflow: hidden;
+      position: relative;
+    }
+    body {
+      height  : 100%;
+      overflow: auto;
+      position: relative;
+      overflow: hidden;
+    }
+      
+      
+  </style>
+
+
+  
+  <script src="/assets/vendor/p5.min.js"></script>
+  <script src="/assets/vendor/p5.dom.min.js"></script>
+  <script src="/assets/vendor/p5.sound.min.js"></script>
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

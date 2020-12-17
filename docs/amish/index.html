@@ -1,0 +1,114 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>nonlinear, amish</title>
+  
+  
+  
+  <link
+  rel="stylesheet" href="/assets/main.css">
+  
+
+</head>
+<body class="creative code" id="public">
+  
+  
+    <div class="menu">
+      <div class="scroll">
+        
+        <header>
+          <h2 class="title">amish</h2>
+          <p>
+           devices
+         </p>
+         <p><a href="https://github.com/nonlinear/play/blob/master/_posts/play/2020-09-02-amish.html" target="_blank">
+         view github code</a></p>
+         
+         <hr>
+       </header>
+       <p>An instagram post from <a href="https://www.instagram.com/p/CEQMBarFjvy/">@amish_ranpariya</a></p>
+<script>
+	let angle = 0;
+	function setup() {
+		createCanvas(800, 800, WEBGL);
+		angleMode(DEGREES);
+	}
+	function draw() {
+		background(0);
+		push();
+		rotateX(angle);
+		rotateY(angle / 2);
+		rotateZ(angle / 1.5);
+		for (let i = 0; i < 5; i++) {
+				let x map(i, 0, 5, -250, 250);
+			for (let j = 0; j < 5; j++) {
+				let y map(j, 0, 5, -250, 250);
+			for (let k = 0; k < 5; k++) {
+				let z map(k, 0, 5, -250, 250);
+			push();
+			translate(x, y, z);
+			let r = map(i, 0, 5, 0, 255)
+			let g = map(j, 0, 5, 0, 255)
+			let b = map(k, 0, 5, 0, 255)
+			emissiveMaterial(r, g, b);
+			box(70);
+			pop();
+		}
+	}
+}
+pop();
+angle++;
+}
+</script>
+     </div>
+   </div>
+   
+
+   
+   
+   <script>
+    document.addEventListener('gesturestart', function (e) {
+      e.preventDefault();
+    });
+  </script>
+  
+  
+
+  <style>
+      
+    html {
+      height  : 100%;
+      overflow: hidden;
+      position: relative;
+    }
+    body {
+      height  : 100%;
+      overflow: auto;
+      position: relative;
+      overflow: hidden;
+    }
+      
+      
+  </style>
+
+
+  
+  <script src="/assets/vendor/p5.min.js"></script>
+  <script src="/assets/vendor/p5.dom.min.js"></script>
+  <script src="/assets/vendor/p5.sound.min.js"></script>
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

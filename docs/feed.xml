@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://127.0.0.1:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://127.0.0.1:4000/" rel="alternate" type="text/html" /><updated>2020-12-17T09:16:44-05:00</updated><id>http://127.0.0.1:4000/feed.xml</id><title type="html">nonlinear</title><subtitle>The anagram of my name is anarchist fool</subtitle><entry><title type="html">☎️</title><link href="http://127.0.0.1:4000/familia/" rel="alternate" type="text/html" title="☎️" /><published>2020-12-05T00:00:00-05:00</published><updated>2020-12-05T00:00:00-05:00</updated><id>http://127.0.0.1:4000/familia</id><content type="html" xml:base="http://127.0.0.1:4000/familia/">&lt;style type=&quot;text/css&quot;&gt;
+  .btn {
+    display: block;
+  margin: 5px 0;
+  width: 50%;
+  padding: 10px;
+  }
+&lt;/style&gt;
+
+&lt;p&gt;&lt;a href=&quot;facetime://info@nicholasfrota.com&quot; class=&quot;btn btn-primary&quot;&gt;
+Ligar pro Nicholas&lt;/a&gt;
+&lt;a href=&quot;facetime://solanger.frota@gmail.com&quot; class=&quot;btn btn-primary&quot;&gt;
+Ligar pra Solanger&lt;/a&gt;
+&lt;a href=&quot;facetime://thabata.frota@gmail.com&quot; class=&quot;btn btn-primary&quot;&gt;
+Ligar pra Thabata&lt;/a&gt;
+&lt;a href=&quot;facetime://ney@frota.net&quot; class=&quot;btn btn-primary&quot;&gt;
+Ligar pro Ney&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Jekyll uses</title><link href="http://127.0.0.1:4000/note/uses/" rel="alternate" type="text/html" title="Jekyll uses" /><published>2020-12-02T00:00:00-05:00</published><updated>2020-12-02T00:00:00-05:00</updated><id>http://127.0.0.1:4000/note/uses</id><content type="html" xml:base="http://127.0.0.1:4000/note/uses/">&lt;ul&gt;
+  &lt;li&gt;favicon&lt;/li&gt;
+  &lt;li&gt;open-graph&lt;/li&gt;
+  &lt;li&gt;style&lt;/li&gt;
+  &lt;li&gt;header&lt;/li&gt;
+  &lt;li&gt;no-scroll&lt;/li&gt;
+  &lt;li&gt;no-zoom&lt;/li&gt;
+  &lt;li&gt;p5js&lt;/li&gt;
+  &lt;li&gt;ml5js&lt;/li&gt;
+  &lt;li&gt;smooth-scroll&lt;/li&gt;
+  &lt;li&gt;sidenotes&lt;/li&gt;
+  &lt;li&gt;modernizr&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">favicon open-graph style header no-scroll no-zoom p5js ml5js smooth-scroll sidenotes modernizr</summary></entry><entry><title type="html">event</title><link href="http://127.0.0.1:4000/event/" rel="alternate" type="text/html" title="event" /><published>2020-12-01T00:00:00-05:00</published><updated>2020-12-01T00:00:00-05:00</updated><id>http://127.0.0.1:4000/event</id><content type="html" xml:base="http://127.0.0.1:4000/event/">&lt;style&gt;
+.events {
+  display: flex;
+  overflow: auto;
+  flex: none;
+  width: 100vw;
+  height: 100vh;
+  flex-flow: column nowrap;
+  scroll-snap-type: y mandatory;
+}
+
+.event {
+  scroll-snap-align: center;
+    text-align: center;
+  flex: none;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  text-align: center;
+}
+
+
+.card {
+	height: 100%;
+	width: 500px;
+margin: 0 auto;
+	background-color: white;
+	border-radius: 10px;
+    text-align: center;
+
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.1);
+}
+	@media screen and (max-width: 500px) {
+.card {
+	width: 100%;
+}
+}
+
+/*.event:nth-of-type(odd) .card {
+	    transform: rotate(1deg);
+}
+.event:nth-of-type(even) .card {
+	    transform: rotate(-1deg);
+}*/
+
+.card a {
+	display: inline;
+	font-size: 80px;
+	margin-top: 50px;
+}
+
+
+
+&lt;/style&gt;
+&lt;div class=&quot;events&quot;&gt;
+
+&lt;div class=&quot;event&quot; id=&quot;1&quot;&gt;
+&lt;div class=&quot;card&quot;&gt;
+		&lt;a href=&quot;#2&quot;&gt;event 1&lt;/a&gt;
+		&lt;button onClick='screenfull.request();'&gt;Make fullscreen&lt;/button&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;event&quot; id=&quot;2&quot;&gt;
+&lt;div class=&quot;card&quot;&gt;
+		&lt;a href=&quot;#3&quot;&gt;event 2&lt;/a&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;event&quot; id=&quot;3&quot;&gt;
+&lt;div class=&quot;card&quot;&gt;
+		&lt;a href=&quot;#4&quot;&gt;event 3&lt;/a&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;event&quot; id=&quot;4&quot;&gt;
+&lt;div class=&quot;card&quot;&gt;
+		&lt;a href=&quot;#5&quot;&gt;event 4&lt;/a&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;event&quot; id=&quot;5&quot;&gt;
+&lt;div class=&quot;card&quot;&gt;
+		&lt;a href=&quot;#6&quot;&gt;event 5&lt;/a&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;event&quot; id=&quot;6&quot;&gt;
+&lt;div class=&quot;card&quot;&gt;
+		&lt;a href=&quot;#7&quot;&gt;event 6&lt;/a&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;event&quot; id=&quot;7&quot;&gt;
+&lt;div class=&quot;card&quot;&gt;
+		&lt;a href=&quot;#8&quot;&gt;event 7&lt;/a&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;event&quot; id=&quot;8&quot;&gt;
+&lt;div class=&quot;card&quot;&gt;
+		&lt;a href=&quot;#9&quot;&gt;event 8&lt;/a&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;event&quot; id=&quot;9&quot;&gt;
+&lt;div class=&quot;card&quot;&gt;
+		&lt;a href=&quot;#1&quot;&gt;event 9&lt;/a&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+	let resize;
+function setup() {
+	var myCanvas = createCanvas(200, 200);
+	myCanvas.parent(&quot;thecanvas&quot;);
+
+
+resize = selectAll('.resize');
+}
+
+function draw() {
+	// counter, test condition, update counter, code
+	for (var i = 0; i &lt; resize.length; i++) {
+		 resize[i].style('color','blue');
+	}
+
+
+}
+&lt;/script&gt;</content><author><name></name></author><category term="creative code" /><summary type="html">.events { display: flex; overflow: auto; flex: none; width: 100vw; height: 100vh; flex-flow: column nowrap; scroll-snap-type: y mandatory; }</summary></entry><entry><title type="html">illos</title><link href="http://127.0.0.1:4000/illos/" rel="alternate" type="text/html" title="illos" /><published>2020-11-25T00:00:00-05:00</published><updated>2020-11-25T00:00:00-05:00</updated><id>http://127.0.0.1:4000/illos</id><content type="html" xml:base="http://127.0.0.1:4000/illos/">&lt;p&gt;playing with my illustrations, plus p5js&lt;/p&gt;
+&lt;p&gt;future state:&lt;/p&gt;
+&lt;ol&gt;
+	&lt;li&gt;make 1st layer move too&lt;/li&gt;
+	&lt;li&gt;loading images&lt;/li&gt;
+	&lt;li&gt;array of other images, with diff layerNum (random? on click)&lt;/li&gt;
+	&lt;li&gt;parallax should be normalize by layerNum&lt;/li&gt;
+	&lt;li&gt;accelerometer if available, mouse if not&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;style&gt;
+	
+body, html {
+  height: 100%;
+  display: grid;
+}
+canvas { 
+  margin: auto;
+  box-shadow: 5px 5px 2px rgba(0,0,0,.1);
+  border-radius: 5px;
+}
+	canvas {
+		padding 20px;
+	}
+&lt;/style&gt;
+&lt;script&gt;
+	let layers = [];
+	let illustration = &quot;brat&quot;;
+	let layerNum = 5;
+	let parallax = 5;
+	function preload(){
+		for (var i = 1; i &lt;= layerNum; i++) {
+			layers.push(loadImage('../assets/images/illustrations/' + illustration + '0' + i + '.png'));
+		}
+	}
+	function setup() {
+		createCanvas(500, 500);
+	}
+	function draw() {
+		background(243, 228, 176);
+
+		for (var i = 0; i &lt; layerNum; i++) {
+			let dx = map(mouseX, 0, width, -i * parallax, i * parallax);
+			let dy = map(mouseY, 0, height, -i * parallax, i * parallax);
+			image(layers[i], dx, dy, width, height);
+		}
+
+		// image 1, move parallax * 0
+		// image 2, move parallax * 1
+		//
+		
+	}
+&lt;/script&gt;</content><author><name></name></author><category term="creative code" /><summary type="html">playing with my illustrations, plus p5js future state: make 1st layer move too loading images array of other images, with diff layerNum (random? on click) parallax should be normalize by layerNum accelerometer if available, mouse if not</summary></entry><entry><title type="html">vibration</title><link href="http://127.0.0.1:4000/vibration/" rel="alternate" type="text/html" title="vibration" /><published>2020-11-11T00:00:00-05:00</published><updated>2020-11-11T00:00:00-05:00</updated><id>http://127.0.0.1:4000/vibration</id><content type="html" xml:base="http://127.0.0.1:4000/vibration/">&lt;p&gt;from &lt;a href=&quot;https://www.instagram.com/p/CFEiaBOnjIL/&quot;&gt;this instagram&lt;/a&gt;, but I don't think it works.&lt;/p&gt;
+
+&lt;script&gt;
+let R0;
+
+function setup() {
+  createCanvas(1000, 1000);
+}
+
+function draw() {
+  background(0);
+  R0 = 0.26 * width;
+  if (R0 &lt;= 0)
+    noLoop();
+  translate(width/2, width/2);
+  let inc = .005;
+  noStroke();
+  
+for (let i=0; R0 &gt; 20; i++) {
+	R0 -= 10;
+	fill(255 * (i % 2));
+	beginShape();
+	for (let a = 0; a &lt;= TWO_PI; a += inc) {
+		let r - min(1 / abs(sin(a)), 1 / abs(cos(a)));
+		let f = 2;
+		let R = R0 + noise((1 + sin(a)) * f, (1 + cos(a)) * f) * R0;
+		let x = R * r * sin(a);
+		let y = R * r * cos(a);
+		vertex(x, y);
+	}
+	endShape(CLOSE);
+	
+}
+}
+&lt;/script&gt;</content><author><name></name></author><category term="creative code" /><category term="random," /><category term="fail" /><summary type="html">from this instagram, but I don't think it works.</summary></entry><entry><title type="html">html experiments</title><link href="http://127.0.0.1:4000/html/" rel="alternate" type="text/html" title="html experiments" /><published>2020-10-28T00:00:00-04:00</published><updated>2020-10-28T00:00:00-04:00</updated><id>http://127.0.0.1:4000/html</id><content type="html" xml:base="http://127.0.0.1:4000/html/">coisas a fazer
+- illo com giroscopia
+- random svg from folder
+- limpar css (outro default:)
+- criar layouts com grid
+&lt;style&gt;
+	.resize {
+		color: red;
+	}
+
+
+&lt;/style&gt;
+&lt;p class=&quot;resize&quot;&gt;Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Quasi, facilis?&lt;/p&gt;
+&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td class=&quot;resize&quot;&gt;
+		Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Delectus, iure?&lt;/td&gt;
+		&lt;td&gt;Non ipsa iusto aliquid maiores, fugit in, aperiam tempore rerum.&lt;/td&gt;
+		&lt;td&gt;Exercitationem aliquam sit libero repellat sapiente mollitia aliquid quos soluta?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Molestiae, facere.&lt;/td&gt;
+		&lt;td id=&quot;thecanvas&quot;&gt;&lt;/td&gt;
+		&lt;td class=&quot;resize&quot;&gt;Quos ad exercitationem quia sint labore modi adipisci similique repellendus.&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur, eum.&lt;/td&gt;
+		&lt;td&gt;Eaque commodi perferendis deleniti suscipit sapiente expedita nemo quam dicta?&lt;/td&gt;
+		&lt;td class=&quot;resize&quot;&gt;Tempore dolorem recusandae voluptate magni dolores odio in nemo amet.&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+
+
+&lt;script&gt;
+	let resize;
+function setup() {
+	var myCanvas = createCanvas(200, 200);
+	myCanvas.parent(&quot;thecanvas&quot;);
+
+
+resize = selectAll('.resize');
+}
+
+function draw() {
+	// counter, test condition, update counter, code
+	for (var i = 0; i &lt; resize.length; i++) {
+		 resize[i].style('color','blue');
+	}
+
+
+}
+&lt;/script&gt;</content><author><name></name></author><category term="creative code" /><category term="random" /><summary type="html">coisas a fazer - illo com giroscopia - random svg from folder - limpar css (outro default:) - criar layouts com grid .resize { color: red; }</summary></entry><entry><title type="html">grid and typography</title><link href="http://127.0.0.1:4000/grid2/" rel="alternate" type="text/html" title="grid and typography" /><published>2020-10-28T00:00:00-04:00</published><updated>2020-10-28T00:00:00-04:00</updated><id>http://127.0.0.1:4000/grid2</id><content type="html" xml:base="http://127.0.0.1:4000/grid2/">&lt;p&gt;typography examples using &lt;a href=&quot;https://github.com/nonlinear/play/blob/master/assets/articles/03.md#creative-code-toolbox&quot;&gt;grid toolbox&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;from &lt;a href=&quot;https://glitch.com/edit/#!/tipografia-e-grid?path=index.html%3A46%3A0&quot;&gt;THIS GLITCH&lt;/a&gt;&lt;/p&gt;
+
+&lt;style&gt;
+	
+body, html {
+  height: 100%;
+  display: grid;
+}
+canvas { 
+  margin: auto;
+  box-shadow: 5px 5px 2px rgba(0,0,0,.1);
+  border-radius: 5px;
+}
+	canvas {
+		padding 20px;
+	}
+&lt;/style&gt;
+&lt;script&gt;
+	// Grid for p5js
+// version 1.0.1
+
+function Grid(cellNumber,gap) {
+  this.cellNumber = cellNumber;
+  this.gap = gap;
+  this.width = (width-((this.cellNumber-1)*this.gap))/this.cellNumber;
+  this.cells = [];
+  for (let i = 0; i &lt; this.cellNumber; i++) {
+    this.cells[i] = [];
+  }
+  
+  
+  this.show = function() {
+    for (let j = 0; j &lt; this.cellNumber; j++) {
+      let heightPointer = 0;      
+      for (let i = 0; i &lt; this.cells[j].length; i++) {
+        if (heightPointer + this.cells[j][i].height() &lt; height) {
+          push();
+          translate(this.cellPosition(j),heightPointer);
+          heightPointer += this.cells[j][i].height();    
+          this.cells[j][i].show();
+          pop();
+        }
+      }    
+    }
+    
+  }
+  
+  this.stack = function(n, elem) {
+    this.cells[n].push(elem);    
+  }
+  
+  this.cellPosition = function(n) {
+    return this.width*n+this.gap*n;
+  }
+  
+}
+	function setup() {
+		createCanvas(400, 584);
+		grid1 = new Grid(2,10);
+		text1 = new Title(&quot;Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Praesentium perferendis explicabo modi fugit nostrum ex minus sit velit at impedit.&quot;);
+	}
+	function draw() {
+		background(255);
+		grid1.show();
+		grid1.stack(0,text1);
+		fill(0,0,0);
+
+	}
+	function Title(text) {
+		this.height = function() {
+			return 50;
+		}
+		this.text = text;
+		this.show = function() {
+			push();
+			textSize(40);
+			textAlign(LEFT, TOP);
+			text(this.text, 10, 10, 300);
+			pop();
+		}
+	}
+&lt;/script&gt;</content><author><name></name></author><category term="creative code" /><category term="random" /><summary type="html">typography examples using grid toolbox from THIS GLITCH</summary></entry><entry><title type="html">start training on rings</title><link href="http://127.0.0.1:4000/rings/start/" rel="alternate" type="text/html" title="start training on rings" /><published>2020-10-16T00:00:00-04:00</published><updated>2020-10-16T00:00:00-04:00</updated><id>http://127.0.0.1:4000/rings/start</id><content type="html" xml:base="http://127.0.0.1:4000/rings/start/">&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt; &lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;Support hold&lt;/td&gt;
+      &lt;td&gt;few seconds, close to the body, stablizing your hands. Stay till you cna handle 15 seconds.&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;&lt;img src=&quot;/assets/images/rings/start01.png&quot; alt=&quot;&quot; /&gt; &lt;img src=&quot;/assets/images/rings/start02.png&quot; alt=&quot;&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1.2&lt;/td&gt;
+      &lt;td&gt;Advanced support hold&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;&lt;img src=&quot;/assets/images/rings/start03.png&quot; alt=&quot;&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;Plank with rings&lt;/td&gt;
+      &lt;td&gt;Stay till 15 seconds&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;&lt;img src=&quot;/assets/images/rings/start04.png&quot; alt=&quot;&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;Ring dips&lt;/td&gt;
+      &lt;td&gt;At least 10 good reps&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;&lt;img src=&quot;/assets/images/rings/start05.png&quot; alt=&quot;&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3.2&lt;/td&gt;
+      &lt;td&gt;Bulgarian dips&lt;/td&gt;
+      &lt;td&gt;At least 10 good reps&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;&lt;img src=&quot;/assets/images/rings/start06.png&quot; alt=&quot;&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;td&gt;Ring pushup&lt;/td&gt;
+      &lt;td&gt;focus on stabilizing your hands. till 10 good reps&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;&lt;img src=&quot;/assets/images/rings/start07.png&quot; alt=&quot;&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;5&lt;/td&gt;
+      &lt;td&gt;False Grip&lt;/td&gt;
+      &lt;td&gt;practice till 15 seconds hold&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;&lt;img src=&quot;/assets/images/rings/start08.png&quot; alt=&quot;&quot; /&gt; &lt;img src=&quot;/assets/images/rings/start09.png&quot; alt=&quot;&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;6&lt;/td&gt;
+      &lt;td&gt;Ring pull ups&lt;/td&gt;
+      &lt;td&gt;rotate wrists doing the movement&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;&lt;img src=&quot;/assets/images/rings/start10.png&quot; alt=&quot;&quot; /&gt; &lt;img src=&quot;/assets/images/rings/start11.png&quot; alt=&quot;&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;6.2&lt;/td&gt;
+      &lt;td&gt;Simpler pull ups&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;&lt;img src=&quot;/assets/images/rings/start12.png&quot; alt=&quot;&quot; /&gt; &lt;img src=&quot;/assets/images/rings/start13.png&quot; alt=&quot;&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</content><author><name></name></author><summary type="html">        1 Support hold few seconds, close to the body, stablizing your hands. Stay till you cna handle 15 seconds. 1.2 Advanced support hold   2 Plank with rings Stay till 15 seconds 3 Ring dips At least 10 good reps 3.2 Bulgarian dips At least 10 good reps 4 Ring pushup focus on stabilizing your hands. till 10 good reps 5 False Grip practice till 15 seconds hold 6 Ring pull ups rotate wrists doing the movement 6.2 Simpler pull ups  </summary></entry><entry><title type="html">stretches</title><link href="http://127.0.0.1:4000/rings/stretches/" rel="alternate" type="text/html" title="stretches" /><published>2020-10-16T00:00:00-04:00</published><updated>2020-10-16T00:00:00-04:00</updated><id>http://127.0.0.1:4000/rings/stretches</id><content type="html" xml:base="http://127.0.0.1:4000/rings/stretches/">&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt; &lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;Squat opener&lt;/td&gt;
+      &lt;td&gt;3 min&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;&lt;img src=&quot;/assets/images/rings/stretches01.png&quot; style=&quot;width: 250px&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;Shoulder stretch&lt;/td&gt;
+      &lt;td&gt;1 min per side&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;&lt;img src=&quot;/assets/images/rings/stretches02.png&quot; style=&quot;width: 250px&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;Butterfly stretch&lt;/td&gt;
+      &lt;td&gt;3 min&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;&lt;img src=&quot;/assets/images/rings/stretches03.png&quot; style=&quot;width: 250px&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;td&gt;Forearms&lt;/td&gt;
+      &lt;td&gt;3 min&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;&lt;img src=&quot;/assets/images/rings/stretches04.png&quot; style=&quot;width: 250px&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;5&lt;/td&gt;
+      &lt;td&gt;Triceps stretch&lt;/td&gt;
+      &lt;td&gt;1 min per side&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;&lt;img src=&quot;/assets/images/rings/stretches05.png&quot; style=&quot;width: 250px&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;6 (night)&lt;/td&gt;
+      &lt;td&gt;Hip stretch&lt;/td&gt;
+      &lt;td&gt;2 min per side&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;&lt;img src=&quot;/assets/images/rings/stretches06.png&quot; style=&quot;width: 250px&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;7 (night)&lt;/td&gt;
+      &lt;td&gt;Forward fold&lt;/td&gt;
+      &lt;td&gt;3 min&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;&lt;img src=&quot;/assets/images/rings/stretches07.png&quot; style=&quot;width: 250px&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</content><author><name></name></author><summary type="html">        1 Squat opener 3 min 2 Shoulder stretch 1 min per side 3 Butterfly stretch 3 min 4 Forearms 3 min 5 Triceps stretch 1 min per side 6 (night) Hip stretch 2 min per side 7 (night) Forward fold 3 min        </summary></entry><entry><title type="html">grid1</title><link href="http://127.0.0.1:4000/grid1/" rel="alternate" type="text/html" title="grid1" /><published>2020-10-10T00:00:00-04:00</published><updated>2020-10-10T00:00:00-04:00</updated><id>http://127.0.0.1:4000/grid1</id><content type="html" xml:base="http://127.0.0.1:4000/grid1/">&lt;p&gt;Grid toolbox, version 1.0.1, &lt;a href=&quot;https://github.com/nonlinear/play/blob/master/assets/articles/03.md#creative-code-toolbox&quot;&gt;check feature list&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;From this glitch&lt;/a&gt;, studying with &lt;a href=&quot;https://www.twitch.tv/rodjunjun&quot;&gt;Rodrigo Junqueira&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;javascript:location.reload();&quot;&gt;Reload page&lt;/a&gt; for new random content.&lt;/p&gt;
+
+&lt;style&gt;
+  
+body, html {
+  height: 100%;
+  display: grid;
+}
+canvas { 
+  margin: auto;
+  box-shadow: 5px 5px 2px rgba(0,0,0,.1);
+  border-radius: 5px;
+}
+  &lt;/style&gt;
+&lt;script&gt;
+	// Grid for p5js
+// version 1.0.1
+
+function Grid(cellNumber,gap) {
+  this.cellNumber = cellNumber;
+  this.gap = gap;
+  this.width = (width-((this.cellNumber-1)*this.gap))/this.cellNumber;
+  this.cells = [];
+  for (let i = 0; i &lt; this.cellNumber; i++) {
+    this.cells[i] = [];
+  }
+  
+  
+  this.show = function() {
+    for (let j = 0; j &lt; this.cellNumber; j++) {
+      let heightPointer = 0;      
+      for (let i = 0; i &lt; this.cells[j].length; i++) {
+        if (heightPointer + this.cells[j][i].height() &lt; height) {
+          push();
+          translate(this.cellPosition(j),heightPointer);
+          heightPointer += this.cells[j][i].height();    
+          this.cells[j][i].show();
+          pop();
+        }
+      }    
+    }
+    
+  }
+  
+  this.stack = function(n, elem) {
+    this.cells[n].push(elem);    
+  }
+  
+  this.cellPosition = function(n) {
+    return this.width*n+this.gap*n;
+  }
+  
+}
+  function Element(size) {
+  this.palette = [color(153,204,224), color(227,92,55), color(52,52,50)];
+  this.shapes = ['straight','arc-left','arc-right'];
+  this.color = this.palette[floor(random(this.palette.length))];
+  this.direction;
+ 
+  this.shape = this.shapes[floor(random(this.shapes.length))];
+  this.size = size;
+  this.thickness = (this.size/3);
+  this.background = color(255,255,255);
+  
+  this.show = function() {
+    push();
+    noStroke(); 
+    if (this.shape == 'arc-left') {
+      translate(this.size, this.size);
+      fill(this.color);
+      arc(0, 0, this.size*2, this.size*2, HALF_PI, PI + HALF_PI);
+      fill(this.background);
+      arc(0, 0, this.size*2 -  (this.thickness*4), this.size*2 -  (this.thickness*4), HALF_PI, PI + HALF_PI);
+    } else if (this.shape == 'arc-right') {
+      translate(0, this.size);
+      fill(this.color);
+      arc(0, 0, this.size*2, this.size*2, PI + HALF_PI, HALF_PI);
+      fill(this.background);
+      arc(0, 0, this.size*2 - (this.thickness*4), this.size*2 - (this.thickness*4), PI + HALF_PI, HALF_PI);
+    }
+    else if (this.shape == 'straight') {
+      fill(this.palette[2]);
+      rect(0,0,this.size, this.thickness*2);
+      rect(0,(this.size*2 - this.thickness*2),this.size, this.thickness*2);  
+    }
+    pop();
+  }
+  this.height = function() {
+    return this.size*2;
+  }
+  
+}
+
+  let grid1;
+let elementsQty = 9;
+
+function setup() {
+  createCanvas(400, 584);
+  grid1 = new Grid(7,0);
+  
+  // generation
+  for (let j = 0; j &lt; grid1.cellNumber; j++) {
+    for (let i = 0; i &lt; elementsQty; i++) {
+      let newE = new Element(grid1.width);  
+      grid1.stack(j,newE);
+    }
+  }
+  
+  
+  
+  // get colwidth
+  // pass collwidth*2 as this.size
+  // heigth/this.size (arredondado para baixo) é o numero de objetos por coluna
+  
+
+  
+}
+
+function draw() {
+  background(255);
+  
+  // presentation
+  grid1.show();
+  
+  // logica do stack
+  // ha um objeto ja na coluna? se nao, 0, 0
+  // se sim, 0, (sum of all previous objects height)
+  
+
+//   grid1.show();
+//   fill(0);
+//   textSize(20);
+//   text('dsfsdv fgregrw fdgsgsfg dgsgsfg', grid1.cellPosition(2), 0, grid1.width);
+//   push(); 
+//   noStroke();
+//   fill(200,0,255);
+//   rect(grid1.cellPosition(0),0,grid1.width,100);
+//   pop();
+}
+
+
+
+
+
+	&lt;/script&gt;</content><author><name></name></author><category term="creative code" /><summary type="html">Grid toolbox, version 1.0.1, check feature list</summary></entry></feed>

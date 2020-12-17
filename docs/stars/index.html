@@ -1,0 +1,126 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>nonlinear, stars</title>
+  
+  
+  
+  <link
+  rel="stylesheet" href="/assets/main.css">
+  
+
+</head>
+<body class="creative code" id="public">
+  
+  
+    <div class="menu">
+      <div class="scroll">
+        
+        <header>
+          <h2 class="title">stars</h2>
+          <p>
+           devices
+         </p>
+         <p><a href="https://github.com/nonlinear/play/blob/master/_posts/play/2020-03-24-stars.html" target="_blank">
+         view github code</a></p>
+         
+         <hr>
+       </header>
+       In this card I write the main object (the stars) as a <a href="https://github.com/nonlinear/play/blob/master/_includes/stars.html">jekyll include</a>. This way other cards can also use it too.
+<script>
+	function star(left, top, size, range) {
+			push()
+			stroke(random(0, 100))
+			strokeWeight(2)
+			translate(random(left, left + range), random(top, top + range))
+			line(0, size * -1, 0, size)
+			rotate(45)
+			line(0, size * -1, 0, size)
+			rotate(45)
+			line(0, size * -1, 0, size)
+			pop()
+		}
+</script>
+<script>
+	function setup() {
+		createCanvas(windowWidth, windowHeight)
+		console.log('The faculty of 5 is 1*2*3*4*5 = ' + faculty(5))
+	}
+	function faculty(theValue) {
+		var result = 1
+		for (var i = 1; i <= theValue; i++) {
+			result = result * i
+		}
+		return result
+	}
+
+	function draw() {
+		background(125)
+		ellipse(50, 50, 50, 50)
+		push()
+		star(30, 20, 10, 3)
+		star(50, 40, 15, 3)
+		star(40, 70, 12, 3)
+		translate(100, 60)
+		star(30, 20, 10, 3)
+		star(50, 40, 8, 3)
+		star(40, 70, 7, 3)
+		translate(20, -60)
+		star(30, 20, 15, 3)
+		star(50, 40, 10, 3)
+		star(40, 70, 12, 3)
+		pop()
+	}
+</script>
+     </div>
+   </div>
+   
+
+   
+   
+   <script>
+    document.addEventListener('gesturestart', function (e) {
+      e.preventDefault();
+    });
+  </script>
+  
+  
+
+  <style>
+      
+    html {
+      height  : 100%;
+      overflow: hidden;
+      position: relative;
+    }
+    body {
+      height  : 100%;
+      overflow: auto;
+      position: relative;
+      overflow: hidden;
+    }
+      
+      
+  </style>
+
+
+  
+  <script src="/assets/vendor/p5.min.js"></script>
+  <script src="/assets/vendor/p5.dom.min.js"></script>
+  <script src="/assets/vendor/p5.sound.min.js"></script>
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
