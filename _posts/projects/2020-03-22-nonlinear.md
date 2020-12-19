@@ -5,7 +5,7 @@ slug: nonlinear
 categories: project
 status: public
 description: notes about this site
-uses: header, style, bootstrap, jquery, favicon, open-graph
+switches: header, style, bootstrap, jquery, favicon, open-graph
 date: 2020-01-29 18:03:16 -0500
 permalink: /:categories/:slug/
 ---

@@ -5,7 +5,7 @@ slug: computational-guidance-systems
 categories: study
 status: public
 description: notes on UX+Data, Computation as Your Experience Design Superpower
-uses: header, style, bootstrap, jquery, favicon, open-graph
+switches: header, style, bootstrap, jquery, favicon, open-graph
 date: 2020-01-29 18:03:16 -0500
 permalink: /:categories/:slug/
 ---

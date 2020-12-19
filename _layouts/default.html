@@ -3,10 +3,10 @@ layout: default
 ---
 <html>
 <head>
-  {% if page.uses contains "redirect" %}
+  {% if page.switches contains "redirect" %}
   <meta http-equiv="refresh" content="0; url={{ content }}" />
   {%- endif -%}
-  {% if page.uses contains "favicon" %}
+  {% if page.switches contains "favicon" %}
   <link rel="apple-touch-icon" sizes="180x180"
   href="{{'/assets/favicons/apple-touch-icon.png' | prepend: site.baseurl}}">
   <link rel="icon" type="image/png" sizes="32x32"
@@ -22,7 +22,7 @@ layout: default
   {%- endif -%}
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ site.title }}{%- if page.title -%}, {{ page.title }}{%- endif -%}</title>
-  {% if page.uses contains "open-graph" %}
+  {% if page.switches contains "open-graph" %}
   <meta name="title" content="{{ site.title }} {%- if page.title -%}, {{ page.title }}{%- endif -%}">
   {%if page.description %}
   <meta name="description" content="{{ page.description }}">
@@ -52,21 +52,21 @@ layout: default
   <meta property="twitter:image" content="{{ site.url }}/assets/images/{{ page.cover }}"> {% endif %} {%if page.open %}
   <meta property="twitter:image" content="{{ site.url }}/assets/images/{{ page.open }}"> {% endif %} 
   {% endif %}
-  {% if page.uses contains "bootstrap" %}
+  {% if page.switches contains "bootstrap" %}
   <link
   rel="stylesheet" href="{{'/assets/vendor/bootstrap.css' | prepend: site.baseurl}}">
   {% endif %}
-  {% if page.uses contains "style" %}
+  {% if page.switches contains "style" %}
   <link
   rel="stylesheet" href="/assets/main.css">
   {% endif %}
 
 </head>
 <body class="{%- if page.categories -%}{{ page.categories }}{%- endif -%}" id="{%- if page.status -%}{{ page.status }}{%- endif -%}">
-  {% if page.uses contains "request-" %}
+  {% if page.switches contains "request-" %}
   {% include request.html %}
   {% endif %}
-  {% if page.uses contains "header" %}
+  {% if page.switches contains "header" %}
   <div class="container">
     <header class="header wow">
       {% if page.path contains '_posts' %}
@@ -92,7 +92,7 @@ layout: default
         {{ content }}
       </article>
     </div>
-    {% elsif page.uses contains "sidenotes" %}
+    {% elsif page.switches contains "sidenotes" %}
     <div class="menu">
       <div class="scroll">
         {% if page.path contains '_posts' %}
@@ -117,21 +117,21 @@ layout: default
    {% endif %}
 
    
-   {% if page.uses contains "no-zoom" %}
+   {% if page.switches contains "no-zoom" %}
    <script>
     document.addEventListener('gesturestart', function (e) {
       e.preventDefault();
     });
   </script>
   {% endif %}
-  {% if page.uses contains "no-nav" %}
+  {% if page.switches contains "no-nav" %}
   <script>
     window.scrollTo(0,1);
   </script>
   {% endif %}
 
   <style>
-      {% if page.uses contains "no-scroll" %}
+      {% if page.switches contains "no-scroll" %}
     html {
       height  : 100%;
       overflow: hidden;
@@ -144,7 +144,7 @@ layout: default
       overflow: hidden;
     }
       {% endif %}
-      {% if page.uses contains "no-text-select" %}
+      {% if page.switches contains "no-text-select" %}
       * {
      -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
@@ -158,18 +158,18 @@ layout: default
   </style>
 
 
-  {% if page.uses contains "p5js" %}
+  {% if page.switches contains "p5js" %}
   <script src="{{'/assets/vendor/p5.min.js' | prepend: site.baseurl}}"></script>
   <script src="{{'/assets/vendor/p5.dom.min.js' | prepend: site.baseurl}}"></script>
   <script src="{{'/assets/vendor/p5.sound.min.js' | prepend: site.baseurl}}"></script>
   {% endif %}
-  {% if page.uses contains "ml5js" %}
+  {% if page.switches contains "ml5js" %}
   <script src="{{'/assets/vendor/ml5.min.js' | prepend: site.baseurl}}"></script>
   {% endif %}
-  {% if page.uses contains "jquery" %}
+  {% if page.switches contains "jquery" %}
   <script src="{{'/assets/vendor/jquery.min.js' | prepend: site.baseurl}}"></script>
   {% endif %}
-  {% if page.uses contains "smooth-scroll" %}
+  {% if page.switches contains "smooth-scroll" %}
   <script type="text/javascript">
    $('a').click(function(){
     $('html, body').animate({
@@ -179,7 +179,7 @@ layout: default
   });
 </script>
 {% endif %}
-{% if page.uses contains "bootstrap" %}
+{% if page.switches contains "bootstrap" %}
 <script src="{{'/assets/vendor/popper.min.js' | prepend: site.baseurl}}"></script>
 <script src="{{'/assets/vendor/bootstrap.min.js' | prepend: site.baseurl}}"></script>
 <script>
@@ -205,12 +205,12 @@ layout: default
 {% endif %}
 
 
-{% if page.uses contains "modernizr" %}
+{% if page.switches contains "modernizr" %}
 <script src="{{'/assets/vendor/modernizr.js' | prepend: site.baseurl}}"></script>
 <script src="{{'/assets/vendor/detectizr.js' | prepend: site.baseurl}}"></script>
 {% endif %}
 
-{% if page.uses contains "fullscreen" %}
+{% if page.switches contains "fullscreen" %}
 <script src="{{'/assets/vendor/screenfull.js' | prepend: site.baseurl}}"></script>
 
 {% endif %}
