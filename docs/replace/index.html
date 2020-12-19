@@ -4,14 +4,13 @@
   <title>nonlinear, replace</title>
   
   
-  <link
+    <link
   rel="stylesheet" href="/assets/vendor/bootstrap.css">
   
   
-  <link
+    <link
   rel="stylesheet" href="/assets/main.css">
   
-
 </head>
 <body class="creative code" id="public">
   
@@ -88,69 +87,58 @@
 
 </script>
    
-
    
    
-  
-
-  <style>
-      
-      
-      * {
+   
+   
+       <style>
+    * {
      -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
+     -webkit-user-select: none; /* Safari */
      -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Old versions of Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
+     -moz-user-select: none; /* Old versions of Firefox */
+     -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome, Edge, Opera and Firefox */
-      }
-      
-  </style>
-
-
-  
-  <script src="/assets/vendor/p5.min.js"></script>
-  <script src="/assets/vendor/p5.dom.min.js"></script>
-  <script src="/assets/vendor/p5.sound.min.js"></script>
-  
-  
-  
-  <script src="/assets/vendor/jquery.min.js"></script>
-  
-  
-
-<script src="/assets/vendor/popper.min.js"></script>
-<script src="/assets/vendor/bootstrap.min.js"></script>
-<script>
-  $(function () {
-    $('[data-toggle="tooltip"]').tooltip()
-  });
-  $('[data-toggle="popover"]').popover({ trigger: "manual" , html: true, animation:false, content: ''})
-  .on("mouseenter", function () {
-    var _this = this;
-    $(this).popover("show");
-    $(".popover").on("mouseleave", function () {
-      $(_this).popover('hide');
+            supported by Chrome, Edge, Opera and Firefox */
+          }
+        </style>
+   
+   
+           <script src="/assets/vendor/p5.min.js"></script>
+        <script src="/assets/vendor/p5.dom.min.js"></script>
+        <script src="/assets/vendor/p5.sound.min.js"></script>
+   
+   
+   
+      <script src="/assets/vendor/jquery.min.js"></script>
+   
+   
+   
+     <script src="/assets/vendor/popper.min.js"></script>
+  <script src="/assets/vendor/bootstrap.min.js"></script>
+  <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
     });
-  }).on("mouseleave", function () {
-    var _this = this;
-    setTimeout(function () {
-      if (!$(".popover:hover").length) {
-        $(_this).popover("hide");
-      }
-    }, 300);
-  });
-</script>
+    $('[data-toggle="popover"]').popover({ trigger: "manual" , html: true, animation:false, content: ''})
+    .on("mouseenter", function () {
+      var _this = this;
+      $(this).popover("show");
+      $(".popover").on("mouseleave", function () {
+        $(_this).popover('hide');
+      });
+    }).on("mouseleave", function () {
+      var _this = this;
+      setTimeout(function () {
+        if (!$(".popover:hover").length) {
+          $(_this).popover("hide");
+        }
+      }, 300);
+    });
+  </script>
+   
+   
+   
+ </body>
 
-
-
-
-
-
-
-
-
-</body>
-
-</html>
+ </html>

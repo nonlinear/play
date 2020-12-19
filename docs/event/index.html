@@ -5,10 +5,9 @@
   
   
   
-  <link
+    <link
   rel="stylesheet" href="/assets/main.css">
   
-
 </head>
 <body class="creative code" id="public">
   
@@ -139,46 +138,32 @@ function draw() {
 
 
    
-
    
    
-  
+   
+   
+   
+           <script src="/assets/vendor/p5.min.js"></script>
+        <script src="/assets/vendor/p5.dom.min.js"></script>
+        <script src="/assets/vendor/p5.sound.min.js"></script>
+   
+   
+   
+   
+      <script type="text/javascript">
+     $('a').click(function(){
+      $('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top
+      }, 500);
+      return false;
+    });
+  </script>
+   
+   
+   
+   
+     <script src="/assets/vendor/screenfull.js"></script>
+   
+ </body>
 
-  <style>
-      
-      
-  </style>
-
-
-  
-  <script src="/assets/vendor/p5.min.js"></script>
-  <script src="/assets/vendor/p5.dom.min.js"></script>
-  <script src="/assets/vendor/p5.sound.min.js"></script>
-  
-  
-  
-  
-  <script type="text/javascript">
-   $('a').click(function(){
-    $('html, body').animate({
-      scrollTop: $( $(this).attr('href') ).offset().top
-    }, 500);
-    return false;
-  });
-</script>
-
-
-
-
-
-
-
-<script src="/assets/vendor/screenfull.js"></script>
-
-
-
-
-
-</body>
-
-</html>
+ </html>
