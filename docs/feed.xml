@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://127.0.0.1:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://127.0.0.1:4000/" rel="alternate" type="text/html" /><updated>2020-12-19T13:29:12-05:00</updated><id>http://127.0.0.1:4000/feed.xml</id><title type="html">nonlinear</title><subtitle>The anagram of my name is anarchist fool</subtitle><entry><title type="html">☎️</title><link href="http://127.0.0.1:4000/familia/" rel="alternate" type="text/html" title="☎️" /><published>2020-12-05T00:00:00-05:00</published><updated>2020-12-05T00:00:00-05:00</updated><id>http://127.0.0.1:4000/familia</id><content type="html" xml:base="http://127.0.0.1:4000/familia/">&lt;style type=&quot;text/css&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://127.0.0.1:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://127.0.0.1:4000/" rel="alternate" type="text/html" /><updated>2020-12-21T11:02:23-05:00</updated><id>http://127.0.0.1:4000/feed.xml</id><title type="html">nonlinear</title><subtitle>The anagram of my name is anarchist fool</subtitle><entry><title type="html">best abs</title><link href="http://127.0.0.1:4000/exercises/best-abs/" rel="alternate" type="text/html" title="best abs" /><published>2020-12-21T00:00:00-05:00</published><updated>2020-12-21T00:00:00-05:00</updated><id>http://127.0.0.1:4000/exercises/best-abs</id><content type="html" xml:base="http://127.0.0.1:4000/exercises/best-abs/">&lt;p&gt;&lt;img src=&quot;/assets/images/exercises/best-abs-01.gif&quot; alt=&quot;&quot; /&gt;&lt;img src=&quot;/assets/images/exercises/best-abs-02.gif&quot; alt=&quot;&quot; /&gt;&lt;img src=&quot;/assets/images/exercises/best-abs-03.gif&quot; alt=&quot;&quot; /&gt;&lt;img src=&quot;/assets/images/exercises/best-abs-03b.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">☎️</title><link href="http://127.0.0.1:4000/familia/" rel="alternate" type="text/html" title="☎️" /><published>2020-12-05T00:00:00-05:00</published><updated>2020-12-05T00:00:00-05:00</updated><id>http://127.0.0.1:4000/familia</id><content type="html" xml:base="http://127.0.0.1:4000/familia/">&lt;style type=&quot;text/css&quot;&gt;
   .btn {
     display: block;
   margin: 5px 0;
@@ -234,58 +234,7 @@ for (let i=0; R0 &gt; 20; i++) {
 	
 }
 }
-&lt;/script&gt;</content><author><name></name></author><category term="creative code" /><category term="random," /><category term="fail" /><summary type="html">from this instagram, but I don't think it works.</summary></entry><entry><title type="html">html experiments</title><link href="http://127.0.0.1:4000/html/" rel="alternate" type="text/html" title="html experiments" /><published>2020-10-28T00:00:00-04:00</published><updated>2020-10-28T00:00:00-04:00</updated><id>http://127.0.0.1:4000/html</id><content type="html" xml:base="http://127.0.0.1:4000/html/">coisas a fazer
-- illo com giroscopia
-- random svg from folder
-- limpar css (outro default:)
-- criar layouts com grid
-&lt;style&gt;
-	.resize {
-		color: red;
-	}
-
-
-&lt;/style&gt;
-&lt;p class=&quot;resize&quot;&gt;Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Quasi, facilis?&lt;/p&gt;
-&lt;table&gt;
-	&lt;tr&gt;
-		&lt;td class=&quot;resize&quot;&gt;
-		Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Delectus, iure?&lt;/td&gt;
-		&lt;td&gt;Non ipsa iusto aliquid maiores, fugit in, aperiam tempore rerum.&lt;/td&gt;
-		&lt;td&gt;Exercitationem aliquam sit libero repellat sapiente mollitia aliquid quos soluta?&lt;/td&gt;
-	&lt;/tr&gt;
-	&lt;tr&gt;
-		&lt;td&gt;Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Molestiae, facere.&lt;/td&gt;
-		&lt;td id=&quot;thecanvas&quot;&gt;&lt;/td&gt;
-		&lt;td class=&quot;resize&quot;&gt;Quos ad exercitationem quia sint labore modi adipisci similique repellendus.&lt;/td&gt;
-	&lt;/tr&gt;
-	&lt;tr&gt;
-		&lt;td&gt;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur, eum.&lt;/td&gt;
-		&lt;td&gt;Eaque commodi perferendis deleniti suscipit sapiente expedita nemo quam dicta?&lt;/td&gt;
-		&lt;td class=&quot;resize&quot;&gt;Tempore dolorem recusandae voluptate magni dolores odio in nemo amet.&lt;/td&gt;
-	&lt;/tr&gt;
-&lt;/table&gt;
-
-
-&lt;script&gt;
-	let resize;
-function setup() {
-	var myCanvas = createCanvas(200, 200);
-	myCanvas.parent(&quot;thecanvas&quot;);
-
-
-resize = selectAll('.resize');
-}
-
-function draw() {
-	// counter, test condition, update counter, code
-	for (var i = 0; i &lt; resize.length; i++) {
-		 resize[i].style('color','blue');
-	}
-
-
-}
-&lt;/script&gt;</content><author><name></name></author><category term="creative code" /><category term="random" /><summary type="html">coisas a fazer - illo com giroscopia - random svg from folder - limpar css (outro default:) - criar layouts com grid .resize { color: red; }</summary></entry><entry><title type="html">grid and typography</title><link href="http://127.0.0.1:4000/grid2/" rel="alternate" type="text/html" title="grid and typography" /><published>2020-10-28T00:00:00-04:00</published><updated>2020-10-28T00:00:00-04:00</updated><id>http://127.0.0.1:4000/grid2</id><content type="html" xml:base="http://127.0.0.1:4000/grid2/">&lt;p&gt;typography examples using &lt;a href=&quot;https://github.com/nonlinear/play/blob/master/assets/articles/03.md#creative-code-toolbox&quot;&gt;grid toolbox&lt;/a&gt;&lt;/p&gt;
+&lt;/script&gt;</content><author><name></name></author><category term="creative code" /><category term="random," /><category term="fail" /><summary type="html">from this instagram, but I don't think it works.</summary></entry><entry><title type="html">grid and typography</title><link href="http://127.0.0.1:4000/grid2/" rel="alternate" type="text/html" title="grid and typography" /><published>2020-10-28T00:00:00-04:00</published><updated>2020-10-28T00:00:00-04:00</updated><id>http://127.0.0.1:4000/grid2</id><content type="html" xml:base="http://127.0.0.1:4000/grid2/">&lt;p&gt;typography examples using &lt;a href=&quot;https://github.com/nonlinear/play/blob/master/assets/articles/03.md#creative-code-toolbox&quot;&gt;grid toolbox&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;from &lt;a href=&quot;https://glitch.com/edit/#!/tipografia-e-grid?path=index.html%3A46%3A0&quot;&gt;THIS GLITCH&lt;/a&gt;&lt;/p&gt;
 
 &lt;style&gt;
@@ -367,7 +316,58 @@ function Grid(cellNumber,gap) {
 			pop();
 		}
 	}
-&lt;/script&gt;</content><author><name></name></author><category term="creative code" /><category term="random" /><summary type="html">typography examples using grid toolbox from THIS GLITCH</summary></entry><entry><title type="html">start training on rings</title><link href="http://127.0.0.1:4000/rings/start/" rel="alternate" type="text/html" title="start training on rings" /><published>2020-10-16T00:00:00-04:00</published><updated>2020-10-16T00:00:00-04:00</updated><id>http://127.0.0.1:4000/rings/start</id><content type="html" xml:base="http://127.0.0.1:4000/rings/start/">&lt;table&gt;
+&lt;/script&gt;</content><author><name></name></author><category term="creative code" /><category term="random" /><summary type="html">typography examples using grid toolbox from THIS GLITCH</summary></entry><entry><title type="html">html experiments</title><link href="http://127.0.0.1:4000/html/" rel="alternate" type="text/html" title="html experiments" /><published>2020-10-28T00:00:00-04:00</published><updated>2020-10-28T00:00:00-04:00</updated><id>http://127.0.0.1:4000/html</id><content type="html" xml:base="http://127.0.0.1:4000/html/">coisas a fazer
+- illo com giroscopia
+- random svg from folder
+- limpar css (outro default:)
+- criar layouts com grid
+&lt;style&gt;
+	.resize {
+		color: red;
+	}
+
+
+&lt;/style&gt;
+&lt;p class=&quot;resize&quot;&gt;Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Quasi, facilis?&lt;/p&gt;
+&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td class=&quot;resize&quot;&gt;
+		Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Delectus, iure?&lt;/td&gt;
+		&lt;td&gt;Non ipsa iusto aliquid maiores, fugit in, aperiam tempore rerum.&lt;/td&gt;
+		&lt;td&gt;Exercitationem aliquam sit libero repellat sapiente mollitia aliquid quos soluta?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Molestiae, facere.&lt;/td&gt;
+		&lt;td id=&quot;thecanvas&quot;&gt;&lt;/td&gt;
+		&lt;td class=&quot;resize&quot;&gt;Quos ad exercitationem quia sint labore modi adipisci similique repellendus.&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur, eum.&lt;/td&gt;
+		&lt;td&gt;Eaque commodi perferendis deleniti suscipit sapiente expedita nemo quam dicta?&lt;/td&gt;
+		&lt;td class=&quot;resize&quot;&gt;Tempore dolorem recusandae voluptate magni dolores odio in nemo amet.&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+
+
+&lt;script&gt;
+	let resize;
+function setup() {
+	var myCanvas = createCanvas(200, 200);
+	myCanvas.parent(&quot;thecanvas&quot;);
+
+
+resize = selectAll('.resize');
+}
+
+function draw() {
+	// counter, test condition, update counter, code
+	for (var i = 0; i &lt; resize.length; i++) {
+		 resize[i].style('color','blue');
+	}
+
+
+}
+&lt;/script&gt;</content><author><name></name></author><category term="creative code" /><category term="random" /><summary type="html">coisas a fazer - illo com giroscopia - random svg from folder - limpar css (outro default:) - criar layouts com grid .resize { color: red; }</summary></entry><entry><title type="html">start training on rings</title><link href="http://127.0.0.1:4000/exercises/start/" rel="alternate" type="text/html" title="start training on rings" /><published>2020-10-16T00:00:00-04:00</published><updated>2020-10-16T00:00:00-04:00</updated><id>http://127.0.0.1:4000/exercises/start</id><content type="html" xml:base="http://127.0.0.1:4000/exercises/start/">&lt;table&gt;
   &lt;thead&gt;
     &lt;tr&gt;
       &lt;th&gt; &lt;/th&gt;
@@ -381,58 +381,58 @@ function Grid(cellNumber,gap) {
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;Support hold&lt;/td&gt;
       &lt;td&gt;few seconds, close to the body, stablizing your hands. Stay till you cna handle 15 seconds.&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;&lt;img src=&quot;/assets/images/rings/start01.png&quot; alt=&quot;&quot; /&gt; &lt;img src=&quot;/assets/images/rings/start02.png&quot; alt=&quot;&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;&lt;img src=&quot;/assets/images/exercises/start01.png&quot; alt=&quot;&quot; /&gt; &lt;img src=&quot;/assets/images/exercises/start02.png&quot; alt=&quot;&quot; /&gt;&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;1.2&lt;/td&gt;
       &lt;td&gt;Advanced support hold&lt;/td&gt;
       &lt;td&gt; &lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;&lt;img src=&quot;/assets/images/rings/start03.png&quot; alt=&quot;&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;&lt;img src=&quot;/assets/images/exercises/start03.png&quot; alt=&quot;&quot; /&gt;&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;2&lt;/td&gt;
       &lt;td&gt;Plank with rings&lt;/td&gt;
       &lt;td&gt;Stay till 15 seconds&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;&lt;img src=&quot;/assets/images/rings/start04.png&quot; alt=&quot;&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;&lt;img src=&quot;/assets/images/exercises/start04.png&quot; alt=&quot;&quot; /&gt;&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;3&lt;/td&gt;
       &lt;td&gt;Ring dips&lt;/td&gt;
       &lt;td&gt;At least 10 good reps&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;&lt;img src=&quot;/assets/images/rings/start05.png&quot; alt=&quot;&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;&lt;img src=&quot;/assets/images/exercises/start05.png&quot; alt=&quot;&quot; /&gt;&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;3.2&lt;/td&gt;
       &lt;td&gt;Bulgarian dips&lt;/td&gt;
       &lt;td&gt;At least 10 good reps&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;&lt;img src=&quot;/assets/images/rings/start06.png&quot; alt=&quot;&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;&lt;img src=&quot;/assets/images/exercises/start06.png&quot; alt=&quot;&quot; /&gt;&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;4&lt;/td&gt;
       &lt;td&gt;Ring pushup&lt;/td&gt;
       &lt;td&gt;focus on stabilizing your hands. till 10 good reps&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;&lt;img src=&quot;/assets/images/rings/start07.png&quot; alt=&quot;&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;&lt;img src=&quot;/assets/images/exercises/start07.png&quot; alt=&quot;&quot; /&gt;&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;5&lt;/td&gt;
       &lt;td&gt;False Grip&lt;/td&gt;
       &lt;td&gt;practice till 15 seconds hold&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;&lt;img src=&quot;/assets/images/rings/start08.png&quot; alt=&quot;&quot; /&gt; &lt;img src=&quot;/assets/images/rings/start09.png&quot; alt=&quot;&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;&lt;img src=&quot;/assets/images/exercises/start08.png&quot; alt=&quot;&quot; /&gt; &lt;img src=&quot;/assets/images/exercises/start09.png&quot; alt=&quot;&quot; /&gt;&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;6&lt;/td&gt;
       &lt;td&gt;Ring pull ups&lt;/td&gt;
       &lt;td&gt;rotate wrists doing the movement&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;&lt;img src=&quot;/assets/images/rings/start10.png&quot; alt=&quot;&quot; /&gt; &lt;img src=&quot;/assets/images/rings/start11.png&quot; alt=&quot;&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;&lt;img src=&quot;/assets/images/exercises/start10.png&quot; alt=&quot;&quot; /&gt; &lt;img src=&quot;/assets/images/exercises/start11.png&quot; alt=&quot;&quot; /&gt;&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;6.2&lt;/td&gt;
       &lt;td&gt;Simpler pull ups&lt;/td&gt;
       &lt;td&gt; &lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;&lt;img src=&quot;/assets/images/rings/start12.png&quot; alt=&quot;&quot; /&gt; &lt;img src=&quot;/assets/images/rings/start13.png&quot; alt=&quot;&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;&lt;img src=&quot;/assets/images/exercises/start12.png&quot; alt=&quot;&quot; /&gt; &lt;img src=&quot;/assets/images/exercises/start13.png&quot; alt=&quot;&quot; /&gt;&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
-&lt;/table&gt;</content><author><name></name></author><summary type="html">        1 Support hold few seconds, close to the body, stablizing your hands. Stay till you cna handle 15 seconds. 1.2 Advanced support hold   2 Plank with rings Stay till 15 seconds 3 Ring dips At least 10 good reps 3.2 Bulgarian dips At least 10 good reps 4 Ring pushup focus on stabilizing your hands. till 10 good reps 5 False Grip practice till 15 seconds hold 6 Ring pull ups rotate wrists doing the movement 6.2 Simpler pull ups  </summary></entry><entry><title type="html">stretches</title><link href="http://127.0.0.1:4000/rings/stretches/" rel="alternate" type="text/html" title="stretches" /><published>2020-10-16T00:00:00-04:00</published><updated>2020-10-16T00:00:00-04:00</updated><id>http://127.0.0.1:4000/rings/stretches</id><content type="html" xml:base="http://127.0.0.1:4000/rings/stretches/">&lt;table&gt;
+&lt;/table&gt;</content><author><name></name></author><summary type="html">        1 Support hold few seconds, close to the body, stablizing your hands. Stay till you cna handle 15 seconds. 1.2 Advanced support hold   2 Plank with rings Stay till 15 seconds 3 Ring dips At least 10 good reps 3.2 Bulgarian dips At least 10 good reps 4 Ring pushup focus on stabilizing your hands. till 10 good reps 5 False Grip practice till 15 seconds hold 6 Ring pull ups rotate wrists doing the movement 6.2 Simpler pull ups  </summary></entry><entry><title type="html">stretches</title><link href="http://127.0.0.1:4000/exercises/stretches/" rel="alternate" type="text/html" title="stretches" /><published>2020-10-16T00:00:00-04:00</published><updated>2020-10-16T00:00:00-04:00</updated><id>http://127.0.0.1:4000/exercises/stretches</id><content type="html" xml:base="http://127.0.0.1:4000/exercises/stretches/">&lt;table&gt;
   &lt;thead&gt;
     &lt;tr&gt;
       &lt;th&gt; &lt;/th&gt;
@@ -446,43 +446,43 @@ function Grid(cellNumber,gap) {
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;Squat opener&lt;/td&gt;
       &lt;td&gt;3 min&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;&lt;img src=&quot;/assets/images/rings/stretches01.png&quot; style=&quot;width: 250px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;&lt;img src=&quot;/assets/images/exercises/stretches01.png&quot; style=&quot;width: 250px&quot; /&gt;&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;2&lt;/td&gt;
       &lt;td&gt;Shoulder stretch&lt;/td&gt;
       &lt;td&gt;1 min per side&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;&lt;img src=&quot;/assets/images/rings/stretches02.png&quot; style=&quot;width: 250px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;&lt;img src=&quot;/assets/images/exercises/stretches02.png&quot; style=&quot;width: 250px&quot; /&gt;&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;3&lt;/td&gt;
       &lt;td&gt;Butterfly stretch&lt;/td&gt;
       &lt;td&gt;3 min&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;&lt;img src=&quot;/assets/images/rings/stretches03.png&quot; style=&quot;width: 250px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;&lt;img src=&quot;/assets/images/exercises/stretches03.png&quot; style=&quot;width: 250px&quot; /&gt;&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;4&lt;/td&gt;
       &lt;td&gt;Forearms&lt;/td&gt;
       &lt;td&gt;3 min&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;&lt;img src=&quot;/assets/images/rings/stretches04.png&quot; style=&quot;width: 250px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;&lt;img src=&quot;/assets/images/exercises/stretches04.png&quot; style=&quot;width: 250px&quot; /&gt;&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;5&lt;/td&gt;
       &lt;td&gt;Triceps stretch&lt;/td&gt;
       &lt;td&gt;1 min per side&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;&lt;img src=&quot;/assets/images/rings/stretches05.png&quot; style=&quot;width: 250px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;&lt;img src=&quot;/assets/images/exercises/stretches05.png&quot; style=&quot;width: 250px&quot; /&gt;&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;6 (night)&lt;/td&gt;
       &lt;td&gt;Hip stretch&lt;/td&gt;
       &lt;td&gt;2 min per side&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;&lt;img src=&quot;/assets/images/rings/stretches06.png&quot; style=&quot;width: 250px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;&lt;img src=&quot;/assets/images/exercises/stretches06.png&quot; style=&quot;width: 250px&quot; /&gt;&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;7 (night)&lt;/td&gt;
       &lt;td&gt;Forward fold&lt;/td&gt;
       &lt;td&gt;3 min&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;&lt;img src=&quot;/assets/images/rings/stretches07.png&quot; style=&quot;width: 250px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;&lt;img src=&quot;/assets/images/exercises/stretches07.png&quot; style=&quot;width: 250px&quot; /&gt;&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt; &lt;/td&gt;
@@ -491,152 +491,4 @@ function Grid(cellNumber,gap) {
       &lt;td style=&quot;text-align: right&quot;&gt; &lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
-&lt;/table&gt;</content><author><name></name></author><summary type="html">        1 Squat opener 3 min 2 Shoulder stretch 1 min per side 3 Butterfly stretch 3 min 4 Forearms 3 min 5 Triceps stretch 1 min per side 6 (night) Hip stretch 2 min per side 7 (night) Forward fold 3 min        </summary></entry><entry><title type="html">grid1</title><link href="http://127.0.0.1:4000/grid1/" rel="alternate" type="text/html" title="grid1" /><published>2020-10-10T00:00:00-04:00</published><updated>2020-10-10T00:00:00-04:00</updated><id>http://127.0.0.1:4000/grid1</id><content type="html" xml:base="http://127.0.0.1:4000/grid1/">&lt;p&gt;Grid toolbox, version 1.0.1, &lt;a href=&quot;https://github.com/nonlinear/play/blob/master/assets/articles/03.md#creative-code-toolbox&quot;&gt;check feature list&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;From this glitch&lt;/a&gt;, studying with &lt;a href=&quot;https://www.twitch.tv/rodjunjun&quot;&gt;Rodrigo Junqueira&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;javascript:location.reload();&quot;&gt;Reload page&lt;/a&gt; for new random content.&lt;/p&gt;
-
-&lt;style&gt;
-  
-body, html {
-  height: 100%;
-  display: grid;
-}
-canvas { 
-  margin: auto;
-  box-shadow: 5px 5px 2px rgba(0,0,0,.1);
-  border-radius: 5px;
-}
-  &lt;/style&gt;
-&lt;script&gt;
-	// Grid for p5js
-// version 1.0.1
-
-function Grid(cellNumber,gap) {
-  this.cellNumber = cellNumber;
-  this.gap = gap;
-  this.width = (width-((this.cellNumber-1)*this.gap))/this.cellNumber;
-  this.cells = [];
-  for (let i = 0; i &lt; this.cellNumber; i++) {
-    this.cells[i] = [];
-  }
-  
-  
-  this.show = function() {
-    for (let j = 0; j &lt; this.cellNumber; j++) {
-      let heightPointer = 0;      
-      for (let i = 0; i &lt; this.cells[j].length; i++) {
-        if (heightPointer + this.cells[j][i].height() &lt; height) {
-          push();
-          translate(this.cellPosition(j),heightPointer);
-          heightPointer += this.cells[j][i].height();    
-          this.cells[j][i].show();
-          pop();
-        }
-      }    
-    }
-    
-  }
-  
-  this.stack = function(n, elem) {
-    this.cells[n].push(elem);    
-  }
-  
-  this.cellPosition = function(n) {
-    return this.width*n+this.gap*n;
-  }
-  
-}
-  function Element(size) {
-  this.palette = [color(153,204,224), color(227,92,55), color(52,52,50)];
-  this.shapes = ['straight','arc-left','arc-right'];
-  this.color = this.palette[floor(random(this.palette.length))];
-  this.direction;
- 
-  this.shape = this.shapes[floor(random(this.shapes.length))];
-  this.size = size;
-  this.thickness = (this.size/3);
-  this.background = color(255,255,255);
-  
-  this.show = function() {
-    push();
-    noStroke(); 
-    if (this.shape == 'arc-left') {
-      translate(this.size, this.size);
-      fill(this.color);
-      arc(0, 0, this.size*2, this.size*2, HALF_PI, PI + HALF_PI);
-      fill(this.background);
-      arc(0, 0, this.size*2 -  (this.thickness*4), this.size*2 -  (this.thickness*4), HALF_PI, PI + HALF_PI);
-    } else if (this.shape == 'arc-right') {
-      translate(0, this.size);
-      fill(this.color);
-      arc(0, 0, this.size*2, this.size*2, PI + HALF_PI, HALF_PI);
-      fill(this.background);
-      arc(0, 0, this.size*2 - (this.thickness*4), this.size*2 - (this.thickness*4), PI + HALF_PI, HALF_PI);
-    }
-    else if (this.shape == 'straight') {
-      fill(this.palette[2]);
-      rect(0,0,this.size, this.thickness*2);
-      rect(0,(this.size*2 - this.thickness*2),this.size, this.thickness*2);  
-    }
-    pop();
-  }
-  this.height = function() {
-    return this.size*2;
-  }
-  
-}
-
-  let grid1;
-let elementsQty = 9;
-
-function setup() {
-  createCanvas(400, 584);
-  grid1 = new Grid(7,0);
-  
-  // generation
-  for (let j = 0; j &lt; grid1.cellNumber; j++) {
-    for (let i = 0; i &lt; elementsQty; i++) {
-      let newE = new Element(grid1.width);  
-      grid1.stack(j,newE);
-    }
-  }
-  
-  
-  
-  // get colwidth
-  // pass collwidth*2 as this.size
-  // heigth/this.size (arredondado para baixo) é o numero de objetos por coluna
-  
-
-  
-}
-
-function draw() {
-  background(255);
-  
-  // presentation
-  grid1.show();
-  
-  // logica do stack
-  // ha um objeto ja na coluna? se nao, 0, 0
-  // se sim, 0, (sum of all previous objects height)
-  
-
-//   grid1.show();
-//   fill(0);
-//   textSize(20);
-//   text('dsfsdv fgregrw fdgsgsfg dgsgsfg', grid1.cellPosition(2), 0, grid1.width);
-//   push(); 
-//   noStroke();
-//   fill(200,0,255);
-//   rect(grid1.cellPosition(0),0,grid1.width,100);
-//   pop();
-}
-
-
-
-
-
-	&lt;/script&gt;</content><author><name></name></author><category term="creative code" /><summary type="html">Grid toolbox, version 1.0.1, check feature list</summary></entry></feed>
+&lt;/table&gt;</content><author><name></name></author><summary type="html">        1 Squat opener 3 min 2 Shoulder stretch 1 min per side 3 Butterfly stretch 3 min 4 Forearms 3 min 5 Triceps stretch 1 min per side 6 (night) Hip stretch 2 min per side 7 (night) Forward fold 3 min        </summary></entry></feed>

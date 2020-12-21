@@ -23,9 +23,9 @@
 	{% endfor %}
 	{% endif %}
 
-		{% if page.categories contains "rings" %}
+		{% if page.categories contains "exercises" %}
 	{% for post in site.posts %}
-	{% if post.categories contains "rings" and post.status contains "public" %}
+	{% if post.categories contains "exercises" and post.status contains "public" %}
 	<a href="{{ post.url }}"><span class="title">{{ post.title }}</span></a>
 	{% endif %}
 	{% endfor %}
