@@ -7805,6 +7805,17 @@
   @font-face {
     font-family: RenoMono;
     src: url("/assets/fonts/RenoMono.svg#RenoMono") format("svg"); } }
+li .ssb {
+  display: grid;
+  grid-template-columns: 35px 550px;
+  grid-gap: 5px; }
+  li .ssb span {
+    padding-top: 3px; }
+  li .ssb input {
+    background-color: rgba(255, 255, 0, 0.3);
+    padding: 0 5px;
+    border: solid 1px #999; }
+
 body {
   font-family: Space Grotesk;
   background-color: #ccc;

@@ -20,7 +20,19 @@
 	$path: "/assets/fonts/");
 
 // prevent elastic scroll
-
+li .ssb {
+	display: grid;
+	grid-template-columns: 35px 550px;
+	grid-gap:5px;
+	span {
+		padding-top: 3px;
+	}
+	input {
+	background-color: $link;
+	padding: 0 5px;
+	border: solid 1px #999;
+}
+}
 
 
 body {
