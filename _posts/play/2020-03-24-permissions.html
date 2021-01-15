@@ -5,11 +5,10 @@ slug: permissions
 status: public
 category: creative code
 tags: devices, test
-switches: no-zoom, p5js, fullscreen, style, no-scroll, request-motion, request-camera
+switches: no-zoom, p5js, fullscreen, style, no-scroll, request-motion
 date: 2020-03-24
 permalink: /:slug/
 ---
-
 <!-- <h2>TODO</h2>
 <ul>
   <li>testar :fullscreen pseudo class</li>
@@ -32,28 +31,3 @@ permalink: /:slug/
 <button onClick='screen.orientation.lock("landscape-primary");'>landscape-primary</button>
 <button onClick='screen.orientation.lock("landscape-secondary");'>landscape-secondary</button> -->
 
-<script type="text/javascript">
-
-  function requestOrientationPermission(){
-    DeviceOrientationEvent.requestPermission()
-    .then(response => {
-      if (response == 'granted') {
-        window.addEventListener('deviceorientation', (e) => {
-
-        })
-      }
-    })
-    .catch(console.error)
-  }
-  function requestMotionPermission(){
-    DeviceMotionEvent.requestPermission()
-    .then(response => {
-      if (response == 'granted') {
-        window.addEventListener('devicemotion', (e) => {
-                    // do something with e
-                  })
-      }
-    })
-    .catch(console.error)
-  }
-</script>

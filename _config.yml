@@ -8,6 +8,7 @@ url: 'https://www.nonlinear.nyc'
 twitter_username: nonlinear
 github_username: nonlinear
 destination: docs
+host: 0.0.0.0
 
 sass:
   load_paths:
