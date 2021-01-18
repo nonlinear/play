@@ -22,7 +22,7 @@ layout: default
   {% endif %}
 </head>
 <body class="{%- if page.categories -%}{{ page.categories }}{%- endif -%}" id="{%- if page.status -%}{{ page.status }}{%- endif -%}">
-  {% include switches/request.html %}
+  {% include toolbox/request.html %}
   {% if page.switches contains "header" %}
   <div class="container">
     <header class="header wow">
