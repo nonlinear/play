@@ -3,7 +3,7 @@ layout: default
 title: ethical code
 slug: ethical
 categories: project
-status: public
+status: draft
 description: notes for the ethical code project
 switches: header, style, bootstrap, jquery, favicon, open-graph
 date: 2020-01-29 18:03:16 -0500

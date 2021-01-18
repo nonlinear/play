@@ -3,7 +3,7 @@ layout: default
 title: nonlinear
 slug: nonlinear
 categories: project
-status: public
+status: draft
 description: notes about this site
 switches: header, style, bootstrap, jquery, favicon, open-graph
 date: 2020-01-29 18:03:16 -0500
