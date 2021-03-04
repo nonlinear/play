@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Plays on Nonlinear</title>
-    <link>http://nonlinear.nyc/hugo/play/</link>
-    <description>Recent content in Plays on Nonlinear</description>
+    <title>Plays on nonlinear</title>
+    <link>http://nonlinear.nyc/play/</link>
+    <description>Recent content in Plays on nonlinear</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 29 Jan 2020 18:03:16 -0500</lastBuildDate><atom:link href="http://nonlinear.nyc/hugo/play/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 29 Jan 2020 18:03:16 -0500</lastBuildDate><atom:link href="http://nonlinear.nyc/play/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Testing hugo features</title>
-      <link>http://nonlinear.nyc/hugo/play/hello-world/</link>
+      <link>http://nonlinear.nyc/play/hello-world/</link>
       <pubDate>Wed, 29 Jan 2020 18:03:16 -0500</pubDate>
       
-      <guid>http://nonlinear.nyc/hugo/play/hello-world/</guid>
+      <guid>http://nonlinear.nyc/play/hello-world/</guid>
       <description>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, ut? Ipsum, quasi, dolorem. Omnis cupiditate cumque natus deleniti ex nulla obcaecati, consectetur ipsa, unde corrupti animi dicta odit maxime quod!
 Click to jump Ratione officiis in deleniti mollitia culpa dolorem, facere, quod laborum vero tempore magnam, porro. Tempora, nesciunt, recusandae dolorum suscipit natus reprehenderit minima excepturi rerum fugit molestias consequuntur dicta. Maxime, dolores.
 Tempore libero voluptates similique, laboriosam suscipit neque officia dicta maxime ab cupiditate quos rem velit aspernatur corporis adipisci sed laudantium.</description>

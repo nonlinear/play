@@ -3,47 +3,44 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 
-<link rel="stylesheet" href="http://nonlinear.nyc/hugo/css/main.ab6ada2c398d2cfc95c37f62af5cf2ea89c506b3317b04ea685e2c60087c8d17.css">
+<link rel="stylesheet" href="http://nonlinear.nyc/css/main.e330bb8bce376bc8eb8f530898f0f086540c1b5260af5212482e893dbff31747.css">
 
-	<title>Nonlinear</title>
+	<title>nonlinear</title>
 </head>
 <body>
 <div class="container">
-		<h1>Categories</h1>
-<div class="grid">
-	<div class="column">
-		<h2>Books</h2>
-		<ul>
-	
-	
-		<li><a href="http://nonlinear.nyc/hugo/books/angeltech/">Angel Tech</a></li>
+		<header class="header">
+				<h1>nonlinear</h1>
+		<h3></h3>
+		<hr>
+		</header>
 		
-		<li><a href="http://nonlinear.nyc/hugo/books/zendegi/">Zendegi</a></li>
-		
-		<li><a href="http://nonlinear.nyc/hugo/books/incomplete/">Incomplete Nature</a></li>
-		
-		<li><a href="http://nonlinear.nyc/hugo/books/cerebro/">O Que o Cérebro Tem Para Contar</a></li>
-		
-		<li><a href="http://nonlinear.nyc/hugo/books/schilds-ladder/">Schilds Ladder</a></li>
-		
-		<li><a href="http://nonlinear.nyc/hugo/books/supersizing/">Supersizing the mind</a></li>
-		
-		<li><a href="http://nonlinear.nyc/hugo/books/dispossessed/">The Dispossessed</a></li>
-		
-</ul>
-	</div>
-	<div class="column">
-		<h2>Play</h2>
-		<ul>
-	
-	
-</ul>
-	</div>
-	<div class="column"></div>
 </div>
-</div>
+
+<script src="http://nonlinear.nyc/js/jquery.min.js"></script>
+<script src="http://nonlinear.nyc/js/popper.min.js"></script>
+<script src="http://nonlinear.nyc/js/bootstrap.min.js"></script>
+<script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    });
+    $('[data-toggle="popover"]').popover({ trigger: "manual" , html: true, animation:false, content: ''})
+    .on("mouseenter", function () {
+      var _this = this;
+      $(this).popover("show");
+      $(".popover").on("mouseleave", function () {
+        $(_this).popover('hide');
+      });
+    }).on("mouseleave", function () {
+      var _this = this;
+      setTimeout(function () {
+        if (!$(".popover:hover").length) {
+          $(_this).popover("hide");
+        }
+      }, 300);
+    });
+  </script> 
 </body>
 </html>

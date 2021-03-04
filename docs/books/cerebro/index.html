@@ -3,21 +3,45 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 
-<link rel="stylesheet" href="http://nonlinear.nyc/hugo/css/main.ab6ada2c398d2cfc95c37f62af5cf2ea89c506b3317b04ea685e2c60087c8d17.css">
+<link rel="stylesheet" href="http://nonlinear.nyc/css/main.e330bb8bce376bc8eb8f530898f0f086540c1b5260af5212482e893dbff31747.css">
 
-	<title>Nonlinear</title>
+	<title>nonlinear</title>
 </head>
 <body>
 <div class="container">
-		<h1>O Que o Cérebro Tem Para Contar fallback (outside theme!!!)</h1>
-<p>![book](/assets/images/books/{{ page.slug }}.jpg)</p>
-<p>O Que o Cérebro Tem Para Contar: Desvendando os Mistérios da Natureza Humana</p>
+		<header class="header">
+		<nav>	<h2><a href="http://nonlinear.nyc/">nonlinear</a> / 
+		<a data-toggle='popover' data-placement='bottom' title='more books' data-html='true' data-content='
+<a href="http://nonlinear.nyc/books/angeltech/"><span class="title">Angel Tech</span></a>
+		
+<a href="http://nonlinear.nyc/books/zendegi/"><span class="title">Zendegi</span></a>
+		
+<a href="http://nonlinear.nyc/books/incomplete/"><span class="title">Incomplete Nature</span></a>
+		
+<a href="http://nonlinear.nyc/books/cerebro/"><span class="title">O Que o Cérebro Tem Para Contar</span></a>
+		
+<a href="http://nonlinear.nyc/books/schilds-ladder/"><span class="title">Schilds Ladder</span></a>
+		
+<a href="http://nonlinear.nyc/books/supersizing/"><span class="title">Supersizing the mind</span></a>
+		
+<a href="http://nonlinear.nyc/books/dispossessed/"><span class="title">The Dispossessed</span></a>
+		</ul>'>books</a>
+		
+
+		
+			</h2></nav>
+				<h1>O Que o Cérebro Tem Para Contar</h1>
+				<h3 class="date">published january 2020</h3>
+
+		<hr>
+		</header>
+<article>
+	<p>O Que o Cérebro Tem Para Contar: Desvendando os Mistérios da Natureza Humana</p>
 <p>by V.S. Ramachandran</p>
 <p>Read in Play Books around April 2017</p>
-<p><a href="https://en.wikipedia.org/wiki/Incomplete_Nature">Wikipedia</a></p>
+<p><a href="https://en.wikipedia.org/wiki/Incomplete_Nature">📚</a></p>
 <ul>
 <li>Durante a maior parte do século XX, tudo o que tínhamos a oferecer em matéria de explicação do comportamento humano eram dois edifícios teóricos - o freudismo e o behaviorismo
 <ul>
@@ -336,9 +360,31 @@
 </li>
 </ul>
 
+</article>
 </div>
-<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script src="http://nonlinear.nyc/js/jquery.min.js"></script>
+<script src="http://nonlinear.nyc/js/popper.min.js"></script>
+<script src="http://nonlinear.nyc/js/bootstrap.min.js"></script>
+<script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    });
+    $('[data-toggle="popover"]').popover({ trigger: "manual" , html: true, animation:false, content: ''})
+    .on("mouseenter", function () {
+      var _this = this;
+      $(this).popover("show");
+      $(".popover").on("mouseleave", function () {
+        $(_this).popover('hide');
+      });
+    }).on("mouseleave", function () {
+      var _this = this;
+      setTimeout(function () {
+        if (!$(".popover:hover").length) {
+          $(_this).popover("hide");
+        }
+      }, 300);
+    });
+  </script>
 </body>
 </html>
