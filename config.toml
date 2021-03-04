@@ -1,0 +1,5 @@
+baseURL = "http://nonlinear.nyc/"
+languageCode = "en-us"
+title = "nonlinear"
+publishDir = "docs"
+theme = "play"

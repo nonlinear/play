@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+{{ partial "head.html" . }}
+<body>
+<div class="container">
+		<header class="header">
+				<h1>{{ .Site.Title }}</h1>
+		<h3>{{ .Description }}</h3>
+		<hr>
+		</header>
+		{{ .Content }}
+</div>
+{{ partial "scripts.html" . }} 
+</body>
+</html>

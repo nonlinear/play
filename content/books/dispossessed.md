@@ -1,0 +1,120 @@
+---
+title: The Dispossessed
+category: books
+date: 2020-01-29 18:03:16 -0500
+---
+
+by Ursula Le Guin
+
+Read in Play Books around January 2017
+
+[📚](https://en.wikipedia.org/wiki/The_Dispossessed)
+
+- If the foreman had no experience in bossing a mob, they had no experience in being one.
+	- December 24, 2016
+- A stone lay there. It was dark like the wall, but on it, or inside it, there was a number; and 5 he thought at first, then took it for 1 then understood what it was—the primal number, that was both unity and plurality. “That is the cornerstone
+	- May 6, 2017
+- if I’m the prisoner, I can’t decide. I’m not free. You have to decide when to let me out.”
+	- May 6, 2017
+- They were not playing the new role now, it was playing them
+	- May 6, 2017
+- Every time he looked into his mind there was Kadagv in it. It was disgusting.
+	- May 6, 2017
+- Forbidden? Nonorganic word. Who forbids? You’re externalizing the integrative function itself
+	- May 6, 2017
+- Their central function wasn’t being wasted. They were working: doing what they wanted to do. He was not working. He was being worked.
+	- May 6, 2017
+- Having’s wrong; sharing’s right.
+	- May 6, 2017
+- Beshun, expert in delight, took him into the heart of sexuality, where there is no rancor and no ineptitude, where the two bodies striving to join each other annihilate the moment in
+	- May 6, 2017
+- They were overintellectual. They didn’t seem to want to commit themselves either to work or to sex.
+	- May 6, 2017
+- Uninfluenced by others, he never knew he influenced them; he had no idea they liked him.
+	- May 6, 2017
+- blunt self-assurance of one accustomed to respect.
+	- May 6, 2017
+- except for Atro, who had outlived intensity.
+	- May 6, 2017
+- The idea is like grass. It craves light, likes crowds, thrives on crossbreeding, grows better for being stepped on.
+	- May 6, 2017
+- They are a coordinating system for all syndicates, do not govern persons; they administer production. They have no authority either to support me or to prevent me. They can only tell us the public opinion of us—where we stand in the social conscience. That’s what you want to know?
+	- May 15, 2017
+- not organized federatively but hierarchically, from the top down.
+	- May 16, 2017
+- He had assumed that if you removed a human being’s natural incentive to work—his initiative, his spontaneous creative energy—and replaced it with external motivation and coercion, he would become a lazy and careless worker
+	- May 16, 2017
+- The explorer who will not come back or send back his ships to tell his tale is not an explorer, only an adventurer, and his sons are born in exile.
+	- May 17, 2017
+- It is hard, however, for people who have never paid money for anything to understand the psychology of cost, the argument of the marketplace. Seven generations of peace had not brought trust.
+	- May 17, 2017
+- they held to the ideal of complex organicism. They built the roads first, the houses second
+	- May 17, 2017
+- And from the start the Settlers were aware that that unavoidable centralization was a lasting threat, to be countered by lasting vigilance.
+	- May 17, 2017
+- O child Anarchia, infinite promise
+	- May 17, 2017
+- “Excess is excrement,” Odo wrote in the Analogy. “Excrement retained in the body is a poison.”
+	- May 21, 2017
+- There were no disguises and no advertisements. It was all there, all the work, all the life of the city, open to the eye and to the hand.
+	- May 21, 2017
+- Privilege is responsibility. Correct?”
+	- May 21, 2017
+- If you found a pack of explosive caps in the street would you ‘share’ them with every kid that went by? Those books are explosives. Now do you follow me?
+	- May 21, 2017
+- Did such people actually exchange ideas with free people in a nonaggressive, voluntary manner?
+	- May 21, 2017
+- But for those who accepted the privilege and obligation of human solidarity, privacy was a value only where it served a function.
+	- May 23, 2017
+- Lack of physical labor, lack of variety of occupation, lack of social and sexual intercourse, none of these appeared to him as lacks, but as freedom
+	- May 23, 2017
+- The universe as a giant harpstring, oscillating in and out of existence!
+	- May 23, 2017
+- Can true function arise from basic dysfunction?
+	- May 23, 2017
+- “Stop egoizing,” the doctor said. “Roll over.” Shevek obeyed.
+	- May 23, 2017
+- They play dominance games there.
+	- May 23, 2017
+- I confess to being proud of you. That’s strange, isn’t it? Unreasonable. Propertarian, even.
+	- May 23, 2017
+- But as one gets older one needs certain reassurances that aren’t, always, entirely reasonable. In order to go on at all.
+	- May 23, 2017
+- “It might have been better,” he said, “if you’d gone on thinking of me as a statistic too.”
+	- May 23, 2017
+- “I suppose,” she said, “that I was trying to make a claim on you. But I thought in terms of your making a claim on me. If you wanted to.”
+	- May 23, 2017
+- When you are on the bottom, you must organize from the bottom up!
+	- May 24, 2017
+- Their society maintained them in complete freedom from want, distractions, and cares.
+	- May 24, 2017
+- It appeared to Shevek that their freedom from obligation was in exact proportion to their lack of freedom of initiative.
+	- May 24, 2017
+- He was appalled by the examination system, when it was explained to him; he could not imagine a greater deterrent to the natural wish to learn than this pattern of cramming in information and disgorging it at demand.
+	- May 24, 2017
+- In feudal times the aristocracy had sent their sons to university, conferring superiority on the institution. Nowadays it was the other way round: the university conferred superiority on the man.
+	- May 24, 2017
+- all the operations of capitalism were as meaningless to him as the rites of a primitive religion
+	- May 24, 2017
+- everything either useless to begin with or ornamented so as to disguise its use;
+	- May 24, 2017
+- All the people in all the shops were either buyers or sellers. They had no relation to the things but that of possession.
+	- May 24, 2017
+- “Pae is a pretty good physicist And very obliging. But I don’t trust him.” “Why not?” “Well . . . he evades.”
+	- May 25, 2017
+- your habit of approaching everybody as a person, an
+	- May 25, 2017
+- They think if people can possess enough things they will be content to live in prison.
+	- May 25, 2017
+- “To make a thief, make an owner; to create crime, create laws. The Social Organism.”
+	- May 25, 2017
+- There’s a great deal that’s admirable, I’m sure, in your society, but it doesn’t teach you to discriminate—which is after all the best thing civilization teaches
+	- May 31, 2017
+- No distinction was drawn between the arts and the crafts; art was not considered as having a place in life, but as being a basic technique of life, like speech.
+	- May 31, 2017
+- He copulated with a number of girls, but copulation was not the joy it ought to be. It was a mere relief of need, like evacuating, and he felt ashamed of it afterward because it involved another person as object.
+	- May 31, 2017
+- As a functions analyst I must point out that there is no need for orange. Orange serves no vital function in the social organism at either the cellular or the organic level, and certainly not at the holorganismic or most centrally ethical level
+	- May 31, 2017
+- He hasn’t had a thought of his own for twenty years. Or a bath.
+	- May 31, 2017

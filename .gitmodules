@@ -1,3 +1,9 @@
-[submodule "_includes/toolbox"]
-	path = _includes/toolbox
+[submodule "themes/papermod"]
+	path = themes/papermod
+	url = https://github.com/adityatelange/hugo-PaperMod.git
+[submodule "layouts/shortcodes/toolbox"]
+	path = layouts/shortcodes/toolbox
 	url = https://github.com/nonlinear/toolbox.git
+[submodule "themes/creative-code"]
+	path = themes/creative-code
+	url = https://github.com/nonlinear/creative-code.git
