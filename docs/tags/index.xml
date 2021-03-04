@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on nonlinear</title>
-    <link>http://nonlinear.nyc/tags/</link>
+    <link>http://www.nonlinear.nyc/tags/</link>
     <description>Recent content in Tags on nonlinear</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://nonlinear.nyc/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="http://www.nonlinear.nyc/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

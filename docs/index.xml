@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>nonlinear</title>
-    <link>http://nonlinear.nyc/</link>
+    <link>http://www.nonlinear.nyc/</link>
     <description>Recent content on nonlinear</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 19 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://nonlinear.nyc/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 19 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://www.nonlinear.nyc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Angel Tech</title>
-      <link>http://nonlinear.nyc/books/angeltech/</link>
+      <link>http://www.nonlinear.nyc/books/angeltech/</link>
       <pubDate>Fri, 19 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://nonlinear.nyc/books/angeltech/</guid>
+      <guid>http://www.nonlinear.nyc/books/angeltech/</guid>
       <description>Angel Tech: Undoing Yourself with Energized Meditation and Other Devices
 by Antero Alli
 Read in Play Books around September 2014
@@ -22,10 +22,10 @@ Review
     
     <item>
       <title>Zendegi</title>
-      <link>http://nonlinear.nyc/books/zendegi/</link>
+      <link>http://www.nonlinear.nyc/books/zendegi/</link>
       <pubDate>Sat, 26 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://nonlinear.nyc/books/zendegi/</guid>
+      <guid>http://www.nonlinear.nyc/books/zendegi/</guid>
       <description>📚
   Whittling the collection down would feel like a kind of revisionism
   ‘Groundhog Cage’ she’d constructed that made thirty-day free-trial software think it was always on the first day of the trial
@@ -35,10 +35,10 @@ Review
     
     <item>
       <title>Incomplete Nature</title>
-      <link>http://nonlinear.nyc/books/incomplete/</link>
+      <link>http://www.nonlinear.nyc/books/incomplete/</link>
       <pubDate>Wed, 29 Jan 2020 18:03:16 -0500</pubDate>
       
-      <guid>http://nonlinear.nyc/books/incomplete/</guid>
+      <guid>http://www.nonlinear.nyc/books/incomplete/</guid>
       <description>Incomplete Nature: How Mind Emerged from Matter
 by Terence W. Deacon
 Reading
@@ -48,10 +48,10 @@ Reading
     
     <item>
       <title>O Que o Cérebro Tem Para Contar</title>
-      <link>http://nonlinear.nyc/books/cerebro/</link>
+      <link>http://www.nonlinear.nyc/books/cerebro/</link>
       <pubDate>Wed, 29 Jan 2020 18:03:16 -0500</pubDate>
       
-      <guid>http://nonlinear.nyc/books/cerebro/</guid>
+      <guid>http://www.nonlinear.nyc/books/cerebro/</guid>
       <description>O Que o Cérebro Tem Para Contar: Desvendando os Mistérios da Natureza Humana
 by V.S. Ramachandran
 Read in Play Books around April 2017
@@ -61,20 +61,20 @@ Read in Play Books around April 2017
     
     <item>
       <title>Schilds Ladder</title>
-      <link>http://nonlinear.nyc/books/schilds-ladder/</link>
+      <link>http://www.nonlinear.nyc/books/schilds-ladder/</link>
       <pubDate>Wed, 29 Jan 2020 18:03:16 -0500</pubDate>
       
-      <guid>http://nonlinear.nyc/books/schilds-ladder/</guid>
+      <guid>http://www.nonlinear.nyc/books/schilds-ladder/</guid>
       <description>📚
  &amp;ldquo;I&amp;rsquo;m the quintessential singleton,&amp;rdquo; Cass replied. &amp;ldquo;I weigh up all my choices very carefully.&amp;rdquo;  April 30, 2016   Every viewpoint was a compromise, but she had to be as close as she could get.  May 1, 2016   What was the worst that one of these transient selves might do?  May 1, 2016   endless varieties of suffering, endless varieties of stupidity, endless varieties of banality.</description>
     </item>
     
     <item>
       <title>Supersizing the mind</title>
-      <link>http://nonlinear.nyc/books/supersizing/</link>
+      <link>http://www.nonlinear.nyc/books/supersizing/</link>
       <pubDate>Wed, 29 Jan 2020 18:03:16 -0500</pubDate>
       
-      <guid>http://nonlinear.nyc/books/supersizing/</guid>
+      <guid>http://www.nonlinear.nyc/books/supersizing/</guid>
       <description>Supersizing the Mind: Embodiment, Action, and Cognitive Extension
 by Andy Clark, partial extraction from Sumnotes
 Embodied Cognition on Wikipedia
@@ -83,10 +83,10 @@ Embodied Cognition on Wikipedia
     
     <item>
       <title>Testing hugo features</title>
-      <link>http://nonlinear.nyc/play/hello-world/</link>
+      <link>http://www.nonlinear.nyc/play/hello-world/</link>
       <pubDate>Wed, 29 Jan 2020 18:03:16 -0500</pubDate>
       
-      <guid>http://nonlinear.nyc/play/hello-world/</guid>
+      <guid>http://www.nonlinear.nyc/play/hello-world/</guid>
       <description>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, ut? Ipsum, quasi, dolorem. Omnis cupiditate cumque natus deleniti ex nulla obcaecati, consectetur ipsa, unde corrupti animi dicta odit maxime quod!
 Click to jump Ratione officiis in deleniti mollitia culpa dolorem, facere, quod laborum vero tempore magnam, porro. Tempora, nesciunt, recusandae dolorum suscipit natus reprehenderit minima excepturi rerum fugit molestias consequuntur dicta. Maxime, dolores.
 Tempore libero voluptates similique, laboriosam suscipit neque officia dicta maxime ab cupiditate quos rem velit aspernatur corporis adipisci sed laudantium.</description>
@@ -94,10 +94,10 @@ Tempore libero voluptates similique, laboriosam suscipit neque officia dicta max
     
     <item>
       <title>The Dispossessed</title>
-      <link>http://nonlinear.nyc/books/dispossessed/</link>
+      <link>http://www.nonlinear.nyc/books/dispossessed/</link>
       <pubDate>Wed, 29 Jan 2020 18:03:16 -0500</pubDate>
       
-      <guid>http://nonlinear.nyc/books/dispossessed/</guid>
+      <guid>http://www.nonlinear.nyc/books/dispossessed/</guid>
       <description>by Ursula Le Guin
 Read in Play Books around January 2017
 📚

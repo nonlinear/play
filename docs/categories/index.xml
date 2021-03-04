@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on nonlinear</title>
-    <link>http://nonlinear.nyc/categories/</link>
+    <link>http://www.nonlinear.nyc/categories/</link>
     <description>Recent content in Categories on nonlinear</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://nonlinear.nyc/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="http://www.nonlinear.nyc/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
