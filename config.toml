@@ -1,4 +1,4 @@
-baseURL = "http://www.nonlinear.nyc/"
+baseURL = "https://www.nonlinear.nyc/"
 languageCode = "en-us"
 title = "nonlinear"
 publishDir = "docs"
