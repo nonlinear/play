@@ -4,11 +4,21 @@
 <body>
 <div class="container">
 		<header class="header">
-				<h1>{{ .Site.Title }}</h1>
-		<h3>{{ .Description }}</h3>
+		<nav>	<h2><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a> /
+			</h2></nav>
+				<h1>{{ .Title }}</h1>
+				
+
 		<hr>
 		</header>
-		{{ .Content }}
+		    <ul>
+    <!-- Ranges through content/posts/*.md -->
+    {{ range .Pages }}
+        <li>
+            <a href="{{.Permalink}}">{{.Title}}</a>
+        </li>
+    {{ end }}
+    </ul>
 </div>
 {{ partial "scripts.html" . }} 
 </body>
