@@ -1,5 +1,5 @@
-baseURL = "https://www.nonlinear.nyc/"
+baseURL = "https://www.nonlinear.nyc/play"
 languageCode = "en-us"
-title = "nonlinear"
+title = "nonlinear / play"
 publishDir = "docs"
 theme = "play"
