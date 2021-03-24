@@ -1,93 +1,49 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>nonlinear</title>
-    <link>https://www.nonlinear.nyc/</link>
-    <description>Recent content on nonlinear</description>
+    <title>nonlinear / play</title>
+    <link>https://www.nonlinear.nyc/play/</link>
+    <description>Recent content on nonlinear / play</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Wed, 10 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.nonlinear.nyc/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://www.nonlinear.nyc/play/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>bodypix</title>
+      <link>https://www.nonlinear.nyc/play/bodypix/</link>
+      <pubDate>Wed, 24 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.nonlinear.nyc/play/bodypix/</guid>
+      <description>let bodypix; let segmentation; let img; const options = { multiplier: 0.75, outputStride: 16, // 8, 16, or 32, default is 16 segmentationThreshold: 0.5, // 0 - 1, defaults to 0.5 }; function preload() { img = loadImage(&#39;/images/fashion/7df33e7efeac335dec0953.jpg&#39;); bodypix = ml5.bodyPix(options); } function setup() { createCanvas(600, 400); //bodypix.segment(img, gotResults); createHSBPalette(); bodypix.segmentWithParts(img, gotResults, options); background(&#34;#ff0000&#34;); } function gotResults(err, result) { if (err) { console.log(err); return } segmentation = result; background(0); image(segmentation.</description>
+    </item>
+    
     <item>
       <title>ML5 testing</title>
       <link>https://www.nonlinear.nyc/play/ml5-test/</link>
       <pubDate>Wed, 10 Mar 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.nonlinear.nyc/play/ml5-test/</guid>
-      <description> const bodypix = ml5.bodyPix(modelReady) function modelReady() { // segment the image given bodypix.segment(img, gotResults) } function gotImage(error, result) { if (error) { console.log(error); return; } // log the result console.log(result.maskBackground); } </description>
+      <description>Testing this thingsss  const bodypix = ml5.bodyPix(modelReady) function modelReady() { // segment the image given bodypix.segment(img, gotResults) } function gotImage(error, result) { if (error) { console.log(error); return; } // log the result console.log(result.maskBackground); } </description>
     </item>
     
     <item>
-      <title>Angel Tech</title>
-      <link>https://www.nonlinear.nyc/books/angeltech/</link>
-      <pubDate>Fri, 19 Feb 2021 00:00:00 +0000</pubDate>
+      <title>Reveal Js</title>
+      <link>https://www.nonlinear.nyc/play/revealjs/</link>
+      <pubDate>Wed, 10 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.nonlinear.nyc/books/angeltech/</guid>
-      <description>Angel Tech: Undoing Yourself with Energized Meditation and Other Devices
-by Antero Alli
-Read in Play Books around September 2014
-Review
- the principle of Consciousness itself, which, like the god Hermes. . .travels between worlds without becoming residential to any of them.  September 25, 2014   Angel Tech was constructed much like a can-opener. What it describes is secondary to what it opens up as it reads  September 25, 2014   utter benevolence and surgical precision by which Life expresses itself through us  September 25, 2014   I feel we are only as free as our integrity permits.</description>
+      <guid>https://www.nonlinear.nyc/play/revealjs/</guid>
+      <description>Barebones Presentation This example contains the bare minimum includes and markup required to run a reveal.js presentation.
+  No Theme There&#39;s no theme included, so it will fall back on browser defaults.
+  Barebones Presentation This example contains the bare minimum includes and markup required to run a reveal.js presentation.
+  No Theme There&#39;s no theme included, so it will fall back on browser defaults.
+  Barebones Presentation This example contains the bare minimum includes and markup required to run a reveal.</description>
     </item>
     
     <item>
-      <title>Zendegi</title>
-      <link>https://www.nonlinear.nyc/books/zendegi/</link>
-      <pubDate>Sat, 26 Sep 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.nonlinear.nyc/books/zendegi/</guid>
-      <description>📚
-  Whittling the collection down would feel like a kind of revisionism
-  ‘Groundhog Cage’ she’d constructed that made thirty-day free-trial software think it was always on the first day of the trial
-  I want to see if I can ride the coattails of the distribution
-  So you’d be satisfied with passing as a low-affect psychopath, just so long as you don’t actually come across as brain-dead?</description>
-    </item>
-    
-    <item>
-      <title>Incomplete Nature</title>
-      <link>https://www.nonlinear.nyc/books/incomplete/</link>
+      <title>Playing with credits</title>
+      <link>https://www.nonlinear.nyc/play/credits/</link>
       <pubDate>Wed, 29 Jan 2020 18:03:16 -0500</pubDate>
       
-      <guid>https://www.nonlinear.nyc/books/incomplete/</guid>
-      <description>Incomplete Nature: How Mind Emerged from Matter
-by Terence W. Deacon
-Reading
-📚
- But it is not simply a many-to-one relationship; it is the mapping of a continuum to discrete states. Morphodynamic work shares one very significant attribute with thermodynamic work: the law of diminishing returns. As this tendency to complexity becomes amplified to a far greater extend when we consider the superimposition of teleodynamic processes. how the evolutionary process is able to mine the morphodynamic domain for these sorts of reciprocities and complementarities In general terms, an orthograde teleodynamic process is an end-directed process, and more specifically, one that will tend to occur spontaneously new teleodynamic systems and relationships are generated from the interactions of prior teleodynamic systems with respect to their shared environmental contexts teleodynamic processes because they are end-directed toward specific target states orthograde because they are what organism dynamics produce naturally and spontaneously Organisms are of course highly complicated synergistic constellations of teleodynamic processes But like other forms of work, teleodynamic work can also be used to transform one form of teleodynamic process into another, and to generate emergent phenomena at a higher order And since all ultimately depend on thermodynamic work, this is the final arbiter of teleodynamic success evolution is a kind of teleodynamic engine This shift of work up-level, so to speak, significantly decreases the total amount of thermodynamic work to achieve this end The diversity of forms of teleodynamic work is as extensive as the fields of biology, psychology, human social behavior, and all the arts combined.</description>
-    </item>
-    
-    <item>
-      <title>O Que o Cérebro Tem Para Contar</title>
-      <link>https://www.nonlinear.nyc/books/cerebro/</link>
-      <pubDate>Wed, 29 Jan 2020 18:03:16 -0500</pubDate>
-      
-      <guid>https://www.nonlinear.nyc/books/cerebro/</guid>
-      <description>O Que o Cérebro Tem Para Contar: Desvendando os Mistérios da Natureza Humana
-by V.S. Ramachandran
-Read in Play Books around April 2017
-📚
- Durante a maior parte do século XX, tudo o que tínhamos a oferecer em matéria de explicação do comportamento humano eram dois edifícios teóricos - o freudismo e o behaviorismo  30 de outubro de 2016   em sistemas biológicos há uma profunda unidade entre estrutura, função e origem.</description>
-    </item>
-    
-    <item>
-      <title>Schilds Ladder</title>
-      <link>https://www.nonlinear.nyc/books/schilds-ladder/</link>
-      <pubDate>Wed, 29 Jan 2020 18:03:16 -0500</pubDate>
-      
-      <guid>https://www.nonlinear.nyc/books/schilds-ladder/</guid>
-      <description>📚
- &amp;ldquo;I&amp;rsquo;m the quintessential singleton,&amp;rdquo; Cass replied. &amp;ldquo;I weigh up all my choices very carefully.&amp;rdquo;  April 30, 2016   Every viewpoint was a compromise, but she had to be as close as she could get.  May 1, 2016   What was the worst that one of these transient selves might do?  May 1, 2016   endless varieties of suffering, endless varieties of stupidity, endless varieties of banality.</description>
-    </item>
-    
-    <item>
-      <title>Supersizing the mind</title>
-      <link>https://www.nonlinear.nyc/books/supersizing/</link>
-      <pubDate>Wed, 29 Jan 2020 18:03:16 -0500</pubDate>
-      
-      <guid>https://www.nonlinear.nyc/books/supersizing/</guid>
-      <description>Supersizing the Mind: Embodiment, Action, and Cognitive Extension
-by Andy Clark, partial extraction from Sumnotes
-Embodied Cognition on Wikipedia
- This is the thesis of the extended mind: when parts of the environment are coupled to the brain in the right way, they become parts of the mind. Parity Principle, which held that if aprocess in the world works in a way that we should count as a cognitive process if it were done in the head, then we should count it as a cognitive process all the same.</description>
+      <guid>https://www.nonlinear.nyc/play/credits/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -99,18 +55,6 @@ Embodied Cognition on Wikipedia
       <description>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, ut? Ipsum, quasi, dolorem. Omnis cupiditate cumque natus deleniti ex nulla obcaecati, consectetur ipsa, unde corrupti animi dicta odit maxime quod!
 Click to jump Ratione officiis in deleniti mollitia culpa dolorem, facere, quod laborum vero tempore magnam, porro. Tempora, nesciunt, recusandae dolorum suscipit natus reprehenderit minima excepturi rerum fugit molestias consequuntur dicta. Maxime, dolores.
 Tempore libero voluptates similique, laboriosam suscipit neque officia dicta maxime ab cupiditate quos rem velit aspernatur corporis adipisci sed laudantium.</description>
-    </item>
-    
-    <item>
-      <title>The Dispossessed</title>
-      <link>https://www.nonlinear.nyc/books/dispossessed/</link>
-      <pubDate>Wed, 29 Jan 2020 18:03:16 -0500</pubDate>
-      
-      <guid>https://www.nonlinear.nyc/books/dispossessed/</guid>
-      <description>by Ursula Le Guin
-Read in Play Books around January 2017
-📚
- If the foreman had no experience in bossing a mob, they had no experience in being one.  December 24, 2016   A stone lay there. It was dark like the wall, but on it, or inside it, there was a number; and 5 he thought at first, then took it for 1 then understood what it was—the primal number, that was both unity and plurality.</description>
     </item>
     
   </channel>
