@@ -6,7 +6,16 @@
     <description>Recent content on nonlinear</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 19 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.nonlinear.nyc/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.nonlinear.nyc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ML5 testing</title>
+      <link>https://www.nonlinear.nyc/play/ml5-test/</link>
+      <pubDate>Wed, 10 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.nonlinear.nyc/play/ml5-test/</guid>
+      <description> const bodypix = ml5.bodyPix(modelReady) function modelReady() { // segment the image given bodypix.segment(img, gotResults) } function gotImage(error, result) { if (error) { console.log(error); return; } // log the result console.log(result.maskBackground); } </description>
+    </item>
+    
     <item>
       <title>Angel Tech</title>
       <link>https://www.nonlinear.nyc/books/angeltech/</link>
