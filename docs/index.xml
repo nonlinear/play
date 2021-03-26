@@ -7,18 +7,6 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://www.nonlinear.nyc/play/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Bundle example presentation</title>
-      <link>https://www.nonlinear.nyc/play/revealjs/</link>
-      <pubDate>Thu, 25 Mar 2021 00:00:00 -0400</pubDate>
-      
-      <guid>https://www.nonlinear.nyc/play/revealjs/</guid>
-      <description>Page Bundles  Hugo page bundles are a useful way to organize content.
- To create a reveal-hugo presentation from the index.md file of a leaf page bundle, you need to specify the layout manually.
-layout = &amp;#34;bundle&amp;#34;  Why? By default, reveal-hugo doesn&amp;rsquo;t create pages for single template types (foo.md), only for list template types (_index.md).
- This technique can also be used to output an HTML file for any section of a presentation, should you need to.</description>
-    </item>
-    
-    <item>
       <title>bodypix</title>
       <link>https://www.nonlinear.nyc/play/bodypix/</link>
       <pubDate>Wed, 24 Mar 2021 00:00:00 +0000</pubDate>
@@ -38,10 +26,10 @@ layout = &amp;#34;bundle&amp;#34;  Why? By default, reveal-hugo doesn&amp;rsquo;
     
     <item>
       <title>Reveal Js</title>
-      <link>https://www.nonlinear.nyc/play/revealjs2/</link>
+      <link>https://www.nonlinear.nyc/play/reveal-test/</link>
       <pubDate>Wed, 10 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.nonlinear.nyc/play/revealjs2/</guid>
+      <guid>https://www.nonlinear.nyc/play/reveal-test/</guid>
       <description>Barebones Presentation This example contains the bare minimum includes and markup required to run a reveal.js presentation.
   No Theme There&#39;s no theme included, so it will fall back on browser defaults.
   Barebones Presentation This example contains the bare minimum includes and markup required to run a reveal.js presentation.
