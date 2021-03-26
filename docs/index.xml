@@ -9,10 +9,10 @@
     <item>
       <title>bodypix</title>
       <link>https://www.nonlinear.nyc/play/bodypix/</link>
-      <pubDate>Wed, 24 Mar 2021 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 10 Mar 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.nonlinear.nyc/play/bodypix/</guid>
-      <description>let bodypix; let segmentation; let img; const options = { multiplier: 0.75, outputStride: 16, // 8, 16, or 32, default is 16 segmentationThreshold: 0.5, // 0 - 1, defaults to 0.5 }; function preload() { img = loadImage(&#39;/images/fashion/7df33e7efeac335dec0953.jpg&#39;); bodypix = ml5.bodyPix(options); } function setup() { createCanvas(600, 400); //bodypix.segment(img, gotResults); createHSBPalette(); bodypix.segmentWithParts(img, gotResults, options); background(&#34;#ff0000&#34;); } function gotResults(err, result) { if (err) { console.log(err); return } segmentation = result; background(0); image(segmentation.</description>
+      <description>let bodypix; let segmentation; let img; const options = { multiplier: 0.75, outputStride: 16, // 8, 16, or 32, default is 16 segmentationThreshold: 0.5, // 0 - 1, defaults to 0.5 }; function preload() { img = loadImage(&#39;images/fashion/7df28571455f32f283d1a7.jpg&#39;); bodypix = ml5.bodyPix(options); } function setup() { createCanvas(600, 400); //bodypix.segment(img, gotResults); createHSBPalette(); bodypix.segmentWithParts(img, gotResults, options); background(&#34;#ff0000&#34;); } function gotResults(err, result) { if (err) { console.log(err); return } segmentation = result; background(0); image(segmentation.</description>
     </item>
     
     <item>
