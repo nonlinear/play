@@ -1,14 +1,14 @@
 ---
 title: bodypix
-play: revealjs[magazine], style, modernizr, ml5js, p5js
+play: style, modernizr, ml5js, p5js
 date: 2021-03-10
 ---
-		<section>
 		<script>
 
   let bodypix;
   let segmentation;
   let img;
+  let bodies = {confusing:8, fashion:28, guys:5};
 
   const options = {
     multiplier: 0.75,
@@ -16,20 +16,22 @@ date: 2021-03-10
     segmentationThreshold: 0.5, // 0 - 1, defaults to 0.5
   };
 
+  // ../images/bodies(name)-(random ate o bodies #).jpg
+
   function preload() {
-      img = loadImage('images/fashion/7df28571455f32f283d1a7.jpg');
+  	bodytype = Object.keys(bodies)[floor(random(Object.keys(bodies).length))];
+      img = loadImage('../images/bodypix/' + bodytype + '-04.jpg');
       bodypix = ml5.bodyPix(options);
   }
 
   function setup() {
-      createCanvas(600, 400);
+      createCanvas(windowWidth, windowHeight);
       //bodypix.segment(img, gotResults);
       createHSBPalette();
 
       bodypix.segmentWithParts(img, gotResults, options);
 
 
-      background("#ff0000");
   }
 
   function gotResults(err, result) {
@@ -50,51 +52,14 @@ date: 2021-03-10
     colorMode(HSB);
     options.palette = bodypix.config.palette;
     Object.keys(options.palette).forEach(part => {
-        // const h = floor(random(360));
-        // const s = floor(random(100));
-        // const b = floor(random(100));
-        // const c = color(h, s, b);
-        // options.palette[part].color = c;
-        if (part == "leftFace") {
-            options.palette[part].color = color(0,0,0);
-        } else {
-            options.palette[part].color = color(0,0,100);
-        }
+        const h = floor(random(360));
+        const s = floor(random(100));
+        const b = floor(random(100));
+        const c = color(h, s, b);
+        options.palette[part].color = c;
         
     });
     console.log(options.palette);
 }  
 
 </script>
-		</section>
-		<section>
-			<h2>No Theme</h2>
-			<p>There's no theme included, so it will fall back on browser defaults.</p>
-		</section>
-				<section id="other">
-			<h2>Barebones Presentation</h2>
-			<p>This example contains the bare minimum includes and markup required to run a reveal.js presentation.</p>
-		</section>
-
-		<section>
-			<h2>No Theme</h2>
-			<p>There's no theme included, so it will fall back on browser defaults.</p>
-		</section>
-				<section>
-			<h2>Barebones Presentation</h2>
-			<p>This example contains the bare minimum includes and markup required to run a reveal.js presentation.</p>
-		</section>
-
-		<section>
-			<h2>No Theme</h2>
-			<p>There's no theme included, so it will fall back on browser defaults.</p>
-		</section>
-				<section>
-			<h2>Barebones Presentation</h2>
-			<p>This example contains the bare minimum includes and markup required to run a reveal.js presentation.</p>
-		</section>
-
-		<section>
-			<h2>No Theme</h2>
-			<p>There's no theme included, so it will fall back on browser defaults.</p>
-		</section>
