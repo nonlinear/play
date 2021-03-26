@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>nonlinear / play</title>
+    <link>https://www.nonlinear.nyc/play/</link>
+    <description>Recent content on nonlinear / play</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://www.nonlinear.nyc/play/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>bodypix</title>
+      <link>https://www.nonlinear.nyc/play/bodypix/</link>
+      <pubDate>Wed, 10 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.nonlinear.nyc/play/bodypix/</guid>
+      <description>let bodypix; let segmentation; let img; const options = { multiplier: 0.75, outputStride: 16, // 8, 16, or 32, default is 16 segmentationThreshold: 0.5, // 0 - 1, defaults to 0.5 }; function preload() { img = loadImage(&#39;images/fashion/7df28571455f32f283d1a7.jpg&#39;); bodypix = ml5.bodyPix(options); } function setup() { createCanvas(600, 400); //bodypix.segment(img, gotResults); createHSBPalette(); bodypix.segmentWithParts(img, gotResults, options); background(&#34;#ff0000&#34;); } function gotResults(err, result) { if (err) { console.log(err); return } segmentation = result; background(0); image(segmentation.</description>
+    </item>
+    
+    <item>
+      <title>Magazine</title>
+      <link>https://www.nonlinear.nyc/play/magazine/</link>
+      <pubDate>Wed, 10 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.nonlinear.nyc/play/magazine/</guid>
+      <description>Barebones Presentation This example contains the bare minimum includes and markup required to run a reveal.js presentation.
+  No Theme There&#39;s no theme included, so it will fall back on browser defaults.
+ Barebones Presentation This example contains the bare minimum includes and markup required to run a reveal.js presentation.
+  No Theme There&#39;s no theme included, so it will fall back on browser defaults.
+  Barebones Presentation This example contains the bare minimum includes and markup required to run a reveal.</description>
+    </item>
+    
+    <item>
+      <title>ML5 testing</title>
+      <link>https://www.nonlinear.nyc/play/ml5-test/</link>
+      <pubDate>Wed, 10 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.nonlinear.nyc/play/ml5-test/</guid>
+      <description>Testing this thingsss  const bodypix = ml5.bodyPix(modelReady) function modelReady() { // segment the image given bodypix.segment(img, gotResults) } function gotImage(error, result) { if (error) { console.log(error); return; } // log the result console.log(result.maskBackground); } </description>
+    </item>
+    
+    <item>
+      <title>Reveal Js</title>
+      <link>https://www.nonlinear.nyc/play/reveal-test/</link>
+      <pubDate>Wed, 10 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.nonlinear.nyc/play/reveal-test/</guid>
+      <description>Barebones Presentation This example contains the bare minimum includes and markup required to run a reveal.js presentation.
+  No Theme There&#39;s no theme included, so it will fall back on browser defaults.
+  Barebones Presentation This example contains the bare minimum includes and markup required to run a reveal.js presentation.
+  No Theme There&#39;s no theme included, so it will fall back on browser defaults.</description>
+    </item>
+    
+    <item>
+      <title>Playing with credits</title>
+      <link>https://www.nonlinear.nyc/play/credits/</link>
+      <pubDate>Wed, 29 Jan 2020 18:03:16 -0500</pubDate>
+      
+      <guid>https://www.nonlinear.nyc/play/credits/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Testing hugo features</title>
+      <link>https://www.nonlinear.nyc/play/hello-world/</link>
+      <pubDate>Wed, 29 Jan 2020 18:03:16 -0500</pubDate>
+      
+      <guid>https://www.nonlinear.nyc/play/hello-world/</guid>
+      <description>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, ut? Ipsum, quasi, dolorem. Omnis cupiditate cumque natus deleniti ex nulla obcaecati, consectetur ipsa, unde corrupti animi dicta odit maxime quod!
+Click to jump Ratione officiis in deleniti mollitia culpa dolorem, facere, quod laborum vero tempore magnam, porro. Tempora, nesciunt, recusandae dolorum suscipit natus reprehenderit minima excepturi rerum fugit molestias consequuntur dicta. Maxime, dolores.
+Tempore libero voluptates similique, laboriosam suscipit neque officia dicta maxime ab cupiditate quos rem velit aspernatur corporis adipisci sed laudantium.</description>
+    </item>
+    
+  </channel>
+</rss>
