@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   
-  <link rel="stylesheet" href="https://www.nonlinear.nyc/play/css/reveal.css">
+   
   
   
   
@@ -34,48 +34,17 @@
     
     
   </script>
-  <div class="reveal">
-	<div class="slides">
+  <h1 id="page-bundles">Page Bundles</h1>
+<hr>
+<p><a href="https://gohugo.io/content-management/page-bundles/">Hugo page bundles</a> are a useful way to organize content.</p>
+<hr>
+<p>To create a reveal-hugo presentation from the <code>index.md</code> file of a leaf page bundle, you need to specify the layout manually.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#a6e22e">layout</span> = <span style="color:#e6db74">&#34;bundle&#34;</span>
+</code></pre></div><hr>
+<p>Why? By default, reveal-hugo doesn&rsquo;t create pages for single template types (foo.md), only for list template types (_index.md).</p>
+<hr>
+<p>This technique can also be used to output an HTML file for any section of a presentation, should you need to.</p>
 
-		<section>
-			<h2>Barebones Presentation</h2>
-			<p>This example contains the bare minimum includes and markup required to run a reveal.js presentation.</p>
-		</section>
-
-		<section>
-			<h2>No Theme</h2>
-			<p>There's no theme included, so it will fall back on browser defaults.</p>
-		</section>
-				<section>
-			<h2>Barebones Presentation</h2>
-			<p>This example contains the bare minimum includes and markup required to run a reveal.js presentation.</p>
-		</section>
-
-		<section>
-			<h2>No Theme</h2>
-			<p>There's no theme included, so it will fall back on browser defaults.</p>
-		</section>
-				<section>
-			<h2>Barebones Presentation</h2>
-			<p>This example contains the bare minimum includes and markup required to run a reveal.js presentation.</p>
-		</section>
-
-		<section>
-			<h2>No Theme</h2>
-			<p>There's no theme included, so it will fall back on browser defaults.</p>
-		</section>
-				<section>
-			<h2>Barebones Presentation</h2>
-			<p>This example contains the bare minimum includes and markup required to run a reveal.js presentation.</p>
-		</section>
-
-		<section>
-			<h2>No Theme</h2>
-			<p>There's no theme included, so it will fall back on browser defaults.</p>
-		</section>
-
-	</div>
-</div>
   
 <style>
 	a.credits-trigger {
@@ -177,7 +146,7 @@ color: black;
 	<article class="modal-body">
 		<header class="modal-header">
 			<div>
-				<h1>Reveal Js</h1>
+				<h1>Bundle example presentation</h1>
 		<h2></h2>
 	
 	</div>
