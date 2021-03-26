@@ -16,6 +16,19 @@
     </item>
     
     <item>
+      <title>Magazine</title>
+      <link>https://www.nonlinear.nyc/play/magazine/</link>
+      <pubDate>Wed, 10 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.nonlinear.nyc/play/magazine/</guid>
+      <description>Barebones Presentation This example contains the bare minimum includes and markup required to run a reveal.js presentation.
+  No Theme There&#39;s no theme included, so it will fall back on browser defaults.
+ Barebones Presentation This example contains the bare minimum includes and markup required to run a reveal.js presentation.
+  No Theme There&#39;s no theme included, so it will fall back on browser defaults.
+  Barebones Presentation This example contains the bare minimum includes and markup required to run a reveal.</description>
+    </item>
+    
+    <item>
       <title>ML5 testing</title>
       <link>https://www.nonlinear.nyc/play/ml5-test/</link>
       <pubDate>Wed, 10 Mar 2021 00:00:00 +0000</pubDate>
