@@ -8214,48 +8214,12 @@ a:hover {
 
 :root {
   --magazine-ratio: 500px;
-  --magazine-radius: 4px;
-  --accent-color: #666; }
+  --magazine-radius: 0px;
+  --magazine-color-1: #666;
+  --magazine-color-2: #eee;
+  --magazine-shadow: 5px 5px 0px rgba(0, 0, 0, 0.06); }
 
-.reveal-viewport {
-  background-color: #ccc !important; }
-
-.magazine .reveal .slides {
-  overflow: hidden;
-  -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
-  -ms-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
-  -o-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
-  border-radius: var(--magazine-radius);
-  width: var(--magazine-ratio) !important;
-  background-color: white; }
-
-.magazine .reveal .slides section {
-  height: 100%; }
-
-.magazine .reveal .roll span:after {
-  color: #fff;
-  background: #00003f; }
-
-.magazine .reveal .r-frame {
-  border: 4px solid #000;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); }
-
-.magazine .reveal a .r-frame {
-  transition: all .15s linear; }
-
-.magazine .reveal a:hover .r-frame {
-  border-color: #00008B;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
-
-.magazine .reveal .controls {
-  color: var(--accent-color); }
-
-.magazine .reveal .progress {
-  background: transparent; }
-
-.magazine .reveal .progress span {
-  background-color: var(--accent-color); }
+.magazine.reveal-viewport {
+  background-color: #ccc; }
 
 /*# sourceMappingURL=main.css.map */
