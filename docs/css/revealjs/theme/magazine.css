@@ -5,6 +5,7 @@
 	 --magazine-color-1: #666;
 	 --magazine-color-2: #eee;
 	 --magazine-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+	 --magazine-portrait-zoom: 1.4;
 }
  .magazine .reveal .slides {
 	 
@@ -19,7 +20,7 @@
 /* this is a hack, the best I could do CSS-only. test, test, test */
 @media (orientation: portrait) {
  .magazine .reveal .slides {
- 	transform: translate(-50%, -50%) scale(1.3) !important;
+ 	transform: translate(-50%, -50%) scale(var(--magazine-portrait-zoom)) !important;
 }
 }
 
