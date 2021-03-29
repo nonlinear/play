@@ -1,12 +1,18 @@
 :root {
 	--magazine-ratio: 500px;
+	/* px is a fiction since revealjs scales slides automatically. */	
+	/* the bigger the vallue, the "thicker" the magazine */
 	--magazine-default-bg: white;
+	/* add classes to sections to style it individually */
 	--magazine-radius: 4px;
 	--magazine-color-1: #666;
+	/* arrows and progress bar */
 	--magazine-color-2: #eee;
+	/* empty scrollbar */
 	--magazine-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
 	--magazine-portrait-zoom: 1.4;
 	--magazine-animation: magazine;
+	/* use false to disable initial animation */
 	--magazine-animation-duration: 500ms;
 	--magazine-animation-timing-function: ease-out;
 }
