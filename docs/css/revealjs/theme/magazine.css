@@ -1,59 +1,90 @@
 :root {
-	 --magazine-ratio: 500px;
-	 --magazine-default-bg: white;
-	 --magazine-radius: 4px;
-	 --magazine-color-1: #666;
-	 --magazine-color-2: #eee;
-	 --magazine-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
-	 --magazine-portrait-zoom: 1.4;
+	--magazine-ratio: 500px;
+	--magazine-default-bg: white;
+	--magazine-radius: 4px;
+	--magazine-color-1: #666;
+	--magazine-color-2: #eee;
+	--magazine-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+	--magazine-portrait-zoom: 1.4;
+	--magazine-animation: magazine;
+	--magazine-animation-duration: 500ms;
+	--magazine-animation-timing-function: ease-out;
 }
- .magazine .reveal .slides {
-	 
-	 box-shadow: var(--magazine-shadow);
-	 border-radius: var(--magazine-radius);
-	 background-color: var(--magazine-default-bg);
 
- 	width: var(--magazine-ratio) !important;
-	 
+@-webkit-keyframes magazine {
+	from {
+		margin-left: 30%;
+		opacity: 0;
+		visibility: visible;
+	}
+
+	to {
+		margin-left: 0px;
+	}
+}
+@keyframes magazine {
+	from {
+		margin-left: 30%;
+		opacity: 0;
+		visibility: visible;
+	}
+
+	to {
+		margin-left: 0px;
+	}
+}
+
+.magazine .reveal .slides {
+	box-shadow: var(--magazine-shadow);
+	border-radius: var(--magazine-radius);
+	background-color: var(--magazine-default-bg);
+	width: var(--magazine-ratio) !important;
+	animation-name: var(--magazine-animation);
+	animation-duration: var(--magazine-animation-duration);
+	animation-iteration-count: 1;
+	animation-timing-function: var(--magazine-animation-timing-function);
 }
 
 /* this is a hack, the best I could do CSS-only. test, test, test */
-@media (orientation: portrait) {
- .magazine .reveal .slides {
- 	transform: translate(-50%, -50%) scale(var(--magazine-portrait-zoom)) !important;
+@media screen and (orientation: portrait) {
+	.magazine .reveal .slides {
+		transform: translate(-50%, -50%) scale(var(--magazine-portrait-zoom)) !important;
+	}
 }
+@media screen and (max-width: --magazine-ratio) {
+	transform: translate(-50%, -50%) scale(1) !important;
 }
 
- .magazine .reveal.overview .slides section {
- 	background-color: var(--magazine-default-bg);
+.magazine .reveal.overview .slides section {
+	background-color: var(--magazine-default-bg);
 }
- .magazine .reveal:not(.overview) .slides {
- 	overflow: hidden;
+.magazine .reveal:not(.overview) .slides {
+	overflow: hidden;
 }
- .magazine .reveal .slides section {
-	 height: 100%;
+.magazine .reveal .slides section {
+	height: 100%;
 }
- .magazine .reveal .roll span:after {
-	 color: #fff;
-	 background: #00003f;
+.magazine .reveal .roll span:after {
+	color: #fff;
+	background: #00003f;
 }
- .magazine .reveal .r-frame {
-	 border: 4px solid #000;
-	 box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+.magazine .reveal .r-frame {
+	border: 4px solid #000;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
- .magazine .reveal a .r-frame {
-	 transition: all 0.15s linear;
+.magazine .reveal a .r-frame {
+	transition: all 0.15s linear;
 }
- .magazine .reveal a:hover .r-frame {
-	 border-color: #00008b;
-	 box-shadow: 0 0 20px rgba(0, 0, 0, 0.55);
+.magazine .reveal a:hover .r-frame {
+	border-color: #00008b;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.55);
 }
- .magazine .reveal .controls {
-	 color: var(--magazine-color-1);
+.magazine .reveal .controls {
+	color: var(--magazine-color-1);
 }
- .magazine .reveal .progress {
-	 background: var(--magazine-color-2);
+.magazine .reveal .progress {
+	background: var(--magazine-color-2);
 }
- .magazine .reveal .progress span {
-	 background-color: var(--magazine-color-1);
+.magazine .reveal .progress span {
+	background-color: var(--magazine-color-1);
 }
