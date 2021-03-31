@@ -3,7 +3,12 @@ title: bodypix
 play: style, modernizr, ml5js, p5js
 description: testing bodypix `segmentation.partMask` feature
 date: 2021-03-10
-about: "[assorted images](https://github.com/nonlinear/play/tree/master/static/images/bodypix) (fashion, body, confusing) and [assorted patterns](https://github.com/nonlinear/play/tree/master/static/images/bodypix/patterns) to check how far `partMask` goes."
+about: "[assorted images](https://github.com/nonlinear/play/tree/master/static/images/bodypix) (fashion, body, confusing) and [assorted patterns](https://github.com/nonlinear/play/tree/master/static/images/bodypix/patterns) to check how far `partMask` goes.
+
+- [view complete list of parts](https://learn.ml5js.org/#/reference/bodypix?id=parameters)
+- review [blend modes](https://p5js.org/reference/#/p5/blendMode) on p5js
+- Some images are too large for WebGL to parse. It may be a browser or system limit, better to investigate.
+"
 ---
 <script>
 
@@ -51,6 +56,8 @@ about: "[assorted images](https://github.com/nonlinear/play/tree/master/static/i
        textSize(40);
        fill(0,0,0);
     text(bodytype, 20, 40);
+           textSize(20);
+    text("control+R to test another", 20, 65);
 
 
   }
