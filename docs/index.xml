@@ -12,7 +12,7 @@
       <pubDate>Wed, 10 Mar 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.nonlinear.nyc/play/bodypix/</guid>
-      <description>let bodypix; let segmentation; let img; let bodies = {confusing:8, fashion:28, guys:5}; const options = { multiplier: 0.75, outputStride: 16, // 8, 16, or 32, default is 16 segmentationThreshold: 0.5, // 0 - 1, defaults to 0.5 }; // ../images/bodies(name)-(random ate o bodies #).jpg function preload() { bodytype = Object.keys(bodies)[floor(random(Object.keys(bodies).length))]; img = loadImage(&#39;../images/bodypix/&#39; + bodytype + &#39;-04.jpg&#39;); bodypix = ml5.bodyPix(options); } function setup() { createCanvas(windowWidth, windowHeight); //bodypix.segment(img, gotResults); createHSBPalette(); bodypix.</description>
+      <description>let bodypix; let segmentation; let img; let bodies = {confusing:8, fashion:28, guys:5}; let bodytype = &#34;&#34;; const options = { multiplier: 0.75, outputStride: 16, // 8, 16, or 32, default is 16 segmentationThreshold: 0.5, // 0 - 1, defaults to 0.5 }; // ../images/bodies(name)-(random ate o bodies #).jpg function preload() { bodytype = Object.keys(bodies)[floor(random(Object.keys(bodies).length))]; bodylength = ceil(random(bodies[bodytype])); img = loadImage(&#39;../images/bodypix/&#39; + bodytype + &#39;-&#39; + bodylength + &#39;.jpg&#39;); bodypix = ml5.</description>
     </item>
     
     <item>
@@ -21,11 +21,9 @@
       <pubDate>Wed, 10 Mar 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.nonlinear.nyc/play/magazine/</guid>
-      <description>Barebones Presentation This example contains the bare minimum includes and markup required to run a reveal.js presentation.
+      <description>:root { --magazine-ratio: 500px; --magazine-radius: 0px; --magazine-color-1: #666; --magazine-color-2: #eee; --magazine-shadow: 5px 5px 0px rgba(0, 0, 0, 0.06); } .reveal-viewport { background-color: #ccc; }   Barebones Presentation This example contains the bare minimum includes and markup required to run a reveal.js presentation.
   No Theme There&#39;s no theme included, so it will fall back on browser defaults.
- Barebones Presentation This example contains the bare minimum includes and markup required to run a reveal.js presentation.
-  No Theme There&#39;s no theme included, so it will fall back on browser defaults.
-  Barebones Presentation This example contains the bare minimum includes and markup required to run a reveal.</description>
+ Barebones Presentation This example contains the bare minimum includes and markup required to run a reveal.</description>
     </item>
     
     <item>

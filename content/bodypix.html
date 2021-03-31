@@ -3,20 +3,15 @@ title: bodypix
 play: style, modernizr, ml5js, p5js
 description: testing bodypix `segmentation.partMask` feature
 date: 2021-03-10
-about: "[assorted images](https://github.com/nonlinear/play/tree/master/static/images/bodypix) (fashion, body, confusing) and [assorted patterns](https://github.com/nonlinear/play/tree/master/static/images/bodypix/patterns) to check how far `partMask` goes. 
-
-- aaa
-
-- bbb
-
-- ccc"
+about: "[assorted images](https://github.com/nonlinear/play/tree/master/static/images/bodypix) (fashion, body, confusing) and [assorted patterns](https://github.com/nonlinear/play/tree/master/static/images/bodypix/patterns) to check how far `partMask` goes."
 ---
-		<script>
+<script>
 
   let bodypix;
   let segmentation;
   let img;
   let bodies = {confusing:8, fashion:28, guys:5};
+  let bodytype = "";
 
   const options = {
     multiplier: 0.75,
@@ -27,31 +22,35 @@ about: "[assorted images](https://github.com/nonlinear/play/tree/master/static/i
   // ../images/bodies(name)-(random ate o bodies #).jpg
 
   function preload() {
-  	bodytype = Object.keys(bodies)[floor(random(Object.keys(bodies).length))];
-      img = loadImage('../images/bodypix/' + bodytype + '-04.jpg');
-      bodypix = ml5.bodyPix(options);
+    bodytype = Object.keys(bodies)[floor(random(Object.keys(bodies).length))];
+    bodylength = ceil(random(bodies[bodytype]));
+    img = loadImage('../images/bodypix/' + bodytype + '-' + bodylength + '.jpg');
+
+    bodypix = ml5.bodyPix(options);
   }
 
   function setup() {
-      createCanvas(windowWidth, windowHeight);
-      //bodypix.segment(img, gotResults);
-      createHSBPalette();
+    createCanvas(windowWidth, windowHeight);
+    createHSBPalette();
+    bodypix.segmentWithParts(img, gotResults, options);
 
-      bodypix.segmentWithParts(img, gotResults, options);
 
 
   }
 
   function gotResults(err, result) {
-      if (err) {
-          console.log(err);
-          return
-      }
+    if (err) {
+      console.log(err);
+      return
+    }
 
-      segmentation = result;
+    segmentation = result;
 
-      background(0);
-      image(segmentation.partMask, 0, 0, width, height);
+    background(0);
+    image(segmentation.partMask, 0, 0, width, height);  
+       textSize(40);
+       fill(0,0,0);
+    text(bodytype, 20, 40);
 
 
   }
@@ -60,14 +59,14 @@ about: "[assorted images](https://github.com/nonlinear/play/tree/master/static/i
     colorMode(HSB);
     options.palette = bodypix.config.palette;
     Object.keys(options.palette).forEach(part => {
-        const h = floor(random(360));
-        const s = floor(random(100));
-        const b = floor(random(100));
-        const c = color(h, s, b);
-        options.palette[part].color = c;
-        
+      const h = floor(random(360));
+      const s = floor(random(100));
+      const b = floor(random(100));
+      const c = color(h, s, b);
+      options.palette[part].color = c;
+
     });
     console.log(options.palette);
-}  
+  }  
 
 </script>

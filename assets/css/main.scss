@@ -4,14 +4,3 @@
 @import "functions";
 @import "layout";
 
-:root {
-	 --magazine-ratio: 500px;
-	 --magazine-radius: 0px;
-	 --magazine-color-1: #666;
-	 --magazine-color-2: #eee;
-	 --magazine-shadow: 5px 5px 0px rgba(0, 0, 0, 0.06);
-}
-
-.magazine.reveal-viewport {
-	background-color: $color-bg;
-}
