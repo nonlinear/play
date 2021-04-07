@@ -41,7 +41,7 @@
       <pubDate>Wed, 10 Mar 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.nonlinear.nyc/play/mosaic/</guid>
-      <description>Mosaic a vector experiment  script { const el = document.querySelector(&#34;#cover&#34;); el.addEventListener(&#34;mousemove&#34;, (e) = { el.style.setProperty(&#39;--size-1&#39;, -e.offsetX); el.style.setProperty(&#39;--size-2&#39;, -e.offsetY); }); } </description>
+      <description>Mosaic  cross lines   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia dolore, tempora voluptatibus repellat aliquam quasi iste praesentium, exercitationem aspernatur quos sed eius autem, suscipit id, soluta ipsum nulla. Tenetur, reiciendis.   Quo necessitatibus magni, fuga aliquid fugiat possimus debitis dolore ut perspiciatis, maxime quisquam laborum corporis harum natus, nesciunt officia optio. Expedita repellat, deserunt fugiat! Earum aspernatur explicabo aut quae voluptates.   Sunt consequuntur dignissimos, voluptatem totam nesciunt dolorum eum at veniam fugiat harum cum esse magni atque odio expedita quaerat beatae dolor, amet tempore voluptates odit cupiditate iure ducimus.</description>
     </item>
     
     <item>

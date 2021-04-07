@@ -1,6 +1,6 @@
 ---
 title: Mosaic
-play: revealjs[magazine], style, modernizr, no-text-select
+play: revealjs[magazine], style
 description: mosaic experiments
 date: 2021-03-10
 about: "Just playing around:
@@ -9,18 +9,39 @@ about: "Just playing around:
 
 - [Moving Backgrounds With Mouse Position | CSS-Tricks](https://css-tricks.com/moving-backgrounds-with-mouse-position/)"
 ---
-<section id="cover">
+<section class="cross">
 
 		<h1>Mosaic</h1>
-	<h2>a vector experiment</h2>
 
 </section>
+<section class="lines">
 
-script {
-	const el = document.querySelector("#cover");
+		<h2>cross lines</h2>
 
-el.addEventListener("mousemove", (e) => {
-  el.style.setProperty('--size-1', -e.offsetX);
-  el.style.setProperty('--size-2', -e.offsetY);
+</section>
+<section>
+	<h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia dolore, tempora voluptatibus repellat aliquam quasi iste praesentium, exercitationem aspernatur quos sed eius autem, suscipit id, soluta ipsum nulla. Tenetur, reiciendis.</h2>
+</section>
+<section>
+	<h2>Quo necessitatibus magni, fuga aliquid fugiat possimus debitis dolore ut perspiciatis, maxime quisquam laborum corporis harum natus, nesciunt officia optio. Expedita repellat, deserunt fugiat! Earum aspernatur explicabo aut quae voluptates.</h2>
+</section>
+<section>
+	<h2>Sunt consequuntur dignissimos, voluptatem totam nesciunt dolorum eum at veniam fugiat harum cum esse magni atque odio expedita quaerat beatae dolor, amet tempore voluptates odit cupiditate iure ducimus. Repudiandae, rem?</h2>
+</section>
+
+<script>
+	var mouseX;
+	var mouseY;
+window.addEventListener('mousemove', function(e) {
+mouseX = e.clientX;
+mouseY = e.clientY;
+const target = document.querySelector("section");
+target.style.setProperty('--size-1', (three(screen.width, 70, mouseX) + 50) + 'px');
+target.style.setProperty('--size-2', (three(screen.height, 70, mouseY) + 50) + 'px');
+// target.style.setProperty('--size-2', three(820, 100, mouseX) + 'px');
 });
+function three(origin, destination, element) {
+	return element / origin * destination
 }
+
+</script>

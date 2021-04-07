@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class='
-mosaic 
+play-mosaic 
     '>
 <head>
   <meta charset="UTF-8">
@@ -31,15 +31,6 @@ mosaic
   <title>nonlinear / play</title>
   <style>
     
-    
-        * {
-      -webkit-touch-callout: none;  
-      -webkit-user-select: none;  
-      -khtml-user-select: none;  
-      -moz-user-select: none;  
-      -ms-user-select: none;  
-      user-select: none;  
-}
      
 
 
@@ -140,22 +131,14 @@ color: black;
   
   
 
-<link rel="stylesheet" href="https://www.nonlinear.nyc/play/css/main.0a26bedf606dad32d0ef12ad3ea1c9817da84c3f17d2c6a7aba41050de851450.css">
+<link rel="stylesheet" href="https://www.nonlinear.nyc/play/css/main.d44eb64d8e87e55429f43ef72a51d9fa193094d09dec929e253d38c2c278f527.css">
   
 </head>
 <body>
   
 
 
- 
-<script src="https://www.nonlinear.nyc/play/js/jquery.min.js"></script>
 
-
-
-
-<script src="https://www.nonlinear.nyc/play/js/modernizr.js"></script>
-
-<script src="https://www.nonlinear.nyc/play/js/detectizr.js"></script>
 
 
 
@@ -167,21 +150,42 @@ color: black;
   
   <div class="reveal">
 	<div class="slides">
-  <section id="cover">
+  <section class="cross">
 
 		<h1>Mosaic</h1>
-	<h2>a vector experiment</h2>
 
 </section>
+<section class="lines">
 
-script {
-	const el = document.querySelector("#cover");
+		<h2>cross lines</h2>
 
-el.addEventListener("mousemove", (e) => {
-  el.style.setProperty('--size-1', -e.offsetX);
-  el.style.setProperty('--size-2', -e.offsetY);
+</section>
+<section>
+	<h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia dolore, tempora voluptatibus repellat aliquam quasi iste praesentium, exercitationem aspernatur quos sed eius autem, suscipit id, soluta ipsum nulla. Tenetur, reiciendis.</h2>
+</section>
+<section>
+	<h2>Quo necessitatibus magni, fuga aliquid fugiat possimus debitis dolore ut perspiciatis, maxime quisquam laborum corporis harum natus, nesciunt officia optio. Expedita repellat, deserunt fugiat! Earum aspernatur explicabo aut quae voluptates.</h2>
+</section>
+<section>
+	<h2>Sunt consequuntur dignissimos, voluptatem totam nesciunt dolorum eum at veniam fugiat harum cum esse magni atque odio expedita quaerat beatae dolor, amet tempore voluptates odit cupiditate iure ducimus. Repudiandae, rem?</h2>
+</section>
+
+<script>
+	var mouseX;
+	var mouseY;
+window.addEventListener('mousemove', function(e) {
+mouseX = e.clientX;
+mouseY = e.clientY;
+const target = document.querySelector("section");
+target.style.setProperty('--size-1', (three(screen.width, 70, mouseX) + 50) + 'px');
+target.style.setProperty('--size-2', (three(screen.height, 70, mouseY) + 50) + 'px');
+// target.style.setProperty('--size-2', three(820, 100, mouseX) + 'px');
 });
+function three(origin, destination, element) {
+	return element / origin * destination
 }
+
+</script>
 
 </div>
 </div>
