@@ -36,6 +36,15 @@
     </item>
     
     <item>
+      <title>Mosaic</title>
+      <link>https://www.nonlinear.nyc/play/mosaic/</link>
+      <pubDate>Wed, 10 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.nonlinear.nyc/play/mosaic/</guid>
+      <description>Mosaic a vector experiment  script { const el = document.querySelector(&#34;#cover&#34;); el.addEventListener(&#34;mousemove&#34;, (e) = { el.style.setProperty(&#39;--size-1&#39;, -e.offsetX); el.style.setProperty(&#39;--size-2&#39;, -e.offsetY); }); } </description>
+    </item>
+    
+    <item>
       <title>Reveal Js</title>
       <link>https://www.nonlinear.nyc/play/reveal-test/</link>
       <pubDate>Wed, 10 Mar 2021 00:00:00 +0000</pubDate>

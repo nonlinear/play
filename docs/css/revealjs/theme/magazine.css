@@ -69,6 +69,7 @@
 }
 .reveal .slides section {
 	height: 100%;
+	text-align: left;
 }
 .reveal .roll span:after {
 	color: #fff;

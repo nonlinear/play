@@ -1,11 +1,31 @@
 <!DOCTYPE html>
 <html lang="en" class='
-credits 
+mosaic 
     '>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
+
+  <link rel="stylesheet" href="https://www.nonlinear.nyc/play/css/revealjs/reveal.css">
+  
+  <link rel="stylesheet" href="https://www.nonlinear.nyc/play/css/revealjs/plugin/highlight/monokai.css" id="highlight-theme">
+  
+    
+    
+    
+     
+  
+  <link rel="stylesheet" href="https://www.nonlinear.nyc/play/css/revealjs/theme/magazine.css" id="theme">
+  
+    
+    
+    
+    
+    
+    
+  		    
+    
 
   
   <title>nonlinear / play</title>
@@ -133,25 +153,38 @@ color: black;
 
 
 
+<script src="https://www.nonlinear.nyc/play/js/modernizr.js"></script>
 
-<script src="https://www.nonlinear.nyc/play/js/p5.min.js"></script>
-
-
-<script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+<script src="https://www.nonlinear.nyc/play/js/detectizr.js"></script>
 
 
 
-<script>
-  document.addEventListener('gesturestart', function (e) {
-    e.preventDefault();
-  });
-</script>
+
 
 
 
 
   
-  
+  <div class="reveal">
+	<div class="slides">
+  <section id="cover">
+
+		<h1>Mosaic</h1>
+	<h2>a vector experiment</h2>
+
+</section>
+
+script {
+	const el = document.querySelector("#cover");
+
+el.addEventListener("mousemove", (e) => {
+  el.style.setProperty('--size-1', -e.offsetX);
+  el.style.setProperty('--size-2', -e.offsetY);
+});
+}
+
+</div>
+</div>
   
   
   
@@ -163,8 +196,8 @@ color: black;
 	<article class="play-modal-body">
 		<header class="play-modal-header">
 			<div>
-				<h1>Playing with credits</h1>
-		<h2>stuff here</h2>
+				<h1>Mosaic</h1>
+		<h2>mosaic experiments</h2>
 	
 	</div>
 	
@@ -172,7 +205,12 @@ color: black;
 		</header>
 		
 <section class="play-modal-content">
-	
+	<p>Just playing around:</p>
+<ul>
+<li><a href="https://projects.verou.me/css3patterns/#cross">CSS3 Patterns Gallery</a></li>
+<li><a href="https://css-tricks.com/moving-backgrounds-with-mouse-position/">Moving Backgrounds With Mouse Position | CSS-Tricks</a></li>
+</ul>
+
 
 </section>
 		<footer class="play-modal-footer">
@@ -213,5 +251,20 @@ color: black;
 	</article>
 </div>
       
+ 
+<script src="https://www.nonlinear.nyc/play/js/revealjs/reveal.js"></script>
+
+<script src="https://www.nonlinear.nyc/play/js/revealjs/plugin/notes/notes.js"></script>
+
+<script src="https://www.nonlinear.nyc/play/js/revealjs/plugin/markdown/markdown.js"></script>
+
+<script src="https://www.nonlinear.nyc/play/js/revealjs/plugin/highlight/highlight.js"></script>
+<script>
+	Reveal.initialize({
+		hash: true,
+		plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+	});
+</script>
+		  
 </body>
 </html>
