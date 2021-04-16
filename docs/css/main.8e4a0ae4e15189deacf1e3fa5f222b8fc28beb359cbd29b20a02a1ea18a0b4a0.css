@@ -8212,4 +8212,112 @@ a:hover {
   text-decoration: none;
   background-color: rgba(255, 165, 0, 0.4); }
 
+.play-mosaic {
+  --color-1: darkred;
+  --color-2: #fbc2eb;
+  --size-1: 50px;
+  --size-2: 25px;
+  --magazine-color-1: var(--color-1); }
+
+.play-mosaic .reveal-viewport {
+  background-color: #999; }
+
+.play-mosaic section {
+  padding-top: 100px; }
+
+.play-mosaic section h1, .play-mosaic section h2 {
+  color: white;
+  background-color: var(--color-1);
+  text-transform: uppercase;
+  padding: 20px 20px 5px 30px;
+  display: inline-block;
+  margin: 0; }
+
+.play-mosaic section h1 {
+  font-size: 400%;
+  -webkit-animation-name: fadeInLeft;
+  -moz-animation-name: fadeInLeft;
+  -ms-animation-name: fadeInLeft;
+  -o-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+  -webkit-animation-iteration-count: 1s;
+  -moz-animation-iteration-count: 1s;
+  -ms-animation-iteration-count: 1s;
+  -o-animation-iteration-count: 1s;
+  animation-iteration-count: 1s;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 600ms;
+  -moz-animation-delay: 600ms;
+  -ms-animation-delay: 600ms;
+  -o-animation-delay: 600ms;
+  animation-delay: 600ms;
+  -webkit-animation-timing-function: ease;
+  -moz-animation-timing-function: ease;
+  -ms-animation-timing-function: ease;
+  -o-animation-timing-function: ease;
+  animation-timing-function: ease;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+.play-mosaic section h2 {
+  font-size: 200%;
+  -webkit-animation-name: fadeInLeft;
+  -moz-animation-name: fadeInLeft;
+  -ms-animation-name: fadeInLeft;
+  -o-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+  -webkit-animation-iteration-count: 1s;
+  -moz-animation-iteration-count: 1s;
+  -ms-animation-iteration-count: 1s;
+  -o-animation-iteration-count: 1s;
+  animation-iteration-count: 1s;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 1200ms;
+  -moz-animation-delay: 1200ms;
+  -ms-animation-delay: 1200ms;
+  -o-animation-delay: 1200ms;
+  animation-delay: 1200ms;
+  -webkit-animation-timing-function: ease;
+  -moz-animation-timing-function: ease;
+  -ms-animation-timing-function: ease;
+  -o-animation-timing-function: ease;
+  animation-timing-function: ease;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  margin-top: -15px; }
+
+.play-mosaic section.cross, .play-mosaic section.cross-2 {
+  background: radial-gradient(circle, transparent 20%, var(--color-2) 20%, var(--color-2) 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, var(--color-2) 20%, var(--color-2) 80%, transparent 80%, transparent) 50px 50px, linear-gradient(var(--color-1) 8px, transparent 8px) 0 -4px, linear-gradient(90deg, var(--color-1) 8px, transparent 8px) -4px 0;
+  background-color: var(--color-2);
+  background-size: var(--size-1) var(--size-1), var(--size-1) var(--size-1), var(--size-2) var(--size-2), var(--size-2) var(--size-2); }
+
+.play-mosaic section.lines {
+  background: radial-gradient(var(--color-1) 3px, transparent 4px), radial-gradient(var(--color-1) 3px, transparent 4px), linear-gradient(#fff 4px, transparent 0), linear-gradient(45deg, transparent 74px, transparent 75px, var(--color-1) 75px, var(--color-1) 76px, transparent 77px, transparent 109px), linear-gradient(-45deg, transparent 75px, transparent 76px, var(--color-1) 76px, var(--color-1) 77px, transparent 78px, var(--color-2) 109px), #fff;
+  background-size: 109px 109px, 109px 109px,100% 6px, 109px 109px, 109px 109px;
+  background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px; }
+
 /*# sourceMappingURL=main.css.map */

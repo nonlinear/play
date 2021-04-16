@@ -1,0 +1,6 @@
+function relationship(origin0, origin1, destination0, destination1, element) {
+	var lengthOrigin = origin1 - origin0;
+	var lengthDestination = destination1 - destination0;
+	var ratio = lengthDestination / lengthOrigin;
+	return destination0 + element * ratio;
+}

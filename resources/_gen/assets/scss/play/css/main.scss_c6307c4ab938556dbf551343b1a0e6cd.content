@@ -8310,7 +8310,7 @@ a:hover {
   backface-visibility: hidden;
   margin-top: -15px; }
 
-.play-mosaic section.cross {
+.play-mosaic section.cross, .play-mosaic section.cross-2 {
   background: radial-gradient(circle, transparent 20%, var(--color-2) 20%, var(--color-2) 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, var(--color-2) 20%, var(--color-2) 80%, transparent 80%, transparent) 50px 50px, linear-gradient(var(--color-1) 8px, transparent 8px) 0 -4px, linear-gradient(90deg, var(--color-1) 8px, transparent 8px) -4px 0;
   background-color: var(--color-2);
   background-size: var(--size-1) var(--size-1), var(--size-1) var(--size-1), var(--size-2) var(--size-2), var(--size-2) var(--size-2); }

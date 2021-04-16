@@ -131,7 +131,7 @@ color: black;
   
   
 
-<link rel="stylesheet" href="https://www.nonlinear.nyc/play/css/main.d44eb64d8e87e55429f43ef72a51d9fa193094d09dec929e253d38c2c278f527.css">
+<link rel="stylesheet" href="https://www.nonlinear.nyc/play/css/main.8e4a0ae4e15189deacf1e3fa5f222b8fc28beb359cbd29b20a02a1ea18a0b4a0.css">
   
 </head>
 <body>
@@ -155,6 +155,11 @@ color: black;
 		<h1>Mosaic</h1>
 
 </section>
+<section class="cross-2">
+
+		<h1>Mosaic 2</h1>
+
+</section>
 <section class="lines">
 
 		<h2>cross lines</h2>
@@ -170,23 +175,26 @@ color: black;
 	<h2>Sunt consequuntur dignissimos, voluptatem totam nesciunt dolorum eum at veniam fugiat harum cum esse magni atque odio expedita quaerat beatae dolor, amet tempore voluptates odit cupiditate iure ducimus. Repudiandae, rem?</h2>
 </section>
 
+
+
 <script>
 	var mouseX;
 	var mouseY;
 window.addEventListener('mousemove', function(e) {
 mouseX = e.clientX;
 mouseY = e.clientY;
-const target = document.querySelector("section");
-target.style.setProperty('--size-1', (three(screen.width, 70, mouseX) + 50) + 'px');
-target.style.setProperty('--size-2', (three(screen.height, 70, mouseY) + 50) + 'px');
-// target.style.setProperty('--size-2', three(820, 100, mouseX) + 'px');
+const target = document.querySelector("section.cross");
+target.style.setProperty("--size-1", relationship(0, screen.width,  50 ,  70 , mouseX) + 'px');
+target.style.setProperty("--size-2", relationship(0, screen.height,  50 ,  50 , mouseY) + 'px');
 });
-function three(origin, destination, element) {
-	return element / origin * destination
+
+function relationship(origin0, origin1, destination0, destination1, element) {
+	var lengthOrigin = origin1 - origin0;
+	var lengthDestination = destination1 - destination0;
+	var ratio = lengthDestination / lengthOrigin;
+	return destination0 + element * ratio;
 }
-
 </script>
-
 </div>
 </div>
   
