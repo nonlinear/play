@@ -61,6 +61,12 @@
 	transform: translate(-50%, -50%) scale(1) !important;
 }
 
+.reveal.slide .slides > section:not([data-transition]).past {
+    transform: translate(-100%,0) !important;
+}
+.reveal .slides > section[data-transition~="slide-out"].past, .reveal.slide .slides > section:not([data-transition]).future {
+    transform: translate(100%,0) !important;
+
 .reveal.overview .slides section {
 	background-color: var(--magazine-default-bg);
 }
