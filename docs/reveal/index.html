@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class='
-play-mosaic 
+play-reveal 
 '>
 <head>
   <meta charset="UTF-8">
@@ -129,10 +129,6 @@ color: black;
   }
   </style>
   
-  
-
-<link rel="stylesheet" href="https://www.nonlinear.nyc/play/css/main.8e4a0ae4e15189deacf1e3fa5f222b8fc28beb359cbd29b20a02a1ea18a0b4a0.css">
-  
 </head>
 <body>
   
@@ -150,63 +146,73 @@ color: black;
   
   <div class="reveal">
    <div class="slides">
-    <section class="cross">
+    <style>
 
-		<h1>Mosaic</h1>
-
-</section>
-<section class="cross-2">
-
-		<h1>Mosaic 2</h1>
-
-</section>
-<section class="lines">
-
-		<h2>cross lines</h2>
-
-</section>
-<section>
-	<h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia dolore, tempora voluptatibus repellat aliquam quasi iste praesentium, exercitationem aspernatur quos sed eius autem, suscipit id, soluta ipsum nulla. Tenetur, reiciendis.</h2>
-</section>
-<section>
-	<h2>Quo necessitatibus magni, fuga aliquid fugiat possimus debitis dolore ut perspiciatis, maxime quisquam laborum corporis harum natus, nesciunt officia optio. Expedita repellat, deserunt fugiat! Earum aspernatur explicabo aut quae voluptates.</h2>
-</section>
-<section>
-	<h2>Sunt consequuntur dignissimos, voluptatem totam nesciunt dolorum eum at veniam fugiat harum cum esse magni atque odio expedita quaerat beatae dolor, amet tempore voluptates odit cupiditate iure ducimus. Repudiandae, rem?</h2>
-</section>
-<script>
-var mouseX;
-var mouseY;
-
-_default_unit = 'px';
-_default_minX = 0;
-_default_minY = 0;
-_default_event = 'mousemove';
-
-
-unit = _default_unit;
-minX =  50 ;
-minY =  50 ;
-event = "mousemove";
-
-
-window.addEventListener(event, function(e) {
-	mouseX = e.clientX;
-mouseY = e.clientY;
-const target = document.querySelector("section.cross");
-target.style.setProperty("--size-1", relationship(0, screen.width, minX,  70 , mouseX) + unit);
-target.style.setProperty("--size-2", relationship(0, screen.height, minY,  70 , mouseY) + unit);
-});
-
-function relationship(origin0, origin1, destination0, destination1, element) {
-	var lengthOrigin = origin1 - origin0;
-	var lengthDestination = destination1 - destination0;
-	var ratio = lengthDestination / lengthOrigin;
-	return destination0 + element * ratio;
+	.play-reveal section {
+	background-color: red;
+	margin: 0;
 }
-</script>
 
+}
+</style>
 
+<section>
+	<h1>Example</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</section><section>
+	<h1>Example</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</section><section>
+	<h1>Example</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</section><section>
+	<h1>Example</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</section><section>
+	<h1>Example</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</section><section>
+	<h1>Example</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</section><section>
+	<h1>Example</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</section>
   </div>
 </div>
 
@@ -220,8 +226,8 @@ function relationship(origin0, origin1, destination0, destination1, element) {
 	<article class="play-modal-body">
 		<header class="play-modal-header">
 			<div>
-				<h1>Mosaic</h1>
-		<h2>mosaic experiments</h2>
+				<h1>reveal</h1>
+		<h2></h2>
 	
 	</div>
 	
@@ -229,12 +235,7 @@ function relationship(origin0, origin1, destination0, destination1, element) {
 		</header>
 		
 <section class="play-modal-content">
-	<p>Just playing around:</p>
-<ul>
-<li><a href="https://projects.verou.me/css3patterns/#cross">CSS3 Patterns Gallery</a></li>
-<li><a href="https://css-tricks.com/moving-backgrounds-with-mouse-position/">Moving Backgrounds With Mouse Position | CSS-Tricks</a></li>
-</ul>
-
+	
 
 </section>
 		<footer class="play-modal-footer">

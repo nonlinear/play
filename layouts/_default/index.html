@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" class='{{ if in .Params.play "no-scope" }}{{ else }}
+play-{{ .File.BaseFileName }} {{ if .Params.style  }}{{ .Params.style }}{{ end }}
+{{ end }}'>
+{{ partial "head.html" . }}
+<body>
+ {{ range .Pages }}
+						<a  class="category-post" href="{{ .Permalink }}"  {{ if .Params.cover  }}style="background-image: url({{ .Site.BaseURL }}/images/{{ .Params.cover  }})"{{end}}>
+							<header>
+								<p class="title">{{ .Title }}</p>
+							<p class="description">{{ .Description }}</p>
+							</header>
+						</a>
+						{{ end }}
+
+
+{{ partial "credits.html" . }}
+{{ partial "requests.html" . }}
+{{ if in .Params.play "revealjs" }}
+{{ partial "revealjs-js.html" . }}
+{{ end }}
+</body>
+</html>

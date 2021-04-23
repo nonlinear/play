@@ -10,11 +10,18 @@
 	--magazine-color-2: #eee;
 	/* empty scrollbar */
 	--magazine-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
-	--magazine-portrait-zoom: 1.2;
+	--magazine-portrait-zoom: .8;
 	--magazine-animation: magazine;
 	/* use false to disable initial animation */
 	--magazine-animation-duration: 500ms;
 	--magazine-animation-timing-function: ease-out;
+}
+
+.reveal.slide .slides > section:not([data-transition]).past {
+    transform: translate(-100%,0);
+}
+.reveal .slides > section[data-transition~="slide-out"].past, .reveal.slide .slides > section:not([data-transition]).future {
+    transform: translate(100%,0);
 }
 
 @-webkit-keyframes magazine {
@@ -57,15 +64,11 @@
 		transform: translate(-50%, -50%) scale(var(--magazine-portrait-zoom)) !important;
 	}
 }
-@media screen and (max-width: --magazine-ratio) {
+/*@media screen and (max-width: --magazine-ratio) {
+	.reveal .slides {
 	transform: translate(-50%, -50%) scale(1) !important;
-}
-
-.reveal.slide .slides > section:not([data-transition]).past {
-    transform: translate(-100%,0) !important;
-}
-.reveal .slides > section[data-transition~="slide-out"].past, .reveal.slide .slides > section:not([data-transition]).future {
-    transform: translate(100%,0) !important;
+	}
+}*/
 
 .reveal.overview .slides section {
 	background-color: var(--magazine-default-bg);

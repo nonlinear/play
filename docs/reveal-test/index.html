@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" class='
 play-reveal-test 
-    '>
+'>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,7 +27,7 @@ play-reveal-test
   		    
     
 
-  
+  <link rel="manifest" href="https://www.nonlinear.nyc/playmanifest.json">
   <title>nonlinear / play</title>
   <style>
     
@@ -136,8 +136,6 @@ color: black;
 </head>
 <body>
   
-
-
  
 <script src="https://www.nonlinear.nyc/play/js/jquery.min.js"></script>
 
@@ -155,10 +153,12 @@ color: black;
 
 
 
+
+
   
   <div class="reveal">
-	<div class="slides">
-  		<section>
+   <div class="slides">
+    		<section>
 			<h2>Barebones Presentation</h2>
 			<p>This example contains the bare minimum includes and markup required to run a reveal.js presentation.</p>
 		</section>
@@ -194,11 +194,11 @@ color: black;
 			<h2>No Theme</h2>
 			<p>There's no theme included, so it will fall back on browser defaults.</p>
 		</section>
+  </div>
 </div>
-</div>
-  
-  
-  
+
+
+
 
 
 <a class="credits-trigger" href="#credits"></a>
@@ -227,7 +227,7 @@ color: black;
 	</article>
 </div>
 
-    
+
 <a class="requests-trigger" href="#requests"></a>
 
 <div id="requests" class="play-modal">
@@ -256,8 +256,8 @@ color: black;
 		
 	</article>
 </div>
-      
- 
+
+
 <script src="https://www.nonlinear.nyc/play/js/revealjs/reveal.js"></script>
 
 <script src="https://www.nonlinear.nyc/play/js/revealjs/plugin/notes/notes.js"></script>
@@ -271,6 +271,6 @@ color: black;
 		plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
 	});
 </script>
-		  
+
 </body>
 </html>

@@ -1,52 +1,35 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://www.nonlinear.nyc/play/bodypix/</loc>
     <lastmod>2021-03-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.nonlinear.nyc/play/magazine/</loc>
     <lastmod>2021-03-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.nonlinear.nyc/play/ml5-test/</loc>
     <lastmod>2021-03-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.nonlinear.nyc/play/mosaic/</loc>
     <lastmod>2021-03-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://www.nonlinear.nyc/play/reveal/</loc>
+    <lastmod>2021-03-10T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://www.nonlinear.nyc/play/reveal-test/</loc>
     <lastmod>2021-03-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.nonlinear.nyc/play/credits/</loc>
     <lastmod>2020-01-29T18:03:16-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.nonlinear.nyc/play/hello-world/</loc>
     <lastmod>2020-01-29T18:03:16-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.nonlinear.nyc/play/categories/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.nonlinear.nyc/play/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.nonlinear.nyc/play/tags/</loc>
   </url>
-  
 </urlset>
