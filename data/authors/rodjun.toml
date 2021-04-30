@@ -1,0 +1,11 @@
+alias = "rodjun"
+name = "Rodrigo"
+surname = "Junqueira"
+emoji = "✨"
+location = "brasil"
+email = "rodrigo.fpjunqueira@gmail.com"
+
+links = [
+	{title = "site", URL =  "https://www.rodjun.com/"},
+	{title = "github", URL =  "https://github.com/rodjuncode"}
+]

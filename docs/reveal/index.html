@@ -52,8 +52,8 @@ a.credits-trigger {
   }
   .play-modal {
     visibility: hidden;
+        opacity: 0;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !default;
-    opacity: 0;
     position: absolute;
     top: 0;
     right: 0;
@@ -66,6 +66,10 @@ a.credits-trigger {
     transition: all .4s;
     z-index: 1000 !important;
 
+  }
+  .play-modal#credits {
+      visibility: visible;
+    opacity: 1;
   }
 
   .play-modal:target {
@@ -228,7 +232,35 @@ color: black;
 			<div>
 				<h1>reveal</h1>
 		<h2></h2>
+	<h3>authors: nicholas</h3>
+
+
+
+
+
+<ol>
+	<li>Nicholas Frota</li>
+	<li>New York</li>
+	<li>the anagram of my name is anarchist fool</li>
 	
+	<li><a href="https://nonlinear.nyc">site</a></li>
+	
+	<li><a href="https://mastodon.social/@nonlinear">mastodon</a></li>
+	
+	<li><a href="https://twitter.com/nonlinear">twitter</a></li>
+	
+	<li><a href="https://www.instapaper.com/p/nonlinear">instapaper</a></li>
+	
+	<li><a href="https://instagram.com/nonlinear">instagram</a></li>
+	
+</ol>
+
+
+
+
+
+
+
 	</div>
 	
 			<a href="#" class="play-modal-close">&times;</a>

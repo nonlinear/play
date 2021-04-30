@@ -1,0 +1,10 @@
+name = "Alex"
+surname = "Dolabi"
+emoji = "🐠"
+bio = "lorem"
+email = "aodolabi@gmail.com"
+location = "New York"
+
+[link1]
+	title = "instagram" 
+	URL = "https://www.instagram.com/aodolabi/"
