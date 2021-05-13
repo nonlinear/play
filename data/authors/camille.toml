@@ -1,0 +1,13 @@
+alias = "camille"
+name = "Camille"
+surname = "E. Acey"
+emoji = "🗿"
+bio = "lorem"
+email = "connect@camilleacey.com"
+location = "New York"
+
+
+links = [
+		{title = "colet", URL = "https://colet.space/"}, 
+	{title = "mastodon", URL = "https://eweg.be/@olamina"}
+]

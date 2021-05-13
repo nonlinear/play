@@ -1,31 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" class='
-play-magazine another-name
+style-magazine 
 '>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-
-  <link rel="stylesheet" href="https://www.nonlinear.nyc/play/css/revealjs/reveal.css">
-  
-  <link rel="stylesheet" href="https://www.nonlinear.nyc/play/css/revealjs/plugin/highlight/monokai.css" id="highlight-theme">
-  
-    
-    
-    
-     
-  
-  <link rel="stylesheet" href="https://www.nonlinear.nyc/play/css/revealjs/theme/magazine.css" id="theme">
-  
-    
-    
-    
-    
-    
-    
-  		    
-    
 
   <link rel="manifest" href="https://www.nonlinear.nyc/playmanifest.json">
   <title>nonlinear / play</title>
@@ -76,10 +56,7 @@ a.credits-trigger {
     z-index: 1000 !important;
 
   }
-  .play-modal#credits {
-      visibility: visible;
-    opacity: 1;
-  }
+ 
 
   .play-modal:target {
     visibility: visible;
@@ -144,8 +121,11 @@ color: black;
   
   
 
-<link rel="stylesheet" href="https://www.nonlinear.nyc/play/css/main.8e4a0ae4e15189deacf1e3fa5f222b8fc28beb359cbd29b20a02a1ea18a0b4a0.css">
+<link rel="stylesheet" href="https://www.nonlinear.nyc/play/css/main.d9a325e50071f15cd066d4fb960191b23d7e1baeaef2eaa25bbc3427f1ac25dd.css">
   
+   
+<link rel="stylesheet" href="https://www.nonlinear.nyc/play/css/spread.css">
+ 
 </head>
 <body>
   
@@ -168,58 +148,43 @@ color: black;
 
 
 
+
   
-  <div class="reveal">
-   <div class="slides">
-    <style>
-	:root {
-		--magazine-ratio: 500px;
-		--magazine-radius: 0px;
-		--magazine-color-1: #666;
-		--magazine-color-2: #eee;
-		--magazine-shadow: 5px 5px 0px rgba(0, 0, 0, 0.06);
-	}
-
-	.reveal-viewport {
-		background-color: #ccc;
-	}
-</style>
-<section>
-	<h2>Barebones Presentation</h2>
-	<p>This example contains the bare minimum includes and markup required to run a reveal.js presentation.</p>
+<div class="spread">
+		<section>
+	<h2>Scroll test</h2>scroll here</p>
+	<div class="spin-scroll vertical">
+		<div class="scroll">
+			<img src="../images/LylCdAEGKFD0pruRuUJ8.png">
+		</div>
+	</div>
+	<div class="spin-scroll horizontal">
+		<div class="scroll">
+			<img src="../images/LylCdAEGKFD0pruRuUJ8.png">
+		</div>
+	</div>
 </section>
 <section>
-	<h2>No Theme</h2>
-	<p>There's no theme included, so it will fall back on browser defaults.</p>
-</section>
-<section id="other">
-	<h2>Barebones Presentation</h2>
-	<p>This example contains the bare minimum includes and markup required to run a reveal.js presentation.</p>
-</section>
-
-<section>
-	<h2>No Theme</h2>
-	<p>There's no theme included, so it will fall back on browser defaults.</p>
+	<h1>h1 test</h1>
+	<h2>h2 test</h2>
+	<h3>h3 test</h3>
+	<p>paragraph test Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi dolore quod at, voluptatem nihil quo cupiditate facere deserunt explicabo dolorum!</p>
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, hic?</p>
 </section>
 <section>
-	<h2>Barebones Presentation</h2>
-	<p>This example contains the bare minimum includes and markup required to run a reveal.js presentation.</p>
+	<h2>Image</h2>
+	<p class="pending">Images of different sizes here</p>
+</section>
+<section>
+	<h2>Background</h2>
+	<p class="pending">backgrounds of different types here</p>
+</section>
+<section>
+	<h2>SVG test</h2>
+	<p class="pending">embedded, img, with css stuff on it</p>
 </section>
 
-<section>
-	<h2>No Theme</h2>
-	<p>There's no theme included, so it will fall back on browser defaults.</p>
-</section>
-<section>
-	<h2>Barebones Presentation</h2>
-	<p>This example contains the bare minimum includes and markup required to run a reveal.js presentation.</p>
-</section>
 
-<section>
-	<h2>No Theme</h2>
-	<p>There's no theme included, so it will fall back on browser defaults.</p>
-</section>
-  </div>
 </div>
 
 
@@ -232,9 +197,23 @@ color: black;
 	<article class="play-modal-body">
 		<header class="play-modal-header">
 			<div>
-				<h1>Magazine test</h1>
-		<h2>testing revealjs magazine theme</h2>
-	<h3>authors: nicholas</h3>
+				<h1>Magazine</h1>
+		<h2>testing CSS-only magazine</h2>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -263,20 +242,19 @@ color: black;
 
 
 
+
+
+
+
+
+
 	</div>
 	
 			<a href="#" class="play-modal-close">&times;</a>
 		</header>
 		
 <section class="play-modal-content">
-	<p>Revealjs resizes automatically depending on screen, so whatever you do will work properly on smaller screens preserving the framing ration, which is what I need for design creations (think comics, kinetic posters, fashion spreads).
-dfdffg</p>
-<ul>
-<li>dfdg</li>
-<li>dfdgg</li>
-<li>dgsgsfg</li>
-</ul>
-
+	
 
 </section>
 		<footer class="play-modal-footer">
@@ -316,21 +294,6 @@ dfdffg</p>
 		
 	</article>
 </div>
-
-
-<script src="https://www.nonlinear.nyc/play/js/revealjs/reveal.js"></script>
-
-<script src="https://www.nonlinear.nyc/play/js/revealjs/plugin/notes/notes.js"></script>
-
-<script src="https://www.nonlinear.nyc/play/js/revealjs/plugin/markdown/markdown.js"></script>
-
-<script src="https://www.nonlinear.nyc/play/js/revealjs/plugin/highlight/highlight.js"></script>
-<script>
-	Reveal.initialize({
-		hash: true,
-		plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-	});
-</script>
 
 </body>
 </html>

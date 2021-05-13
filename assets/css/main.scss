@@ -8,3 +8,27 @@
 
 
 
+.spin-scroll {
+	--width: 300px;
+	--height: 250px;
+	width: var(--width);
+	height: var(--height);
+	&.horizontal {
+		overflow-y: hidden;
+		.scroll {
+			width: calc(var(--width) * 5);
+		}
+	}
+	&.vertical {
+		overflow-x: hidden;
+		.scroll {
+			height: calc(var(--width) * 5);
+		}
+	}
+	.scroll {
+		img, svg {
+			width: var(--width);
+			height: var(--height);
+		}
+	}
+}
