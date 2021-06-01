@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" class='
-play- 
+style-spin-scroll-older 
 '>
 <head>
-	<meta name="generator" content="Hugo 0.82.0" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
@@ -111,94 +110,81 @@ color: black;
   }
   </style>
   
+  
+
+<link rel="stylesheet" href="https://www.nonlinear.nyc/play/css/main.d9a325e50071f15cd066d4fb960191b23d7e1baeaef2eaa25bbc3427f1ac25dd.css">
+  
    
 </head>
 <body>
- 
-						<a  class="category-post" href="https://www.nonlinear.nyc/play/magazine/"  >
-							<header>
-								<p class="title">Magazine</p>
-							<p class="description">testing CSS-only magazine</p>
-							</header>
-						</a>
-						
-						<a  class="category-post" href="https://www.nonlinear.nyc/play/bodypix/"  >
-							<header>
-								<p class="title">bodypix</p>
-							<p class="description">testing bodypix `segmentation.partMask` feature</p>
-							</header>
-						</a>
-						
-						<a  class="category-post" href="https://www.nonlinear.nyc/play/revealjs-magazine/"  >
-							<header>
-								<p class="title">Magazine test</p>
-							<p class="description">testing revealjs magazine theme</p>
-							</header>
-						</a>
-						
-						<a  class="category-post" href="https://www.nonlinear.nyc/play/ml5-test/"  >
-							<header>
-								<p class="title">ML5 testing</p>
-							<p class="description"></p>
-							</header>
-						</a>
-						
-						<a  class="category-post" href="https://www.nonlinear.nyc/play/mosaic/"  >
-							<header>
-								<p class="title">Mosaic</p>
-							<p class="description">mosaic experiments</p>
-							</header>
-						</a>
-						
-						<a  class="category-post" href="https://www.nonlinear.nyc/play/reveal/"  >
-							<header>
-								<p class="title">reveal</p>
-							<p class="description"></p>
-							</header>
-						</a>
-						
-						<a  class="category-post" href="https://www.nonlinear.nyc/play/reveal-test/"  >
-							<header>
-								<p class="title">Reveal Js</p>
-							<p class="description"></p>
-							</header>
-						</a>
-						
-						<a  class="category-post" href="https://www.nonlinear.nyc/play/simple-cube/"  >
-							<header>
-								<p class="title">simple cube</p>
-							<p class="description">spin test</p>
-							</header>
-						</a>
-						
-						<a  class="category-post" href="https://www.nonlinear.nyc/play/spin-scroll-older/"  >
-							<header>
-								<p class="title">spin scroll</p>
-							<p class="description">spin test</p>
-							</header>
-						</a>
-						
-						<a  class="category-post" href="https://www.nonlinear.nyc/play/spin-scroll/"  >
-							<header>
-								<p class="title">spin scroll</p>
-							<p class="description">spin test</p>
-							</header>
-						</a>
-						
-						<a  class="category-post" href="https://www.nonlinear.nyc/play/credits/"  >
-							<header>
-								<p class="title">Playing with credits</p>
-							<p class="description">stuff here</p>
-							</header>
-						</a>
-						
-						<a  class="category-post" href="https://www.nonlinear.nyc/play/hello-world/"  >
-							<header>
-								<p class="title">Testing hugo features</p>
-							<p class="description"></p>
-							</header>
-						</a>
-						
+  
+
+
+
+
+
+
+<script src="https://www.nonlinear.nyc/play/js/three.js"></script>
+
+<script src="https://www.nonlinear.nyc/play/js/GLTFLoader.js"></script>
+
+<script src="https://www.nonlinear.nyc/play/js/OrbitControls.js"></script>
+
+
+
+
+
+
+
+
+  
+<script>
+      let scene, camera, renderer;
+      function init() {
+        scene = new THREE.Scene();
+        scene.background = new THREE.Color(0xdddddd);
+        camera = new THREE.PerspectiveCamera(40,window.innerWidth/window.innerHeight,1,5000);
+        camera.rotation.y = 45/180*Math.PI;
+        camera.position.x = 800;
+        camera.position.y = 100;
+        camera.position.z = 1000;
+        controls = new THREE.OrbitControls(camera, renderer.domElement);
+        controls.addEventListener('change', renderer);
+        hlight = new THREE.AmbientLight (0x404040,100);
+        scene.add(hlight);
+        directionalLight = new THREE.DirectionalLight(0xffffff,100);
+        directionalLight.position.set(0,1,0);
+        directionalLight.castShadow = true;
+        scene.add(directionalLight);
+        light = new THREE.PointLight(0xc4c4c4,10);
+        light.position.set(0,300,500);
+        scene.add(light);
+        light2 = new THREE.PointLight(0xc4c4c4,10);
+        light2.position.set(500,100,0);
+        scene.add(light2);
+        light3 = new THREE.PointLight(0xc4c4c4,10);
+        light3.position.set(0,100,-500);
+        scene.add(light3);
+        light4 = new THREE.PointLight(0xc4c4c4,10);
+        light4.position.set(-500,300,500);
+        scene.add(light4);
+        renderer = new THREE.WebGLRenderer({antialias:true});
+        renderer.setSize(window.innerWidth,window.innerHeight);
+        document.body.appendChild(renderer.domElement);
+        let loader = new THREE.GLTFLoader();
+        loader.load('/play/3D/hand_low_poly/scene.gltf', function(gltf){
+          car = gltf.scene.children[0];
+          car.scale.set(0.5,0.5,0.5);
+          scene.add(gltf.scene);
+          animate();
+        });
+      }
+      function animate() {
+        renderer.render(scene,camera);
+        requestAnimationFrame(animate);
+      }
+      init();
+		</script>
 
 
 
@@ -210,8 +196,8 @@ color: black;
 	<article class="play-modal-body">
 		<header class="play-modal-header">
 			<div>
-				<h1>nonlinear / play</h1>
-		<h2></h2>
+				<h1>spin scroll</h1>
+		<h2>spin test</h2>
 	
 
 

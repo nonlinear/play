@@ -124,13 +124,6 @@ color: black;
 
 
 
-<script src="https://www.nonlinear.nyc/play/js/three.js"></script>
-
-<script src="https://www.nonlinear.nyc/play/js/GLTFLoader.js"></script>
-
-<script src="https://www.nonlinear.nyc/play/js/OrbitControls.js"></script>
-
-
 
 
 
@@ -138,53 +131,64 @@ color: black;
 
 
   
+<script src="https://unpkg.com/three"></script>
+  <script
+      src="https://unpkg.com/three/examples/js/loaders/GLTF2Loader.js"
+      ></script>
 <script>
-      let scene, camera, renderer;
-      function init() {
-        scene = new THREE.Scene();
-        scene.background = new THREE.Color(0xdddddd);
-        camera = new THREE.PerspectiveCamera(40,window.innerWidth/window.innerHeight,1,5000);
-        camera.rotation.y = 45/180*Math.PI;
-        camera.position.x = 800;
-        camera.position.y = 100;
-        camera.position.z = 1000;
-        controls = new THREE.OrbitControls(camera, renderer.domElement);
-        controls.addEventListener('change', renderer);
-        hlight = new THREE.AmbientLight (0x404040,100);
-        scene.add(hlight);
-        directionalLight = new THREE.DirectionalLight(0xffffff,100);
-        directionalLight.position.set(0,1,0);
-        directionalLight.castShadow = true;
-        scene.add(directionalLight);
-        light = new THREE.PointLight(0xc4c4c4,10);
-        light.position.set(0,300,500);
-        scene.add(light);
-        light2 = new THREE.PointLight(0xc4c4c4,10);
-        light2.position.set(500,100,0);
-        scene.add(light2);
-        light3 = new THREE.PointLight(0xc4c4c4,10);
-        light3.position.set(0,100,-500);
-        scene.add(light3);
-        light4 = new THREE.PointLight(0xc4c4c4,10);
-        light4.position.set(-500,300,500);
-        scene.add(light4);
-        renderer = new THREE.WebGLRenderer({antialias:true});
-        renderer.setSize(window.innerWidth,window.innerHeight);
-        document.body.appendChild(renderer.domElement);
-        let loader = new THREE.GLTFLoader();
-        loader.load('/play/3D/hand_low_poly/scene.gltf', function(gltf){
-          car = gltf.scene.children[0];
-          car.scale.set(0.5,0.5,0.5);
-          scene.add(gltf.scene);
-          animate();
-        });
-      }
-      function animate() {
-        renderer.render(scene,camera);
+  
+"use strict";
+
+// simplified on three.js/examples/webgl_loader_gltf2.html                        
+function main() {
+    // renderer                                                                 
+    const renderer = new THREE.WebGLRenderer({antialias: true});
+    renderer.setSize(800, 600);
+    document.body.appendChild(renderer.domElement);
+
+    // camera                                                                   
+    const camera = new THREE.PerspectiveCamera(30, 800 / 600, 1, 10000);
+    camera.position.set(30, 10, 70); // settings in `sceneList` "Monster"
+    camera.up.set(0, 1, 0);
+    camera.lookAt(new THREE.Vector3(0, 0, 0));
+
+    // scene and lights                                                         
+    const scene = new THREE.Scene();
+    scene.add(new THREE.AmbientLight(0xcccccc));
+
+    // load gltf model and texture                            
+    const objs = [];
+    const loader = new THREE.GLTF2Loader();
+    loader.load("./3D/z-Monster.gltf", gltf => {
+        // model is a THREE.Group (THREE.Object3D)                              
+        const mixer = new THREE.AnimationMixer(gltf.scene);
+        // animations is a list of THREE.AnimationClip
+        for (const anim of gltf.animations) {
+            mixer.clipAction(anim).play();
+        }
+        // settings in `sceneList` "Monster"
+        gltf.scene.scale.set(0.4, 0.4, 0.4);
+        gltf.scene.rotation.copy(new THREE.Euler(0, -3 * Math.PI / 4, 0));
+        gltf.scene.position.set(2, 1, 0);
+        
+        scene.add(gltf.scene);
+        objs.push({gltf, mixer});
+    });
+
+    // animation rendering                                                      
+    const clock = new THREE.Clock();
+    (function animate() {
+        // animation with THREE.AnimationMixer.update(timedelta)                
+        objs.forEach(({mixer}) => {mixer.update(clock.getDelta());});
+        renderer.render(scene, camera);
         requestAnimationFrame(animate);
-      }
-      init();
-		</script>
+    })();
+    return objs;
+}
+const objs = main();
+
+
+</script>
 
 
 
